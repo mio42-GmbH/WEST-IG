@@ -1,0 +1,202 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Condition/8d84156a-fe2b-4eb8-b87e-57fe51b641d0> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "8d84156a-fe2b-4eb8-b87e-57fe51b641d0"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/condition-assertedDate>
+     ] ;
+     fhir:value [
+       a fhir:DateTime ;
+       fhir:v "2012"^^xsd:gYear
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Diagnose_istDauerdiagnose"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Diagnose_istDauerdiagnose>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] [
+     fhir:url [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Diagnoseausnahmetatbestand: Ja"
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-clinical>
+       ] ;
+       fhir:version [ fhir:v "4.0.1" ] ;
+       fhir:code [ fhir:v "resolved" ] ;
+       fhir:display [ fhir:v "Resolved" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/condition-ver-status>
+       ] ;
+       fhir:version [ fhir:v "4.0.1" ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "Confirmed" ]
+     ] )
+  ] ; # 
+  fhir:severity [
+     fhir:coding ( [
+       a sct:24484000 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
+       fhir:code [ fhir:v "24484000" ] ;
+       fhir:display [ fhir:v "Severe" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen>
+         ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [
+             fhir:v "http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen"^^xsd:anyURI ;
+             fhir:l <http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen>
+           ] ;
+           fhir:code [ fhir:v "*" ] ;
+           fhir:display [ fhir:v "*" ]
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://fhir.de/StructureDefinition/seitenlokalisation"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/StructureDefinition/seitenlokalisation>
+         ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [
+             fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"^^xsd:anyURI ;
+             fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION>
+           ] ;
+           fhir:code [ fhir:v "B" ] ;
+           fhir:display [ fhir:v "beiderseits" ]
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit>
+         ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [
+             fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT"^^xsd:anyURI ;
+             fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT>
+           ] ;
+           fhir:code [ fhir:v "Z" ] ;
+           fhir:display [ fhir:v "Zustand nach" ]
+         ]
+       ] ) ;
+       fhir:system [
+         fhir:v "http://fhir.de/CodeSystem/bfarm/icd-10-gm"^^xsd:anyURI ;
+         fhir:l <http://fhir.de/CodeSystem/bfarm/icd-10-gm>
+       ] ;
+       fhir:version [ fhir:v "2025" ] ;
+       fhir:code [ fhir:v "A00.0" ] ;
+       fhir:display [ fhir:v "Cholera durch Vibrio cholerae O:1, Biovar cholerae" ]
+     ] [
+       fhir:system [
+         fhir:v "http://fhir.de/CodeSystem/bfarm/alpha-id"^^xsd:anyURI ;
+         fhir:l <http://fhir.de/CodeSystem/bfarm/alpha-id>
+       ] ;
+       fhir:version [ fhir:v "2020" ] ;
+       fhir:code [ fhir:v "I6158" ]
+     ] [
+       a sct:404684003 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
+       fhir:code [ fhir:v "404684003" ] ;
+       fhir:display [ fhir:v "Clinical finding" ]
+     ] [
+       fhir:system [
+         fhir:v "http://www.orpha.net"^^xsd:anyURI ;
+         fhir:l <http://www.orpha.net>
+       ] ;
+       fhir:version [ fhir:v "2024" ] ;
+       fhir:code [ fhir:v "104075" ]
+     ] )
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:coding ( [
+       a sct:76505004 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
+       fhir:code [ fhir:v "76505004" ] ;
+       fhir:display [ fhir:v "Thumb structure" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:l <urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:reference [ fhir:v "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2016-01-01"^^xsd:date ]
+  ] ; # 
+  fhir:abatement [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2018-01-01"^^xsd:date ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2020-05-07"^^xsd:date] ; # 
+  fhir:note ( [
+     fhir:author [
+       a fhir:String ;
+       fhir:v "Mueller"
+     ] ;
+     fhir:time [ fhir:v "2020-01-02"^^xsd:date ] ;
+     fhir:text [ fhir:v "ausgedacht" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

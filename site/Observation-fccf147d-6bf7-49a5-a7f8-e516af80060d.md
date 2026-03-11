@@ -1,0 +1,71 @@
+# fccf147d-6bf7-49a5-a7f8-e516af80060d - Arbeitsgruppe WeST v1.0.0-kommentierung
+
+Arbeitsgruppe WeST
+
+Version 1.0.0-kommentierung - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **fccf147d-6bf7-49a5-a7f8-e516af80060d**
+
+## Example Observation: fccf147d-6bf7-49a5-a7f8-e516af80060d
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "fccf147d-6bf7-49a5-a7f8-e516af80060d",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation|1.0.0-kommentierung"]
+  },
+  "status" : "amended",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "version" : "2.74",
+      "code" : "2708-6",
+      "display" : "Oxygen saturation in Arterial blood"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000274103/version/20230731",
+      "code" : "431314004",
+      "display" : "Peripheral oxygen saturation (observable entity)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "version" : "2.74",
+      "code" : "59408-5",
+      "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
+    }]
+  },
+  "subject" : {
+    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+  },
+  "effectiveDateTime" : "2020-01-02",
+  "valueQuantity" : {
+    "value" : 40,
+    "unit" : "%",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "%"
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000274103/version/20250515",
+      "code" : "448703006",
+      "display" : "Pulse oximeter"
+    }]
+  }
+}
+
+```

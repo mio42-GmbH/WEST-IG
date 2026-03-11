@@ -1,0 +1,193 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/MedicationStatement/5af292a5-0972-4937-a005-ac480aeb60ba> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "5af292a5-0972-4937-a005-ac480aeb60ba"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:statusReason ( [
+     fhir:coding ( [
+       a sct:275942009 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
+       fhir:code [ fhir:v "275942009" ] ;
+       fhir:display [ fhir:v "New medication added" ]
+     ] )
+  ] ) ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:l <https://fhir.kbv.de/Medication/149e683b-729a-41e2-a3ce-b21f4a2b55e2> ;
+     fhir:reference [ fhir:v "Medication/149e683b-729a-41e2-a3ce-b21f4a2b55e2" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <https://fhir.kbv.de/Patient/904e04d0-c9f2-4edd-b734-c3526f015000> ;
+     fhir:reference [ fhir:v "Patient/904e04d0-c9f2-4edd-b734-c3526f015000" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2022-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2022-03-31"^^xsd:date ]
+  ] ; # 
+  fhir:dateAsserted [ fhir:v "2022-01-01"^^xsd:date] ; # 
+  fhir:note ( [
+     fhir:author [
+       a fhir:String ;
+       fhir:v "Mueller"
+     ] ;
+     fhir:time [ fhir:v "2020-01-02"^^xsd:date ] ;
+     fhir:text [ fhir:v "ausgedacht" ]
+  ] ) ; # 
+  fhir:dosage ( [
+     fhir:patientInstruction [ fhir:v "Einahme 2 Stunden nach einer Mahlzeit" ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:bounds [
+           a fhir:Period ;
+           fhir:start [ fhir:v "2022-01-01"^^xsd:date ] ;
+           fhir:end [ fhir:v "2022-03-31"^^xsd:date ]
+         ] ;
+         fhir:frequency [ fhir:v "2"^^xsd:positiveInteger ] ;
+         fhir:period [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:periodUnit [ fhir:v "d" ] ;
+         fhir:when ( [ fhir:v "MORN" ] )
+       ]
+     ] ;
+     fhir:asNeeded [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:422400008 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
+         fhir:code [ fhir:v "422400008" ] ;
+         fhir:display [ fhir:v "Vomiting" ]
+       ] ) ;
+       fhir:text [ fhir:v "Erbrechen" ]
+     ] ;
+     fhir:site [
+       fhir:coding ( [
+         a sct:442083009 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
+         fhir:code [ fhir:v "442083009" ] ;
+         fhir:display [ fhir:v "Anatomical or acquired body structure" ]
+       ] ) ;
+       fhir:text [ fhir:v "Oral" ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:26643006 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
+         fhir:code [ fhir:v "26643006" ] ;
+         fhir:display [ fhir:v "Oral route" ]
+       ] [
+         fhir:system [
+           fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ;
+           fhir:l <http://standardterms.edqm.eu>
+         ] ;
+         fhir:version [ fhir:v "4.0.1" ] ;
+         fhir:code [ fhir:v "20053000" ] ;
+         fhir:display [ fhir:v "Oral use" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Range ;
+         fhir:low [
+           fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "Einzeldosis" ] ;
+           fhir:system [
+             fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"^^xsd:anyURI ;
+             fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT>
+           ] ;
+           fhir:code [ fhir:v "g" ]
+         ] ;
+         fhir:high [
+           fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "Einzeldosis" ] ;
+           fhir:system [
+             fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"^^xsd:anyURI ;
+             fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT>
+           ] ;
+           fhir:code [ fhir:v "g" ]
+         ]
+       ] ;
+       fhir:rate [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "Einzeldosis" ] ;
+           fhir:system [
+             fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"^^xsd:anyURI ;
+             fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT>
+           ] ;
+           fhir:code [ fhir:v "g" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "Einzeldosis" ] ;
+           fhir:system [
+             fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+             fhir:l <http://unitsofmeasure.org>
+           ] ;
+           fhir:code [ fhir:v "s" ]
+         ]
+       ]
+     ] ) ;
+     fhir:maxDosePerPeriod [
+       fhir:numerator [
+         fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Einzeldosis" ] ;
+         fhir:system [
+           fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"^^xsd:anyURI ;
+           fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT>
+         ] ;
+         fhir:code [ fhir:v "g" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "Einzeldosis" ] ;
+         fhir:system [
+           fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+           fhir:l <http://unitsofmeasure.org>
+         ] ;
+         fhir:code [ fhir:v "s" ]
+       ]
+     ] ;
+     fhir:maxDosePerAdministration [
+       fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "Einzeldosis" ] ;
+       fhir:system [
+         fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"^^xsd:anyURI ;
+         fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT>
+       ] ;
+       fhir:code [ fhir:v "g" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

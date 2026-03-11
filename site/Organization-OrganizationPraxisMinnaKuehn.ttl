@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Organization/OrganizationPraxisMinnaKuehn> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OrganizationPraxisMinnaKuehn"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "Praxis 2014 übernommen von Dr. Bauer"
+     ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Allgemeinmedizinische Praxis"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "010 1112" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "010 2222" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "praxis@allgemeinmedizin-minna-kuehn.de" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "allgemeinmedizin-minna-kuehn@mio42.kim.telematik" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [ fhir:v "Hauptstraße 2" ] ) ;
+     fhir:city [ fhir:v "Neustadt" ] ;
+     fhir:postalCode [ fhir:v "10000" ] ;
+     fhir:country [ fhir:v "D" ]
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:name [
+       fhir:text [ fhir:v "Praxis Alessa Costa" ]
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "010 1116" ]
+     ] ) ;
+     fhir:address [
+       fhir:text [ fhir:v "Hauptstraße 6, 10000 Neustadt, Deutschland" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,20 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/MedicationKnowledge/d07718e0-8ac6-43e6-afc6-a662f8ef107a> a fhir:MedicationKnowledge ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "d07718e0-8ac6-43e6-afc6-a662f8ef107a"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge?version=1.0.0-kommentierung>
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

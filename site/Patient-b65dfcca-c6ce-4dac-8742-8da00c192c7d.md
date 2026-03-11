@@ -1,0 +1,180 @@
+# b65dfcca-c6ce-4dac-8742-8da00c192c7d - Arbeitsgruppe WeST v1.0.0-kommentierung
+
+Arbeitsgruppe WeST
+
+Version 1.0.0-kommentierung - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **b65dfcca-c6ce-4dac-8742-8da00c192c7d**
+
+## Example Patient: b65dfcca-c6ce-4dac-8742-8da00c192c7d
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Patient",
+  "id" : "b65dfcca-c6ce-4dac-8742-8da00c192c7d",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient|1.0.0-kommentierung"]
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "code",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+          "code" : "D",
+          "display" : "Deutschland"
+        }]
+      }
+    }],
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-citizenship"
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "MR"
+      }]
+    },
+    "system" : "http://www.acmedasdd.com/identifiers/patient",
+    "value" : "123456"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+        "code" : "KVZ10"
+      }]
+    },
+    "system" : "http://fhir.de/sid/gkv/kvid-10",
+    "value" : "G995030560"
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type",
+        "code" : "pkv-nr"
+      },
+      {
+        "system" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+        "code" : "PKV"
+      }]
+    },
+    "system" : "http://www.acmedasdd.com/identifiers/patient",
+    "value" : "1234567890",
+    "assigner" : {
+      "reference" : "urn:uuid:86d0ed84-c2b8-4177-b56b-92f893492d9f",
+      "display" : "KK"
+    }
+  },
+  {
+    "type" : {
+      "coding" : [{
+        "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type",
+        "code" : "kvk"
+      }]
+    },
+    "system" : "http://fhir.de/sid/gkv/kvk-versichertennummer",
+    "value" : "1995030560"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Hans",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+        "valueString" : "Glücklich"
+      },
+      {
+        "url" : "http://fhir.de/StructureDefinition/humanname-namenszusatz",
+        "valueString" : "Prinz"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+        "valueString" : "von"
+      }]
+    },
+    "given" : ["Hans"],
+    "prefix" : ["Dr"],
+    "_prefix" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+        "valueCode" : "AC"
+      }]
+    }]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "12123455"
+  }],
+  "gender" : "other",
+  "_gender" : {
+    "extension" : [{
+      "url" : "http://fhir.de/StructureDefinition/gender-amtlich-de",
+      "valueCoding" : {
+        "system" : "http://fhir.de/CodeSystem/gender-amtlich-de",
+        "code" : "X",
+        "display" : "unbestimmt"
+      }
+    }]
+  },
+  "birthDate" : "2022-03-01",
+  "address" : [{
+    "type" : "both",
+    "line" : ["Mittestr 43"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+        "valueString" : "Mittestr"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+        "valueString" : "43"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+        "valueString" : "Nebenhaus"
+      }]
+    }],
+    "city" : "Berlin",
+    "postalCode" : "12015",
+    "country" : "D"
+  },
+  {
+    "type" : "postal",
+    "line" : ["Mittestr"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
+        "valueString" : "Mittestr"
+      }]
+    }],
+    "city" : "Berlin",
+    "postalCode" : "12015",
+    "country" : "D"
+  }],
+  "photo" : [{
+    "contentType" : "image/jpeg",
+    "url" : "Binary/f016"
+  }],
+  "communication" : [{
+    "language" : {
+      "coding" : [{
+        "system" : "urn:ietf:bcp:47",
+        "code" : "hr",
+        "display" : "Croatian"
+      }]
+    },
+    "preferred" : false
+  }],
+  "generalPractitioner" : [{
+    "reference" : "urn:uuid:831c3d46-4b70-40ee-9996-031b8ee80576"
+  }]
+}
+
+```

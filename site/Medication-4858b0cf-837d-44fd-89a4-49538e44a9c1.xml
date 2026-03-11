@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="4858b0cf-837d-44fd-89a4-49538e44a9c1"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication|1.0.0-kommentierung"/>
+  </meta>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/900000000000207008/version/20220331"/>
+        <code value="763158003"/>
+        <display value="Medicinal product"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <code>
+    <text value="Metoprolol-ratiopharm® 100 mg Tabletten"/>
+  </code>
+  <form>
+    <coding>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
+      <version value="1.15"/>
+      <code value="TAB"/>
+      <display value="Tabletten"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
+      <code value="385055001"/>
+      <display value="Tablet"/>
+    </coding>
+    <coding>
+      <system value="http://standardterms.edqm.eu"/>
+      <code value="12200"/>
+      <display value="Tablet"/>
+    </coding>
+  </form>
+</Medication>

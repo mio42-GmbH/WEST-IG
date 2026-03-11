@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Medication/4858b0cf-837d-44fd-89a4-49538e44a9c1> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "4858b0cf-837d-44fd-89a4-49538e44a9c1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type>
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a sct:763158003 ;
+         fhir:system [
+           fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+           fhir:l <http://snomed.info/sct>
+         ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20220331" ] ;
+         fhir:code [ fhir:v "763158003" ] ;
+         fhir:display [ fhir:v "Medicinal product" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:code [
+     fhir:text [ fhir:v "Metoprolol-ratiopharm® 100 mg Tabletten" ]
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"^^xsd:anyURI ;
+         fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM>
+       ] ;
+       fhir:version [ fhir:v "1.15" ] ;
+       fhir:code [ fhir:v "TAB" ] ;
+       fhir:display [ fhir:v "Tabletten" ]
+     ] [
+       a sct:385055001 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
+       fhir:code [ fhir:v "385055001" ] ;
+       fhir:display [ fhir:v "Tablet" ]
+     ] [
+       fhir:system [
+         fhir:v "http://standardterms.edqm.eu"^^xsd:anyURI ;
+         fhir:l <http://standardterms.edqm.eu>
+       ] ;
+       fhir:code [ fhir:v "12200" ] ;
+       fhir:display [ fhir:v "Tablet" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

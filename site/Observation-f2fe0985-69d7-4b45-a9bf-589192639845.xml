@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="f2fe0985-69d7-4b45-a9bf-589192639845"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Respiratory_Rate|1.0.0-kommentierung"/>
+  </meta>
+  <status value="amended"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <code value="9279-1"/>
+      <display value="Respiratory rate"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20230731"/>
+      <code value="86290005"/>
+      <display value="Respiratory rate (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+  </subject>
+  <effectiveDateTime value="2020-01-02"/>
+  <valueQuantity>
+    <value value="40"/>
+    <unit value="per minute"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="/min"/>
+  </valueQuantity>
+  <bodySite>
+    <text value="test"/>
+  </bodySite>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20230731"/>
+      <code value="258011001"/>
+      <display value="Chessboard method (qualifier value)"/>
+    </coding>
+  </method>
+</Observation>

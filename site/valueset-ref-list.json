@@ -1,0 +1,40 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTClinicalFindings",
+    "title" : "SNOMED CT Clinical Findings",
+    "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.232"],
+    "sources" : ["2.16.840.1.113883.4.642.3.232"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-WEST-ServiceRequest.html" : "KBV_PR_WEST_ServiceRequest"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_Base_CommonLanguages",
+    "version" : "1.8.0",
+    "status" : "active",
+    "name" : "KBV_VS_Base_CommonLanguages",
+    "title" : "Bevorzugte Sprache (Includes)",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Bevorzugte Sprache (Includes).",
+    "systems" : ["urn:ietf:bcp:47"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-WEST-Patient.html" : "KBV_PR_WEST_Patient"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_Base_Deuev_Anlage_8",
+    "version" : "1.8.0",
+    "status" : "active",
+    "name" : "KBV_VS_Base_Deuev_Anlage_8",
+    "title" : "Land/Wohnsitzländercode",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Land/Wohnsitzländercode.",
+    "systems" : ["http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-WEST-Patient.html" : "KBV_PR_WEST_Patient"
+  }]
+}

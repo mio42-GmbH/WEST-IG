@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="5af292a5-0972-4937-a005-ac480aeb60ba"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement|1.0.0-kommentierung"/>
+  </meta>
+  <status value="active"/>
+  <statusReason>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
+      <code value="275942009"/>
+      <display value="New medication added"/>
+    </coding>
+  </statusReason>
+  <medicationReference>
+    <reference value="Medication/149e683b-729a-41e2-a3ce-b21f4a2b55e2"/>
+  </medicationReference>
+  <subject>
+    <reference value="Patient/904e04d0-c9f2-4edd-b734-c3526f015000"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2022-01-01"/>
+    <end value="2022-03-31"/>
+  </effectivePeriod>
+  <dateAsserted value="2022-01-01"/>
+  <note>
+    <authorString value="Mueller"/>
+    <time value="2020-01-02"/>
+    <text value="ausgedacht"/>
+  </note>
+  <dosage>
+    <patientInstruction value="Einahme 2 Stunden nach einer Mahlzeit"/>
+    <timing>
+      <repeat>
+        <boundsPeriod>
+          <start value="2022-01-01"/>
+          <end value="2022-03-31"/>
+        </boundsPeriod>
+        <frequency value="2"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+        <when value="MORN"/>
+      </repeat>
+    </timing>
+    <asNeededCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/11000274103/version/20250515"/>
+        <code value="422400008"/>
+        <display value="Vomiting"/>
+      </coding>
+      <text value="Erbrechen"/>
+    </asNeededCodeableConcept>
+    <site>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/11000274103/version/20250515"/>
+        <code value="442083009"/>
+        <display value="Anatomical or acquired body structure"/>
+      </coding>
+      <text value="Oral"/>
+    </site>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <version value="http://snomed.info/sct/11000274103/version/20250515"/>
+        <code value="26643006"/>
+        <display value="Oral route"/>
+      </coding>
+      <coding>
+        <system value="http://standardterms.edqm.eu"/>
+        <version value="4.0.1"/>
+        <code value="20053000"/>
+        <display value="Oral use"/>
+      </coding>
+    </route>
+    <doseAndRate>
+      <doseRange>
+        <low>
+          <value value="1"/>
+          <unit value="Einzeldosis"/>
+          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+          <code value="g"/>
+        </low>
+        <high>
+          <value value="2"/>
+          <unit value="Einzeldosis"/>
+          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+          <code value="g"/>
+        </high>
+      </doseRange>
+      <rateRatio>
+        <numerator>
+          <value value="2"/>
+          <unit value="Einzeldosis"/>
+          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+          <code value="g"/>
+        </numerator>
+        <denominator>
+          <value value="2"/>
+          <unit value="Einzeldosis"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="s"/>
+        </denominator>
+      </rateRatio>
+    </doseAndRate>
+    <maxDosePerPeriod>
+      <numerator>
+        <value value="2"/>
+        <unit value="Einzeldosis"/>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+        <code value="g"/>
+      </numerator>
+      <denominator>
+        <value value="2"/>
+        <unit value="Einzeldosis"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="s"/>
+      </denominator>
+    </maxDosePerPeriod>
+    <maxDosePerAdministration>
+      <value value="2"/>
+      <unit value="Einzeldosis"/>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT"/>
+      <code value="g"/>
+    </maxDosePerAdministration>
+  </dosage>
+</MedicationStatement>

@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Patient/fc3e742e-c891-4b31-9e54-97dfbfbd3452> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fc3e742e-c891-4b31-9e54-97dfbfbd3452"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type"^^xsd:anyURI ;
+           fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type>
+         ] ;
+         fhir:code [ fhir:v "kvk" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://fhir.de/sid/gkv/kvk-versichertennummer"^^xsd:anyURI ;
+       fhir:l <http://fhir.de/sid/gkv/kvk-versichertennummer>
+     ] ;
+     fhir:value [ fhir:v "111111" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [
+       fhir:v "Doe" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/humanname-own-name>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Doe"
+         ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "John" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1948-11-11"^^xsd:date] ; # 
+  fhir:photo ( [
+     fhir:contentType [ fhir:v "image/jpeg" ] ;
+     fhir:url [
+       fhir:v "Binary/f016"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/Binary/f016>
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="b8256177-8c41-46c6-a35e-94eb3dcfdf94"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter|1.0.0-kommentierung"/>
+  </meta>
+  <status value="planned"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+  </class>
+  <subject>
+    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+  </subject>
+  <participant>
+    <individual>
+      <reference value="urn:uuid:9df81f65-7b3c-410b-b8f1-6426649fcde4"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2021-11-15"/>
+  </period>
+  <serviceProvider>
+    <reference value="urn:uuid:1e02c811-9ac0-4120-b8b7-58538c6d549f"/>
+  </serviceProvider>
+</Encounter>

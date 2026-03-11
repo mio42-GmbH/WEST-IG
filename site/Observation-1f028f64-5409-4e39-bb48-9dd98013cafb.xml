@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="1f028f64-5409-4e39-bb48-9dd98013cafb"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese|1.0.0-kommentierung"/>
+  </meta>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="365854008"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+  </subject>
+  <valueString value="testAnamnese"/>
+</Observation>

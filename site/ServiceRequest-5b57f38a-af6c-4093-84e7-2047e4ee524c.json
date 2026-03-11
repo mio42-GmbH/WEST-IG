@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "5b57f38a-af6c-4093-84e7-2047e4ee524c",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest|1.0.0-kommentierung"]
+  },
+  "extension" : [{
+    "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant",
+    "valueBoolean" : true
+  }],
+  "status" : "completed",
+  "intent" : "proposal",
+  "category" : [{
+    "coding" : [{
+      "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_Leistungsart",
+      "version" : "1.0.0-kommentierung",
+      "code" : "1",
+      "display" : "Kurativ"
+    }]
+  }],
+  "subject" : {
+    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+  },
+  "encounter" : {
+    "reference" : "urn:uuid:11edd49d-fa98-41d1-9773-1f6e56568a81"
+  },
+  "authoredOn" : "2020-01-02"
+}

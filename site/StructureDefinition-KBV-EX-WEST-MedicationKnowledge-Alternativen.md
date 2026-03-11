@@ -1,0 +1,210 @@
+# KBV_EX_WEST_MedicationKnowledge_Alternativen - Arbeitsgruppe WeST v1.0.0-kommentierung
+
+Arbeitsgruppe WeST
+
+Version 1.0.0-kommentierung - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **KBV_EX_WEST_MedicationKnowledge_Alternativen**
+
+## Extension: KBV_EX_WEST_MedicationKnowledge_Alternativen 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Alternativen | *Version*:1.0.0-kommentierung |
+| Draft as of 2026-03-11 | *Computable Name*:KBV_EX_WEST_MedicationKnowledge_Alternativen |
+| **Copyright/Legal**: Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, Alpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED ‘AS IS.’ ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health - ICF, herausgegeben durch die Weltgesundheitsorganisation. | |
+
+**Context of Use**
+
+This extension may be used on the following element(s):
+
+* Element ID MedicationKnowledge
+
+**Usage info**
+
+**Usages:**
+
+* Use this Extension: [KBV_PR_WEST_MedicationKnowledge](StructureDefinition-KBV-PR-WEST-MedicationKnowledge.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/kbv.mio.west|current/StructureDefinition/KBV-EX-WEST-MedicationKnowledge-Alternativen)
+
+### Formal Views of Extension Content
+
+ [Description of Profiles, Differentials, Snapshots, and how the XML and JSON presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-KBV-EX-WEST-MedicationKnowledge-Alternativen.csv), [Excel](StructureDefinition-KBV-EX-WEST-MedicationKnowledge-Alternativen.xlsx), [Schematron](StructureDefinition-KBV-EX-WEST-MedicationKnowledge-Alternativen.sch) 
+
+#### Constraints
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "KBV-EX-WEST-MedicationKnowledge-Alternativen",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Alternativen",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_MedicationKnowledge_Alternativen",
+  "status" : "draft",
+  "date" : "2026-03-11T11:00:33+01:00",
+  "publisher" : "mio42 GmbH",
+  "contact" : [{
+    "name" : "mio42 GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://mio.kbv.de"
+    },
+    {
+      "system" : "email",
+      "value" : "hello@mio42.de"
+    }]
+  }],
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, Alpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED 'AS IS.' ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health - ICF, herausgegeben durch die Weltgesundheitsorganisation.",
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "complex-type",
+  "abstract" : false,
+  "context" : [{
+    "type" : "element",
+    "expression" : "MedicationKnowledge"
+  }],
+  "type" : "Extension",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Extension",
+      "path" : "Extension",
+      "short" : "Alternativen",
+      "definition" : "Diese Erweiterung soll die optionale Rezept Medikamentenkosten Alternativen"
+    },
+    {
+      "id" : "Extension.extension:alternative_Freitext",
+      "path" : "Extension.extension",
+      "sliceName" : "alternative_Freitext",
+      "short" : "Alternative Freitext",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Extension.extension:alternative_Freitext.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:alternative_Freitext.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "alternative_Freitext"
+    },
+    {
+      "id" : "Extension.extension:alternative_Freitext.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "rules" : "closed"
+      },
+      "min" : 1,
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Extension.extension:alternative_Freitext.value[x]:valueString",
+      "path" : "Extension.extension.value[x]",
+      "sliceName" : "valueString",
+      "short" : "Alternativen",
+      "comment" : "Medikamentenkosten Alternativen",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "Extension.extension:arzneimittel_Information",
+      "path" : "Extension.extension",
+      "sliceName" : "arzneimittel_Information",
+      "short" : "Arzneimittel Information",
+      "min" : 0,
+      "max" : "*"
+    },
+    {
+      "id" : "Extension.extension:arzneimittel_Information.extension",
+      "path" : "Extension.extension.extension",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:arzneimittel_Information.url",
+      "path" : "Extension.extension.url",
+      "fixedUri" : "arzneimittel_Information"
+    },
+    {
+      "id" : "Extension.extension:arzneimittel_Information.value[x]",
+      "path" : "Extension.extension.value[x]",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "type",
+          "path" : "$this"
+        }],
+        "rules" : "closed"
+      },
+      "min" : 1,
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "Extension.extension:arzneimittel_Information.value[x]:valueReference",
+      "path" : "Extension.extension.value[x]",
+      "sliceName" : "valueReference",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge|1.0.0-kommentierung"]
+      }]
+    },
+    {
+      "id" : "Extension.extension:arzneimittel_Information.value[x]:valueReference.type",
+      "path" : "Extension.extension.value[x].type",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.extension:arzneimittel_Information.value[x]:valueReference.identifier",
+      "path" : "Extension.extension.value[x].identifier",
+      "max" : "0"
+    },
+    {
+      "id" : "Extension.url",
+      "path" : "Extension.url",
+      "fixedUri" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Alternativen"
+    },
+    {
+      "id" : "Extension.value[x]",
+      "path" : "Extension.value[x]",
+      "max" : "0"
+    }]
+  }
+}
+
+```

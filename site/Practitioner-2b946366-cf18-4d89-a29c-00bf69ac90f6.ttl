@@ -1,0 +1,161 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "2b946366-cf18-4d89-a29c-00bf69ac90f6"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "test"
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "LANR" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR>
+     ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/CodeSystem/identifier-type-de-basis>
+         ] ;
+         fhir:code [ fhir:v "ZANR" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://fhir.de/sid/kzbv/zahnarztnummer"^^xsd:anyURI ;
+       fhir:l <http://fhir.de/sid/kzbv/zahnarztnummer>
+     ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:text [ fhir:v "Dr. Hans Glücklich" ] ;
+     fhir:family [
+       fhir:v "Hans" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/humanname-own-name>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Glücklich"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://fhir.de/StructureDefinition/humanname-namenszusatz"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/StructureDefinition/humanname-namenszusatz>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Prinz"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/humanname-own-prefix>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "von"
+         ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "Hans" ] ) ;
+     fhir:prefix ( [
+       fhir:v "Dr" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "AC"
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "12123455" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [
+       fhir:v "Mittestr 43 Schöneberg" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Mittestr"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "43"
+         ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Berlin" ] ;
+     fhir:postalCode [ fhir:v "12015" ] ;
+     fhir:country [ fhir:v "D" ]
+  ] ) ; # 
+  fhir:gender [
+     fhir:v "other" ;
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://fhir.de/StructureDefinition/gender-amtlich-de"^^xsd:anyURI ;
+         fhir:l <http://fhir.de/StructureDefinition/gender-amtlich-de>
+       ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [
+           fhir:v "http://fhir.de/CodeSystem/gender-amtlich-de"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/CodeSystem/gender-amtlich-de>
+         ] ;
+         fhir:code [ fhir:v "X" ] ;
+         fhir:display [ fhir:v "unbestimmt" ]
+       ]
+     ] )
+  ] ; # 
+  fhir:birthDate [ fhir:v "1987-11-11"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

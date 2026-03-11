@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="d85ec119-de39-4a3b-b439-68d294b44536"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Abdominal_Circumference|1.0.0-kommentierung"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <code value="8280-0"/>
+      <display value="Waist Circumference at umbilicus by Tape measure"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
+      <code value="396552003"/>
+      <display value="Abdominal circumference"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+  </subject>
+  <effectiveDateTime value="2020-01-01"/>
+  <valueQuantity>
+    <value value="80"/>
+    <unit value="centimeter"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="cm"/>
+  </valueQuantity>
+</Observation>

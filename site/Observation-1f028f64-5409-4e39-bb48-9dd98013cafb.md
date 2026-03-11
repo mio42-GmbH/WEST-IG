@@ -1,0 +1,37 @@
+# 1f028f64-5409-4e39-bb48-9dd98013cafb - Arbeitsgruppe WeST v1.0.0-kommentierung
+
+Arbeitsgruppe WeST
+
+Version 1.0.0-kommentierung - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **1f028f64-5409-4e39-bb48-9dd98013cafb**
+
+## Example Observation: 1f028f64-5409-4e39-bb48-9dd98013cafb
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Observation",
+  "id" : "1f028f64-5409-4e39-bb48-9dd98013cafb",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese|1.0.0-kommentierung"]
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "365854008"
+    }]
+  },
+  "subject" : {
+    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+  },
+  "valueString" : "testAnamnese"
+}
+
+```

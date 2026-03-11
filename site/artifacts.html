@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Arbeitsgruppe WeST v1.0.0-kommentierung</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ig.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.gematik.min.js"> </script>
+<link href="assets/css/edge-dark.min.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.api.doc.gematik.min.js"> </script>
+<link href="assets/css/ig.req.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.req.gematik.min.js"> </script>
+<link href="assets/css/infomodell-view.css" rel="stylesheet" />
+<link href="assets/css/jstree.min.css" rel="stylesheet" />
+
+<script type="text/javascript" src="assets/js/ig.bibliography.gematik.js"> </script>
+
+<style>
+    .gem-ig-headline-container {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+        background: url('assets/images/gem-headline.png') no-repeat;
+        background-position: 90% -136px;
+    }
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+    <a id="gem-ig-logo" no-external="true" href="./index.html">
+        <img height="50" alt="Home" src="assets/images/gem-mio42-logo.png"/>
+    </a>
+</div>
+
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Startseite</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Kommentierung der Arbeitspakete
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Arbeitspaket_1_-_abgeschlossen.html">Arbeitspaket 1 - abgeschlossen</a>
+      </li>
+      <li>
+        <a href="Arbeitspaket_2.html">Arbeitspaket 2</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="infomodell.html">Datenmodell</a>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR-Artefakte</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+
+    <div class="segment"> 
+      <div class="container">
+        
+
+<div class="gem-ig-headline-container"> 
+    <div id="gem-ig-headline" class="col-lg-10 col-md-12">
+        <div class="gem-ig-headline-title">
+            
+Arbeitsgruppe WeST
+        </div>
+        <div id="ig-status" class="gem-ig-headline-subtitle">
+            <span style="display:inline-block;">Version 1.0.0-kommentierung - ci-build
+                
+                
+            </span>
+            
+
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Betriebsstaette.html"
+                  title="StructureDefinition/KBV-PR-WEST-Betriebsstaette">KBV_PR_WEST_Betriebsstaette</a>
+            </td>
+            <td>
+<p>In dieser Ressource werden Informationen zu einer Betriebsstätte transportiert</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Condition.html"
+                  title="StructureDefinition/KBV-PR-WEST-Condition">KBV_PR_WEST_Condition</a>
+            </td>
+            <td>
+<p>Hier können alle Informationen angegeben werden, die im Zusammenhang mit einer Diagnosestellung stehen.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Encounter.html"
+                  title="StructureDefinition/KBV-PR-WEST-Encounter">KBV_PR_WEST_Encounter</a>
+            </td>
+            <td>
+<p>Diese Ressource beschreibt eine einzelne Begegnung eines Patienten mit einem Arzt. Damit ist eine Behandlungseinheit, die bspw. aus einem Termin resultieren würde gemeint. Für einen Hausbesuch gibt es ein weiteres Profil mit dem Namen KBV_PR_WEST_Hausbesuch.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Medication.html"
+                  title="StructureDefinition/KBV-PR-WEST-Medication">KBV_PR_WEST_Medication</a>
+            </td>
+            <td>
+<p>Diese Ressource bietet die Möglichkeit Informationen zu einem Arzneimittel, das nur durch eine PZN definiert ist, zu dokumentieren</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-MedicationKnowledge.html"
+                  title="StructureDefinition/KBV-PR-WEST-MedicationKnowledge">KBV_PR_WEST_MedicationKnowledge</a>
+            </td>
+            <td>
+<p>Diese Ressource bietet die Möglichkeit, Informationen über die Kosten eines verschriebenen Medikaments zu dokumentieren.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-MedicationStatement.html"
+                  title="StructureDefinition/KBV-PR-WEST-MedicationStatement">KBV_PR_WEST_MedicationStatement</a>
+            </td>
+            <td>
+<p>Diese Ressource bietet die Möglichkeit anzugeben, ob eine Medikation im System als Dauermedikation deklariert wurde.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Abdominal-Circumference.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Abdominal-Circumference">KBV_PR_WEST_Observation_Abdominal_Circumference</a>
+            </td>
+            <td>
+<p>In dieser Ressource wird der Bauchumfang dokumentiert</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Anamnese.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Anamnese">KBV_PR_WEST_Observation_Anamnese</a>
+            </td>
+            <td>
+<p>In dieser Ressource wird die generische Form einer Anamnese abgebilet.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Blood-Pressure.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Blood-Pressure">KBV_PR_WEST_Observation_Blood_Pressure</a>
+            </td>
+            <td>
+<p>Dieses Profil bildet einen Blutdurck ab. Dieser kann die systolische Messung, diastolische Messung oder den Mittelwert enthalten oder auch eine Kombination hiervon.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Body-Height.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Body-Height">KBV_PR_WEST_Observation_Body_Height</a>
+            </td>
+            <td>
+<p>Dieses Profil bildet eine Körperlänge/Körpergröße ab.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Body-Temperature.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Body-Temperature">KBV_PR_WEST_Observation_Body_Temperature</a>
+            </td>
+            <td>
+<p>Dieses Profil bildet eine Körpertemperatur ab.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Body-Weight.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Body-Weight">KBV_PR_WEST_Observation_Body_Weight</a>
+            </td>
+            <td>
+<p>Dieses Profil bildet das Körpergewicht ab.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Glucose-Concentration.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Glucose-Concentration">KBV_PR_WEST_Observation_Glucose_Concentration</a>
+            </td>
+            <td>
+<p>Dieses Profil bildet einen Glukosespiegel ab.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Head-Circumference.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Head-Circumference">KBV_PR_WEST_Observation_Head_Circumference</a>
+            </td>
+            <td>
+<p>Dieses Profil bildet einen gemessenen Kopfumfang ab.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Heart-Rate.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Heart-Rate">KBV_PR_WEST_Observation_Heart_Rate</a>
+            </td>
+            <td>
+<p>Dieses Profil bildet die Herzfrequenz ab.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Hip-Circumference.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Hip-Circumference">KBV_PR_WEST_Observation_Hip_Circumference</a>
+            </td>
+            <td>
+<p>In dieser Ressource wird der Hueftumfang dokumentiert</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Peripheral-Oxygen-Saturation.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Peripheral-Oxygen-Saturation">KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation</a>
+            </td>
+            <td>
+<p>Dieses Profil bildet die periphere arterielle Sauerstoffsättigung ab.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Observation-Respiratory-Rate.html"
+                  title="StructureDefinition/KBV-PR-WEST-Observation-Respiratory-Rate">KBV_PR_WEST_Observation_Respiratory_Rate</a>
+            </td>
+            <td>
+<p>Dieses Profil bildet die Atemfrequenz ab.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Organization.html"
+                  title="StructureDefinition/KBV-PR-WEST-Organization">KBV_PR_WEST_Organization</a>
+            </td>
+            <td>
+<p>Diese Ressource bietet die Möglichkeit Informationen zu einer undefinierten Organisation abzubilden.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Patient.html"
+                  title="StructureDefinition/KBV-PR-WEST-Patient">KBV_PR_WEST_Patient</a>
+            </td>
+            <td>
+<p>Hier können die Informationen zur versicherten Person abgebildet werden</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-Practitioner.html"
+                  title="StructureDefinition/KBV-PR-WEST-Practitioner">KBV_PR_WEST_Practitioner</a>
+            </td>
+            <td>
+<p>Informationen zum Behandelnden (Arzt, Psychotherapeut)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-PractitionerRole.html"
+                  title="StructureDefinition/KBV-PR-WEST-PractitionerRole">KBV_PR_WEST_PractitionerRole</a>
+            </td>
+            <td>
+<p>Zuordnung des Behandelnden zu einer oder mehreren Betriebsstätten</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-PR-WEST-ServiceRequest.html"
+                  title="StructureDefinition/KBV-PR-WEST-ServiceRequest">KBV_PR_WEST_ServiceRequest</a>
+            </td>
+            <td>
+<p>Diese Ressource beschreibt eine empfangene Überweisung von einem Überweiser an den Behandelnden des exportierenden Systems.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-Adressbuch-Anrede.html"
+                  title="StructureDefinition/KBV-EX-WEST-Adressbuch-Anrede">KBV_EX_WEST_Adressbuch_Anrede</a>
+            </td>
+            <td>
+<p>Diese Extension bildet eine Anrede in einem Adressbuch ab.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-Adressbuch-Schlusssatz.html"
+                  title="StructureDefinition/KBV-EX-WEST-Adressbuch-Schlusssatz">KBV_EX_WEST_Adressbuch_Schlusssatz</a>
+            </td>
+            <td>
+<p>Diese Extension bildet einen Schlusssatz in einem Adressbuch ab.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-Begegnung-Spezielle-Begegnungsinformationen.html"
+                  title="StructureDefinition/KBV-EX-WEST-Begegnung-Spezielle-Begegnungsinformationen">KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen</a>
+            </td>
+            <td>
+<p>Spezielle Begegnungsinformationen</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-Betriebsstaette-Hierarchie.html"
+                  title="StructureDefinition/KBV-EX-WEST-Betriebsstaette-Hierarchie">KBV_EX_WEST_Betriebsstaette_Hierarchie</a>
+            </td>
+            <td>
+<p>Die Einrichtung beschreibt beispielsweise den Ort, an dem ein Kontakt zwischen der zu behandelnden Person und der leistungserbringenden Person stattfindet (z. B. Praxis). Diese kann aber auch eine rein fiktive Organisation zur Abrechnung sein (z. B. IK-Organisation für Hebammen)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-Diagnose-istDauerdiagnose.html"
+                  title="StructureDefinition/KBV-EX-WEST-Diagnose-istDauerdiagnose">KBV_EX_WEST_Diagnose_istDauerdiagnose</a>
+            </td>
+            <td>
+<p>Diese Extension ermöglicht die Angabe, ob eine Diagnose als Dauerdiagnose typisiert ist.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-MedicationKnowledge-Alternativen.html"
+                  title="StructureDefinition/KBV-EX-WEST-MedicationKnowledge-Alternativen">KBV_EX_WEST_MedicationKnowledge_Alternativen</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-MedicationKnowledge-Gegenanzeige.html"
+                  title="StructureDefinition/KBV-EX-WEST-MedicationKnowledge-Gegenanzeige">KBV_EX_WEST_MedicationKnowledge_Gegenanzeige</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-MedicationKnowledge-Nebenwirkungen.html"
+                  title="StructureDefinition/KBV-EX-WEST-MedicationKnowledge-Nebenwirkungen">KBV_EX_WEST_MedicationKnowledge_Nebenwirkungen</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-MedicationKnowledge-Wechselwirkungen.html"
+                  title="StructureDefinition/KBV-EX-WEST-MedicationKnowledge-Wechselwirkungen">KBV_EX_WEST_MedicationKnowledge_Wechselwirkungen</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-Organization-Strasse-und-Hausnummer.html"
+                  title="StructureDefinition/KBV-EX-WEST-Organization-Strasse-und-Hausnummer">KBV_EX_WEST_Organization_Strasse_und_Hausnummer</a>
+            </td>
+            <td>
+<p>Diese Extension ermöglicht die gemeinsame Angabe von Strasse und Hausnummer.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-Patient-Aktuelle-Taetigkeit.html"
+                  title="StructureDefinition/KBV-EX-WEST-Patient-Aktuelle-Taetigkeit">KBV_EX_WEST_Patient_Aktuelle_Taetigkeit</a>
+            </td>
+            <td>
+<p>Diese Extension bildet die aktuelle Tätigkeit einer versicherten Person ab.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-Patient-Postleitzahl-und-Ort.html"
+                  title="StructureDefinition/KBV-EX-WEST-Patient-Postleitzahl-und-Ort">KBV_EX_WEST_Patient_Postleitzahl_und_Ort</a>
+            </td>
+            <td>
+<p>Diese Extension ermöglicht die gemeinsame Angabe von Postleitzahl und Ort.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-Patient-Vsdm-Zusatzinformationen.html"
+                  title="StructureDefinition/KBV-EX-WEST-Patient-Vsdm-Zusatzinformationen">KBV_EX_WEST_Patient_Vsdm_Zusatzinformationen</a>
+            </td>
+            <td>
+<p>Diese Extension ermöglicht die Angabe der VSDM Zusatzinformationen für eine versicherte Person.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-KBV-EX-WEST-istAbrechnungsrelevant.html"
+                  title="StructureDefinition/KBV-EX-WEST-istAbrechnungsrelevant">KBV_EX_WEST_istAbrechnungsrelevant</a>
+            </td>
+            <td>
+<p>Diese Extension ermöglicht die Angabe, ob die dokumentierten Informationen für die Abrechnung der Behandlung (z.B. im KVDT) relevant sind.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-014ec6b1-2352-448e-ab16-b456f1842fbd.html"
+                  title="Observation/014ec6b1-2352-448e-ab16-b456f1842fbd">014ec6b1-2352-448e-ab16-b456f1842fbd</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-0271969e-1ac2-4440-88ff-e3659f0f2861.html"
+                  title="Observation/0271969e-1ac2-4440-88ff-e3659f0f2861">0271969e-1ac2-4440-88ff-e3659f0f2861</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-1b7000ea-84b8-42cd-9fbd-64d292fee395.html"
+                  title="Observation/1b7000ea-84b8-42cd-9fbd-64d292fee395">1b7000ea-84b8-42cd-9fbd-64d292fee395</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-1f028f64-5409-4e39-bb48-9dd98013cafb.html"
+                  title="Observation/1f028f64-5409-4e39-bb48-9dd98013cafb">1f028f64-5409-4e39-bb48-9dd98013cafb</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationKnowledge-1f2be22d-79f1-4469-8c12-55295bb3e950.html"
+                  title="MedicationKnowledge/1f2be22d-79f1-4469-8c12-55295bb3e950">1f2be22d-79f1-4469-8c12-55295bb3e950</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-2033a62c-4a46-4d01-a897-e6a0f6137058.html"
+                  title="PractitionerRole/2033a62c-4a46-4d01-a897-e6a0f6137058">2033a62c-4a46-4d01-a897-e6a0f6137058</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-21a4f872-d221-4196-83ca-e19d0c979513.html"
+                  title="Observation/21a4f872-d221-4196-83ca-e19d0c979513">21a4f872-d221-4196-83ca-e19d0c979513</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-2336103a-c86d-40fa-8376-9ec1c47532ee.html"
+                  title="Observation/2336103a-c86d-40fa-8376-9ec1c47532ee">2336103a-c86d-40fa-8376-9ec1c47532ee</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-23fd3c7e-03fb-4391-af3a-9178be31651f.html"
+                  title="Encounter/23fd3c7e-03fb-4391-af3a-9178be31651f">23fd3c7e-03fb-4391-af3a-9178be31651f</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-2668aa27-255b-4da1-90d0-d5e0beb087ae.html"
+                  title="Observation/2668aa27-255b-4da1-90d0-d5e0beb087ae">2668aa27-255b-4da1-90d0-d5e0beb087ae</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-2b946366-cf18-4d89-a29c-00bf69ac90f6.html"
+                  title="Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6">2b946366-cf18-4d89-a29c-00bf69ac90f6</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-4391d2b4-a2be-4c19-a3a6-0d799bb1427e.html"
+                  title="Observation/4391d2b4-a2be-4c19-a3a6-0d799bb1427e">4391d2b4-a2be-4c19-a3a6-0d799bb1427e</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-4858b0cf-837d-44fd-89a4-49538e44a9c1.html"
+                  title="Medication/4858b0cf-837d-44fd-89a4-49538e44a9c1">4858b0cf-837d-44fd-89a4-49538e44a9c1</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-49788959-8d60-4988-9069-0ba6a773e7fb.html"
+                  title="Observation/49788959-8d60-4988-9069-0ba6a773e7fb">49788959-8d60-4988-9069-0ba6a773e7fb</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-4b30f538-8da8-4fb6-87c2-b4735aead90b.html"
+                  title="Observation/4b30f538-8da8-4fb6-87c2-b4735aead90b">4b30f538-8da8-4fb6-87c2-b4735aead90b</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-4e2824ac-4134-442b-b5e8-2260974baa64.html"
+                  title="Observation/4e2824ac-4134-442b-b5e8-2260974baa64">4e2824ac-4134-442b-b5e8-2260974baa64</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-50157a4b-98c9-4f66-87b5-fb827c3ed8f6.html"
+                  title="Observation/50157a4b-98c9-4f66-87b5-fb827c3ed8f6">50157a4b-98c9-4f66-87b5-fb827c3ed8f6</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationStatement-5af292a5-0972-4937-a005-ac480aeb60ba.html"
+                  title="MedicationStatement/5af292a5-0972-4937-a005-ac480aeb60ba">5af292a5-0972-4937-a005-ac480aeb60ba</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-5b57f38a-af6c-4093-84e7-2047e4ee524c.html"
+                  title="ServiceRequest/5b57f38a-af6c-4093-84e7-2047e4ee524c">5b57f38a-af6c-4093-84e7-2047e4ee524c</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-611cd0f1-482d-4246-a9ea-329d925749c4.html"
+                  title="Observation/611cd0f1-482d-4246-a9ea-329d925749c4">611cd0f1-482d-4246-a9ea-329d925749c4</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-6352e4f6-6b9a-4e2a-bdd4-80fbaae601c6.html"
+                  title="Observation/6352e4f6-6b9a-4e2a-bdd4-80fbaae601c6">6352e4f6-6b9a-4e2a-bdd4-80fbaae601c6</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-63597e7c-563b-40ed-bab5-daa9ed80529a.html"
+                  title="Organization/63597e7c-563b-40ed-bab5-daa9ed80529a">63597e7c-563b-40ed-bab5-daa9ed80529a</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-67796ba0-61d0-4120-9d31-f9690fd88eaa.html"
+                  title="Condition/67796ba0-61d0-4120-9d31-f9690fd88eaa">67796ba0-61d0-4120-9d31-f9690fd88eaa</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationStatement-6806ffd0-9535-453d-a1fe-228f3d786b9f.html"
+                  title="MedicationStatement/6806ffd0-9535-453d-a1fe-228f3d786b9f">6806ffd0-9535-453d-a1fe-228f3d786b9f</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8.html"
+                  title="Practitioner/6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8">6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-71833996-94af-4c00-affd-ec4dd3870cd1.html"
+                  title="Observation/71833996-94af-4c00-affd-ec4dd3870cd1">71833996-94af-4c00-affd-ec4dd3870cd1</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-7f88fa28-c2c0-47ce-a0a9-043a54a23f5e.html"
+                  title="Medication/7f88fa28-c2c0-47ce-a0a9-043a54a23f5e">7f88fa28-c2c0-47ce-a0a9-043a54a23f5e</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-8d84156a-fe2b-4eb8-b87e-57fe51b641d0.html"
+                  title="Condition/8d84156a-fe2b-4eb8-b87e-57fe51b641d0">8d84156a-fe2b-4eb8-b87e-57fe51b641d0</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-9b427ed9-7ffe-4081-9ab5-e9a37336815c.html"
+                  title="Observation/9b427ed9-7ffe-4081-9ab5-e9a37336815c">9b427ed9-7ffe-4081-9ab5-e9a37336815c</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-OrganizationPraxisAlessaCosta.html"
+                  title="Organization/OrganizationPraxisAlessaCosta">OrganizationPraxisAlessaCosta</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-OrganizationPraxisMinnaKuehn.html"
+                  title="Organization/OrganizationPraxisMinnaKuehn">OrganizationPraxisMinnaKuehn</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-PatientIsoldeMeinhardt.html"
+                  title="Patient/PatientIsoldeMeinhardt">PatientIsoldeMeinhardt</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-PractitionerMinnaKuehn.html"
+                  title="Practitioner/PractitionerMinnaKuehn">PractitionerMinnaKuehn</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-PractitionerRoleMinnaKuehn.html"
+                  title="PractitionerRole/PractitionerRoleMinnaKuehn">PractitionerRoleMinnaKuehn</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-a3e6ff44-7046-4040-8195-ddc352ec4a36.html"
+                  title="ServiceRequest/a3e6ff44-7046-4040-8195-ddc352ec4a36">a3e6ff44-7046-4040-8195-ddc352ec4a36</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="PractitionerRole-a424d6c6-de52-443e-a9b2-5240d3b9401a.html"
+                  title="PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a">a424d6c6-de52-443e-a9b2-5240d3b9401a</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-b65dfcca-c6ce-4dac-8742-8da00c192c7d.html"
+                  title="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d">b65dfcca-c6ce-4dac-8742-8da00c192c7d</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-b65dfcca-c6ce-4dac-8742-8da00c192c7f.html"
+                  title="Organization/b65dfcca-c6ce-4dac-8742-8da00c192c7f">b65dfcca-c6ce-4dac-8742-8da00c192c7f</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-b8256177-8c41-46c6-a35e-94eb3dcfdf94.html"
+                  title="Encounter/b8256177-8c41-46c6-a35e-94eb3dcfdf94">b8256177-8c41-46c6-a35e-94eb3dcfdf94</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-b981d772-45c4-4299-a581-ee6d5705397b.html"
+                  title="Observation/b981d772-45c4-4299-a581-ee6d5705397b">b981d772-45c4-4299-a581-ee6d5705397b</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-c39f152b-c068-4707-b8c1-beb23de255a1.html"
+                  title="Observation/c39f152b-c068-4707-b8c1-beb23de255a1">c39f152b-c068-4707-b8c1-beb23de255a1</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-c9852d64-43c6-4660-a9a0-7be6324853fe.html"
+                  title="Observation/c9852d64-43c6-4660-a9a0-7be6324853fe">c9852d64-43c6-4660-a9a0-7be6324853fe</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="MedicationKnowledge-d07718e0-8ac6-43e6-afc6-a662f8ef107a.html"
+                  title="MedicationKnowledge/d07718e0-8ac6-43e6-afc6-a662f8ef107a">d07718e0-8ac6-43e6-afc6-a662f8ef107a</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-d70f568e-e758-4793-9fd9-7293de309c10.html"
+                  title="Observation/d70f568e-e758-4793-9fd9-7293de309c10">d70f568e-e758-4793-9fd9-7293de309c10</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-d85ec119-de39-4a3b-b439-68d294b44536.html"
+                  title="Observation/d85ec119-de39-4a3b-b439-68d294b44536">d85ec119-de39-4a3b-b439-68d294b44536</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-f2fe0985-69d7-4b45-a9bf-589192639845.html"
+                  title="Observation/f2fe0985-69d7-4b45-a9bf-589192639845">f2fe0985-69d7-4b45-a9bf-589192639845</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-fafb4053-2267-4a53-8bf3-b808fb705277.html"
+                  title="Observation/fafb4053-2267-4a53-8bf3-b808fb705277">fafb4053-2267-4a53-8bf3-b808fb705277</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-fc3e742e-c891-4b31-9e54-97dfbfbd3452.html"
+                  title="Patient/fc3e742e-c891-4b31-9e54-97dfbfbd3452">fc3e742e-c891-4b31-9e54-97dfbfbd3452</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-fccf147d-6bf7-49a5-a7f8-e516af80060d.html"
+                  title="Observation/fccf147d-6bf7-49a5-a7f8-e516af80060d">fccf147d-6bf7-49a5-a7f8-e516af80060d</a>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jstree.min.js"> </script>
+
+
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Mar 11, 2026 11:00+0100">2026-03-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

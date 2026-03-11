@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner|1.0.0-kommentierung"/>
+  </meta>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+    <valueString value="test"/>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="LANR"/>
+      </coding>
+    </type>
+    <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
+    <value value="123456789"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://fhir.de/CodeSystem/identifier-type-de-basis"/>
+        <code value="ZANR"/>
+      </coding>
+    </type>
+    <system value="http://fhir.de/sid/kzbv/zahnarztnummer"/>
+    <value value="123456789"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <text value="Dr. Hans Glücklich"/>
+    <family value="Hans">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Glücklich"/>
+      </extension>
+      <extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+        <valueString value="Prinz"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+        <valueString value="von"/>
+      </extension>
+    </family>
+    <given value="Hans"/>
+    <prefix value="Dr">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="AC"/>
+      </extension>
+    </prefix>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="12123455"/>
+  </telecom>
+  <address>
+    <type value="both"/>
+    <line value="Mittestr 43 Schöneberg">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Mittestr"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="43"/>
+      </extension>
+    </line>
+    <city value="Berlin"/>
+    <postalCode value="12015"/>
+    <country value="D"/>
+  </address>
+  <gender value="other">
+    <extension url="http://fhir.de/StructureDefinition/gender-amtlich-de">
+      <valueCoding>
+        <system value="http://fhir.de/CodeSystem/gender-amtlich-de"/>
+        <code value="X"/>
+        <display value="unbestimmt"/>
+      </valueCoding>
+    </extension>
+  </gender>
+  <birthDate value="1987-11-11"/>
+</Practitioner>

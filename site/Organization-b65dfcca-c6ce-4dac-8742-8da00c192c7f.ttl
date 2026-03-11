@@ -1,0 +1,164 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Organization/b65dfcca-c6ce-4dac-8742-8da00c192c7f> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "b65dfcca-c6ce-4dac-8742-8da00c192c7f"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "test"
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "XX" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://fhir.de/sid/arge-ik/iknr"^^xsd:anyURI ;
+       fhir:l <http://fhir.de/sid/arge-ik/iknr>
+     ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "BSNR" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR>
+     ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "NIIP" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://fhir.de/sid/kbv/vknr"^^xsd:anyURI ;
+       fhir:l <http://fhir.de/sid/kbv/vknr>
+     ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/CodeSystem/identifier-type-de-basis>
+         ] ;
+         fhir:code [ fhir:v "KZVA" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://fhir.de/sid/kzbv/kzvabrechnungsnummer"^^xsd:anyURI ;
+       fhir:l <http://fhir.de/sid/kzbv/kzvabrechnungsnummer>
+     ] ;
+     fhir:value [ fhir:v "123456789" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://fhir.kbv.de/CodeSystem/KBV-CS-WEST-BDT-Betriebsstaettenstatus"^^xsd:anyURI ;
+         fhir:l <https://fhir.kbv.de/CodeSystem/KBV-CS-WEST-BDT-Betriebsstaettenstatus>
+       ] ;
+       fhir:version [ fhir:v "1.0.0-kommentierung" ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Arztpraxis" ]
+     ] ) ;
+     fhir:text [ fhir:v "test" ]
+  ] ) ; # 
+  fhir:name [ fhir:v "Praxis X"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "0173555" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [
+       fhir:v "Musterweg 42" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Musterweg"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "42"
+         ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Berlin" ] ;
+     fhir:postalCode [ fhir:v "9132" ] ;
+     fhir:country [ fhir:v "D" ]
+  ] ) ; # 
+  fhir:partOf [
+     fhir:l <urn:uuid:c2aaa336-e17e-491c-bf24-084d4c88309b> ;
+     fhir:reference [ fhir:v "urn:uuid:c2aaa336-e17e-491c-bf24-084d4c88309b" ]
+  ] ; # 
+  fhir:contact ( [
+     fhir:purpose [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/contactentity-type"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/contactentity-type>
+         ] ;
+         fhir:code [ fhir:v "PAYOR" ] ;
+         fhir:display [ fhir:v "Payor" ]
+       ] )
+     ] ;
+     fhir:name [
+       fhir:use [ fhir:v "official" ] ;
+       fhir:family [ fhir:v "Hans" ] ;
+       fhir:given ( [ fhir:v "Pater" ] )
+     ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "12123455" ]
+     ] ) ;
+     fhir:address [
+       fhir:text [ fhir:v "Oberweg 70,12015,Berlin" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

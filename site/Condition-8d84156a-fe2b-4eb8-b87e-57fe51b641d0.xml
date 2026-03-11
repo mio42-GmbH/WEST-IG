@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="8d84156a-fe2b-4eb8-b87e-57fe51b641d0"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition|1.0.0-kommentierung"/>
+  </meta>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/condition-assertedDate">
+    <valueDateTime value="2012"/>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Diagnose_istDauerdiagnose">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+    <valueString value="Diagnoseausnahmetatbestand: Ja"/>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <version value="4.0.1"/>
+      <code value="resolved"/>
+      <display value="Resolved"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <version value="4.0.1"/>
+      <code value="confirmed"/>
+      <display value="Confirmed"/>
+    </coding>
+  </verificationStatus>
+  <severity>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
+      <code value="24484000"/>
+      <display value="Severe"/>
+    </coding>
+  </severity>
+  <code>
+    <coding>
+      <extension url="http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen">
+        <valueCoding>
+          <system value="http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen"/>
+          <code value="*"/>
+          <display value="*"/>
+        </valueCoding>
+      </extension>
+      <extension url="http://fhir.de/StructureDefinition/seitenlokalisation">
+        <valueCoding>
+          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"/>
+          <code value="B"/>
+          <display value="beiderseits"/>
+        </valueCoding>
+      </extension>
+      <extension url="http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit">
+        <valueCoding>
+          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT"/>
+          <code value="Z"/>
+          <display value="Zustand nach"/>
+        </valueCoding>
+      </extension>
+      <system value="http://fhir.de/CodeSystem/bfarm/icd-10-gm"/>
+      <version value="2025"/>
+      <code value="A00.0"/>
+      <display value="Cholera durch Vibrio cholerae O:1, Biovar cholerae"/>
+    </coding>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/bfarm/alpha-id"/>
+      <version value="2020"/>
+      <code value="I6158"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
+      <code value="404684003"/>
+      <display value="Clinical finding"/>
+    </coding>
+    <coding>
+      <system value="http://www.orpha.net"/>
+      <version value="2024"/>
+      <code value="104075"/>
+    </coding>
+  </code>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
+      <code value="76505004"/>
+      <display value="Thumb structure"/>
+    </coding>
+  </bodySite>
+  <subject>
+    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+  </subject>
+  <onsetPeriod>
+    <start value="2016-01-01"/>
+  </onsetPeriod>
+  <abatementPeriod>
+    <start value="2018-01-01"/>
+  </abatementPeriod>
+  <recordedDate value="2020-05-07"/>
+  <note>
+    <authorString value="Mueller"/>
+    <time value="2020-01-02"/>
+    <text value="ausgedacht"/>
+  </note>
+</Condition>

@@ -1,0 +1,2111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="kbv.mio.west"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide kbv.mio.west</b></p><a name="kbv.mio.west"> </a><a name="hckbv.mio.west"> </a><h2>ArbeitsgruppeWeST</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.kbv.de/ImplementationGuide/kbv.mio.west</pre><div><p>Projekt für die FHIR Ressourcen zur Arbeitsgruppe WeST</p>
+</div></div>
+  </text>
+  <url value="https://fhir.kbv.de/ImplementationGuide/kbv.mio.west"/>
+  <version value="1.0.0-kommentierung"/>
+  <name value="ArbeitsgruppeWeST"/>
+  <title value="Arbeitsgruppe WeST"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-03-11T11:00:33+01:00"/>
+  <publisher value="mio42 GmbH"/>
+  <contact>
+    <name value="mio42 GmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://mio.kbv.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hello@mio42.de"/>
+    </telecom>
+  </contact>
+  <description value="Projekt für die FHIR Ressourcen zur Arbeitsgruppe WeST"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="kbv.mio.west"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="kbv_basis">
+    <uri value="http://fhir.org/packages/kbv.basis/ImplementationGuide/kbv.basis"/>
+    <packageId value="kbv.basis"/>
+    <version value="1.8.0"/>
+  </dependsOn>
+  <dependsOn id="de_basisprofil_r4">
+    <uri value="http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"/>
+    <packageId value="de.basisprofil.r4"/>
+    <version value="1.5.4"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2025+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-usage-check"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="bundle-references-resolve"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Betriebsstaette"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_PractitionerRole"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Abdominal_Circumference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Blood_Pressure"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Height"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Temperature"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Weight"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Head_Circumference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Heart_Rate"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Hip_Circumference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Respiratory_Rate"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Condition/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Encounter/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Medication/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="MedicationKnowledge/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="MedicationStatement/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Observation/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ServiceRequest/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Patient/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Practitioner/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="PractitionerRole/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Organization/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2025+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-usage-check"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="bundle-references-resolve"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Betriebsstaette"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_PractitionerRole"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Abdominal_Circumference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Blood_Pressure"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Height"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Temperature"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Weight"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Head_Circumference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Heart_Rate"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Hip_Circumference"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Respiratory_Rate"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Condition/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Encounter/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Medication/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="MedicationKnowledge/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="MedicationStatement/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Observation/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ServiceRequest/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Patient/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Practitioner/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="PractitionerRole/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="no-narrative"/>
+      </extension>
+      <extension url="value">
+        <valueString value="Organization/*"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="usage-stats-opt-out"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/014ec6b1-2352-448e-ab16-b456f1842fbd"/>
+      </reference>
+      <name value="014ec6b1-2352-448e-ab16-b456f1842fbd"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Respiratory_Rate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/0271969e-1ac2-4440-88ff-e3659f0f2861"/>
+      </reference>
+      <name value="0271969e-1ac2-4440-88ff-e3659f0f2861"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/1b7000ea-84b8-42cd-9fbd-64d292fee395"/>
+      </reference>
+      <name value="1b7000ea-84b8-42cd-9fbd-64d292fee395"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/1f028f64-5409-4e39-bb48-9dd98013cafb"/>
+      </reference>
+      <name value="1f028f64-5409-4e39-bb48-9dd98013cafb"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/1f2be22d-79f1-4469-8c12-55295bb3e950"/>
+      </reference>
+      <name value="1f2be22d-79f1-4469-8c12-55295bb3e950"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/2033a62c-4a46-4d01-a897-e6a0f6137058"/>
+      </reference>
+      <name value="2033a62c-4a46-4d01-a897-e6a0f6137058"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/21a4f872-d221-4196-83ca-e19d0c979513"/>
+      </reference>
+      <name value="21a4f872-d221-4196-83ca-e19d0c979513"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Heart_Rate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/2336103a-c86d-40fa-8376-9ec1c47532ee"/>
+      </reference>
+      <name value="2336103a-c86d-40fa-8376-9ec1c47532ee"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Abdominal_Circumference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/23fd3c7e-03fb-4391-af3a-9178be31651f"/>
+      </reference>
+      <name value="23fd3c7e-03fb-4391-af3a-9178be31651f"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/2668aa27-255b-4da1-90d0-d5e0beb087ae"/>
+      </reference>
+      <name value="2668aa27-255b-4da1-90d0-d5e0beb087ae"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Head_Circumference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
+      </reference>
+      <name value="2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/4391d2b4-a2be-4c19-a3a6-0d799bb1427e"/>
+      </reference>
+      <name value="4391d2b4-a2be-4c19-a3a6-0d799bb1427e"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Temperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/4858b0cf-837d-44fd-89a4-49538e44a9c1"/>
+      </reference>
+      <name value="4858b0cf-837d-44fd-89a4-49538e44a9c1"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/49788959-8d60-4988-9069-0ba6a773e7fb"/>
+      </reference>
+      <name value="49788959-8d60-4988-9069-0ba6a773e7fb"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Hip_Circumference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/4b30f538-8da8-4fb6-87c2-b4735aead90b"/>
+      </reference>
+      <name value="4b30f538-8da8-4fb6-87c2-b4735aead90b"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Temperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/4e2824ac-4134-442b-b5e8-2260974baa64"/>
+      </reference>
+      <name value="4e2824ac-4134-442b-b5e8-2260974baa64"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Weight"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/50157a4b-98c9-4f66-87b5-fb827c3ed8f6"/>
+      </reference>
+      <name value="50157a4b-98c9-4f66-87b5-fb827c3ed8f6"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Height"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/5af292a5-0972-4937-a005-ac480aeb60ba"/>
+      </reference>
+      <name value="5af292a5-0972-4937-a005-ac480aeb60ba"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/5b57f38a-af6c-4093-84e7-2047e4ee524c"/>
+      </reference>
+      <name value="5b57f38a-af6c-4093-84e7-2047e4ee524c"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/611cd0f1-482d-4246-a9ea-329d925749c4"/>
+      </reference>
+      <name value="611cd0f1-482d-4246-a9ea-329d925749c4"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Head_Circumference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/6352e4f6-6b9a-4e2a-bdd4-80fbaae601c6"/>
+      </reference>
+      <name value="6352e4f6-6b9a-4e2a-bdd4-80fbaae601c6"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Weight"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/63597e7c-563b-40ed-bab5-daa9ed80529a"/>
+      </reference>
+      <name value="63597e7c-563b-40ed-bab5-daa9ed80529a"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/67796ba0-61d0-4120-9d31-f9690fd88eaa"/>
+      </reference>
+      <name value="67796ba0-61d0-4120-9d31-f9690fd88eaa"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/6806ffd0-9535-453d-a1fe-228f3d786b9f"/>
+      </reference>
+      <name value="6806ffd0-9535-453d-a1fe-228f3d786b9f"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8"/>
+      </reference>
+      <name value="6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/71833996-94af-4c00-affd-ec4dd3870cd1"/>
+      </reference>
+      <name value="71833996-94af-4c00-affd-ec4dd3870cd1"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Blood_Pressure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/7f88fa28-c2c0-47ce-a0a9-043a54a23f5e"/>
+      </reference>
+      <name value="7f88fa28-c2c0-47ce-a0a9-043a54a23f5e"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/8d84156a-fe2b-4eb8-b87e-57fe51b641d0"/>
+      </reference>
+      <name value="8d84156a-fe2b-4eb8-b87e-57fe51b641d0"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/9b427ed9-7ffe-4081-9ab5-e9a37336815c"/>
+      </reference>
+      <name value="9b427ed9-7ffe-4081-9ab5-e9a37336815c"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/a3e6ff44-7046-4040-8195-ddc352ec4a36"/>
+      </reference>
+      <name value="a3e6ff44-7046-4040-8195-ddc352ec4a36"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+      </reference>
+      <name value="a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_PractitionerRole"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+      </reference>
+      <name value="b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/b65dfcca-c6ce-4dac-8742-8da00c192c7f"/>
+      </reference>
+      <name value="b65dfcca-c6ce-4dac-8742-8da00c192c7f"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/b8256177-8c41-46c6-a35e-94eb3dcfdf94"/>
+      </reference>
+      <name value="b8256177-8c41-46c6-a35e-94eb3dcfdf94"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/b981d772-45c4-4299-a581-ee6d5705397b"/>
+      </reference>
+      <name value="b981d772-45c4-4299-a581-ee6d5705397b"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Hip_Circumference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/c39f152b-c068-4707-b8c1-beb23de255a1"/>
+      </reference>
+      <name value="c39f152b-c068-4707-b8c1-beb23de255a1"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Blood_Pressure"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/c9852d64-43c6-4660-a9a0-7be6324853fe"/>
+      </reference>
+      <name value="c9852d64-43c6-4660-a9a0-7be6324853fe"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Heart_Rate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationKnowledge"/>
+      </extension>
+      <reference>
+        <reference value="MedicationKnowledge/d07718e0-8ac6-43e6-afc6-a662f8ef107a"/>
+      </reference>
+      <name value="d07718e0-8ac6-43e6-afc6-a662f8ef107a"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/d70f568e-e758-4793-9fd9-7293de309c10"/>
+      </reference>
+      <name value="d70f568e-e758-4793-9fd9-7293de309c10"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/d85ec119-de39-4a3b-b439-68d294b44536"/>
+      </reference>
+      <name value="d85ec119-de39-4a3b-b439-68d294b44536"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Abdominal_Circumference"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/f2fe0985-69d7-4b45-a9bf-589192639845"/>
+      </reference>
+      <name value="f2fe0985-69d7-4b45-a9bf-589192639845"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Respiratory_Rate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fafb4053-2267-4a53-8bf3-b808fb705277"/>
+      </reference>
+      <name value="fafb4053-2267-4a53-8bf3-b808fb705277"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Height"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/fc3e742e-c891-4b31-9e54-97dfbfbd3452"/>
+      </reference>
+      <name value="fc3e742e-c891-4b31-9e54-97dfbfbd3452"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/fccf147d-6bf7-49a5-a7f8-e516af80060d"/>
+      </reference>
+      <name value="fccf147d-6bf7-49a5-a7f8-e516af80060d"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-Adressbuch-Anrede"/>
+      </reference>
+      <name value="KBV_EX_WEST_Adressbuch_Anrede"/>
+      <description value="Diese Extension bildet eine Anrede in einem Adressbuch ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-Adressbuch-Schlusssatz"/>
+      </reference>
+      <name value="KBV_EX_WEST_Adressbuch_Schlusssatz"/>
+      <description value="Diese Extension bildet einen Schlusssatz in einem Adressbuch ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-Begegnung-Spezielle-Begegnungsinformationen"/>
+      </reference>
+      <name value="KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen"/>
+      <description value="Spezielle Begegnungsinformationen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-Betriebsstaette-Hierarchie"/>
+      </reference>
+      <name value="KBV_EX_WEST_Betriebsstaette_Hierarchie"/>
+      <description value="Die Einrichtung beschreibt beispielsweise den Ort, an dem ein Kontakt zwischen der zu behandelnden Person und der leistungserbringenden Person stattfindet (z. B. Praxis). Diese kann aber auch eine rein fiktive Organisation zur Abrechnung sein (z. B. IK-Organisation für Hebammen)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-Diagnose-istDauerdiagnose"/>
+      </reference>
+      <name value="KBV_EX_WEST_Diagnose_istDauerdiagnose"/>
+      <description value="Diese Extension ermöglicht die Angabe, ob eine Diagnose als Dauerdiagnose typisiert ist."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-istAbrechnungsrelevant"/>
+      </reference>
+      <name value="KBV_EX_WEST_istAbrechnungsrelevant"/>
+      <description value="Diese Extension ermöglicht die Angabe, ob die dokumentierten Informationen für die Abrechnung der Behandlung (z.B. im KVDT) relevant sind."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-MedicationKnowledge-Alternativen"/>
+      </reference>
+      <name value="KBV_EX_WEST_MedicationKnowledge_Alternativen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-MedicationKnowledge-Gegenanzeige"/>
+      </reference>
+      <name value="KBV_EX_WEST_MedicationKnowledge_Gegenanzeige"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-MedicationKnowledge-Nebenwirkungen"/>
+      </reference>
+      <name value="KBV_EX_WEST_MedicationKnowledge_Nebenwirkungen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-MedicationKnowledge-Wechselwirkungen"/>
+      </reference>
+      <name value="KBV_EX_WEST_MedicationKnowledge_Wechselwirkungen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-Organization-Strasse-und-Hausnummer"/>
+      </reference>
+      <name value="KBV_EX_WEST_Organization_Strasse_und_Hausnummer"/>
+      <description value="Diese Extension ermöglicht die gemeinsame Angabe von Strasse und Hausnummer."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-Patient-Aktuelle-Taetigkeit"/>
+      </reference>
+      <name value="KBV_EX_WEST_Patient_Aktuelle_Taetigkeit"/>
+      <description value="Diese Extension bildet die aktuelle Tätigkeit einer versicherten Person ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-Patient-Postleitzahl-und-Ort"/>
+      </reference>
+      <name value="KBV_EX_WEST_Patient_Postleitzahl_und_Ort"/>
+      <description value="Diese Extension ermöglicht die gemeinsame Angabe von Postleitzahl und Ort."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-EX-WEST-Patient-Vsdm-Zusatzinformationen"/>
+      </reference>
+      <name value="KBV_EX_WEST_Patient_Vsdm_Zusatzinformationen"/>
+      <description value="Diese Extension ermöglicht die Angabe der VSDM Zusatzinformationen für eine versicherte Person."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Betriebsstaette"/>
+      </reference>
+      <name value="KBV_PR_WEST_Betriebsstaette"/>
+      <description value="In dieser Ressource werden Informationen zu einer Betriebsstätte transportiert"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Condition"/>
+      </reference>
+      <name value="KBV_PR_WEST_Condition"/>
+      <description value="Hier können alle Informationen angegeben werden, die im Zusammenhang mit einer Diagnosestellung stehen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Encounter"/>
+      </reference>
+      <name value="KBV_PR_WEST_Encounter"/>
+      <description value="Diese Ressource beschreibt eine einzelne Begegnung eines Patienten mit einem Arzt. Damit ist eine Behandlungseinheit, die bspw. aus einem Termin resultieren würde gemeint. Für einen Hausbesuch gibt es ein weiteres Profil mit dem Namen KBV_PR_WEST_Hausbesuch."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Medication"/>
+      </reference>
+      <name value="KBV_PR_WEST_Medication"/>
+      <description value="Diese Ressource bietet die Möglichkeit Informationen zu einem Arzneimittel, das nur durch eine PZN definiert ist, zu dokumentieren"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-MedicationKnowledge"/>
+      </reference>
+      <name value="KBV_PR_WEST_MedicationKnowledge"/>
+      <description value="Diese Ressource bietet die Möglichkeit, Informationen über die Kosten eines verschriebenen Medikaments zu dokumentieren."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-MedicationStatement"/>
+      </reference>
+      <name value="KBV_PR_WEST_MedicationStatement"/>
+      <description value="Diese Ressource bietet die Möglichkeit anzugeben, ob eine Medikation im System als Dauermedikation deklariert wurde."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Abdominal-Circumference"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Abdominal_Circumference"/>
+      <description value="In dieser Ressource wird der Bauchumfang dokumentiert"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Anamnese"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Anamnese"/>
+      <description value="In dieser Ressource wird die generische Form einer Anamnese abgebilet."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Blood-Pressure"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Blood_Pressure"/>
+      <description value="Dieses Profil bildet einen Blutdurck ab. Dieser kann die systolische Messung, diastolische Messung oder den Mittelwert enthalten oder auch eine Kombination hiervon."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Body-Height"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Body_Height"/>
+      <description value="Dieses Profil bildet eine Körperlänge/Körpergröße ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Body-Temperature"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Body_Temperature"/>
+      <description value="Dieses Profil bildet eine Körpertemperatur ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Body-Weight"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Body_Weight"/>
+      <description value="Dieses Profil bildet das Körpergewicht ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Glucose-Concentration"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Glucose_Concentration"/>
+      <description value="Dieses Profil bildet einen Glukosespiegel ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Head-Circumference"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Head_Circumference"/>
+      <description value="Dieses Profil bildet einen gemessenen Kopfumfang ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Heart-Rate"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Heart_Rate"/>
+      <description value="Dieses Profil bildet die Herzfrequenz ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Hip-Circumference"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Hip_Circumference"/>
+      <description value="In dieser Ressource wird der Hueftumfang dokumentiert"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Peripheral-Oxygen-Saturation"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation"/>
+      <description value="Dieses Profil bildet die periphere arterielle Sauerstoffsättigung ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Observation-Respiratory-Rate"/>
+      </reference>
+      <name value="KBV_PR_WEST_Observation_Respiratory_Rate"/>
+      <description value="Dieses Profil bildet die Atemfrequenz ab."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Organization"/>
+      </reference>
+      <name value="KBV_PR_WEST_Organization"/>
+      <description value="Diese Ressource bietet die Möglichkeit Informationen zu einer undefinierten Organisation abzubilden."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Patient"/>
+      </reference>
+      <name value="KBV_PR_WEST_Patient"/>
+      <description value="Hier können die Informationen zur versicherten Person abgebildet werden"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-Practitioner"/>
+      </reference>
+      <name value="KBV_PR_WEST_Practitioner"/>
+      <description value="Informationen zum Behandelnden (Arzt, Psychotherapeut)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-PractitionerRole"/>
+      </reference>
+      <name value="KBV_PR_WEST_PractitionerRole"/>
+      <description value="Zuordnung des Behandelnden zu einer oder mehreren Betriebsstätten"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KBV-PR-WEST-ServiceRequest"/>
+      </reference>
+      <name value="KBV_PR_WEST_ServiceRequest"/>
+      <description value="Diese Ressource beschreibt eine empfangene Überweisung von einem Überweiser an den Behandelnden des exportierenden Systems."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/OrganizationPraxisAlessaCosta"/>
+      </reference>
+      <name value="OrganizationPraxisAlessaCosta"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/OrganizationPraxisMinnaKuehn"/>
+      </reference>
+      <name value="OrganizationPraxisMinnaKuehn"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientIsoldeMeinhardt"/>
+      </reference>
+      <name value="PatientIsoldeMeinhardt"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/PractitionerMinnaKuehn"/>
+      </reference>
+      <name value="PractitionerMinnaKuehn"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/PractitionerRoleMinnaKuehn"/>
+      </reference>
+      <name value="PractitionerRoleMinnaKuehn"/>
+      <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_PractitionerRole"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Wechselschnittstelle - Startseite"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Kommentierung_der_Arbeitspakete.html"/>
+        </extension>
+        <nameUrl value="Kommentierung_der_Arbeitspakete.html"/>
+        <title value="Kommentierung der Arbeitspakete"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Arbeitspaket_1_-_abgeschlossen.html"/>
+        </extension>
+        <nameUrl value="Arbeitspaket_1_-_abgeschlossen.html"/>
+        <title value="Arbeitspaket 1 - abgeschlossen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Arbeitspaket_2.html"/>
+        </extension>
+        <nameUrl value="Arbeitspaket_2.html"/>
+        <title value="Arbeitspaket 2"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="infomodell.html"/>
+        </extension>
+        <nameUrl value="infomodell.html"/>
+        <title value="Datenmodell"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_requirements.html"/>
+        </extension>
+        <nameUrl value="west_requirements.html"/>
+        <title value="Vorgaben"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_operationalisations.html"/>
+        </extension>
+        <nameUrl value="west_operationalisations.html"/>
+        <title value="Operationalisierungshinweise"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_scenario_Arbeitspaket_1.html"/>
+        </extension>
+        <nameUrl value="west_scenario_Arbeitspaket_1.html"/>
+        <title value="Szenario Arbeitspaket 1"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_scenario_Arbeitspaket_2.html"/>
+        </extension>
+        <nameUrl value="west_scenario_Arbeitspaket_2.html"/>
+        <title value="Szenario Arbeitspaket 2"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

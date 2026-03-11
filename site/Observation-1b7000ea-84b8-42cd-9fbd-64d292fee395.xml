@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="1b7000ea-84b8-42cd-9fbd-64d292fee395"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation|1.0.0-kommentierung"/>
+  </meta>
+  <status value="amended"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <code value="2708-6"/>
+      <display value="Oxygen saturation in Arterial blood"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20230731"/>
+      <code value="431314004"/>
+      <display value="Peripheral oxygen saturation (observable entity)"/>
+    </coding>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <code value="59408-5"/>
+      <display value="Oxygen saturation in Arterial blood by Pulse oximetry"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+  </subject>
+  <effectiveDateTime value="2020-01-02"/>
+  <valueQuantity>
+    <value value="40"/>
+    <unit value="%"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <bodySite>
+    <text value="Finger"/>
+  </bodySite>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
+      <code value="448703006"/>
+      <display value="Pulse oximeter"/>
+    </coding>
+  </method>
+</Observation>

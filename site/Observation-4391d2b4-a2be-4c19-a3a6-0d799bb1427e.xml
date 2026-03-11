@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="4391d2b4-a2be-4c19-a3a6-0d799bb1427e"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Temperature|1.0.0-kommentierung"/>
+  </meta>
+  <status value="amended"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <code value="8310-5"/>
+      <display value="Body temperature"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20230731"/>
+      <code value="386725007"/>
+      <display value="Body temperature"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+  </subject>
+  <effectiveDateTime value="2020-01-02"/>
+  <valueQuantity>
+    <value value="40"/>
+    <unit value="degree Celsius"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="Cel"/>
+  </valueQuantity>
+</Observation>

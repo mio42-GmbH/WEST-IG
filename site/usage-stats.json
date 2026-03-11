@@ -1,0 +1,751 @@
+{
+  "package": "kbv.mio.west",
+  "version": "1.0.0-kommentierung",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "DE",
+  "extensions": [
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Adressbuch_Anrede",
+      "title": "KBV_EX_WEST_Adressbuch_Anrede",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Adressbuch_Schlusssatz",
+      "title": "KBV_EX_WEST_Adressbuch_Schlusssatz",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen",
+      "title": "KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen",
+      "types": [
+        "string",
+        "string",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Betriebsstaette_Hierarchie",
+      "title": "KBV_EX_WEST_Betriebsstaette_Hierarchie",
+      "types": [
+        "code",
+        "code"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Diagnose_istDauerdiagnose",
+      "title": "KBV_EX_WEST_Diagnose_istDauerdiagnose",
+      "types": [
+        "boolean",
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Alternativen",
+      "title": "KBV_EX_WEST_MedicationKnowledge_Alternativen",
+      "types": [
+        "string",
+        "string",
+        "Reference",
+        "Reference",
+        "string",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Gegenanzeige",
+      "title": "KBV_EX_WEST_MedicationKnowledge_Gegenanzeige",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Nebenwirkungen",
+      "title": "KBV_EX_WEST_MedicationKnowledge_Nebenwirkungen",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Wechselwirkungen",
+      "title": "KBV_EX_WEST_MedicationKnowledge_Wechselwirkungen",
+      "types": [
+        "string",
+        "string",
+        "string",
+        "string",
+        "Reference",
+        "Reference",
+        "string",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Organization_Strasse_und_Hausnummer",
+      "title": "KBV_EX_WEST_Organization_Strasse_und_Hausnummer",
+      "types": [
+        "string",
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Aktuelle_Taetigkeit",
+      "title": "KBV_EX_WEST_Patient_Aktuelle_Taetigkeit",
+      "types": [
+        "string",
+        "string",
+        "Reference",
+        "Reference",
+        "string",
+        "Extension",
+        "string",
+        "uri",
+        "Identifier",
+        "string",
+        "dateTime",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Postleitzahl_und_Ort",
+      "title": "KBV_EX_WEST_Patient_Postleitzahl_und_Ort",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Vsdm_Zusatzinformationen",
+      "title": "KBV_EX_WEST_Patient_Vsdm_Zusatzinformationen",
+      "types": [
+        "HumanName",
+        "HumanName",
+        "Coding",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "date",
+        "date",
+        "Address",
+        "Address",
+        "Address",
+        "Address",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant",
+      "title": "KBV_EX_WEST_istAbrechnungsrelevant",
+      "types": [
+        "boolean",
+        "boolean"
+      ]
+    }
+  ],
+  "profiles": {
+    "Organization": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization",
+        "title": "KBV_PR_WEST_Organization"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition",
+        "title": "KBV_PR_WEST_Condition"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter",
+        "title": "KBV_PR_WEST_Encounter"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication",
+        "title": "KBV_PR_WEST_Medication"
+      }
+    ],
+    "MedicationKnowledge": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge",
+        "title": "KBV_PR_WEST_MedicationKnowledge"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement",
+        "title": "KBV_PR_WEST_MedicationStatement"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Abdominal_Circumference",
+        "title": "KBV_PR_WEST_Observation_Abdominal_Circumference"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese",
+        "title": "KBV_PR_WEST_Observation_Anamnese"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Blood_Pressure",
+        "title": "KBV_PR_WEST_Observation_Blood_Pressure"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Height",
+        "title": "KBV_PR_WEST_Observation_Body_Height"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Temperature",
+        "title": "KBV_PR_WEST_Observation_Body_Temperature"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Weight",
+        "title": "KBV_PR_WEST_Observation_Body_Weight"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration",
+        "title": "KBV_PR_WEST_Observation_Glucose_Concentration"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Head_Circumference",
+        "title": "KBV_PR_WEST_Observation_Head_Circumference"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Heart_Rate",
+        "title": "KBV_PR_WEST_Observation_Heart_Rate"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Hip_Circumference",
+        "title": "KBV_PR_WEST_Observation_Hip_Circumference"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation",
+        "title": "KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation"
+      },
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Respiratory_Rate",
+        "title": "KBV_PR_WEST_Observation_Respiratory_Rate"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient",
+        "title": "KBV_PR_WEST_Patient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner",
+        "title": "KBV_PR_WEST_Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_PractitionerRole",
+        "title": "KBV_PR_WEST_PractitionerRole"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest",
+        "title": "KBV_PR_WEST_ServiceRequest"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.de/StructureDefinition/gender-amtlich-de": [
+      "Patient.gender",
+      "Practitioner.gender"
+    ],
+    "http://fhir.de/StructureDefinition/humanname-namenszusatz": [
+      "Patient.extension.extension.value[x].family",
+      "Patient.name.family",
+      "Practitioner.name.family"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit": [
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen": [
+      "Condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/lebensphase": [
+      "Condition.abatement[x]",
+      "Condition.onset[x]"
+    ],
+    "http://fhir.de/StructureDefinition/normgroesse": [
+      "Medication"
+    ],
+    "http://fhir.de/StructureDefinition/seitenlokalisation": [
+      "Condition.code.coding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Patient.birthDate"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-name": [
+      "Patient.extension.extension.value[x].family",
+      "Patient.name.family",
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
+      "Patient.extension.extension.value[x].family",
+      "Patient.name.family",
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct": [
+      "Organization.address",
+      "Practitioner.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Organization.address.line",
+      "Patient.address.line",
+      "Practitioner.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier": [
+      "Patient.extension.extension.value[x].prefix",
+      "Patient.name.prefix",
+      "Practitioner.name.prefix"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-citizenship": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-sexParameterForClinicalUse": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/resource-pertainsToGoal": [
+      "MedicationStatement"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment": [
+      "Condition",
+      "Organization",
+      "Practitioner"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Medication_Type": [
+      "Medication"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Adressbuch_Anrede": [
+      "Practitioner"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Adressbuch_Schlusssatz": [
+      "Practitioner"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen": [
+      "Encounter"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Betriebsstaette_Hierarchie": [
+      "Organization"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Diagnose_istDauerdiagnose": [
+      "Condition"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Alternativen": [
+      "MedicationKnowledge"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Gegenanzeige": [
+      "MedicationKnowledge"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Nebenwirkungen": [
+      "MedicationKnowledge"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Wechselwirkungen": [
+      "MedicationKnowledge"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Organization_Strasse_und_Hausnummer": [
+      "Organization.address.line"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Aktuelle_Taetigkeit": [
+      "Patient"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Vsdm_Zusatzinformationen": [
+      "Patient"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant": [
+      "Condition",
+      "ServiceRequest"
+    ]
+  }
+}

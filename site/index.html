@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Wechselschnittstelle - Startseite - Arbeitsgruppe WeST v1.0.0-kommentierung</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ig.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.gematik.min.js"> </script>
+<link href="assets/css/edge-dark.min.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.api.doc.gematik.min.js"> </script>
+<link href="assets/css/ig.req.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.req.gematik.min.js"> </script>
+<link href="assets/css/infomodell-view.css" rel="stylesheet" />
+<link href="assets/css/jstree.min.css" rel="stylesheet" />
+
+<script type="text/javascript" src="assets/js/ig.bibliography.gematik.js"> </script>
+
+<style>
+    .gem-ig-headline-container {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+        background: url('assets/images/gem-headline.png') no-repeat;
+        background-position: 90% -136px;
+    }
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+    <a id="gem-ig-logo" no-external="true" href="./index.html">
+        <img height="50" alt="Home" src="assets/images/gem-mio42-logo.png"/>
+    </a>
+</div>
+
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Startseite</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Kommentierung der Arbeitspakete
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Arbeitspaket_1_-_abgeschlossen.html">Arbeitspaket 1 - abgeschlossen</a>
+      </li>
+      <li>
+        <a href="Arbeitspaket_2.html">Arbeitspaket 2</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="infomodell.html">Datenmodell</a>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR-Artefakte</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+
+    <div class="segment"> 
+      <div class="container">
+        
+
+<div class="gem-ig-headline-container"> 
+    <div id="gem-ig-headline" class="col-lg-10 col-md-12">
+        <div class="gem-ig-headline-title">
+            
+Arbeitsgruppe WeST
+        </div>
+        <div id="ig-status" class="gem-ig-headline-subtitle">
+            <span style="display:inline-block;">Version 1.0.0-kommentierung - ci-build
+                
+                
+            </span>
+            
+
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Wechselschnittstelle - Startseite</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  
+  <h2>Wechselschnittstelle - Startseite</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhir.kbv.de/ImplementationGuide/kbv.mio.west<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhir.kbv.de/ImplementationGuide/kbv.mio.west"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0-kommentierung<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhir.kbv.de/ImplementationGuide/kbv.mio.west|1.0.0-kommentierung"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2026-03-11
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ArbeitsgruppeWeST</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<div class="confluence-content">
+
+  <p>Die mio42 wurde beauftragt eine Wechselschnittstelle nach § 371 Abs. 1 SGB V zu entwickeln, welche dazu dient, Patientendaten bei einem Wechsel des Praxisverwaltungssystems (PVS) sicher, einheitlich und verbindlich zu übertragen. Sie soll durch einen möglichst umfassenden Datentransfer dazu beitragen, bestehende Wechselhürden abzubauen – etwa durch proprietäre Datenformate, Cloud-Hosting, hohe Kosten oder eingeschränkte Usability – und damit echte Systemwahlfreiheit für Arztpraxen ermöglichen. Der Fokus liegt dabei auf einem möglichst holistischen Datenmodell für Interoperabilität und Standardisierung sowie der Sicherstellung einer angemessenen Performanz im Wechselprozess.</p>
+
+  <p>Perspektivisch soll die Wechselschnittstelle für die Konzeption einer Mehrwertschnittstelle nachgenutzt werden, um Vorteile während der regulären PVS-Nutzung zu ermöglichen. Die Mehrwertschnittstelle soll dazu dienen, dass weitere Systeme innerhalb einer Praxis standardisiert mit weiteren Systemen der Praxis Daten austauschen kann. Dadurch wird die Wechselschnittstelle ein Absprungpunkt für ein interoperables Ökosystem, in dem Praxen digitale Anwendungen flexibel integrieren und Prozesse effizienter und sicherer gestalten können.</p>
+
+  <p>Ziel ist es, Interoperabilität, Datenqualität, Sicherheit und Workflow-Effizienz beim PVS-Wechsel zu erhöhen, Innovationsoffenheit zu fördern, Barrieren und Abhängigkeiten abzubauen und langfristig ein modernes, standardisiertes und patientenorientiertes Gesundheitssystem zu unterstützen.</p>
+
+  <p>Essentiell für den Erfolg des Entwicklungsprozesses ist ein praxisnaher und transparenter Austausch mit iterativen Entwicklungsschleifen. Daher entwickelt Mio42 diese Schnittstelle im Co-Creation Ansatz mit der Gematik und der Industrie und in enger Abstimmung mit dem BMG.</p>
+
+  <p>Die neue Wechselschnittstelle soll performant und praktikabel werden. Der Interop Council hat dazu innerhalb des Arbeitskreises “Analyse der Effizienz der AWSt” mit relevanten Expert:innen ein Positionspapier entwickelt, in dem konkrete Handlungsempfehlungen für eine optimierte Umsetzung mit FHIR aufgeführt wurden.</p>
+
+  <h4 id="wo-stehen-wir">Wo stehen wir?</h4>
+
+  <p>Nach dem erfolgreichen Kick-Off der Co-Creation-Phase wurde der Weg für eine enge Zusammenarbeit zwischen allen Beteiligten geebnet. In der Discovery-Phase haben sich Mio42, Gematik und Vertreter der Industrie intensiv mit der Konzeptionierung und Lösungsfindung für die bestehenden Performance- und Praktikabilitätsprobleme der alten Archiv- und Wechselschnittstelle beschäftigt. Gemeinsame Workshops ermöglichten eine detaillierte Analyse der Herausforderungen und legten die Grundlage für die weitere Entwicklung.</p>
+
+  <p>Im Fokus stand vor allem die Frage, wie die bestehende Schnittstelle auf Basis des FHIR-Standards weiter optimiert und gleichzeitig praktikabel gestaltet werden kann. Das Format wird nun anhand der Handlungsempfehlungen aus dem Positionspapier des Interop Council kritisch auf die Probe gestellt. Diese Empfehlungen beinhalten unter anderem Ansätze zur Modularisierung der FHIR-Profile und zur Reduzierung von Datenmengen, um die Performance bei großen Datenbeständen zu verbessern.</p>
+
+  <p>Derzeit befinden sich die ersten Arbeitspakete des Projekts in der Erstellung. Ziel der ersten Arbeitspakete ist es, eine erste funktionsfähige Implementierung der optimierten Wechselschnittstelle zu entwickeln, die als Grundlage für zukünftige Iterationen und Anpassungen dienen wird.</p>
+
+  <h4 id="nchste-schritte">Nächste Schritte</h4>
+
+  <p>Im weiteren Verlauf des Projekts stehen nun mehrere entscheidende Schritte an, um die Entwicklung der Wechselschnittstelle voranzutreiben und sicherzustellen, dass die optimierte Lösung sowohl technisch als auch praktisch den Anforderungen entspricht. Dabei gehen wir in iterativen Phasen vor, die durch mehrfache Feedbackschleifen eine flexible und schnelle Optimierung ermöglichen. So Soll in Zusammenarbeit mit allen Stakeholdern eine eng abgestimmte und praxistaugliche Schnittstelle entstehen.</p>
+
+  <p>Zunächst wird das Informationsmodell sowie die FHIR-Profilierung eines Arbeitspakets abgeschlossen. Anschließend erfolgt die Kommentierung, bei der alle relevanten Stakeholder ihre Rückmeldungen einbringen können. Mio42 nimmt auf Basis der Kommentierung etwaige Optimierungen und Anpassungen vor. Sobald ein Arbeitspaket finalisiert und kommentiert wurde, wird mit derErstellung und Kommentierung des nächsten Arbeitspakets fortgefahren.</p>
+
+  <p>Anhand der ertsten beiden Arbeitspakete erfolgt eine umfassende Vertestung der Schnittstelle unter Berücksichtigung der Handlungsempfehlungen aus dem Positionspapier des Interop Councils. Diese Testphase wird sicherstellen, dass die entwickelten Lösungen in der Praxis funktionieren und den gewünschten Leistungsanforderungen gerecht werden. Ziel der Tests soll sein, die Eignung von FHIR als Datenformat für die Wechselschnittstelle zu evaluieren und die Testergebnisse für zukünftige Iterationen und Anpassungen zu nutzen. Dabei wird überprüft, ob FHIR die nötige Performanz und Praktikabilität bietet, um als dauerhaft tragfähiger Standard für den Datenaustausch zwischen den Systemen zu dienen.</p>
+
+  <p>Stand Dez 25</p>
+
+  <div class="row">
+    <div class="column">
+
+    </div>
+    <div class="column">
+
+    </div>
+  </div>
+
+</div>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jstree.min.js"> </script>
+
+
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Mar 11, 2026 11:00+0100">2026-03-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

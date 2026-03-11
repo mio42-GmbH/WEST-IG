@@ -1,0 +1,265 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "b65dfcca-c6ce-4dac-8742-8da00c192c7d"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "code"^^xsd:anyURI ;
+         fhir:l fhir:code
+       ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"^^xsd:anyURI ;
+             fhir:l <http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen>
+           ] ;
+           fhir:code [ fhir:v "D" ] ;
+           fhir:display [ fhir:v "Deutschland" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/patient-citizenship"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/patient-citizenship>
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+         ] ;
+         fhir:code [ fhir:v "MR" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://www.acmedasdd.com/identifiers/patient"^^xsd:anyURI ;
+       fhir:l <http://www.acmedasdd.com/identifiers/patient>
+     ] ;
+     fhir:value [ fhir:v "123456" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/CodeSystem/identifier-type-de-basis>
+         ] ;
+         fhir:code [ fhir:v "KVZ10" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://fhir.de/sid/gkv/kvid-10"^^xsd:anyURI ;
+       fhir:l <http://fhir.de/sid/gkv/kvid-10>
+     ] ;
+     fhir:value [ fhir:v "G995030560" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type"^^xsd:anyURI ;
+           fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type>
+         ] ;
+         fhir:code [ fhir:v "pkv-nr" ]
+       ] [
+         fhir:system [
+           fhir:v "http://fhir.de/CodeSystem/identifier-type-de-basis"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/CodeSystem/identifier-type-de-basis>
+         ] ;
+         fhir:code [ fhir:v "PKV" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://www.acmedasdd.com/identifiers/patient"^^xsd:anyURI ;
+       fhir:l <http://www.acmedasdd.com/identifiers/patient>
+     ] ;
+     fhir:value [ fhir:v "1234567890" ] ;
+     fhir:assigner [
+       fhir:l <urn:uuid:86d0ed84-c2b8-4177-b56b-92f893492d9f> ;
+       fhir:reference [ fhir:v "urn:uuid:86d0ed84-c2b8-4177-b56b-92f893492d9f" ] ;
+       fhir:display [ fhir:v "KK" ]
+     ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type"^^xsd:anyURI ;
+           fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type>
+         ] ;
+         fhir:code [ fhir:v "kvk" ]
+       ] )
+     ] ;
+     fhir:system [
+       fhir:v "http://fhir.de/sid/gkv/kvk-versichertennummer"^^xsd:anyURI ;
+       fhir:l <http://fhir.de/sid/gkv/kvk-versichertennummer>
+     ] ;
+     fhir:value [ fhir:v "1995030560" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [
+       fhir:v "Hans" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-name"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/humanname-own-name>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Glücklich"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://fhir.de/StructureDefinition/humanname-namenszusatz"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/StructureDefinition/humanname-namenszusatz>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Prinz"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/humanname-own-prefix>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "von"
+         ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "Hans" ] ) ;
+     fhir:prefix ( [
+       fhir:v "Dr" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier>
+         ] ;
+         fhir:value [
+           a fhir:Code ;
+           fhir:v "AC"
+         ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "12123455" ]
+  ] ) ; # 
+  fhir:gender [
+     fhir:v "other" ;
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://fhir.de/StructureDefinition/gender-amtlich-de"^^xsd:anyURI ;
+         fhir:l <http://fhir.de/StructureDefinition/gender-amtlich-de>
+       ] ;
+       fhir:value [
+         a fhir:Coding ;
+         fhir:system [
+           fhir:v "http://fhir.de/CodeSystem/gender-amtlich-de"^^xsd:anyURI ;
+           fhir:l <http://fhir.de/CodeSystem/gender-amtlich-de>
+         ] ;
+         fhir:code [ fhir:v "X" ] ;
+         fhir:display [ fhir:v "unbestimmt" ]
+       ]
+     ] )
+  ] ; # 
+  fhir:birthDate [ fhir:v "2022-03-01"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [
+       fhir:v "Mittestr 43" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Mittestr"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "43"
+         ]
+       ] [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Nebenhaus"
+         ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Berlin" ] ;
+     fhir:postalCode [ fhir:v "12015" ] ;
+     fhir:country [ fhir:v "D" ]
+  ] [
+     fhir:type [ fhir:v "postal" ] ;
+     fhir:line ( [
+       fhir:v "Mittestr" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Mittestr"
+         ]
+       ] )
+     ] ) ;
+     fhir:city [ fhir:v "Berlin" ] ;
+     fhir:postalCode [ fhir:v "12015" ] ;
+     fhir:country [ fhir:v "D" ]
+  ] ) ; # 
+  fhir:photo ( [
+     fhir:contentType [ fhir:v "image/jpeg" ] ;
+     fhir:url [
+       fhir:v "Binary/f016"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/Binary/f016>
+     ]
+  ] ) ; # 
+  fhir:communication ( [
+     fhir:language [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
+           fhir:l <urn:ietf:bcp:47>
+         ] ;
+         fhir:code [ fhir:v "hr" ] ;
+         fhir:display [ fhir:v "Croatian" ]
+       ] )
+     ] ;
+     fhir:preferred [ fhir:v false ]
+  ] ) ; # 
+  fhir:generalPractitioner ( [
+     fhir:l <urn:uuid:831c3d46-4b70-40ee-9996-031b8ee80576> ;
+     fhir:reference [ fhir:v "urn:uuid:831c3d46-4b70-40ee-9996-031b8ee80576" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

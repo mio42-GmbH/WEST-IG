@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://hl7.org/fhir/ValueSet/clinical-findings,4.0.1,draft,"2.16.840.1.113883.4.642.3.232",SNOMEDCTClinicalFindings,SNOMED CT Clinical Findings,"This value set includes all the ""Clinical finding"" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).","StructureDefinition/KBV-PR-WEST-ServiceRequest","SCT"
+https://fhir.kbv.de/ValueSet/KBV_VS_Base_CommonLanguages,1.8.0,active,,KBV_VS_Base_CommonLanguages,Bevorzugte Sprache (Includes),"Dieses Valueset enthält die Codes zur Beschreibung von Bevorzugte Sprache (Includes).","StructureDefinition/KBV-PR-WEST-Patient","Other"
+https://fhir.kbv.de/ValueSet/KBV_VS_Base_Deuev_Anlage_8,1.8.0,active,,KBV_VS_Base_Deuev_Anlage_8,Land/Wohnsitzländercode,"Dieses Valueset enthält die Codes zur Beschreibung von Land/Wohnsitzländercode.","StructureDefinition/KBV-PR-WEST-Patient","de.basisprofil.r4"

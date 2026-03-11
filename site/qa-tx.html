@@ -1,0 +1,227 @@
+<hr/><a name="l1"> </a>
+<p>#1</p>
+<pre>
+GET https://tx.mio42.de/r4/metadata HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+User-Agent: fhir/publisher
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:4391
+content-type:application/fhir+json
+date:Wed, 11 Mar 2026 10:01:08 GMT
+pragma:no-cache
+server:nginx/1.29.4
+x-request-id:16-7057
+
+{&quot;resourceType&quot; : &quot;CapabilityStatement&quot;,&quot;id&quot; : &quot;FhirServer&quot;,&quot;text&quot; : {&quot;status&quot; : &quot;generated&quot;,&quot;div&quot; : &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;sebg Conformance Statement&lt;/h2&gt;&lt;p&gt;FHIR v4.0.1 released 20251208113154.394Z. Server version 4.0.8-SNAPSHOT built 20251208113154.394Z&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;th&gt;Resource Type&lt;/th&gt;&lt;th&gt;Profile&lt;/th&gt;&lt;th&gt;Read&lt;/th&gt;&lt;th&gt;V-Read&lt;/th&gt;&lt;th&gt;Search&lt;/th&gt;&lt;th&gt;Update&lt;/th&gt;&lt;th&gt;Updates&lt;/th&gt;&lt;th&gt;Create&lt;/th&gt;&lt;th&gt;Delete&lt;/th&gt;&lt;th&gt;History&lt;/th&gt;&lt;/tr&gt;\n&lt;/table&gt;\n&lt;p&gt;Operations&lt;/p&gt;\n&lt;ul&gt;\n &lt;li&gt;expand: see OperationDefinition/fso-expand&lt;/li&gt;\n &lt;li&gt;lookup: see OperationDefinition/fso-lookup&lt;/li&gt;\n &lt;li&gt;subsumes: see OperationDefinition/fso-subsumes&lt;/li&gt;\n &lt;li&gt;validate-code: see OperationDefinition/fso-validate-code&lt;/li&gt;\n &lt;li&gt;batch-validate-code: see OperationDefinition/fso-batch-validate-code&lt;/li&gt;\n &lt;li&gt;translate: see OperationDefinition/fso-translate&lt;/li&gt;\n &lt;li&gt;closure: see OperationDefinition/fso-closure&lt;/li&gt;\n &lt;li&gt;versions: see OperationDefinition/fso-versions&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/div&gt;&quot;},&quot;extension&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-tests/FeatureDefinition/test-version&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;1.8.0&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;name&quot;,&quot;valueCode&quot; : &quot;mode&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueCode&quot; : &quot;tx.fhir.org&quot;}],&quot;url&quot; : &quot;qualifier&quot;}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;},{&quot;extension&quot; : [{&quot;url&quot; : &quot;definition&quot;,&quot;valueCanonical&quot; : &quot;http://hl7.org/fhir/uv/tx-ecosystem/FeatureDefinition/CodeSystemAsParameter&quot;},{&quot;url&quot; : &quot;value&quot;,&quot;valueBoolean&quot; : true}],&quot;url&quot; : &quot;http://hl7.org/fhir/uv/application-feature/StructureDefinition/feature&quot;}],&quot;url&quot; : &quot;http://localhost/r4/CapabilityStatement/tx&quot;,&quot;version&quot; : &quot;4.0.1-4.0.8-SNAPSHOT&quot;,&quot;name&quot; : &quot;FHIRReferenceServer&quot;,&quot;title&quot; : &quot;FHIR Reference Server Conformance Statement&quot;,&quot;status&quot; : &quot;active&quot;,&quot;date&quot; : &quot;2026-03-11T10:01:08.436Z&quot;,&quot;contact&quot; : [{&quot;telecom&quot; : [{&quot;system&quot; : &quot;other&quot;,&quot;value&quot; : &quot;http://healthintersections.com.au/&quot;}]}],&quot;description&quot; : &quot;Standard Conformance Statement for the open source Reference FHIR Server provided by Health Intersections&quot;,&quot;kind&quot; : &quot;instance&quot;,&quot;instantiates&quot; : [&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;,&quot;http://hl7.org/fhir/CapabilityStatement/terminology-server&quot;],&quot;software&quot; : {&quot;name&quot; : &quot;HealthIntersections Server&quot;,&quot;version&quot; : &quot;4.0.8-SNAPSHOT&quot;,&quot;releaseDate&quot; : &quot;2025-12-08T11:31:54.394Z&quot;},&quot;implementation&quot; : {&quot;description&quot; : &quot;FHIR Server running at http://localhost/r4&quot;,&quot;url&quot; : &quot;http://localhost/r4&quot;},&quot;fhirVersion&quot; : &quot;4.0.1&quot;,&quot;format&quot; : [&quot;application/fhir+xml&quot;,&quot;application/fhir+json&quot;],&quot;rest&quot; : [{&quot;mode&quot; : &quot;server&quot;,&quot;security&quot; : {&quot;cors&quot; : true},&quot;resource&quot; : [{&quot;type&quot; : &quot;CodeSystem&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a code system&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the code systems. Not that there a few major code systems that are not available through this API (SCT, LOINC etc)&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-validate-code&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-lookup&quot;}]},{&quot;type&quot; : &quot;ValueSet&quot;,&quot;interaction&quot; : [{&quot;code&quot; : &quot;read&quot;,&quot;documentation&quot; : &quot;Read a ValueSet&quot;},{&quot;code&quot; : &quot;search-type&quot;,&quot;documentation&quot; : &quot;Search the value sets&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-validate-code&quot;},{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;}]}],&quot;interaction&quot; : [{&quot;code&quot; : &quot;transaction&quot;}],&quot;operation&quot; : [{&quot;name&quot; : &quot;expand&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-expand&quot;},{&quot;name&quot; : &quot;lookup&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ValueSet-lookup&quot;},{&quot;name&quot; : &quot;subsumes&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/CodeSystem-subsumes&quot;},{&quot;name&quot; : &quot;validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-validate-code&quot;},{&quot;name&quot; : &quot;batch-validate-code&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/Resource-batch-validate-code&quot;},{&quot;name&quot; : &quot;translate&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-translate&quot;},{&quot;name&quot; : &quot;closure&quot;,&quot;definition&quot; : &quot;http://hl7.org/fhir/OperationDefinition/ConceptMap-closure&quot;},{&quot;name&quot; : &quot;versions&quot;,&quot;definition&quot; : &quot;http://localhost/r4/OperationDefinition/fso-versions&quot;}]}]}
+</pre>
+<hr/><a name="l2"> </a>
+<p>#2</p>
+<pre>
+GET https://tx.mio42.de/r4/CodeSystem?url=http%3a%2f%2fterminology.hl7.org%2fCodeSystem%2fcondition-clinical&version=4.0.1 HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+json; fhirVersion=4.0
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:2832
+content-type:application/fhir+json
+date:Wed, 11 Mar 2026 10:01:39 GMT
+pragma:no-cache
+server:nginx/1.29.4
+x-request-id:16-7058
+
+{&quot;resourceType&quot; : &quot;Bundle&quot;,&quot;id&quot; : &quot;ad35c768-9048-4c24-9f05-bc94ee9c16&quot;,&quot;meta&quot; : {&quot;lastUpdated&quot; : &quot;2026-03-11T10:01:39.077Z&quot;},&quot;type&quot; : &quot;searchset&quot;,&quot;total&quot; : 1,&quot;link&quot; : [{&quot;relation&quot; : &quot;self&quot;,&quot;url&quot; : &quot;CodeSystem?&amp;url=http://terminology.hl7.org/CodeSystem/condition-clinical&amp;version=4.0.1&quot;}],&quot;entry&quot; : [{&quot;fullUrl&quot; : &quot;http://localhost/r4/CodeSystem/condition-clinical&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;CodeSystem&quot;,&quot;id&quot; : &quot;condition-clinical&quot;,&quot;meta&quot; : {&quot;lastUpdated&quot; : &quot;2019-11-01T09:29:23.356+11:00&quot;,&quot;profile&quot; : [&quot;http://hl7.org/fhir/StructureDefinition/shareablecodesystem&quot;]},&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-wg&quot;,&quot;valueCode&quot; : &quot;pc&quot;},{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;,&quot;valueCode&quot; : &quot;trial-use&quot;},{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;,&quot;valueInteger&quot; : 3}],&quot;url&quot; : &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;,&quot;identifier&quot; : [{&quot;system&quot; : &quot;urn:ietf:rfc:3986&quot;,&quot;value&quot; : &quot;urn:oid:2.16.840.1.113883.4.642.4.1074&quot;}],&quot;version&quot; : &quot;4.0.1&quot;,&quot;name&quot; : &quot;ConditionClinicalStatusCodes&quot;,&quot;title&quot; : &quot;Condition Clinical Status Codes&quot;,&quot;status&quot; : &quot;draft&quot;,&quot;experimental&quot; : false,&quot;publisher&quot; : &quot;FHIR Project team&quot;,&quot;contact&quot; : [{&quot;telecom&quot; : [{&quot;system&quot; : &quot;url&quot;,&quot;value&quot; : &quot;http://hl7.org/fhir&quot;}]}],&quot;description&quot; : &quot;Preferred value set for Condition Clinical Status.&quot;,&quot;caseSensitive&quot; : true,&quot;valueSet&quot; : &quot;http://hl7.org/fhir/ValueSet/condition-clinical&quot;,&quot;content&quot; : &quot;complete&quot;,&quot;concept&quot; : [{&quot;code&quot; : &quot;active&quot;,&quot;display&quot; : &quot;Active&quot;,&quot;definition&quot; : &quot;The subject is currently experiencing the symptoms of the condition or there is evidence of the condition.&quot;,&quot;concept&quot; : [{&quot;code&quot; : &quot;recurrence&quot;,&quot;display&quot; : &quot;Recurrence&quot;,&quot;definition&quot; : &quot;The subject is experiencing a re-occurence or repeating of a previously resolved condition, e.g. urinary tract infection, pancreatitis, cholangitis, conjunctivitis.&quot;},{&quot;code&quot; : &quot;relapse&quot;,&quot;display&quot; : &quot;Relapse&quot;,&quot;definition&quot; : &quot;The subject is experiencing a return of a condition, or signs and symptoms after a period of improvement or remission, e.g. relapse of cancer, multiple sclerosis, rheumatoid arthritis, systemic lupus erythematosus, bipolar disorder, [psychotic relapse of] schizophrenia, etc.&quot;}]},{&quot;code&quot; : &quot;inactive&quot;,&quot;display&quot; : &quot;Inactive&quot;,&quot;definition&quot; : &quot;The subject is no longer experiencing the symptoms of the condition or there is no longer evidence of the condition.&quot;,&quot;concept&quot; : [{&quot;code&quot; : &quot;remission&quot;,&quot;display&quot; : &quot;Remission&quot;,&quot;definition&quot; : &quot;The subject is no longer experiencing the symptoms of the condition, but there is a risk of the symptoms returning.&quot;},{&quot;code&quot; : &quot;resolved&quot;,&quot;display&quot; : &quot;Resolved&quot;,&quot;definition&quot; : &quot;The subject is no longer experiencing the symptoms of the condition and there is a negligible perceived risk of the symptoms returning.&quot;}]}]}}]}
+</pre>
+<hr/><a name="l3"> </a>
+<p>#3</p>
+<pre>
+GET https://tx.mio42.de/r4/CodeSystem?url=http%3a%2f%2fterminology.hl7.org%2fCodeSystem%2fcondition-ver-status&version=4.0.1 HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+json; fhirVersion=4.0
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:2548
+content-type:application/fhir+json
+date:Wed, 11 Mar 2026 10:01:39 GMT
+pragma:no-cache
+server:nginx/1.29.4
+x-request-id:16-7059
+
+{&quot;resourceType&quot; : &quot;Bundle&quot;,&quot;id&quot; : &quot;6eea178d-d3aa-4b3c-a12c-3383c990a3&quot;,&quot;meta&quot; : {&quot;lastUpdated&quot; : &quot;2026-03-11T10:01:39.170Z&quot;},&quot;type&quot; : &quot;searchset&quot;,&quot;total&quot; : 1,&quot;link&quot; : [{&quot;relation&quot; : &quot;self&quot;,&quot;url&quot; : &quot;CodeSystem?&amp;url=http://terminology.hl7.org/CodeSystem/condition-ver-status&amp;version=4.0.1&quot;}],&quot;entry&quot; : [{&quot;fullUrl&quot; : &quot;http://localhost/r4/CodeSystem/condition-ver-status&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;CodeSystem&quot;,&quot;id&quot; : &quot;condition-ver-status&quot;,&quot;meta&quot; : {&quot;lastUpdated&quot; : &quot;2019-11-01T09:29:23.356+11:00&quot;},&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-wg&quot;,&quot;valueCode&quot; : &quot;pc&quot;},{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;,&quot;valueCode&quot; : &quot;trial-use&quot;},{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;,&quot;valueInteger&quot; : 3}],&quot;url&quot; : &quot;http://terminology.hl7.org/CodeSystem/condition-ver-status&quot;,&quot;identifier&quot; : [{&quot;system&quot; : &quot;urn:ietf:rfc:3986&quot;,&quot;value&quot; : &quot;urn:oid:2.16.840.1.113883.4.642.4.1075&quot;}],&quot;version&quot; : &quot;4.0.1&quot;,&quot;name&quot; : &quot;ConditionVerificationStatus&quot;,&quot;title&quot; : &quot;ConditionVerificationStatus&quot;,&quot;status&quot; : &quot;draft&quot;,&quot;experimental&quot; : false,&quot;date&quot; : &quot;2019-11-01T09:29:23+11:00&quot;,&quot;publisher&quot; : &quot;HL7 (FHIR Project)&quot;,&quot;contact&quot; : [{&quot;telecom&quot; : [{&quot;system&quot; : &quot;url&quot;,&quot;value&quot; : &quot;http://hl7.org/fhir&quot;},{&quot;system&quot; : &quot;email&quot;,&quot;value&quot; : &quot;fhir@lists.hl7.org&quot;}]}],&quot;description&quot; : &quot;The verification status to support or decline the clinical status of the condition or diagnosis.&quot;,&quot;caseSensitive&quot; : true,&quot;valueSet&quot; : &quot;http://hl7.org/fhir/ValueSet/condition-ver-status&quot;,&quot;content&quot; : &quot;complete&quot;,&quot;concept&quot; : [{&quot;code&quot; : &quot;unconfirmed&quot;,&quot;display&quot; : &quot;Unconfirmed&quot;,&quot;definition&quot; : &quot;There is not sufficient diagnostic and/or clinical evidence to treat this as a confirmed condition.&quot;,&quot;concept&quot; : [{&quot;code&quot; : &quot;provisional&quot;,&quot;display&quot; : &quot;Provisional&quot;,&quot;definition&quot; : &quot;This is a tentative diagnosis - still a candidate that is under consideration.&quot;},{&quot;code&quot; : &quot;differential&quot;,&quot;display&quot; : &quot;Differential&quot;,&quot;definition&quot; : &quot;One of a set of potential (and typically mutually exclusive) diagnoses asserted to further guide the diagnostic process and preliminary treatment.&quot;}]},{&quot;code&quot; : &quot;confirmed&quot;,&quot;display&quot; : &quot;Confirmed&quot;,&quot;definition&quot; : &quot;There is sufficient diagnostic and/or clinical evidence to treat this as a confirmed condition.&quot;},{&quot;code&quot; : &quot;refuted&quot;,&quot;display&quot; : &quot;Refuted&quot;,&quot;definition&quot; : &quot;This condition has been ruled out by diagnostic and clinical evidence.&quot;},{&quot;code&quot; : &quot;entered-in-error&quot;,&quot;display&quot; : &quot;Entered in Error&quot;,&quot;definition&quot; : &quot;The statement was entered in error and is not valid.&quot;}]}}]}
+</pre>
+<hr/><a name="l4"> </a>
+<p>#4</p>
+<pre>
+POST https://tx.mio42.de/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM","version":"1.15","code":"TAB","display":"Tabletten"},{"system":"http://snomed.info/sct","version":"http://snomed.info/sct/11000274103/version/20250515","code":"385055001","display":"Tablet"},{"system":"http://standardterms.edqm.eu","code":"12200","display":"Tablet"}]}},{"name":"displayLanguage","valueString":"de-DE"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"c1337012-7fe3-4fe6-977e-2fcc689423d5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:3600
+content-type:application/fhir+json
+date:Wed, 11 Mar 2026 10:01:39 GMT
+last-modified:Wed, 11 Mar 2026 10:01:39 GMT
+pragma:no-cache
+server:nginx/1.29.4
+x-request-id:16-7060
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://standardterms.edqm.eu&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;12200&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;5 February 2025&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Tablet&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM' version '1.15' could not be found, so the code cannot be validated. No versions of this code system are known&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM&quot;,&quot;version&quot; : &quot;1.15&quot;,&quot;code&quot; : &quot;TAB&quot;,&quot;display&quot; : &quot;Tabletten&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;version&quot; : &quot;http://snomed.info/sct/11000274103/version/20250515&quot;,&quot;code&quot; : &quot;385055001&quot;,&quot;display&quot; : &quot;Tablet&quot;},{&quot;system&quot; : &quot;http://standardterms.edqm.eu&quot;,&quot;code&quot; : &quot;12200&quot;,&quot;display&quot; : &quot;Tablet&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM_VERSION_NONE&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM' version '1.15' could not be found, so the code cannot be validated. No versions of this code system are known&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].system&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].system&quot;]},{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;NO_VALID_DISPLAY_FOUND_LANG_NONE&quot;}],&quot;severity&quot; : &quot;information&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;display-comment&quot;}],&quot;text&quot; : &quot;'Tablet' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-DE&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[1].display&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[1].display&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n3 3     : 0ms  #914: Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n3 0     : 0ms  #914: Parameters: disp-lang=de-DE, default-to-latest\r\n3 0     : 0ms  #914: Prepare include: \&quot;()\&quot;\r\n3 0     : 0ms  #914: Validate \&quot;[https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM|1.15#TAB (\&quot;Tabletten\&quot;), http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#385055001 (\&quot;Tablet\&quot;), http://standardterms.edqm.eu#12200 (\&quot;Tablet\&quot;)]\&quot;\r\n3 0     : 0ms  #914: Check \&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM|1.15#TAB\&quot;\r\n3 0     : 0ms  #914: Didn't find CodeSystem \&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM|1.15\&quot;\r\n4 1     : 1ms  #914: Check \&quot;http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#385055001\&quot;\r\n4 0     : 1ms  #914: Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515\&quot; (content = complete)\r\n4 0     : 1ms  #914: Check \&quot;http://standardterms.edqm.eu#12200\&quot;\r\n4 0     : 1ms  #914: Using CodeSystem \&quot;http://standardterms.edqm.eu|5 February 2025 (from fhir.tx.support.r4#0.32.0)\&quot; (content = complete)\r\n&quot;}]}
+</pre>
+<hr/><a name="l5"> </a>
+<p>#5</p>
+<pre>
+POST https://tx.mio42.de/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"codeableConcept","valueCodeableConcept":{"coding":[{"system":"https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM","version":"1.15","code":"TAB","display":"Tabletten"},{"system":"http://snomed.info/sct","version":"http://snomed.info/sct/11000274103/version/20250515","code":"385055001","display":"Tablet"},{"system":"http://standardterms.edqm.eu","code":"12200","display":"Tablet"}]}},{"name":"displayLanguage","valueString":"de-DE"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"c1337012-7fe3-4fe6-977e-2fcc689423d5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:3600
+content-type:application/fhir+json
+date:Wed, 11 Mar 2026 10:01:39 GMT
+last-modified:Wed, 11 Mar 2026 10:01:39 GMT
+pragma:no-cache
+server:nginx/1.29.4
+x-request-id:16-7061
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;http://standardterms.edqm.eu&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;12200&quot;},{&quot;name&quot; : &quot;version&quot;,&quot;valueString&quot; : &quot;5 February 2025&quot;},{&quot;name&quot; : &quot;display&quot;,&quot;valueString&quot; : &quot;Tablet&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM' version '1.15' could not be found, so the code cannot be validated. No versions of this code system are known&quot;},{&quot;name&quot; : &quot;codeableConcept&quot;,&quot;valueCodeableConcept&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM&quot;,&quot;version&quot; : &quot;1.15&quot;,&quot;code&quot; : &quot;TAB&quot;,&quot;display&quot; : &quot;Tabletten&quot;},{&quot;system&quot; : &quot;http://snomed.info/sct&quot;,&quot;version&quot; : &quot;http://snomed.info/sct/11000274103/version/20250515&quot;,&quot;code&quot; : &quot;385055001&quot;,&quot;display&quot; : &quot;Tablet&quot;},{&quot;system&quot; : &quot;http://standardterms.edqm.eu&quot;,&quot;code&quot; : &quot;12200&quot;,&quot;display&quot; : &quot;Tablet&quot;}]}},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM_VERSION_NONE&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM' version '1.15' could not be found, so the code cannot be validated. No versions of this code system are known&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[0].system&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[0].system&quot;]},{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;NO_VALID_DISPLAY_FOUND_LANG_NONE&quot;}],&quot;severity&quot; : &quot;information&quot;,&quot;code&quot; : &quot;invalid&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;display-comment&quot;}],&quot;text&quot; : &quot;'Tablet' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-DE&quot;},&quot;location&quot; : [&quot;CodeableConcept.coding[1].display&quot;],&quot;expression&quot; : [&quot;CodeableConcept.coding[1].display&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n3 3     : 0ms  #915: Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n3 0     : 0ms  #915: Parameters: disp-lang=de-DE, default-to-latest\r\n3 0     : 0ms  #915: Prepare include: \&quot;()\&quot;\r\n3 0     : 0ms  #915: Validate \&quot;[https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM|1.15#TAB (\&quot;Tabletten\&quot;), http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#385055001 (\&quot;Tablet\&quot;), http://standardterms.edqm.eu#12200 (\&quot;Tablet\&quot;)]\&quot;\r\n3 0     : 0ms  #915: Check \&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM|1.15#TAB\&quot;\r\n3 0     : 0ms  #915: Didn't find CodeSystem \&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM|1.15\&quot;\r\n4 1     : 1ms  #915: Check \&quot;http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515#385055001\&quot;\r\n4 0     : 1ms  #915: Using CodeSystem \&quot;http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515\&quot; (content = complete)\r\n4 0     : 1ms  #915: Check \&quot;http://standardterms.edqm.eu#12200\&quot;\r\n5 1     : 2ms  #915: Using CodeSystem \&quot;http://standardterms.edqm.eu|5 February 2025 (from fhir.tx.support.r4#0.32.0)\&quot; (content = complete)\r\n&quot;}]}
+</pre>
+<hr/><a name="l6"> </a>
+<p>#6</p>
+<pre>
+GET https://tx.mio42.de/r4/CodeSystem?url=http%3a%2f%2fterminology.hl7.org%2fCodeSystem%2freferencerange-meaning&version=4.0.1 HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept: application/fhir+json; fhirVersion=4.0
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:3781
+content-type:application/fhir+json
+date:Wed, 11 Mar 2026 10:01:39 GMT
+pragma:no-cache
+server:nginx/1.29.4
+x-request-id:16-7062
+
+{&quot;resourceType&quot; : &quot;Bundle&quot;,&quot;id&quot; : &quot;e95e97fd-9a3f-480f-bb0d-4e9f2d3eb9&quot;,&quot;meta&quot; : {&quot;lastUpdated&quot; : &quot;2026-03-11T10:01:39.791Z&quot;},&quot;type&quot; : &quot;searchset&quot;,&quot;total&quot; : 1,&quot;link&quot; : [{&quot;relation&quot; : &quot;self&quot;,&quot;url&quot; : &quot;CodeSystem?&amp;url=http://terminology.hl7.org/CodeSystem/referencerange-meaning&amp;version=4.0.1&quot;}],&quot;entry&quot; : [{&quot;fullUrl&quot; : &quot;http://localhost/r4/CodeSystem/referencerange-meaning&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;CodeSystem&quot;,&quot;id&quot; : &quot;referencerange-meaning&quot;,&quot;meta&quot; : {&quot;lastUpdated&quot; : &quot;2019-11-01T09:29:23.356+11:00&quot;,&quot;profile&quot; : [&quot;http://hl7.org/fhir/StructureDefinition/shareablecodesystem&quot;]},&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-wg&quot;,&quot;valueCode&quot; : &quot;oo&quot;}],&quot;url&quot; : &quot;http://terminology.hl7.org/CodeSystem/referencerange-meaning&quot;,&quot;identifier&quot; : [{&quot;system&quot; : &quot;urn:ietf:rfc:3986&quot;,&quot;value&quot; : &quot;urn:oid:2.16.840.1.113883.4.642.4.1124&quot;}],&quot;version&quot; : &quot;4.0.1&quot;,&quot;name&quot; : &quot;ObservationReferenceRangeMeaningCodes&quot;,&quot;title&quot; : &quot;Observation Reference Range Meaning Codes&quot;,&quot;status&quot; : &quot;draft&quot;,&quot;experimental&quot; : false,&quot;publisher&quot; : &quot;FHIR Project team&quot;,&quot;contact&quot; : [{&quot;telecom&quot; : [{&quot;system&quot; : &quot;url&quot;,&quot;value&quot; : &quot;http://hl7.org/fhir&quot;}]}],&quot;description&quot; : &quot;This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.&quot;,&quot;caseSensitive&quot; : true,&quot;valueSet&quot; : &quot;http://hl7.org/fhir/ValueSet/referencerange-meaning&quot;,&quot;hierarchyMeaning&quot; : &quot;is-a&quot;,&quot;content&quot; : &quot;complete&quot;,&quot;property&quot; : [{&quot;code&quot; : &quot;abstract&quot;,&quot;description&quot; : &quot;True if an element is considered 'abstract' - in otherwords, the code is not for use as a real concept&quot;,&quot;type&quot; : &quot;boolean&quot;}],&quot;concept&quot; : [{&quot;code&quot; : &quot;type&quot;,&quot;display&quot; : &quot;Type&quot;,&quot;definition&quot; : &quot;General types of reference range.&quot;,&quot;property&quot; : [{&quot;code&quot; : &quot;abstract&quot;,&quot;valueBoolean&quot; : true}],&quot;concept&quot; : [{&quot;code&quot; : &quot;normal&quot;,&quot;display&quot; : &quot;Normal Range&quot;,&quot;definition&quot; : &quot;Values expected for a normal member of the relevant control population being measured. Typically each results producer such as a laboratory has specific normal ranges and they are usually defined as within two standard deviations from the mean and account for 95.45% of this population.&quot;},{&quot;code&quot; : &quot;recommended&quot;,&quot;display&quot; : &quot;Recommended Range&quot;,&quot;definition&quot; : &quot;The range that is recommended by a relevant professional body.&quot;},{&quot;code&quot; : &quot;treatment&quot;,&quot;display&quot; : &quot;Treatment Range&quot;,&quot;definition&quot; : &quot;The range at which treatment would/should be considered.&quot;},{&quot;code&quot; : &quot;therapeutic&quot;,&quot;display&quot; : &quot;Therapeutic Desired Level&quot;,&quot;definition&quot; : &quot;The optimal range for best therapeutic outcomes.&quot;,&quot;concept&quot; : [{&quot;code&quot; : &quot;pre&quot;,&quot;display&quot; : &quot;Pre Therapeutic Desired Level&quot;,&quot;definition&quot; : &quot;The optimal range for best therapeutic outcomes for a specimen taken immediately before administration.&quot;},{&quot;code&quot; : &quot;post&quot;,&quot;display&quot; : &quot;Post Therapeutic Desired Level&quot;,&quot;definition&quot; : &quot;The optimal range for best therapeutic outcomes for a specimen taken immediately after administration.&quot;}]}]},{&quot;code&quot; : &quot;endocrine&quot;,&quot;display&quot; : &quot;Endocrine&quot;,&quot;definition&quot; : &quot;Endocrine related states that change the expected value.&quot;,&quot;property&quot; : [{&quot;code&quot; : &quot;abstract&quot;,&quot;valueBoolean&quot; : true}],&quot;concept&quot; : [{&quot;code&quot; : &quot;pre-puberty&quot;,&quot;display&quot; : &quot;Pre-Puberty&quot;,&quot;definition&quot; : &quot;An expected range in an individual prior to puberty.&quot;},{&quot;code&quot; : &quot;follicular&quot;,&quot;display&quot; : &quot;Follicular Stage&quot;,&quot;definition&quot; : &quot;An expected range in an individual during the follicular stage of the cycle.&quot;},{&quot;code&quot; : &quot;midcycle&quot;,&quot;display&quot; : &quot;MidCycle&quot;,&quot;definition&quot; : &quot;An expected range in an individual during the midcycle stage of the cycle.&quot;},{&quot;code&quot; : &quot;luteal&quot;,&quot;display&quot; : &quot;Luteal&quot;,&quot;definition&quot; : &quot;An expected range in an individual during the luteal stage of the cycle.&quot;},{&quot;code&quot; : &quot;postmenopausal&quot;,&quot;display&quot; : &quot;Post-Menopause&quot;,&quot;definition&quot; : &quot;An expected range in an individual post-menopause.&quot;}]}]}}]}
+</pre>
+<hr/><a name="l7"> </a>
+<p>#7</p>
+<pre>
+POST https://tx.mio42.de/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT","code":"g"}},{"name":"displayLanguage","valueString":"de-DE"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"c1337012-7fe3-4fe6-977e-2fcc689423d5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1713
+content-type:application/fhir+json
+date:Wed, 11 Mar 2026 10:02:25 GMT
+last-modified:Wed, 11 Mar 2026 10:02:25 GMT
+pragma:no-cache
+server:nginx/1.29.4
+x-request-id:16-7063
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;g&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n3 3     : 0ms  #916: Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n3 0     : 0ms  #916: Parameters: disp-lang=de-DE, default-to-latest\r\n3 0     : 0ms  #916: Prepare include: \&quot;()\&quot;\r\n3 0     : 0ms  #916: Validate \&quot;[https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT#g (\&quot;\&quot;)]\&quot;\r\n3 0     : 0ms  #916: Check \&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT#g\&quot;\r\n3 0     : 0ms  #916: Didn't find CodeSystem \&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l8"> </a>
+<p>#8</p>
+<pre>
+POST https://tx.mio42.de/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT","code":"g"}},{"name":"displayLanguage","valueString":"de-DE"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"c1337012-7fe3-4fe6-977e-2fcc689423d5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1713
+content-type:application/fhir+json
+date:Wed, 11 Mar 2026 10:02:25 GMT
+last-modified:Wed, 11 Mar 2026 10:02:25 GMT
+pragma:no-cache
+server:nginx/1.29.4
+x-request-id:16-7064
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;g&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n2 2     : 0ms  #917: Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n2 0     : 0ms  #917: Parameters: disp-lang=de-DE, default-to-latest\r\n2 0     : 0ms  #917: Prepare include: \&quot;()\&quot;\r\n2 0     : 0ms  #917: Validate \&quot;[https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT#g (\&quot;\&quot;)]\&quot;\r\n2 0     : 0ms  #917: Check \&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT#g\&quot;\r\n2 0     : 0ms  #917: Didn't find CodeSystem \&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT\&quot;\r\n&quot;}]}
+</pre>
+<hr/><a name="l9"> </a>
+<p>#9</p>
+<pre>
+POST https://tx.mio42.de/r4/CodeSystem/$validate-code? HTTP/1.0
+Accept: application/fhir+json; fhirVersion=4.0
+Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
+User-Agent: fhir/publisher
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT","code":"g"}},{"name":"displayLanguage","valueString":"de-DE"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"c1337012-7fe3-4fe6-977e-2fcc689423d5"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"},{"name":"diagnostics","valueBoolean":true}]}
+</pre>
+<pre>
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:1713
+content-type:application/fhir+json
+date:Wed, 11 Mar 2026 10:02:25 GMT
+last-modified:Wed, 11 Mar 2026 10:02:25 GMT
+pragma:no-cache
+server:nginx/1.29.4
+x-request-id:16-7065
+
+{&quot;resourceType&quot; : &quot;Parameters&quot;,&quot;parameter&quot; : [{&quot;name&quot; : &quot;result&quot;,&quot;valueBoolean&quot; : false},{&quot;name&quot; : &quot;system&quot;,&quot;valueUri&quot; : &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT&quot;},{&quot;name&quot; : &quot;x-caused-by-unknown-system&quot;,&quot;valueCanonical&quot; : &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT&quot;},{&quot;name&quot; : &quot;code&quot;,&quot;valueCode&quot; : &quot;g&quot;},{&quot;name&quot; : &quot;message&quot;,&quot;valueString&quot; : &quot;A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT' could not be found, so the code cannot be validated&quot;},{&quot;name&quot; : &quot;issues&quot;,&quot;resource&quot; : {&quot;resourceType&quot; : &quot;OperationOutcome&quot;,&quot;issue&quot; : [{&quot;extension&quot; : [{&quot;url&quot; : &quot;http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id&quot;,&quot;valueString&quot; : &quot;UNKNOWN_CODESYSTEM&quot;}],&quot;severity&quot; : &quot;error&quot;,&quot;code&quot; : &quot;not-found&quot;,&quot;details&quot; : {&quot;coding&quot; : [{&quot;system&quot; : &quot;http://hl7.org/fhir/tools/CodeSystem/tx-issue-type&quot;,&quot;code&quot; : &quot;not-found&quot;}],&quot;text&quot; : &quot;A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT' could not be found, so the code cannot be validated&quot;},&quot;location&quot; : [&quot;Coding.system&quot;],&quot;expression&quot; : [&quot;Coding.system&quot;]}]}},{&quot;name&quot; : &quot;diagnostics&quot;,&quot;valueString&quot; : &quot;0 0 : start\r\n3 3     : 0ms  #918: Analysing http://hl7.org/fhir/ValueSet/@all for validation purposes\r\n3 0     : 0ms  #918: Parameters: disp-lang=de-DE, default-to-latest\r\n3 0     : 0ms  #918: Prepare include: \&quot;()\&quot;\r\n3 0     : 0ms  #918: Validate \&quot;[https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT#g (\&quot;\&quot;)]\&quot;\r\n3 0     : 0ms  #918: Check \&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT#g\&quot;\r\n3 0     : 0ms  #918: Didn't find CodeSystem \&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT\&quot;\r\n&quot;}]}
+</pre>

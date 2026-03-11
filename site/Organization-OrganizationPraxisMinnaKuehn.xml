@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="OrganizationPraxisMinnaKuehn"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization|1.0.0-kommentierung"/>
+  </meta>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+    <valueString value="Praxis 2014 übernommen von Dr. Bauer"/>
+  </extension>
+  <name value="Allgemeinmedizinische Praxis"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="010 1112"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="010 2222"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="praxis@allgemeinmedizin-minna-kuehn.de"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="allgemeinmedizin-minna-kuehn@mio42.kim.telematik"/>
+  </telecom>
+  <address>
+    <type value="both"/>
+    <line value="Hauptstraße 2"/>
+    <city value="Neustadt"/>
+    <postalCode value="10000"/>
+    <country value="D"/>
+  </address>
+  <contact>
+    <name>
+      <text value="Praxis Alessa Costa"/>
+    </name>
+    <telecom>
+      <system value="phone"/>
+      <value value="010 1116"/>
+    </telecom>
+    <address>
+      <text value="Hauptstraße 6, 10000 Neustadt, Deutschland"/>
+    </address>
+  </contact>
+</Organization>

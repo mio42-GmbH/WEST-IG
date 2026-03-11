@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Operationalisierungshinweise - Arbeitsgruppe WeST v1.0.0-kommentierung</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ig.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.gematik.min.js"> </script>
+<link href="assets/css/edge-dark.min.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.api.doc.gematik.min.js"> </script>
+<link href="assets/css/ig.req.gematik.css" rel="stylesheet" />
+<script type="text/javascript" src="assets/js/ig.req.gematik.min.js"> </script>
+<link href="assets/css/infomodell-view.css" rel="stylesheet" />
+<link href="assets/css/jstree.min.css" rel="stylesheet" />
+
+<script type="text/javascript" src="assets/js/ig.bibliography.gematik.js"> </script>
+
+<style>
+    .gem-ig-headline-container {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+        background: url('assets/images/gem-headline.png') no-repeat;
+        background-position: 90% -136px;
+    }
+</style>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+    <a id="gem-ig-logo" no-external="true" href="./index.html">
+        <img height="50" alt="Home" src="assets/images/gem-mio42-logo.png"/>
+    </a>
+</div>
+
+
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Startseite</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Kommentierung der Arbeitspakete
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Arbeitspaket_1_-_abgeschlossen.html">Arbeitspaket 1 - abgeschlossen</a>
+      </li>
+      <li>
+        <a href="Arbeitspaket_2.html">Arbeitspaket 2</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="infomodell.html">Datenmodell</a>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR-Artefakte</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+
+    <div class="segment"> 
+      <div class="container">
+        
+
+<div class="gem-ig-headline-container"> 
+    <div id="gem-ig-headline" class="col-lg-10 col-md-12">
+        <div class="gem-ig-headline-title">
+            
+Arbeitsgruppe WeST
+        </div>
+        <div id="ig-status" class="gem-ig-headline-subtitle">
+            <span style="display:inline-block;">Version 1.0.0-kommentierung - ci-build
+                
+                
+            </span>
+            
+
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Operationalisierungshinweise</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  
+  <h2>Operationalisierungshinweise</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<table class="table">
+<tr>
+<th>Element</th>
+<th>Operationalisierungshinweis</th>
+</tr>
+<tr>
+<td><p>Übergreifend</p></td>
+<td><p>Eine Historisierung der Daten ist mit dem Element Ressource.meta abzubilden.
+ <br />
+ <br />
+ meta.versionId: Angabe der fortlaufend aufsteigenden Versionsnummer der Historisierten Daten. Bei nicht historisierten Daten wird hier immer der Wert=1 verwendet.
+ <br />
+ meta.lastUpdated: Angabe des aktuellen Datums der Erstellung der Ressource
+ <br />
+ meta.profile: Angabe des KBV-Profils mit Versionsangabe (https://fhir.kbv.de/StructureDefinition/KBV_PR_AW_Anlage|1.2.0)
+ <br />
+ <br />
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>Übergreifend</p></td>
+<td><p>Die menschenlesbaren Daten werden im Element Ressource.text dargestellt.
+ <br />
+ Dabei sind alle fachlich relevanten Informationen aus dem maschinenlesbaren Teil im text.div darzustellen.</p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Arzneimittel <b style="color:blue;">/</b> Arzneimittel/Rezeptur - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<p>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </p>
+ <p>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </p>
+ <p>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ </p>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Arzneimittel <b style="color:blue;">/</b> Darreichungsform - Code/Bezeichnung</p></td>
+<td><p>
+  Wenn möglich, sollte die Darreichungsform als Code angegeben werden. Sollte dies nicht möglich sein, kann Das Feld Bezeichnung verwendet werden, um eine Freitextangabe zu machen.
+ </p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Arzneimittel <b style="color:blue;">/</b> Darreichungsform - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<p>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </p>
+ <p>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </p>
+ <p>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ </p>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Arzneimittel <b style="color:blue;">/</b> Bestandteile <b style="color:blue;">/</b> Bestandteil - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<p>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </p>
+ <p>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </p>
+ <p>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ </p>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Verabreichung/Einnahme: Zeitangabe-Auswahl</p></td>
+<td><div>
+<p>Für erstellende und anzeigende Systeme:
+ <br />
+ </p>
+<ul>
+  <li>
+   Ist dieses Element nicht befüllt oder existiert ein Zeitraum ohne Enddatum, so sollte die Medikation als Dauermedikation gekennzeichnet werden.
+  </li>
+ </ul>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung</p></td>
+<td><div>
+  <div>
+   Für erstellende Systeme:
+   <br />
+   <ul>
+    <li>
+     Um eine eindeutige Abbildung von Dosierungen zu gewährleisten
+     sollte
+     jede Verabreichung/Einnahme und dessen Wiederholung als eigenständige Dosierungsangabe (Element Dosage in FHIR) dargestellt werden.
+     <br />
+    </li>
+    <li>
+     Es wird empfohlen, grundsätzlich zwischen einer strukturierten Dosieranweisung und einer Freitext Dosieranweisung zu unterscheiden, die sich gegenseitig ausschließen sollten. Im Falle einer strukturierten Dosieranweisung sollte die Gruppe "Dosierung der einzelnen Verabreichung/Einnahme" grundsätzlich befüllt werden.
+     <br />
+    </li>
+    <li>
+     Innerhalb des FHIR®-Elements Dosage.timing.repeat werden innerhalb von FHIR® verschiedene Regeln definiert (siehe https://www.hl7.org/fhir/datatypes.html#Timing).
+     Hinweise bzw. Warnmeldungen zur Einhaltung dieser Regeln sollten benutzerfreundlich in die GUI des Primärsystems integriert werden, damit eine syntaktisch korrekte Instanz der FHIR®-Ressource erzeugt werden kann.
+    </li>
+    <li>
+     Über diese Regeln hinaus sind in den einzelnen Elementen dieses Informationsmodells weitere Hinweise zur Umsetzung einer benutzerfreundlichen GUI aufgeführt.
+    </li>
+   </ul>
+  </div>
+ </div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Dosierung der einzelnen Verabreichung/Einnahme</p></td>
+<td><div>
+<p>Für erstellende Systeme:
+ <br />
+ </p>
+<ul>
+  <li>
+   Es sollten grundsätzlich entweder eine Menge pro Gabe/Einnahme oder ein Mengenbereich pro Gabe/Einnahme angegeben werden, damit die Dosierungsangabe schlüssig ist.
+  </li>
+  <li>
+   Bei einer Bedarfsmedikation (FHIR®: asNeededBoolean = true | asNeededCodeableConcept exisitert) kann zusätzlich zu einer definierten Menge bzw. einem Mengenbereich pro Gabe/Einnahme auch eine maximale Menge pro Gabe/Einnahme angegeben werden.
+   <br />
+  </li>
+ </ul>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Dosierung der einzelnen Verabreichung/Einnahme <b style="color:blue;">/</b> Verabreichungsweg - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Dosierung der einzelnen Verabreichung/Einnahme <b style="color:blue;">/</b> Körperstelle - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Wiederholung der Verabreichung/Einnahme</p></td>
+<td><div>
+<p>Für erstellende Systeme:
+ <br />
+ </p>
+<ul>
+  <li>
+   Wenn das Arzneimittel einmalig eingenommen/verabreicht wird oder es sich um eine Bedarfsmedikation handelt, sollte dieser Abschnitt nicht ausgefüllt werden.
+  </li>
+ </ul>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Wiederholung der Verabreichung/Einnahme <b style="color:blue;">/</b> Zeitangabe-Auswahl (dosisspezifisch)</p></td>
+<td><div>
+<div>
+  <u>
+   Für erstellende Systeme:
+  </u>
+ </div>
+ <div>
+  <ul>
+   <li>
+    Der "Zeitangabe-Auswahl (dosisspezifisch)" kann für jede Dosierungsangabe (FHIR-Element Dosage) einzeln abgebildet werden.
+   </li>
+   <li>
+    Diese Angaben sollten nur erfolgen, wenn es mehrere "Dosage" Elemente gibt und sich die Zeiträume der Dosierungen unterscheiden.
+   </li>
+  </ul>
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Wiederholung der Verabreichung/Einnahme <b style="color:blue;">/</b> Zeitangabe-Auswahl (dosisspezifisch) <b style="color:blue;">/</b> Zeitraum (dosisspezifisch)</p></td>
+<td><div>
+<p>Für erstellende Systeme:
+ <br />
+ </p>
+<ul>
+  <li>
+   Wenn das Element "Dosierung" nur einmal vorkommt, kann das Element "Zeitraum (dosisspezifisch)" auf Basis der Angaben des Elements "Verabreichung/Einnahme: Zeitangabe-Auswahl" auf der obersten Ebene des Profils "Medikations-Information" automatisiert befüllt werden.
+  </li>
+ </ul>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Wiederholung der Verabreichung/Einnahme <b style="color:blue;">/</b> Uhrzeit</p></td>
+<td><div>
+<p>Für erstellende Systeme:
+ <br />
+ </p>
+<ul>
+  <li>
+   Es wird empfohlen, das Ausfüllen von Uhrzeiten in der Benutzeroberfläche ohne Sekundengenauigkeit zu gestalten.
+  </li>
+ </ul>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Wiederholung der Verabreichung/Einnahme <b style="color:blue;">/</b> Wochentag</p></td>
+<td><div>
+<p>Für erstellende Systeme:
+ <br />
+ </p>
+<ul>
+  <li>
+   Bei Angabe des Wochentags sollte als Einheit der Zeitspanne "Woche" verwendet werden.
+  </li>
+  <li>
+   Soll das Medikament an mehreren Tagen pro Woche verabreicht/eingenommen werden, so sollten hierfür getrennte Dosage-Elemente angelegt werden.
+  </li>
+  <li>
+   Soll das Medikament an sämtlichen Wochentagen verabreicht/eingenommen werden, so sollte als Einheit der Zeitspanne "Tag" verwendet und dieses Element nicht befüllt werden.
+  </li>
+ </ul>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Bedarfsmedikation</p></td>
+<td><div>
+<div>
+  Für erstellende Systeme:
+ </div>
+ <ul>
+  <li>
+   Grundsätzlich ist es möglich, Dosieranweisungen als reine Bedarfsmedikation oder in Kombination mit anderen Schemata ("zusätzlich bei Bedarf") zu definieren. Auch im letzteren Fall ist die Bedarfsmedikation als einzelnes Dosage-Element zu übermitteln (vgl. Operationalisierungshinweis beim Element "Dosierung").
+  </li>
+ </ul>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Bedarfsmedikation <b style="color:blue;">/</b> Bedarfsmedikation ja/nein</p></td>
+<td><div>
+<p>Für erstellende Systeme:
+ <br />
+ </p>
+<ul>
+  <li>
+   Es wird empfohlen, die weiteren Elemente dieser Gruppe in der Benutzeroberfläche auszublenden, wenn hier "false" angegeben ist.
+  </li>
+ </ul>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Bedarfsmedikation <b style="color:blue;">/</b> Bedingung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><p>Hierbei soll zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.</p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Dosierung <b style="color:blue;">/</b> Freitext Dosieranweisung</p></td>
+<td><div>
+<p>Für erstellende Systeme:
+ <br />
+ </p>
+<ul>
+  <li>
+   Es wird empfohlen, die Freitext Dosieranweisung nur als Alternative zu einer strukturieren Dosieranweisung anzubieten. Ergänzende Hinweise zu einer strukturierten Dosieranweisung sollten über das Element "Hinweise" (FHIR: dosage.patientInstruction) abgebildet werden.
+  </li>
+ </ul>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Medikations-Information <b style="color:blue;">/</b> Notiz <b style="color:blue;">/</b> Autor:in</p></td>
+<td><p>Für erstellende Systeme: Dieses Element sollte in der Regel automatisiert befüllt werden, z.B. auf Basis des Benutzermanagements des Primärsystems.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Begegnung/Aufenthalt <b style="color:blue;">/</b> Fachrichtung/Fachabteilung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<p>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </p>
+ <p>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </p>
+ <p>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ </p>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Begegnung/Aufenthalt <b style="color:blue;">/</b> Grund <b style="color:blue;">/</b> Grund - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><div>
+<p>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </p>
+ <p>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </p>
+ <p>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ </p>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Diagnose <b style="color:blue;">/</b> Codierung Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> ICD-10-GM-Code <b style="color:blue;">/</b> ICD-Diagnosesicherheit</p></td>
+<td><div>
+<p>
+  Bei Angabe der ICD-Diagnosesicherheit ist die zusätzliche Angabe der äquivalenten Werte für clinicalStatus und verificationStatus zwingend. Die Äquivalente sind im HL7®-Leitfaden Basis DE (
+  <a href="https://simplifier.net/guide/leitfaden-de-basis-r4/ig-markdown-Ressourcen-Condition-ICD-10-GM?version=current" rel="noopener noreferrer">
+   https://ig.fhir.de/basisprofile-de/stable/Ressourcen-Condition-ICD-10-GM.html
+  </a>
+  ) wie folgt festgelegt:
+ </p>
+ <ul>
+  <li>
+   <p>
+    <a href="https://simplifier.net/kbvschluesseltabellen/kbv-cs-sfhir-icd-diagnosesicherheit" rel="noopener noreferrer">
+     A (ausgeschlossen) =&gt; clinicalStatus = leer, verificationStatus="refuted"
+    </a>
+   </p>
+  </li>
+  <li>
+   <p>
+    <a href="https://simplifier.net/kbvschluesseltabellen/kbv-cs-sfhir-icd-diagnosesicherheit" rel="noopener noreferrer">
+     G (gesicherte Diagnose) =&gt; clinicalStatus = "active", verificationStatus="confirmed"
+    </a>
+   </p>
+  </li>
+  <li>
+   <p>
+    <a href="https://simplifier.net/kbvschluesseltabellen/kbv-cs-sfhir-icd-diagnosesicherheit" rel="noopener noreferrer">
+     V (Verdacht auf/zum Ausschluss von) =&gt; clinicalStatus = "active", verificationStatus="provisional" oder "differential"
+    </a>
+   </p>
+  </li>
+  <li>
+   <p>
+    <a href="https://simplifier.net/kbvschluesseltabellen/kbv-cs-sfhir-icd-diagnosesicherheit" rel="noopener noreferrer">
+     Z (Zustand nach) =&gt; clinicalStatus = "resolved", verificationStatus="confirmed"
+    </a>
+   </p>
+  </li>
+ </ul>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Diagnose <b style="color:blue;">/</b> Codierung Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) angegeben werden.
+ <br />
+ <br />
+ Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ <br />
+ Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Diagnose <b style="color:blue;">/</b> Körperstelle - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Diagnose <b style="color:blue;">/</b> Notiz <b style="color:blue;">/</b> Autor:in</p></td>
+<td><p>Für erstellende Systeme: Dieses Element sollte in der Regel automatisiert befüllt werden, z.B. auf Basis des Benutzermanagements des Primärsystems.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Atemfrequenz <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Atemfrequenz <b style="color:blue;">/</b> Körperstelle - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Atemfrequenz <b style="color:blue;">/</b> Methode - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Atemfrequenz <b style="color:blue;">/</b> Notiz <b style="color:blue;">/</b> Autor:in</p></td>
+<td><p>Für erstellende Systeme: Dieses Element sollte in der Regel automatisiert befüllt werden, z.B. auf Basis des Benutzermanagements des Primärsystems.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Blutdruck <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Blutdruck <b style="color:blue;">/</b> Körperstelle - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Blutdruck <b style="color:blue;">/</b> Methode - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Blutdruck <b style="color:blue;">/</b> systolischer Blutdruck <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Blutdruck <b style="color:blue;">/</b> diastolischer Blutdruck <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Blutdruck <b style="color:blue;">/</b> mittlerer arterieller Blutdruck <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Blutdruck <b style="color:blue;">/</b> Notiz <b style="color:blue;">/</b> Autor:in</p></td>
+<td><p>Für erstellende Systeme: Dieses Element sollte in der Regel automatisiert befüllt werden, z.B. auf Basis des Benutzermanagements des Primärsystems.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Glukosespiegel <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Glukosespiegel <b style="color:blue;">/</b> Körperstelle - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Glukosespiegel <b style="color:blue;">/</b> Messergebnis Quantität <b style="color:blue;">/</b> Komparator</p></td>
+<td><p>Komparator =  muss nicht extra benannt werden.</p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Glukosespiegel <b style="color:blue;">/</b> Notiz <b style="color:blue;">/</b> Autor:in</p></td>
+<td><p>Für erstellende Systeme: Dieses Element sollte in der Regel automatisiert befüllt werden, z.B. auf Basis des Benutzermanagements des Primärsystems.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Herzfrequenz <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Herzfrequenz <b style="color:blue;">/</b> Körperstelle - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Herzfrequenz <b style="color:blue;">/</b> Methode - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Herzfrequenz <b style="color:blue;">/</b> Notiz <b style="color:blue;">/</b> Autor:in</p></td>
+<td><p>Für erstellende Systeme: Dieses Element sollte in der Regel automatisiert befüllt werden, z.B. auf Basis des Benutzermanagements des Primärsystems.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Kopfumfang <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR
+  ®
+  abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Kopfumfang <b style="color:blue;">/</b> Methode - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Kopfumfang <b style="color:blue;">/</b> Notiz <b style="color:blue;">/</b> Autor:in</p></td>
+<td><p>Für erstellende Systeme: Dieses Element sollte in der Regel automatisiert befüllt werden, z.B. auf Basis des Benutzermanagements des Primärsystems.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Körpergewicht <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Körpergewicht <b style="color:blue;">/</b> Methode - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Körpergewicht <b style="color:blue;">/</b> Notiz <b style="color:blue;">/</b> Autor:in</p></td>
+<td><p>Für erstellende Systeme: Dieses Element sollte in der Regel automatisiert befüllt werden, z.B. auf Basis des Benutzermanagements des Primärsystems.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Körperlänge/Körpergröße <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Körperlänge/Körpergröße <b style="color:blue;">/</b> Methode - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Körperlänge/Körpergröße <b style="color:blue;">/</b> Notiz <b style="color:blue;">/</b> Autor:in</p></td>
+<td><p>Für erstellende Systeme: Dieses Element sollte in der Regel automatisiert befüllt werden, z.B. auf Basis des Benutzermanagements des Primärsystems.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Körpertemperatur <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Körpertemperatur <b style="color:blue;">/</b> Körperstelle - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Displayname) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Körpertemperatur <b style="color:blue;">/</b> Methode - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Displayname) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> Körpertemperatur <b style="color:blue;">/</b> Notiz <b style="color:blue;">/</b> Autor:in</p></td>
+<td><p>Für erstellende Systeme: Dieses Element sollte in der Regel automatisiert befüllt werden, z.B. auf Basis des Benutzermanagements des Primärsystems.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> periphere arterielle Sauerstoffsättigung <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> periphere arterielle Sauerstoffsättigung <b style="color:blue;">/</b> Körperstelle - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem Codesystem</p></td>
+<td><p>Hier sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> periphere arterielle Sauerstoffsättigung <b style="color:blue;">/</b> Sauerstoffgabe <b style="color:blue;">/</b> Sauerstoff-Flussrate <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> periphere arterielle Sauerstoffsättigung <b style="color:blue;">/</b> Sauerstoffgabe <b style="color:blue;">/</b> Sauerstoff-Konzentration <b style="color:blue;">/</b> Codierung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<div>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </div>
+ <div>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </div>
+ <div>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+  <br />
+ </div>
+</div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-2 <b style="color:blue;">/</b> Vitalzeichen und Körpermaße <b style="color:blue;">/</b> periphere arterielle Sauerstoffsättigung <b style="color:blue;">/</b> Notiz <b style="color:blue;">/</b> Autor:in</p></td>
+<td><p>Für erstellende Systeme: Dieses Element sollte in der Regel automatisiert befüllt werden, z.B. auf Basis des Benutzermanagements des Primärsystems.
+ <br /></p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-1 <b style="color:blue;">/</b> Patient:in <b style="color:blue;">/</b> Identifikator <b style="color:blue;">/</b> PID</p></td>
+<td><div>
+  <div>
+   Wenn kein organisationsspezifisches System angegeben wird sollte die PID einer UUID (Universally Unique Identifier) entsprechen, sodass dieser 
+global eindeutig ist. Es sollte in vorgehenden Instanzen überprüft 
+werden, ob bereits eine UUID vergeben worden ist.
+  </div>
+ </div></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-1 <b style="color:blue;">/</b> Behandelnde Person <b style="color:blue;">/</b> Kontaktdaten <b style="color:blue;">/</b> Kontaktkanal</p></td>
+<td><p>
+  Werte für "7204: Funktelefon" sind in als "Telefon" einzutragen. Werte für "72018: Internet-Adresse" sind in als "url" einzutragen.
+ </p></td>
+</tr>
+<tr>
+<td><p>ARBEITSPAKET-1 <b style="color:blue;">/</b> Behandelnde Person/Einrichtung <b style="color:blue;">/</b> Fachrichtung - Code/Bezeichnung <b style="color:blue;">/</b> Code-Auswahl <b style="color:blue;">/</b> Code aus einem anderen Codesystem</p></td>
+<td><div>
+<p>
+  Aus technischen Gründen kann dieses Element nicht direkt in FHIR® abgebildet werden.
+ </p>
+ <p>
+  Bei einer Ableitung von diesem Profil können aber beliebige weitere Codesysteme hinzugefügt werden (offenes Slicing).
+ </p>
+ <p>
+  Hierbei sollte zusätzlich zum Code auch das Codesystem, die Version des Codesystems und der Anzeigename (Display Name) übermittelt werden.
+ </p>
+</div></td>
+</tr>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/jstree.min.js"> </script>
+
+
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Mar 11, 2026 11:00+0100">2026-03-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

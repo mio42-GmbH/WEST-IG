@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Organization/OrganizationPraxisAlessaCosta> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OrganizationPraxisAlessaCosta"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:name [ fhir:v "Allgemeinmedizinische Praxis"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "010 1116" ]
+  ] [
+     fhir:system [ fhir:v "fax" ] ;
+     fhir:value [ fhir:v "010 2226" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "praxis@allgemeinmedizin-alessa-costa.de" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "allgemeinmedizin-alessa-costa@mio42.kim.telematik" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:type [ fhir:v "both" ] ;
+     fhir:line ( [ fhir:v "Hauptstraße 6" ] ) ;
+     fhir:city [ fhir:v "Neustadt" ] ;
+     fhir:postalCode [ fhir:v "10000" ] ;
+     fhir:country [ fhir:v "D" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

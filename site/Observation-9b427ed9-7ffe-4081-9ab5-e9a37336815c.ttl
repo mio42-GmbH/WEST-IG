@@ -1,0 +1,128 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/Observation/9b427ed9-7ffe-4081-9ab5-e9a37336815c> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "9b427ed9-7ffe-4081-9ab5-e9a37336815c"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "amended"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ;
+         fhir:l <http://terminology.hl7.org/CodeSystem/observation-category>
+       ] ;
+       fhir:code [ fhir:v "vital-signs" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:2339-0 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:version [ fhir:v "2.74" ] ;
+       fhir:code [ fhir:v "2339-0" ] ;
+       fhir:display [ fhir:v "Glucose [Mass/volume] in Blood" ]
+     ] [
+       a sct:434912009 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20230731" ] ;
+       fhir:code [ fhir:v "434912009" ] ;
+       fhir:display [ fhir:v "Blood glucose concentration" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:l <urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:reference [ fhir:v "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:DateTime ;
+     fhir:v "2020-01-02"^^xsd:date
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "90"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "mg/dL" ] ;
+     fhir:system [
+       fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+       fhir:l <http://unitsofmeasure.org>
+     ] ;
+     fhir:code [ fhir:v "mg/dL" ]
+  ] ; # 
+  fhir:interpretation ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20230731" ] ;
+       fhir:code [ fhir:v "365811003:{363713009=260369004}" ] ;
+       fhir:display [ fhir:v "Finding of glucose level (finding) : { Has interpretation (attribute) = Increasing (qualifier value) }" ]
+     ] )
+  ] ) ; # 
+  fhir:bodySite [
+     fhir:text [ fhir:v "Finger" ]
+  ] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:359776002 ;
+       fhir:system [
+         fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
+         fhir:l <http://snomed.info/sct>
+       ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20230731" ] ;
+       fhir:code [ fhir:v "359776002" ] ;
+       fhir:display [ fhir:v "Glucose measurement by monitoring device (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:referenceRange ( [
+     fhir:low [
+       fhir:value [ fhir:v "60"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dL" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mg/dL" ]
+     ] ;
+     fhir:high [
+       fhir:value [ fhir:v "100"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg/dL" ] ;
+       fhir:system [
+         fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ;
+         fhir:l <http://unitsofmeasure.org>
+       ] ;
+       fhir:code [ fhir:v "mg/dL" ]
+     ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/CodeSystem/referencerange-meaning"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/CodeSystem/referencerange-meaning>
+         ] ;
+         fhir:version [ fhir:v "4.0.1" ] ;
+         fhir:code [ fhir:v "therapeutic" ] ;
+         fhir:display [ fhir:v "Therapeutic Desired Level" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

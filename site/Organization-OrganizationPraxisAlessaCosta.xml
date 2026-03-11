@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="OrganizationPraxisAlessaCosta"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization|1.0.0-kommentierung"/>
+  </meta>
+  <name value="Allgemeinmedizinische Praxis"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="010 1116"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="010 2226"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="praxis@allgemeinmedizin-alessa-costa.de"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="allgemeinmedizin-alessa-costa@mio42.kim.telematik"/>
+  </telecom>
+  <address>
+    <type value="both"/>
+    <line value="Hauptstraße 6"/>
+    <city value="Neustadt"/>
+    <postalCode value="10000"/>
+    <country value="D"/>
+  </address>
+</Organization>

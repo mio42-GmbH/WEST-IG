@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/ServiceRequest/5b57f38a-af6c-4093-84e7-2047e4ee524c> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "5b57f38a-af6c-4093-84e7-2047e4ee524c"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_Leistungsart"^^xsd:anyURI ;
+         fhir:l <https://fhir.kbv.de/CodeSystem/KBV_CS_Leistungsart>
+       ] ;
+       fhir:version [ fhir:v "1.0.0-kommentierung" ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Kurativ" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:l <urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:reference [ fhir:v "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:l <urn:uuid:11edd49d-fa98-41d1-9773-1f6e56568a81> ;
+     fhir:reference [ fhir:v "urn:uuid:11edd49d-fa98-41d1-9773-1f6e56568a81" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2020-01-02"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

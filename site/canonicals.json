@@ -1,0 +1,266 @@
+[{
+  "id" : "kbv.mio.west",
+  "type" : "ImplementationGuide",
+  "url" : "https://fhir.kbv.de/ImplementationGuide/kbv.mio.west",
+  "version" : "1.0.0-kommentierung",
+  "name" : "ArbeitsgruppeWeST"
+},
+{
+  "id" : "KBV-EX-WEST-Adressbuch-Anrede",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Adressbuch_Anrede",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_Adressbuch_Anrede"
+},
+{
+  "id" : "KBV-EX-WEST-Adressbuch-Schlusssatz",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Adressbuch_Schlusssatz",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_Adressbuch_Schlusssatz"
+},
+{
+  "id" : "KBV-EX-WEST-Begegnung-Spezielle-Begegnungsinformationen",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen"
+},
+{
+  "id" : "KBV-EX-WEST-Betriebsstaette-Hierarchie",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Betriebsstaette_Hierarchie",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_Betriebsstaette_Hierarchie"
+},
+{
+  "id" : "KBV-EX-WEST-Diagnose-istDauerdiagnose",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Diagnose_istDauerdiagnose",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_Diagnose_istDauerdiagnose"
+},
+{
+  "id" : "KBV-EX-WEST-MedicationKnowledge-Alternativen",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Alternativen",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_MedicationKnowledge_Alternativen"
+},
+{
+  "id" : "KBV-EX-WEST-MedicationKnowledge-Gegenanzeige",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Gegenanzeige",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_MedicationKnowledge_Gegenanzeige"
+},
+{
+  "id" : "KBV-EX-WEST-MedicationKnowledge-Nebenwirkungen",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Nebenwirkungen",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_MedicationKnowledge_Nebenwirkungen"
+},
+{
+  "id" : "KBV-EX-WEST-MedicationKnowledge-Wechselwirkungen",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Wechselwirkungen",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_MedicationKnowledge_Wechselwirkungen"
+},
+{
+  "id" : "KBV-EX-WEST-Organization-Strasse-und-Hausnummer",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Organization_Strasse_und_Hausnummer",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_Organization_Strasse_und_Hausnummer"
+},
+{
+  "id" : "KBV-EX-WEST-Patient-Aktuelle-Taetigkeit",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Aktuelle_Taetigkeit",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_Patient_Aktuelle_Taetigkeit"
+},
+{
+  "id" : "KBV-EX-WEST-Patient-Postleitzahl-und-Ort",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Postleitzahl_und_Ort",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_Patient_Postleitzahl_und_Ort"
+},
+{
+  "id" : "KBV-EX-WEST-Patient-Vsdm-Zusatzinformationen",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Vsdm_Zusatzinformationen",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_Patient_Vsdm_Zusatzinformationen"
+},
+{
+  "id" : "KBV-EX-WEST-istAbrechnungsrelevant",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_EX_WEST_istAbrechnungsrelevant"
+},
+{
+  "id" : "KBV-PR-WEST-Betriebsstaette",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Betriebsstaette",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Betriebsstaette"
+},
+{
+  "id" : "KBV-PR-WEST-Condition",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Condition"
+},
+{
+  "id" : "KBV-PR-WEST-Encounter",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Encounter"
+},
+{
+  "id" : "KBV-PR-WEST-Medication",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Medication"
+},
+{
+  "id" : "KBV-PR-WEST-MedicationKnowledge",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_MedicationKnowledge"
+},
+{
+  "id" : "KBV-PR-WEST-MedicationStatement",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_MedicationStatement"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Abdominal-Circumference",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Abdominal_Circumference",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Abdominal_Circumference"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Anamnese",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Anamnese"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Blood-Pressure",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Blood_Pressure",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Blood_Pressure"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Body-Height",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Height",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Body_Height"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Body-Temperature",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Temperature",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Body_Temperature"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Body-Weight",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Weight",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Body_Weight"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Glucose-Concentration",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Glucose_Concentration"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Head-Circumference",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Head_Circumference",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Head_Circumference"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Heart-Rate",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Heart_Rate",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Heart_Rate"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Hip-Circumference",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Hip_Circumference",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Hip_Circumference"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Peripheral-Oxygen-Saturation",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation"
+},
+{
+  "id" : "KBV-PR-WEST-Observation-Respiratory-Rate",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Respiratory_Rate",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Observation_Respiratory_Rate"
+},
+{
+  "id" : "KBV-PR-WEST-Organization",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Organization"
+},
+{
+  "id" : "KBV-PR-WEST-Patient",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Patient"
+},
+{
+  "id" : "KBV-PR-WEST-Practitioner",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_Practitioner"
+},
+{
+  "id" : "KBV-PR-WEST-PractitionerRole",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_PractitionerRole",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_PractitionerRole"
+},
+{
+  "id" : "KBV-PR-WEST-ServiceRequest",
+  "type" : "StructureDefinition",
+  "url" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_PR_WEST_ServiceRequest"
+}]

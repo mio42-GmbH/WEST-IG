@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="5b57f38a-af6c-4093-84e7-2047e4ee524c"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest|1.0.0-kommentierung"/>
+  </meta>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant">
+    <valueBoolean value="true"/>
+  </extension>
+  <status value="completed"/>
+  <intent value="proposal"/>
+  <category>
+    <coding>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Leistungsart"/>
+      <version value="1.0.0-kommentierung"/>
+      <code value="1"/>
+      <display value="Kurativ"/>
+    </coding>
+  </category>
+  <subject>
+    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:11edd49d-fa98-41d1-9773-1f6e56568a81"/>
+  </encounter>
+  <authoredOn value="2020-01-02"/>
+</ServiceRequest>

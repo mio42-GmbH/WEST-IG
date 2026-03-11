@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kbv.de/MedicationStatement/6806ffd0-9535-453d-a1fe-228f3d786b9f> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "6806ffd0-9535-453d-a1fe-228f3d786b9f"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement|1.0.0-kommentierung"^^xsd:anyURI ;
+       fhir:l <https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement?version=1.0.0-kommentierung>
+     ] )
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:medication [
+     a fhir:Reference ;
+     fhir:l <urn:uuid:ce1bd084-3616-48a8-8926-98cf371d4124> ;
+     fhir:reference [ fhir:v "urn:uuid:ce1bd084-3616-48a8-8926-98cf371d4124" ]
+  ] ; # 
+  fhir:subject [
+     fhir:l <urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:reference [ fhir:v "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
