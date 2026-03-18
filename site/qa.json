@@ -6,14 +6,14 @@
   "status" : "draft",
   "package-id" : "kbv.mio.west",
   "ig-ver" : "1.0.0-kommentierung",
-  "date" : "Wed, 18 Mar, 2026 12:55:48 +0100",
-  "dateISO8601" : "2026-03-18T12:55:48+01:00",
-  "errs" : 140,
+  "date" : "Wed, 18 Mar, 2026 17:09:19 +0100",
+  "dateISO8601" : "2026-03-18T17:09:19+01:00",
+  "errs" : 137,
   "warnings" : 194,
   "hints" : 135,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 3012167488
+  "maxMemory" : 2004877312
 }

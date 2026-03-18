@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
   "name" : "KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation",
   "title" : "KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation",
   "status" : "draft",
-  "date" : "2026-03-18T12:55:48+01:00",
+  "date" : "2026-03-18T17:09:19+01:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

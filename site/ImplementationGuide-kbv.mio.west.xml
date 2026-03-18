@@ -12,7 +12,7 @@
   <title value="Arbeitsgruppe WeST"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-03-18T12:55:48+01:00"/>
+  <date value="2026-03-18T17:09:19+01:00"/>
   <publisher value="mio42 GmbH"/>
   <contact>
     <name value="mio42 GmbH"/>
@@ -434,6 +434,14 @@
       </extension>
       <extension url="value">
         <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -1148,6 +1156,14 @@
         <valueCode value="special-url"/>
       </extension>
       <extension url="value">
+        <valueString value="https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
         <valueString value="https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Leistungsart"/>
       </extension>
     </extension>
@@ -1487,7 +1503,7 @@
         <reference value="Observation/014ec6b1-2352-448e-ab16-b456f1842fbd"/>
       </reference>
       <name value="014ec6b1-2352-448e-ab16-b456f1842fbd"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Respiratory_Rate für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Respiratory_Rate für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Respiratory_Rate"/>
     </resource>
     <resource>
@@ -1498,7 +1514,7 @@
         <reference value="Observation/0271969e-1ac2-4440-88ff-e3659f0f2861"/>
       </reference>
       <name value="0271969e-1ac2-4440-88ff-e3659f0f2861"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Glucose_Concentration für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Glucose_Concentration für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration"/>
     </resource>
     <resource>
@@ -1509,7 +1525,7 @@
         <reference value="Observation/1b7000ea-84b8-42cd-9fbd-64d292fee395"/>
       </reference>
       <name value="1b7000ea-84b8-42cd-9fbd-64d292fee395"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation"/>
     </resource>
     <resource>
@@ -1520,7 +1536,7 @@
         <reference value="Observation/1f028f64-5409-4e39-bb48-9dd98013cafb"/>
       </reference>
       <name value="1f028f64-5409-4e39-bb48-9dd98013cafb"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Anamnese für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Anamnese für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese"/>
     </resource>
     <resource>
@@ -1531,7 +1547,7 @@
         <reference value="MedicationKnowledge/1f2be22d-79f1-4469-8c12-55295bb3e950"/>
       </reference>
       <name value="1f2be22d-79f1-4469-8c12-55295bb3e950"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_MedicationKnowledge für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_MedicationKnowledge für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge"/>
     </resource>
     <resource>
@@ -1553,7 +1569,7 @@
         <reference value="Observation/21a4f872-d221-4196-83ca-e19d0c979513"/>
       </reference>
       <name value="21a4f872-d221-4196-83ca-e19d0c979513"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Heart_Rate für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Heart_Rate für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Heart_Rate"/>
     </resource>
     <resource>
@@ -1564,7 +1580,7 @@
         <reference value="Observation/2336103a-c86d-40fa-8376-9ec1c47532ee"/>
       </reference>
       <name value="2336103a-c86d-40fa-8376-9ec1c47532ee"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Abdominal_Circumference für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Abdominal_Circumference für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Abdominal_Circumference"/>
     </resource>
     <resource>
@@ -1575,7 +1591,7 @@
         <reference value="Encounter/23fd3c7e-03fb-4391-af3a-9178be31651f"/>
       </reference>
       <name value="23fd3c7e-03fb-4391-af3a-9178be31651f"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Encounter für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Encounter für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter"/>
     </resource>
     <resource>
@@ -1586,7 +1602,7 @@
         <reference value="Observation/2668aa27-255b-4da1-90d0-d5e0beb087ae"/>
       </reference>
       <name value="2668aa27-255b-4da1-90d0-d5e0beb087ae"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Head_Circumference für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Head_Circumference für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Head_Circumference"/>
     </resource>
     <resource>
@@ -1608,7 +1624,7 @@
         <reference value="Observation/4391d2b4-a2be-4c19-a3a6-0d799bb1427e"/>
       </reference>
       <name value="4391d2b4-a2be-4c19-a3a6-0d799bb1427e"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Temperature für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Temperature für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Temperature"/>
     </resource>
     <resource>
@@ -1619,7 +1635,7 @@
         <reference value="Medication/4858b0cf-837d-44fd-89a4-49538e44a9c1"/>
       </reference>
       <name value="4858b0cf-837d-44fd-89a4-49538e44a9c1"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Medication für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Medication für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication"/>
     </resource>
     <resource>
@@ -1630,7 +1646,7 @@
         <reference value="Observation/49788959-8d60-4988-9069-0ba6a773e7fb"/>
       </reference>
       <name value="49788959-8d60-4988-9069-0ba6a773e7fb"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Hip_Circumference für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Hip_Circumference für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Hip_Circumference"/>
     </resource>
     <resource>
@@ -1641,7 +1657,7 @@
         <reference value="Observation/4b30f538-8da8-4fb6-87c2-b4735aead90b"/>
       </reference>
       <name value="4b30f538-8da8-4fb6-87c2-b4735aead90b"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Temperature für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Temperature für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Temperature"/>
     </resource>
     <resource>
@@ -1652,7 +1668,7 @@
         <reference value="Observation/4e2824ac-4134-442b-b5e8-2260974baa64"/>
       </reference>
       <name value="4e2824ac-4134-442b-b5e8-2260974baa64"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Weight für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Weight für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Weight"/>
     </resource>
     <resource>
@@ -1663,7 +1679,7 @@
         <reference value="Observation/50157a4b-98c9-4f66-87b5-fb827c3ed8f6"/>
       </reference>
       <name value="50157a4b-98c9-4f66-87b5-fb827c3ed8f6"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Height für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Height für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Height"/>
     </resource>
     <resource>
@@ -1674,7 +1690,7 @@
         <reference value="MedicationStatement/5af292a5-0972-4937-a005-ac480aeb60ba"/>
       </reference>
       <name value="5af292a5-0972-4937-a005-ac480aeb60ba"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_MedicationStatement für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_MedicationStatement für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement"/>
     </resource>
     <resource>
@@ -1685,7 +1701,7 @@
         <reference value="ServiceRequest/5b57f38a-af6c-4093-84e7-2047e4ee524c"/>
       </reference>
       <name value="5b57f38a-af6c-4093-84e7-2047e4ee524c"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_ServiceRequest für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_ServiceRequest für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest"/>
     </resource>
     <resource>
@@ -1696,7 +1712,7 @@
         <reference value="Observation/611cd0f1-482d-4246-a9ea-329d925749c4"/>
       </reference>
       <name value="611cd0f1-482d-4246-a9ea-329d925749c4"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Head_Circumference für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Head_Circumference für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Head_Circumference"/>
     </resource>
     <resource>
@@ -1707,7 +1723,7 @@
         <reference value="Observation/6352e4f6-6b9a-4e2a-bdd4-80fbaae601c6"/>
       </reference>
       <name value="6352e4f6-6b9a-4e2a-bdd4-80fbaae601c6"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Weight für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Weight für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Weight"/>
     </resource>
     <resource>
@@ -1729,7 +1745,7 @@
         <reference value="Condition/67796ba0-61d0-4120-9d31-f9690fd88eaa"/>
       </reference>
       <name value="67796ba0-61d0-4120-9d31-f9690fd88eaa"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Condition für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Condition für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition"/>
     </resource>
     <resource>
@@ -1740,7 +1756,7 @@
         <reference value="MedicationStatement/6806ffd0-9535-453d-a1fe-228f3d786b9f"/>
       </reference>
       <name value="6806ffd0-9535-453d-a1fe-228f3d786b9f"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_MedicationStatement für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_MedicationStatement für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement"/>
     </resource>
     <resource>
@@ -1762,7 +1778,7 @@
         <reference value="Observation/71833996-94af-4c00-affd-ec4dd3870cd1"/>
       </reference>
       <name value="71833996-94af-4c00-affd-ec4dd3870cd1"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Blood_Pressure für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Blood_Pressure für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Blood_Pressure"/>
     </resource>
     <resource>
@@ -1773,7 +1789,7 @@
         <reference value="Medication/7f88fa28-c2c0-47ce-a0a9-043a54a23f5e"/>
       </reference>
       <name value="7f88fa28-c2c0-47ce-a0a9-043a54a23f5e"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Medication für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Medication für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication"/>
     </resource>
     <resource>
@@ -1784,7 +1800,7 @@
         <reference value="Condition/8d84156a-fe2b-4eb8-b87e-57fe51b641d0"/>
       </reference>
       <name value="8d84156a-fe2b-4eb8-b87e-57fe51b641d0"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Condition für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Condition für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition"/>
     </resource>
     <resource>
@@ -1795,7 +1811,7 @@
         <reference value="Observation/9b427ed9-7ffe-4081-9ab5-e9a37336815c"/>
       </reference>
       <name value="9b427ed9-7ffe-4081-9ab5-e9a37336815c"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Glucose_Concentration für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Glucose_Concentration für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration"/>
     </resource>
     <resource>
@@ -1806,7 +1822,7 @@
         <reference value="ServiceRequest/a3e6ff44-7046-4040-8195-ddc352ec4a36"/>
       </reference>
       <name value="a3e6ff44-7046-4040-8195-ddc352ec4a36"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_ServiceRequest für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_ServiceRequest für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest"/>
     </resource>
     <resource>
@@ -1850,7 +1866,7 @@
         <reference value="Encounter/b8256177-8c41-46c6-a35e-94eb3dcfdf94"/>
       </reference>
       <name value="b8256177-8c41-46c6-a35e-94eb3dcfdf94"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Encounter für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Encounter für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter"/>
     </resource>
     <resource>
@@ -1861,7 +1877,7 @@
         <reference value="Observation/b981d772-45c4-4299-a581-ee6d5705397b"/>
       </reference>
       <name value="b981d772-45c4-4299-a581-ee6d5705397b"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Hip_Circumference für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Hip_Circumference für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Hip_Circumference"/>
     </resource>
     <resource>
@@ -1872,7 +1888,7 @@
         <reference value="Observation/c39f152b-c068-4707-b8c1-beb23de255a1"/>
       </reference>
       <name value="c39f152b-c068-4707-b8c1-beb23de255a1"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Blood_Pressure für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Blood_Pressure für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Blood_Pressure"/>
     </resource>
     <resource>
@@ -1883,7 +1899,7 @@
         <reference value="Observation/c9852d64-43c6-4660-a9a0-7be6324853fe"/>
       </reference>
       <name value="c9852d64-43c6-4660-a9a0-7be6324853fe"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Heart_Rate für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Heart_Rate für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Heart_Rate"/>
     </resource>
     <resource>
@@ -1894,7 +1910,7 @@
         <reference value="MedicationKnowledge/d07718e0-8ac6-43e6-afc6-a662f8ef107a"/>
       </reference>
       <name value="d07718e0-8ac6-43e6-afc6-a662f8ef107a"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_MedicationKnowledge für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_MedicationKnowledge für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge"/>
     </resource>
     <resource>
@@ -1905,7 +1921,7 @@
         <reference value="Observation/d70f568e-e758-4793-9fd9-7293de309c10"/>
       </reference>
       <name value="d70f568e-e758-4793-9fd9-7293de309c10"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Anamnese für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Anamnese für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese"/>
     </resource>
     <resource>
@@ -1916,7 +1932,7 @@
         <reference value="Observation/d85ec119-de39-4a3b-b439-68d294b44536"/>
       </reference>
       <name value="d85ec119-de39-4a3b-b439-68d294b44536"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Abdominal_Circumference für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Abdominal_Circumference für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Abdominal_Circumference"/>
     </resource>
     <resource>
@@ -1927,7 +1943,7 @@
         <reference value="Observation/f2fe0985-69d7-4b45-a9bf-589192639845"/>
       </reference>
       <name value="f2fe0985-69d7-4b45-a9bf-589192639845"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Respiratory_Rate für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Respiratory_Rate für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Respiratory_Rate"/>
     </resource>
     <resource>
@@ -1938,7 +1954,7 @@
         <reference value="Observation/fafb4053-2267-4a53-8bf3-b808fb705277"/>
       </reference>
       <name value="fafb4053-2267-4a53-8bf3-b808fb705277"/>
-      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Height für das Arbeitspaket 1"/>
+      <description value="Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Height für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Height"/>
     </resource>
     <resource>
@@ -1960,7 +1976,7 @@
         <reference value="Observation/fccf147d-6bf7-49a5-a7f8-e516af80060d"/>
       </reference>
       <name value="fccf147d-6bf7-49a5-a7f8-e516af80060d"/>
-      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation für das Arbeitspaket 1"/>
+      <description value="Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation für das Arbeitspaket 2"/>
       <exampleCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation"/>
     </resource>
     <resource>

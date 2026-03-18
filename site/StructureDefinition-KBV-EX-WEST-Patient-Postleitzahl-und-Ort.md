@@ -55,7 +55,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-EX-WEST-Patient-
   "name" : "KBV_EX_WEST_Patient_Postleitzahl_und_Ort",
   "title" : "KBV_EX_WEST_Patient_Postleitzahl_und_Ort",
   "status" : "draft",
-  "date" : "2026-03-18T12:55:48+01:00",
+  "date" : "2026-03-18T17:09:19+01:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

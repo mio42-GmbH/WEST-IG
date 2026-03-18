@@ -1,9 +1,9 @@
 ArbeitsgruppeWeST : Validation Results
 =========================================
 
-err = 140, warn = 194, info = 135
+err = 137, warn = 194, info = 135
 IG Publisher Version: 2.2.0
-Generated Wed Mar 18 13:01:59 CET 2026. FHIR version 4.0.1 for kbv.mio.west#1.0.0-kommentierung (canonical = https://fhir.kbv.de)
+Generated Wed Mar 18 17:15:22 CET 2026. FHIR version 4.0.1 for kbv.mio.west#1.0.0-kommentierung (canonical = https://fhir.kbv.de)
  Build Errors : 14 / 9 / 1
  /root/Documents/git/WeST-AG/fsh-generated/resources/Condition-67796ba0-61d0-4120-9d31-f9690fd88eaa : 0 / 4 / 3
  /root/Documents/git/WeST-AG/fsh-generated/resources/Condition-8d84156a-fe2b-4eb8-b87e-57fe51b641d0 : 5 / 5 / 5
@@ -97,7 +97,7 @@ Generated Wed Mar 18 13:01:59 CET 2026. FHIR version 4.0.1 for kbv.mio.west#1.0.
  /root/Documents/git/WeST-AG/input/vocabulary/KBV_CS_WEST_Diagnosekategorie : 0 / 0 / 2
  /root/Documents/git/WeST-AG/input/vocabulary/KBV_CS_WEST_Identifier : 0 / 0 / 2
  /root/Documents/git/WeST-AG/input/vocabulary/KBV_CS_WEST_Leistungsart : 0 / 0 / 2
- /root/Documents/git/WeST-AG/input/vocabulary/KBV_CS_WEST_Preistyp_Code : 3 / 0 / 2
+ /root/Documents/git/WeST-AG/input/vocabulary/KBV_CS_WEST_Preistyp_Code : 0 / 0 / 2
  /root/Documents/git/WeST-AG/input/vocabulary/KBV_VS_WEST_BDT_Betriebsstaettenstatus : 0 / 0 / 3
  /root/Documents/git/WeST-AG/input/vocabulary/KBV_VS_WEST_Diagnoseart : 0 / 0 / 2
  /root/Documents/git/WeST-AG/input/vocabulary/KBV_VS_WEST_Diagnosekategorie : 0 / 0 / 2
@@ -670,10 +670,7 @@ INFORMATION: CodeSystem/KBV-CS-WEST-Identifier: CodeSystem.jurisdiction[0].codin
 == input/vocabulary/KBV_CS_WEST_Leistungsart.json ==
 INFORMATION: CodeSystem/KBV-CS-WEST-Leistungsart: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DE for language(s) 'de-DE'. The display is 'Germany' which is the default language display
 == input/vocabulary/KBV_CS_WEST_Preistyp_Code.json ==
-ERROR: CodeSystem.where(url = 'https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code'): Conformance resource /root/Documents/git/WeST-AG/input/vocabulary/KBV_CS_WEST_Preistyp_Code.json - the canonical URL (https://fhir.kbv.de/CodeSystem/KBV-CS-WEST-Preistyp-Code) does not match the URL (https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code). Use the special-url parameter if you really mean for it not to match
-ERROR: CodeSystem.url: Resource id/url mismatch: KBV-CS-WEST-Preistyp-Code/https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code
 INFORMATION: CodeSystem/KBV-CS-WEST-Preistyp-Code: CodeSystem.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DE for language(s) 'de-DE'. The display is 'Germany' which is the default language display
-ERROR: /root/Documents/git/WeST-AG/input/vocabulary/KBV_CS_WEST_Preistyp_Code: URL Mismatch https://fhir.kbv.de/CodeSystem/KBV-CS-WEST-Preistyp-Code vs https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code
 == input/vocabulary/KBV_VS_WEST_BDT_Betriebsstaettenstatus.json ==
 INFORMATION: ValueSet/KBV-VS-WEST-BDT-Betriebsstaettenstatus: ValueSet.jurisdiction[0].coding[0].display: There are no valid display names found for the code urn:iso:std:iso:3166#DE for language(s) 'de-DE'. The display is 'Germany' which is the default language display
 INFORMATION: ValueSet/KBV-VS-WEST-BDT-Betriebsstaettenstatus: ValueSet.compose.include[0].concept[0]: Reference to draft CodeSystem https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus|1.0.0-kommentierung
