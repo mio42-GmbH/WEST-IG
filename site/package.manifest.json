@@ -1,7 +1,7 @@
 {
   "version" : "1.0.0-kommentierung",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20260318111518",
+  "date" : "20260318125548",
   "name" : "kbv.mio.west",
   "jurisdiction" : "urn:iso:std:iso:3166#DE"
 }

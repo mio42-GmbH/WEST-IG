@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "1.0.0-kommentierung"] ; # 
   fhir:name [ fhir:v "KBV_PR_WEST_MedicationStatement"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-03-18T11:15:18+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-18T12:55:48+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "mio42 GmbH" ] ;

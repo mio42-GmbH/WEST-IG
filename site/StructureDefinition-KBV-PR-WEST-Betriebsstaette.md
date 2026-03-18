@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Betriebs
   "name" : "KBV_PR_WEST_Betriebsstaette",
   "title" : "KBV_PR_WEST_Betriebsstaette",
   "status" : "draft",
-  "date" : "2026-03-18T11:15:18+01:00",
+  "date" : "2026-03-18T12:55:48+01:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
