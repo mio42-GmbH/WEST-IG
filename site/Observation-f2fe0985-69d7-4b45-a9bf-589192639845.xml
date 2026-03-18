@@ -15,19 +15,19 @@
   <code>
     <coding>
       <system value="http://loinc.org"/>
-      <version value="2.74"/>
+      <version value="2.81"/>
       <code value="9279-1"/>
       <display value="Respiratory rate"/>
     </coding>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/11000274103/version/20230731"/>
+      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
       <code value="86290005"/>
       <display value="Respiratory rate (observable entity)"/>
     </coding>
   </code>
   <subject>
-    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
   </subject>
   <effectiveDateTime value="2020-01-02"/>
   <valueQuantity>
@@ -42,7 +42,7 @@
   <method>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/11000274103/version/20230731"/>
+      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
       <code value="258011001"/>
       <display value="Chessboard method (qualifier value)"/>
     </coding>

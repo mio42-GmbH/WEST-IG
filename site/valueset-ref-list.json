@@ -1,5 +1,31 @@
 {
   "codeSystems" : [{
+    "url" : "http://fhir.de/ValueSet/gender-other-de",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "GenderOtherDEVS",
+    "title" : "GenderOtherDE ValueSet",
+    "description" : "Codes zur Erfassung des amtlichen Geschlechts auf Basis der Spezifikationen \"XPersonenstand - Elektronische Datenübermittlung im Personenstandswesen\" und \"Kassenärztliche Vereinigung-Datentransfer\" der KB",
+    "systems" : ["http://fhir.de/CodeSystem/gender-amtlich-de"],
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-Patient-VSDM-Gender.html" : "KBV_VS_WEST_Patient_VSDM_Gender"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AdministrativeGender",
+    "title" : "AdministrativeGender",
+    "description" : "The gender of a person used for administrative purposes.",
+    "systems" : ["http://hl7.org/fhir/administrative-gender"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1"],
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-Patient-VSDM-Gender.html" : "KBV_VS_WEST_Patient_VSDM_Gender"
+  },
+  {
     "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
     "version" : "4.0.1",
     "status" : "draft",
@@ -36,5 +62,79 @@
     "uses" : {
     },
     "StructureDefinition-KBV-PR-WEST-Patient.html" : "KBV_PR_WEST_Patient"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_BDT_Betriebsstaettenstatus",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_VS_WEST_BDT_Betriebsstaettenstatus",
+    "title" : "KBV_VS_WEST_BDT_Betriebsstaettenstatus",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung vom BDT Betriebsstaettenstatus.",
+    "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-WEST-Organization.html" : "KBV_PR_WEST_Organization",
+    "StructureDefinition-KBV-PR-WEST-Betriebsstaette.html" : "KBV_PR_WEST_Betriebsstaette"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnoseart",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_VS_WEST_Diagnoseart",
+    "title" : "KBV_VS_WEST_Diagnoseart",
+    "description" : "Diagnosearten",
+    "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-WEST-Condition.html" : "KBV_PR_WEST_Condition"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnosekategorie",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_VS_WEST_Diagnosekategorie",
+    "title" : "KBV_VS_WEST_Diagnosekategorie",
+    "description" : "Diagnosekategorien",
+    "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-WEST-Condition.html" : "KBV_PR_WEST_Condition"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Leistungsart",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_VS_WEST_Leistungsart",
+    "title" : "KBV_VS_WEST_Leistungsart",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Leistungsart.",
+    "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-WEST-ServiceRequest.html" : "KBV_PR_WEST_ServiceRequest"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Patient_VSDM_Gender",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_VS_WEST_Patient_VSDM_Gender",
+    "title" : "KBV_VS_WEST_Patient_VSDM_Gender",
+    "description" : "Genderauswahl zur Nutzung in VSDM Extension",
+    "systems" : ["http://hl7.org/fhir/administrative-gender",
+    "http://fhir.de/CodeSystem/gender-amtlich-de"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-EX-WEST-Patient-Vsdm-Zusatzinformationen.html" : "KBV_EX_WEST_Patient_Vsdm_Zusatzinformationen"
+  },
+  {
+    "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Preistyp_Code",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_VS_WEST_Preistyp_Code",
+    "title" : "KBV_VS_WEST_Preistyp_Code",
+    "description" : "Dieses Valueset enthält die Codes zur Beschreibung von Preistyp.",
+    "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-WEST-MedicationKnowledge.html" : "KBV_PR_WEST_MedicationKnowledge"
   }]
 }

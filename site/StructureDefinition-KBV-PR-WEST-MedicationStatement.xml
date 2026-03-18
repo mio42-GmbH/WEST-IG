@@ -244,7 +244,7 @@ Ergänzend können Zusatzinformationen angegeben werden, die die  Verabreichung/
   <version value="1.0.0-kommentierung"/>
   <name value="KBV_PR_WEST_MedicationStatement"/>
   <status value="draft"/>
-  <date value="2026-03-11T11:00:33+01:00"/>
+  <date value="2026-03-18T11:15:18+01:00"/>
   <publisher value="mio42 GmbH"/>
   <contact>
     <name value="mio42 GmbH"/>
@@ -5435,7 +5435,7 @@ Ergänzend können Zusatzinformationen angegeben werden, die die  Verabreichung/
         <rules value="open"/>
       </slicing>
       <short value="Code for time period of occurrence"/>
-      <definition value="Hier werden Tageszeiten angegeben, zu denen das Arzneimittel verabreicht/eingenommen wird.&#xD;&#xA;Ergänzend können Zusatzinformationen angegeben werden, die die  Verabreichung/Einnahme des Arzneimittels in Bezug zu Mahlzeiten und Schlafzeiten abbilden."/>
+      <definition value="Hier werden Tageszeiten angegeben, zu denen das Arzneimittel verabreicht/eingenommen wird.&#xA;Ergänzend können Zusatzinformationen angegeben werden, die die  Verabreichung/Einnahme des Arzneimittels in Bezug zu Mahlzeiten und Schlafzeiten abbilden."/>
       <comment value="When more than one event is listed, the event is tied to the union of the specified events."/>
       <requirements value="Timings are frequently determined by occurrences such as waking, eating and sleep."/>
       <min value="0"/>
@@ -12117,7 +12117,7 @@ Ergänzend können Zusatzinformationen angegeben werden, die die  Verabreichung/
     </element>
     <element id="MedicationStatement.dosage.timing.repeat.when">
       <path value="MedicationStatement.dosage.timing.repeat.when"/>
-      <definition value="Hier werden Tageszeiten angegeben, zu denen das Arzneimittel verabreicht/eingenommen wird.&#xD;&#xA;Ergänzend können Zusatzinformationen angegeben werden, die die  Verabreichung/Einnahme des Arzneimittels in Bezug zu Mahlzeiten und Schlafzeiten abbilden."/>
+      <definition value="Hier werden Tageszeiten angegeben, zu denen das Arzneimittel verabreicht/eingenommen wird.&#xA;Ergänzend können Zusatzinformationen angegeben werden, die die  Verabreichung/Einnahme des Arzneimittels in Bezug zu Mahlzeiten und Schlafzeiten abbilden."/>
       <mustSupport value="true"/>
     </element>
     <element id="MedicationStatement.dosage.timing.repeat.when:Tageszeit">

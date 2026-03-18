@@ -15,7 +15,7 @@
   <code>
     <coding>
       <system value="http://loinc.org"/>
-      <version value="2.74"/>
+      <version value="2.81"/>
       <code value="8280-0"/>
       <display value="Waist Circumference at umbilicus by Tape measure"/>
     </coding>
@@ -27,7 +27,7 @@
     </coding>
   </code>
   <subject>
-    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
   </subject>
   <effectiveDateTime value="2020-01-01"/>
   <valueQuantity>

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "KBV-VS-WEST-Diagnosekategorie",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet KBV-VS-WEST-Diagnosekategorie</b></p><a name=\"KBV-VS-WEST-Diagnosekategorie\"> </a><a name=\"hcKBV-VS-WEST-Diagnosekategorie\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-KBV-CS-WEST-Diagnosekategorie.html\"><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0-kommentierung</span></li></ul></div>"
+  },
+  "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnosekategorie",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_VS_WEST_Diagnosekategorie",
+  "title" : "KBV_VS_WEST_Diagnosekategorie",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-03-18T11:15:18+01:00",
+  "publisher" : "mio42 GmbH",
+  "contact" : [{
+    "name" : "mio42 GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://mio.kbv.de"
+    },
+    {
+      "system" : "email",
+      "value" : "hello@mio42.de"
+    }]
+  }],
+  "description" : "Diagnosekategorien",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "Kassenaerztliche Bundesvereinigung",
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie"
+    }]
+  }
+}

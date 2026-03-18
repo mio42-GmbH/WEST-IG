@@ -15,7 +15,7 @@ Version 1.0.0-kommentierung - ci-build
 
 Informationsmodell
 
-Download Excel-Tabelle zur Kommentierung Arbeitspaket 2 (Stand 03.03.026): [AP2-Kommentierungsprotokoll.xlsx](./images/Arbeitspaket_2_AP2-Kommentierungsprotokoll_version_4.xlsx)
+Download Excel-Tabelle zur Kommentierung Arbeitspaket 2 (Stand 03.03.026): [AP2-Kommentierungsprotokoll.xlsx](./Arbeitspaket_2_AP2-Kommentierungsprotokoll_version_4.xlsx)
 
 **Hinweis: die Dateien müssen heruntergeladen werden, um sie im korrekten Format bearbeiten zu können.**
 

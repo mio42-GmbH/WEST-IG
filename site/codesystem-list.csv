@@ -1,1 +1,7 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
+https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus,1.0.0-kommentierung,draft,,KBV_CS_WEST_BDT_Betriebsstaettenstatus,KBV_CS_WEST_BDT_Betriebsstaettenstatus,"Dieses CodeSystem enthält die Codes zur Beschreibung vom BDT Betriebsstaettenstatus",
+https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart,1.0.0-kommentierung,draft,,KBV_CS_WEST_Diagnoseart,KBV_CS_WEST_Diagnoseart,"Diagnosearten",
+https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie,1.0.0-kommentierung,draft,,KBV_CS_WEST_Diagnosekategorie,KBV_CS_WEST_Diagnosekategorie,"Diagnosekategorien",
+https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Identifier,1.0.0-kommentierung,draft,,KBV_CS_WEST_Identifier,KBV_CS_WEST_Identifier,"Dieses Codesystem enthält die Codes für Identifier spezifisch für die Wechselschnittstelle.",
+https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart,1.0.0-kommentierung,draft,,KBV_CS_WEST_Leistungsart,KBV_CS_WEST_Leistungsart,"Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_WEST_Leistungsart.",
+https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code,1.0.0-kommentierung,draft,,KBV_CS_WEST_Preistyp_Code,KBV_CS_WEST_Preistyp_Code,"Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_WEST_Preistyp_Code.",

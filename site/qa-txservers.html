@@ -12,7 +12,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for ArbeitsgruppeWeST</h1>
- <p>Generated Wed Mar 11 11:05:41 CET 2026, FHIR version 4.0.1 for kbv.mio.west#1.0.0-kommentierung (canonical = <a href="https://fhir.kbv.de">https://fhir.kbv.de</a> (<a href="https://fhir.kbv.de/history.html">history</a>))</p>
+ <p>Generated Wed Mar 18 11:20:57 CET 2026, FHIR version 4.0.1 for kbv.mio.west#1.0.0-kommentierung (canonical = <a href="https://fhir.kbv.de">https://fhir.kbv.de</a> (<a href="https://fhir.kbv.de/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -25,7 +25,7 @@
 :     <code>de-DE</code>
   </li>
 </ul>
-<h2>Tx Manager report for 'https://tx.mio42.de/tx-reg'</h2>
+<h2>Tx Manager report for 'https://tx.mio42.de/fhirsmith/tx-reg'</h2>
 <p>
   <b>Decisions</b>
 </p>
@@ -49,239 +49,1288 @@
   </tr>
   <tr>
     <td>Use primary server for urn:iso:std:iso:3166</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
     <td>urn:iso:std:iso:3166</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>http://snomed.info/sct</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
     <td>Use primary server for http://loinc.org</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Betriebsstaetten_Hierarchie</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
     <td>http://loinc.org</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
     <td>Use primary server for http://unitsofmeasure.org</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
     <td>http://unitsofmeasure.org</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION</td>
-    <td>auth = , candidates=</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
-    <td>Fallback: primary server</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Found candidate server https://tx.mio42.de/r4</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>http://terminology.hl7.org/CodeSystem/condition-clinical|4.0.1</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
-  </tr>
-  <tr>
-    <td>Found candidate server https://tx.mio42.de/r4</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>http://terminology.hl7.org/CodeSystem/condition-ver-status|4.0.1</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
     <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
-    <td>[https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM|1.15, http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://standardterms.edqm.eu]</td>
-    <td>[auth = , candidates=, auth = , candidates=https://tx.mio42.de/r4, auth = , candidates=https://tx.mio42.de/r4]</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM|1.15</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM|1.15</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Use primary server for http://snomed.info/sct</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>[https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM|1.15, http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://standardterms.edqm.eu]</td>
-    <td>[auth = , candidates=, auth = , candidates=https://tx.mio42.de/r4, auth = , candidates=https://tx.mio42.de/r4]</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT</td>
-    <td>auth = , candidates=</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
     <td>Use primary server for http://loinc.org</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
-    <td>http://loinc.org|2.74</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
     <td>Use primary server for http://snomed.info/sct</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
-    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20230731</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
     <td>Use primary server for http://loinc.org</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Diagnosis_SNOMED_CT|1.8.0</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server https://tx.fhir.de/fhir</td>
+    <td>https://tx.fhir.de/fhir</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/condition-clinical|4.0.1</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server https://tx.fhir.de/fhir</td>
+    <td>https://tx.fhir.de/fhir</td>
+    <td>null</td>
+    <td>http://terminology.hl7.org/CodeSystem/condition-ver-status|4.0.1</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/condition-severity|4.0.1</td>
+    <td>[http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=https://tx.fhir.de/fhir, auth = , candidates=https://tx.fhir.de/fhir]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/condition-severity|4.0.1</td>
+    <td>[http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=https://tx.fhir.de/fhir, auth = , candidates=https://tx.fhir.de/fhir]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Medication_Type|1.8.0</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Dose_Form_SNOMED_CT|1.8.0</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Medicine_Doseform_EDQM|1.8.0</td>
+    <td>http://standardterms.edqm.eu</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_PRN_Medication_Reason_SNOMED_CT|1.8.0</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Systems handled by multiple servers. Using primary server</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Medicine_Route_Of_Administration|1.8.0</td>
+    <td>[http://standardterms.edqm.eu|4.0.1, http://standardterms.edqm.eu]</td>
+    <td>[auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/units-of-time|4.0.1</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://fhir.de/ValueSet/VitalSignDE-Atemfrequenz-SNOMED-CT|1.5.4</td>
+    <td>[http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=https://tx.fhir.de/fhir, auth = , candidates=https://tx.fhir.de/fhir]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
     <td>http://loinc.org|2.81</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
-    <td>Found candidate server https://tx.mio42.de/r4</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Glucose_Concentration_LOINC|1.8.0</td>
+    <td>http://loinc.org|2.81</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Glucose_Concentration_SNOMED_CT|1.8.0</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://fhir.de/ValueSet/VitalSignDE-Sauerstoffsaettigung-SNOMED-CT|1.5.4</td>
+    <td>[http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=https://tx.fhir.de/fhir, auth = , candidates=https://tx.fhir.de/fhir]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://fhir.de/ValueSet/VitalSignDE-Herzfrequenz-SNOMED-CT|1.5.4</td>
+    <td>[http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=https://tx.fhir.de/fhir, auth = , candidates=https://tx.fhir.de/fhir]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://fhir.de/ValueSet/VitalSignDE-Kopfumfang-SNOMED-CT|1.5.4</td>
+    <td>[http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=https://tx.fhir.de/fhir, auth = , candidates=https://tx.fhir.de/fhir]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM|1.5.4</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://fhir.de/ValueSet/VitalSignDE-Koerpertemperatur-SNOMED-CT|1.5.4</td>
+    <td>[http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=https://tx.fhir.de/fhir, auth = , candidates=https://tx.fhir.de/fhir]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://fhir.de/ValueSet/VitalSignDE-Koerpergewicht-SNOMED-CT|1.5.4</td>
+    <td>[http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=https://tx.fhir.de/fhir, auth = , candidates=https://tx.fhir.de/fhir]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://fhir.de/ValueSet/VitalSignDE_Body_Weigth_UCUM|1.5.4</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://fhir.de/ValueSet/VitalSignDE-Koerpergroesse-SNOMED-CT|1.5.4</td>
+    <td>[http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://snomed.info/sct]</td>
+    <td>[auth = , candidates=https://tx.fhir.de/fhir, auth = , candidates=https://tx.fhir.de/fhir]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Head_Circumference_BodySite_SNOMED_CT|1.8.0</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/ucum-vitals-common|4.0.1</td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Glucose_Concentration_Interpretation|1.8.0</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Glucose_Concentration_Method_SNOMED_CT|1.8.0</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server https://tx.fhir.de/fhir</td>
+    <td>https://tx.fhir.de/fhir</td>
     <td>null</td>
     <td>http://terminology.hl7.org/CodeSystem/referencerange-meaning|4.0.1</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
-  </tr>
-  <tr>
-    <td>System not handled by any servers. Using primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV-CS-WEST-BDT-Betriebsstaettenstatus|1.0.0-kommentierung</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV-CS-WEST-BDT-Betriebsstaettenstatus|1.0.0-kommentierung</td>
-    <td>auth = , candidates=</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
     <td>Use primary server for urn:ietf:bcp:47</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
     <td>urn:ietf:bcp:47|2.0.1</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
     <td>Use primary server for urn:ietf:bcp:47</td>
-    <td>https://tx.mio42.de/r4</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>urn:ietf:bcp:47|2.0.1</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_CommonLanguages--0|1.8.0</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/languages--0|4.0.1</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
     <td>null</td>
     <td>urn:ietf:bcp:47</td>
-    <td>auth = , candidates=https://tx.mio42.de/r4</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_CommonLanguages--0|1.8.0</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>http://hl7.org/fhir/ValueSet/languages--0|4.0.1</td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://loinc.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://loinc.org|2.81</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>null</td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://unitsofmeasure.org</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for urn:ietf:bcp:47</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>urn:ietf:bcp:47</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://loinc.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://loinc.org|2.81</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://unitsofmeasure.org|2.1</td>
+    <td>auth = , candidates=https://tx.mio42.de/fhirsmith/r4</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://unitsofmeasure.org</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Glucose_Concentration_Unit|1.8.0</td>
+    <td>http://unitsofmeasure.org|2.1</td>
+    <td>auth = , candidates=https://tx.mio42.de/fhirsmith/r4</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE|1.03</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE|1.03</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://standardterms.edqm.eu</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://standardterms.edqm.eu</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
-    <td>Fallback: primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT</td>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT</td>
-    <td>auth = , candidates=</td>
-  </tr>
-  <tr>
-    <td>Fallback: primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_IHEXDS_Facharzttitel_der_Aerztekammern|1.8.0</td>
+    <td>http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
     <td>System not handled by any servers. Using primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://ihe-d.de/CodeSystems/QualifikationenNichtAerztlicherAutoren</td>
     <td>auth = , candidates=</td>
   </tr>
   <tr>
-    <td>Fallback: primary server</td>
-    <td>https://tx.mio42.de/r4</td>
-    <td>null</td>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT</td>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_IHEXDS_Qualifikationen_nicht_aerztlicher_Autoren|1.8.0</td>
+    <td>http://ihe-d.de/CodeSystems/QualifikationenNichtAerztlicherAutoren</td>
     <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://ihe-d.de/CodeSystems/QualifikatorenZahnaerztlicherAutoren</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>System not handled by any servers. Using primary server</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_IHEXDS_Qualifikatoren_zahnaerztlicher_Autoren|1.8.0</td>
+    <td>http://ihe-d.de/CodeSystems/QualifikatorenZahnaerztlicherAutoren</td>
+    <td>auth = , candidates=</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://fhir.kbv.de/ValueSet/KBV_VS_Base_Practitioner_Speciality|1.8.0</td>
+    <td>[http://ihe-d.de/CodeSystems/QualifikationenNichtAerztlicherAutoren, http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515, http://ihe-d.de/CodeSystems/QualifikatorenZahnaerztlicherAutoren, http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern]</td>
+    <td>[auth = , candidates=, auth = , candidates=https://tx.fhir.de/fhir, auth = , candidates=, auth = , candidates=]</td>
+  </tr>
+  <tr>
+    <td>Use primary server for http://snomed.info/sct</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://snomed.info/sct|http://snomed.info/sct/11000274103/version/20250515</td>
+    <td>auth = , candidates=https://tx.fhir.de/fhir</td>
+  </tr>
+  <tr>
+    <td>Found candidate server https://tx.mio42.de/fhirsmith/r4</td>
+    <td>https://tx.mio42.de/fhirsmith/r4</td>
+    <td></td>
+    <td>http://terminology.hl7.org/CodeSystem/v3-TimingEvent|2018-08-12</td>
+    <td>auth = , candidates=https://tx.mio42.de/fhirsmith/r4</td>
   </tr>
 </table>
-<h2>Primary Server: https://tx.mio42.de/r4</h2>
-<a href="https://tx.mio42.de/r4"></a>
-<p>Use Count: 11. Code Systems used: </p>
+<h2>Primary Server: https://tx.mio42.de/fhirsmith/r4</h2>
+<a href="https://tx.mio42.de/fhirsmith/r4"></a>
+<p>Use Count: 166. Code Systems used: </p>
+<table class="grid">
+  <tr>
+    <th>
+      <b>System</b>
+    </th>
+    <th>
+      <b>#Exp.</b>
+    </th>
+    <th>
+      <b>#Val.</b>
+    </th>
+    <th>
+      <b>Details</b>
+    </th>
+  </tr>
+  <tr>
+    <td>http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>http://ihe-d.de/CodeSystems/QualifikationenNichtAerztlicherAutoren</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>http://ihe-d.de/CodeSystems/QualifikatorenZahnaerztlicherAutoren</td>
+    <td>2</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>http://standardterms.edqm.eu</td>
+    <td>2</td>
+    <td>2</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>http://standardterms.edqm.eu|4.0.1</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>http://terminology.hl7.org/CodeSystem/v3-TimingEvent|2018-08-12</td>
+    <td>1</td>
+    <td>0</td>
+    <td></td>
+  </tr>
+</table>
+<h2>Server: https://tx.fhir.de/fhir</h2>
+<a href="https://tx.fhir.de/fhir"></a>
+<p>Use Count: 12. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -311,42 +1360,6 @@
   </tr>
   <tr>
     <td>http://terminology.hl7.org/CodeSystem/referencerange-meaning|4.0.1</td>
-    <td>0</td>
-    <td>1</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>https://fhir.kbv.de/CodeSystem/KBV-CS-WEST-BDT-Betriebsstaettenstatus|1.0.0-kommentierung</td>
-    <td>0</td>
-    <td>1</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE|1.03</td>
-    <td>0</td>
-    <td>1</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT</td>
-    <td>0</td>
-    <td>4</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT</td>
-    <td>0</td>
-    <td>1</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION</td>
-    <td>0</td>
-    <td>1</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM|1.15</td>
     <td>0</td>
     <td>1</td>
     <td></td>

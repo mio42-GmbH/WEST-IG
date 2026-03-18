@@ -1,1 +1,7 @@
 URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+https://fhir.kbv.de/ValueSet/KBV_VS_WEST_BDT_Betriebsstaettenstatus,1.0.0-kommentierung,draft,,KBV_VS_WEST_BDT_Betriebsstaettenstatus,KBV_VS_WEST_BDT_Betriebsstaettenstatus,"Dieses Valueset enthält die Codes zur Beschreibung vom BDT Betriebsstaettenstatus.",,"Internal"
+https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnoseart,1.0.0-kommentierung,draft,,KBV_VS_WEST_Diagnoseart,KBV_VS_WEST_Diagnoseart,"Diagnosearten",,"Internal"
+https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnosekategorie,1.0.0-kommentierung,draft,,KBV_VS_WEST_Diagnosekategorie,KBV_VS_WEST_Diagnosekategorie,"Diagnosekategorien",,"Internal"
+https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Leistungsart,1.0.0-kommentierung,draft,,KBV_VS_WEST_Leistungsart,KBV_VS_WEST_Leistungsart,"Dieses Valueset enthält die Codes zur Beschreibung von Leistungsart.",,"Internal"
+https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Patient_VSDM_Gender,1.0.0-kommentierung,draft,,KBV_VS_WEST_Patient_VSDM_Gender,KBV_VS_WEST_Patient_VSDM_Gender,"Genderauswahl zur Nutzung in VSDM Extension",,
+https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Preistyp_Code,1.0.0-kommentierung,draft,,KBV_VS_WEST_Preistyp_Code,KBV_VS_WEST_Preistyp_Code,"Dieses Valueset enthält die Codes zur Beschreibung von Preistyp.",,"Internal"

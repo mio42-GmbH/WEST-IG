@@ -31,19 +31,19 @@ Version 1.0.0-kommentierung - ci-build
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "version" : "2.74",
+      "version" : "2.81",
       "code" : "2339-0",
       "display" : "Glucose [Mass/volume] in Blood"
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20230731",
+      "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "434912009",
       "display" : "Blood glucose concentration"
     }]
   },
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   },
   "effectiveDateTime" : "2020-01-02",
   "valueQuantity" : {
@@ -55,7 +55,7 @@ Version 1.0.0-kommentierung - ci-build
   "interpretation" : [{
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20230731",
+      "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "365811003:{363713009=260369004}",
       "display" : "Finding of glucose level (finding) : { Has interpretation (attribute) = Increasing (qualifier value) }"
     }]
@@ -66,7 +66,7 @@ Version 1.0.0-kommentierung - ci-build
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20230731",
+      "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "359776002",
       "display" : "Glucose measurement by monitoring device (procedure)"
     }]

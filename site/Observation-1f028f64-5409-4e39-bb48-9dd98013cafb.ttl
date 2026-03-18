@@ -28,8 +28,8 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
-     fhir:reference [ fhir:v "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
+     fhir:l <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
   ] ; # 
   fhir:value [
      a fhir:String ;

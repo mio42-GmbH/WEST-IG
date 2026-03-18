@@ -366,6 +366,7 @@
       "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Postleitzahl_und_Ort",
       "title": "KBV_EX_WEST_Patient_Postleitzahl_und_Ort",
       "types": [
+        "string",
         "string"
       ]
     },
@@ -639,6 +640,7 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct": [
       "Organization.address",
+      "Patient.address",
       "Practitioner.address"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
@@ -739,6 +741,9 @@
     ],
     "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Aktuelle_Taetigkeit": [
       "Patient"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Postleitzahl_und_Ort": [
+      "Patient.address.line"
     ],
     "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Patient_Vsdm_Zusatzinformationen": [
       "Patient"

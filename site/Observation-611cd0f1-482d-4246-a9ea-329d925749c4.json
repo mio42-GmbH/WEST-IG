@@ -26,7 +26,7 @@
     }]
   },
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   },
   "effectiveDateTime" : "2020-01-02",
   "valueQuantity" : {
@@ -38,7 +38,7 @@
   "bodySite" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20230731",
+      "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "302548004",
       "display" : "Entire head (body structure)"
     }]
@@ -46,7 +46,7 @@
   "method" : {
     "coding" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20230731",
+      "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "258011001",
       "display" : "Chessboard method (qualifier value)"
     }]

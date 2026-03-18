@@ -1,0 +1,46 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KBV-CS-WEST-Diagnosekategorie",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-WEST-Diagnosekategorie</b></p><a name=\"KBV-CS-WEST-Diagnosekategorie\"> </a><a name=\"hcKBV-CS-WEST-Diagnosekategorie\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Eigendiagnose<a name=\"KBV-CS-WEST-Diagnosekategorie-Eigendiagnose\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Fremddiagnose<a name=\"KBV-CS-WEST-Diagnosekategorie-Fremddiagnose\"> </a></td></tr></table></div>"
+  },
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_CS_WEST_Diagnosekategorie",
+  "title" : "KBV_CS_WEST_Diagnosekategorie",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-03-18T11:15:18+01:00",
+  "publisher" : "mio42 GmbH",
+  "contact" : [{
+    "name" : "mio42 GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://mio.kbv.de"
+    },
+    {
+      "system" : "email",
+      "value" : "hello@mio42.de"
+    }]
+  }],
+  "description" : "Diagnosekategorien",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "Kassenaerztliche Bundesvereinigung",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "Eigendiagnose",
+    "display" : "Eigendiagnose"
+  },
+  {
+    "code" : "Fremddiagnose",
+    "display" : "Fremddiagnose"
+  }]
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KBV-CS-WEST-Leistungsart"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem KBV-CS-WEST-Leistungsart</b></p><a name="KBV-CS-WEST-Leistungsart"> </a><a name="hcKBV-CS-WEST-Leistungsart"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="KBV-CS-WEST-Leistungsart-1"> </a></td><td>Kurativ</td></tr><tr><td style="white-space:nowrap">2<a name="KBV-CS-WEST-Leistungsart-2"> </a></td><td>Praeventiv</td></tr><tr><td style="white-space:nowrap">3<a name="KBV-CS-WEST-Leistungsart-3"> </a></td><td>Empfaengnisregelung/Sterilisation/Schwangerschaftsabbruch</td></tr><tr><td style="white-space:nowrap">4<a name="KBV-CS-WEST-Leistungsart-4"> </a></td><td>belegaerztliche Behandlung</td></tr><tr><td style="white-space:nowrap">5<a name="KBV-CS-WEST-Leistungsart-5"> </a></td><td>ASV-Behandlung</td></tr></table></div>
+  </text>
+  <url value="https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart"/>
+  <version value="1.0.0-kommentierung"/>
+  <name value="KBV_CS_WEST_Leistungsart"/>
+  <title value="KBV_CS_WEST_Leistungsart"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-03-18T11:15:18+01:00"/>
+  <publisher value="mio42 GmbH"/>
+  <contact>
+    <name value="mio42 GmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://mio.kbv.de"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="hello@mio42.de"/>
+    </telecom>
+  </contact>
+  <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_WEST_Leistungsart."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <concept>
+    <code value="1"/>
+    <display value="Kurativ"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Praeventiv"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Empfaengnisregelung/Sterilisation/Schwangerschaftsabbruch"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="belegaerztliche Behandlung"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="ASV-Behandlung"/>
+  </concept>
+</CodeSystem>

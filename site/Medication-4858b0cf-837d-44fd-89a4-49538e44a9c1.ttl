@@ -29,7 +29,7 @@
            fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
            fhir:l <http://snomed.info/sct>
          ] ;
-         fhir:version [ fhir:v "http://snomed.info/sct/900000000000207008/version/20220331" ] ;
+         fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
          fhir:code [ fhir:v "763158003" ] ;
          fhir:display [ fhir:v "Medicinal product" ]
        ] )

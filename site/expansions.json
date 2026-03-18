@@ -1,8 +1,412 @@
 {
   "resourceType" : "Bundle",
-  "id" : "2ac82ab3-ab2c-430c-b38e-0a86b15171a8",
+  "id" : "d0792665-0874-43d1-9708-9363eada5f5c",
   "meta" : {
-    "lastUpdated" : "2026-03-11T11:00:33.190+01:00"
+    "lastUpdated" : "2026-03-18T11:15:18.144+01:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_BDT_Betriebsstaettenstatus",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-KBV-CS-WEST-BDT-Betriebsstaettenstatus.html\">codesystem KBV_CS_WEST_BDT_Betriebsstaettenstatus v1.0.0-kommentierung (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus|1.0.0-kommentierung\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 6 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (de)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus-1\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-BDT-Betriebsstaettenstatus.html#KBV-CS-WEST-BDT-Betriebsstaettenstatus-1\">1</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;1&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;1&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus-2\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-BDT-Betriebsstaettenstatus.html#KBV-CS-WEST-BDT-Betriebsstaettenstatus-2\">2</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;2&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;2&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus-3\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-BDT-Betriebsstaettenstatus.html#KBV-CS-WEST-BDT-Betriebsstaettenstatus-3\">3</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;3&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;3&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus-4\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-BDT-Betriebsstaettenstatus.html#KBV-CS-WEST-BDT-Betriebsstaettenstatus-4\">4</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;4&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;4&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus-5\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-BDT-Betriebsstaettenstatus.html#KBV-CS-WEST-BDT-Betriebsstaettenstatus-5\">5</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;5&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;5&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus-6\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-BDT-Betriebsstaettenstatus.html#KBV-CS-WEST-BDT-Betriebsstaettenstatus-6\">6</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;6&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;6&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_BDT_Betriebsstaettenstatus",
+      "version" : "1.0.0-kommentierung",
+      "name" : "KBV_VS_WEST_BDT_Betriebsstaettenstatus",
+      "title" : "KBV_VS_WEST_BDT_Betriebsstaettenstatus",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-18T11:15:18+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "immutable" : false,
+      "expansion" : {
+        "identifier" : "urn:uuid:e344627f-6da2-435e-9e14-23aa678d7ed9",
+        "timestamp" : "2026-03-18T11:18:17+01:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "de"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus|1.0.0-kommentierung"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+          "code" : "1"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+          "code" : "2"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+          "code" : "3"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+          "code" : "4"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+          "code" : "5"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+          "code" : "6"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnoseart",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-KBV-CS-WEST-Diagnoseart.html\">codesystem KBV_CS_WEST_Diagnoseart v1.0.0-kommentierung (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart|1.0.0-kommentierung\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (de)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart-Behandlungsdiagnose\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-Diagnoseart.html#KBV-CS-WEST-Diagnoseart-Behandlungsdiagnose\">Behandlungsdiagnose</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;Behandlungsdiagnose&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;Behandlungsdiagnose&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart-anamnestische_Diagnose\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-Diagnoseart.html#KBV-CS-WEST-Diagnoseart-anamnestische_Diagnose\">anamnestische_Diagnose</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;anamnestische_Diagnose&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;anamnestische_Diagnose&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnoseart",
+      "version" : "1.0.0-kommentierung",
+      "name" : "KBV_VS_WEST_Diagnoseart",
+      "title" : "KBV_VS_WEST_Diagnoseart",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-18T11:15:18+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:41beb3be-7806-453c-b763-a5f4deeb8b18",
+        "timestamp" : "2026-03-18T11:17:54+01:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "de"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart|1.0.0-kommentierung"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart",
+          "code" : "Behandlungsdiagnose"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart",
+          "code" : "anamnestische_Diagnose"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnosekategorie",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-KBV-CS-WEST-Diagnosekategorie.html\">codesystem KBV_CS_WEST_Diagnosekategorie v1.0.0-kommentierung (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie|1.0.0-kommentierung\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (de)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie-Eigendiagnose\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-Diagnosekategorie.html#KBV-CS-WEST-Diagnosekategorie-Eigendiagnose\">Eigendiagnose</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;Eigendiagnose&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;Eigendiagnose&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie-Fremddiagnose\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-Diagnosekategorie.html#KBV-CS-WEST-Diagnosekategorie-Fremddiagnose\">Fremddiagnose</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;Fremddiagnose&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;Fremddiagnose&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnosekategorie",
+      "version" : "1.0.0-kommentierung",
+      "name" : "KBV_VS_WEST_Diagnosekategorie",
+      "title" : "KBV_VS_WEST_Diagnosekategorie",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-18T11:15:18+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:6e35e44e-eeaf-4959-b876-056f77d6a4d7",
+        "timestamp" : "2026-03-18T11:17:54+01:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "de"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie|1.0.0-kommentierung"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie",
+          "code" : "Eigendiagnose"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie",
+          "code" : "Fremddiagnose"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Patient_VSDM_Gender",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion performed internally based on:</p><ul><li><a href=\"https://simplifier.net/resolve?scope=kbv.basis@1.8.0&amp;canonical=http://fhir.de/CodeSystem/gender-amtlich-de\">codesystem amtliches Geschlecht v1.5.4 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://fhir.de/CodeSystem/gender-amtlich-de|1.5.4\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">codesystem AdministrativeGender v4.0.1 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/administrative-gender|4.0.1\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"https://simplifier.net/resolve?scope=kbv.basis@1.8.0&amp;canonical=http://fhir.de/ValueSet/gender-other-de\">valueset GenderOtherDE ValueSet v1.5.4 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://fhir.de/ValueSet/gender-other-de|1.5.4\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li><li><a href=\"http://hl7.org/fhir/R4/valueset-administrative-gender.html\">valueset AdministrativeGender v4.0.1 (ValueSet)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></li></ul></div><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (de)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/administrative-gender-male\"> </a><code>http://hl7.org/fhir/administrative-gender</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-male\">male</a></td><td/><td>Male.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/administrative-gender&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;male&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/administrative-gender&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;male&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/administrative-gender-female\"> </a><code>http://hl7.org/fhir/administrative-gender</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-female\">female</a></td><td/><td>Female.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/administrative-gender&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;female&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/administrative-gender&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;female&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.org/fhir/administrative-gender-unknown\"> </a><code>http://hl7.org/fhir/administrative-gender</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html#administrative-gender-unknown\">unknown</a></td><td/><td>Unknown.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.org/fhir/administrative-gender&quot;, &quot;version&quot;: &quot;4.0.1&quot;, &quot;code&quot;: &quot;unknown&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/administrative-gender&quot;&gt;&lt;version value=&quot;4.0.1&quot;&gt;&lt;code value=&quot;unknown&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://fhir.de/CodeSystem/gender-amtlich-de-D\"> </a><code>http://fhir.de/CodeSystem/gender-amtlich-de</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://simplifier.net/resolve?scope=kbv.basis@1.8.0&amp;canonical=http://fhir.de/CodeSystem/gender-amtlich-de#gender-amtlich-de-D\">D</a></td><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://fhir.de/CodeSystem/gender-amtlich-de&quot;, &quot;version&quot;: &quot;1.5.4&quot;, &quot;code&quot;: &quot;D&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://fhir.de/CodeSystem/gender-amtlich-de&quot;&gt;&lt;version value=&quot;1.5.4&quot;&gt;&lt;code value=&quot;D&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://fhir.de/CodeSystem/gender-amtlich-de-X\"> </a><code>http://fhir.de/CodeSystem/gender-amtlich-de</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"https://simplifier.net/resolve?scope=kbv.basis@1.8.0&amp;canonical=http://fhir.de/CodeSystem/gender-amtlich-de#gender-amtlich-de-X\">X</a></td><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://fhir.de/CodeSystem/gender-amtlich-de&quot;, &quot;version&quot;: &quot;1.5.4&quot;, &quot;code&quot;: &quot;X&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://fhir.de/CodeSystem/gender-amtlich-de&quot;&gt;&lt;version value=&quot;1.5.4&quot;&gt;&lt;code value=&quot;X&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Patient_VSDM_Gender",
+      "version" : "1.0.0-kommentierung",
+      "name" : "KBV_VS_WEST_Patient_VSDM_Gender",
+      "title" : "KBV_VS_WEST_Patient_VSDM_Gender",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-18T11:15:18+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "immutable" : false,
+      "expansion" : {
+        "identifier" : "urn:uuid:6e01979e-9774-472d-b6e6-1491175a97af",
+        "timestamp" : "2026-03-18T11:18:17+01:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "de"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.org/fhir/administrative-gender|4.0.1"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1"
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "http://fhir.de/ValueSet/gender-other-de|1.5.4"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://fhir.de/CodeSystem/gender-amtlich-de|1.5.4"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "male"
+        },
+        {
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "female"
+        },
+        {
+          "system" : "http://hl7.org/fhir/administrative-gender",
+          "code" : "unknown"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/gender-amtlich-de",
+          "code" : "D"
+        },
+        {
+          "system" : "http://fhir.de/CodeSystem/gender-amtlich-de",
+          "code" : "X"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Preistyp_Code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-KBV-CS-WEST-Preistyp-Code.html\">codesystem KBV_CS_WEST_Preistyp_Code v1.0.0-kommentierung (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code|1.0.0-kommentierung\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (de)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code-end\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-Preistyp-Code.html#KBV-CS-WEST-Preistyp-Code-end\">end</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;end&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;end&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code-fest\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-Preistyp-Code.html#KBV-CS-WEST-Preistyp-Code-fest\">fest</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;fest&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;fest&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Preistyp_Code",
+      "version" : "1.0.0-kommentierung",
+      "name" : "KBV_VS_WEST_Preistyp_Code",
+      "title" : "KBV_VS_WEST_Preistyp_Code",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-18T11:15:18+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "immutable" : false,
+      "expansion" : {
+        "identifier" : "urn:uuid:fcf36226-ae7d-4199-9091-3d76fe241d7a",
+        "timestamp" : "2026-03-18T11:18:17+01:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "de"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code|1.0.0-kommentierung"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code",
+          "code" : "end"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code",
+          "code" : "fest"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Leistungsart",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-KBV-CS-WEST-Leistungsart.html\">codesystem KBV_CS_WEST_Leistungsart v1.0.0-kommentierung (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart|1.0.0-kommentierung\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (de)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart-1\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-Leistungsart.html#KBV-CS-WEST-Leistungsart-1\">1</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;1&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;1&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart-2\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-Leistungsart.html#KBV-CS-WEST-Leistungsart-2\">2</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;2&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;2&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart-3\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-Leistungsart.html#KBV-CS-WEST-Leistungsart-3\">3</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;3&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;3&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart-4\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-Leistungsart.html#KBV-CS-WEST-Leistungsart-4\">4</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;4&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;4&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart-5\"> </a><code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-KBV-CS-WEST-Leistungsart.html#KBV-CS-WEST-Leistungsart-5\">5</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart&quot;, &quot;version&quot;: &quot;1.0.0-kommentierung&quot;, &quot;code&quot;: &quot;5&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart&quot;&gt;&lt;version value=&quot;1.0.0-kommentierung&quot;&gt;&lt;code value=&quot;5&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Leistungsart",
+      "version" : "1.0.0-kommentierung",
+      "name" : "KBV_VS_WEST_Leistungsart",
+      "title" : "KBV_VS_WEST_Leistungsart",
+      "status" : "draft",
+      "experimental" : false,
+      "date" : "2026-03-18T11:15:18+01:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "immutable" : false,
+      "expansion" : {
+        "identifier" : "urn:uuid:c184e549-661d-495b-ae15-578b7b2a93f2",
+        "timestamp" : "2026-03-18T11:18:18+01:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "de"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart|1.0.0-kommentierung"
+        }],
+        "contains" : [{
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart",
+          "code" : "1"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart",
+          "code" : "2"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart",
+          "code" : "3"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart",
+          "code" : "4"
+        },
+        {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart",
+          "code" : "5"
+        }]
+      }
+    }
+  }]
 }

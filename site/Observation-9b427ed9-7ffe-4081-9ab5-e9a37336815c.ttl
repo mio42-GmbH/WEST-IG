@@ -34,7 +34,7 @@
          fhir:v "http://loinc.org"^^xsd:anyURI ;
          fhir:l <http://loinc.org>
        ] ;
-       fhir:version [ fhir:v "2.74" ] ;
+       fhir:version [ fhir:v "2.81" ] ;
        fhir:code [ fhir:v "2339-0" ] ;
        fhir:display [ fhir:v "Glucose [Mass/volume] in Blood" ]
      ] [
@@ -43,14 +43,14 @@
          fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
          fhir:l <http://snomed.info/sct>
        ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20230731" ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
        fhir:code [ fhir:v "434912009" ] ;
        fhir:display [ fhir:v "Blood glucose concentration" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
-     fhir:reference [ fhir:v "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
+     fhir:l <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
   ] ; # 
   fhir:effective [
      a fhir:DateTime ;
@@ -72,7 +72,7 @@
          fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
          fhir:l <http://snomed.info/sct>
        ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20230731" ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
        fhir:code [ fhir:v "365811003:{363713009=260369004}" ] ;
        fhir:display [ fhir:v "Finding of glucose level (finding) : { Has interpretation (attribute) = Increasing (qualifier value) }" ]
      ] )
@@ -87,7 +87,7 @@
          fhir:v "http://snomed.info/sct"^^xsd:anyURI ;
          fhir:l <http://snomed.info/sct>
        ] ;
-       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20230731" ] ;
+       fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
        fhir:code [ fhir:v "359776002" ] ;
        fhir:display [ fhir:v "Glucose measurement by monitoring device (procedure)" ]
      ] )

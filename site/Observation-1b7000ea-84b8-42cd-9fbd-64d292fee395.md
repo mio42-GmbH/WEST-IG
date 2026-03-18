@@ -31,25 +31,25 @@ Version 1.0.0-kommentierung - ci-build
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "version" : "2.74",
+      "version" : "2.81",
       "code" : "2708-6",
       "display" : "Oxygen saturation in Arterial blood"
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20230731",
+      "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "431314004",
       "display" : "Peripheral oxygen saturation (observable entity)"
     },
     {
       "system" : "http://loinc.org",
-      "version" : "2.74",
+      "version" : "2.81",
       "code" : "59408-5",
       "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
     }]
   },
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   },
   "effectiveDateTime" : "2020-01-02",
   "valueQuantity" : {

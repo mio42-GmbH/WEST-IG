@@ -12,17 +12,17 @@
   <intent value="proposal"/>
   <category>
     <coding>
-      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Leistungsart"/>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart"/>
       <version value="1.0.0-kommentierung"/>
       <code value="1"/>
       <display value="Kurativ"/>
     </coding>
   </category>
   <subject>
-    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
   </subject>
   <encounter>
-    <reference value="urn:uuid:b8256177-8c41-46c6-a35e-94eb3dcfdf94"/>
+    <reference value="Encounter/b8256177-8c41-46c6-a35e-94eb3dcfdf94"/>
   </encounter>
   <authoredOn value="2022-01-01"/>
 </ServiceRequest>

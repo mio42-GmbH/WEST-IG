@@ -1,3 +1,50 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [{
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+    "title" : "KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+    "description" : "Dieses CodeSystem enthält die Codes zur Beschreibung vom BDT Betriebsstaettenstatus"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Diagnoseart",
+    "title" : "KBV_CS_WEST_Diagnoseart",
+    "description" : "Diagnosearten"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Diagnosekategorie",
+    "title" : "KBV_CS_WEST_Diagnosekategorie",
+    "description" : "Diagnosekategorien"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Identifier",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Identifier",
+    "title" : "KBV_CS_WEST_Identifier",
+    "description" : "Dieses Codesystem enthält die Codes für Identifier spezifisch für die Wechselschnittstelle."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Leistungsart",
+    "title" : "KBV_CS_WEST_Leistungsart",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_WEST_Leistungsart."
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Preistyp_Code",
+    "title" : "KBV_CS_WEST_Preistyp_Code",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_WEST_Preistyp_Code."
+  }]
 }

@@ -29,14 +29,14 @@ Version 1.0.0-kommentierung - ci-build
   "intent" : "proposal",
   "category" : [{
     "coding" : [{
-      "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_Leistungsart",
+      "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart",
       "version" : "1.0.0-kommentierung",
       "code" : "1",
       "display" : "Kurativ"
     }]
   }],
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   },
   "encounter" : {
     "reference" : "urn:uuid:11edd49d-fa98-41d1-9773-1f6e56568a81"

@@ -50,7 +50,7 @@
   </identifier>
   <type>
     <coding>
-      <system value="https://fhir.kbv.de/CodeSystem/KBV-CS-WEST-BDT-Betriebsstaettenstatus"/>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus"/>
       <version value="1.0.0-kommentierung"/>
       <code value="1"/>
       <display value="Arztpraxis"/>

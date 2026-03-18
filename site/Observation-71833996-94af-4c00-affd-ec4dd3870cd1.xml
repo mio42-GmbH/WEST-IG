@@ -15,7 +15,7 @@
   <code>
     <coding>
       <system value="http://loinc.org"/>
-      <version value="2.74"/>
+      <version value="2.81"/>
       <code value="85354-9"/>
       <display value="Blood pressure panel with all children optional"/>
     </coding>
@@ -27,14 +27,14 @@
     </coding>
   </code>
   <subject>
-    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
   </subject>
   <effectiveDateTime value="2020-01-02"/>
   <component>
     <code>
       <coding>
         <system value="http://loinc.org"/>
-        <version value="2.74"/>
+        <version value="2.81"/>
         <code value="8480-6"/>
         <display value="Systolic blood pressure"/>
       </coding>
@@ -56,7 +56,7 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
-        <version value="2.74"/>
+        <version value="2.81"/>
         <code value="8462-4"/>
         <display value="Diastolic blood pressure"/>
       </coding>

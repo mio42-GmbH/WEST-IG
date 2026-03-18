@@ -62,6 +62,32 @@ These define constraints on FHIR data types for systems conforming to this imple
 | [KBV_EX_WEST_Patient_Vsdm_Zusatzinformationen](StructureDefinition-KBV-EX-WEST-Patient-Vsdm-Zusatzinformationen.md) | Diese Extension ermöglicht die Angabe der VSDM Zusatzinformationen für eine versicherte Person. |
 | [KBV_EX_WEST_istAbrechnungsrelevant](StructureDefinition-KBV-EX-WEST-istAbrechnungsrelevant.md) | Diese Extension ermöglicht die Angabe, ob die dokumentierten Informationen für die Abrechnung der Behandlung (z.B. im KVDT) relevant sind. |
 
+### Terminology: Value Sets 
+
+These define sets of codes used by systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [KBV_VS_WEST_BDT_Betriebsstaettenstatus](ValueSet-KBV-VS-WEST-BDT-Betriebsstaettenstatus.md) | Dieses Valueset enthält die Codes zur Beschreibung vom BDT Betriebsstaettenstatus. |
+| [KBV_VS_WEST_Diagnoseart](ValueSet-KBV-VS-WEST-Diagnoseart.md) | Diagnosearten |
+| [KBV_VS_WEST_Diagnosekategorie](ValueSet-KBV-VS-WEST-Diagnosekategorie.md) | Diagnosekategorien |
+| [KBV_VS_WEST_Leistungsart](ValueSet-KBV-VS-WEST-Leistungsart.md) | Dieses Valueset enthält die Codes zur Beschreibung von Leistungsart. |
+| [KBV_VS_WEST_Patient_VSDM_Gender](ValueSet-KBV-VS-WEST-Patient-VSDM-Gender.md) | Genderauswahl zur Nutzung in VSDM Extension |
+| [KBV_VS_WEST_Preistyp_Code](ValueSet-KBV-VS-WEST-Preistyp-Code.md) | Dieses Valueset enthält die Codes zur Beschreibung von Preistyp. |
+
+### Terminology: Code Systems 
+
+These define new code systems used by systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [KBV_CS_WEST_BDT_Betriebsstaettenstatus](CodeSystem-KBV-CS-WEST-BDT-Betriebsstaettenstatus.md) | Dieses CodeSystem enthält die Codes zur Beschreibung vom BDT Betriebsstaettenstatus |
+| [KBV_CS_WEST_Diagnoseart](CodeSystem-KBV-CS-WEST-Diagnoseart.md) | Diagnosearten |
+| [KBV_CS_WEST_Diagnosekategorie](CodeSystem-KBV-CS-WEST-Diagnosekategorie.md) | Diagnosekategorien |
+| [KBV_CS_WEST_Identifier](CodeSystem-KBV-CS-WEST-Identifier.md) | Dieses Codesystem enthält die Codes für Identifier spezifisch für die Wechselschnittstelle. |
+| [KBV_CS_WEST_Leistungsart](CodeSystem-KBV-CS-WEST-Leistungsart.md) | Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_WEST_Leistungsart. |
+| [KBV_CS_WEST_Preistyp_Code](CodeSystem-KBV-CS-WEST-Preistyp-Code.md) | Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_WEST_Preistyp_Code. |
+
 ### Example: Example Instances 
 
 These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.

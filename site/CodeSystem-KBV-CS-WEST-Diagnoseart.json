@@ -1,0 +1,46 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KBV-CS-WEST-Diagnoseart",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem KBV-CS-WEST-Diagnoseart</b></p><a name=\"KBV-CS-WEST-Diagnoseart\"> </a><a name=\"hcKBV-CS-WEST-Diagnoseart\"> </a><p>This case-sensitive code system <code>https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Behandlungsdiagnose<a name=\"KBV-CS-WEST-Diagnoseart-Behandlungsdiagnose\"> </a></td><td>Behandlungsdiagnose</td></tr><tr><td style=\"white-space:nowrap\">anamnestische_Diagnose<a name=\"KBV-CS-WEST-Diagnoseart-anamnestische_Diagnose\"> </a></td><td>Anamnestische_Diagnose</td></tr></table></div>"
+  },
+  "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart",
+  "version" : "1.0.0-kommentierung",
+  "name" : "KBV_CS_WEST_Diagnoseart",
+  "title" : "KBV_CS_WEST_Diagnoseart",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-03-18T11:15:18+01:00",
+  "publisher" : "mio42 GmbH",
+  "contact" : [{
+    "name" : "mio42 GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://mio.kbv.de"
+    },
+    {
+      "system" : "email",
+      "value" : "hello@mio42.de"
+    }]
+  }],
+  "description" : "Diagnosearten",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "Kassenaerztliche Bundesvereinigung",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "concept" : [{
+    "code" : "Behandlungsdiagnose",
+    "display" : "Behandlungsdiagnose"
+  },
+  {
+    "code" : "anamnestische_Diagnose",
+    "display" : "Anamnestische_Diagnose"
+  }]
+}

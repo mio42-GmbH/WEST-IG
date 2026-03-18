@@ -21,5 +21,60 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+    "title" : "KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+    "description" : "Dieses CodeSystem enthält die Codes zur Beschreibung vom BDT Betriebsstaettenstatus",
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-BDT-Betriebsstaettenstatus.html" : "KBV_VS_WEST_BDT_Betriebsstaettenstatus"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Diagnoseart",
+    "title" : "KBV_CS_WEST_Diagnoseart",
+    "description" : "Diagnosearten",
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-Diagnoseart.html" : "KBV_VS_WEST_Diagnoseart"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Diagnosekategorie",
+    "title" : "KBV_CS_WEST_Diagnosekategorie",
+    "description" : "Diagnosekategorien",
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-Diagnosekategorie.html" : "KBV_VS_WEST_Diagnosekategorie"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Leistungsart",
+    "title" : "KBV_CS_WEST_Leistungsart",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_WEST_Leistungsart.",
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-Leistungsart.html" : "KBV_VS_WEST_Leistungsart"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Preistyp_Code",
+    "title" : "KBV_CS_WEST_Preistyp_Code",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_WEST_Preistyp_Code.",
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-Preistyp-Code.html" : "KBV_VS_WEST_Preistyp_Code"
   }]
 }
