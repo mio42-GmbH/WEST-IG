@@ -57,7 +57,7 @@ Dieses Valueset enthält die Codes zur Beschreibung von Preistyp.
   "title" : "KBV_VS_WEST_Preistyp_Code",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-18T11:15:18+01:00",
+  "date" : "2026-03-18T11:53:44+01:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

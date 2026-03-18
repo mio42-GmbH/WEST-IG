@@ -56,7 +56,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-EX-WEST-Diagnose
   "name" : "KBV_EX_WEST_Diagnose_istDauerdiagnose",
   "title" : "KBV_EX_WEST_Diagnose_istDauerdiagnose",
   "status" : "draft",
-  "date" : "2026-03-18T11:15:18+01:00",
+  "date" : "2026-03-18T11:53:44+01:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

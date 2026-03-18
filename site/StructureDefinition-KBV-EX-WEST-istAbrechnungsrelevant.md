@@ -61,7 +61,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-EX-WEST-istAbrec
   "name" : "KBV_EX_WEST_istAbrechnungsrelevant",
   "title" : "KBV_EX_WEST_istAbrechnungsrelevant",
   "status" : "draft",
-  "date" : "2026-03-18T11:15:18+01:00",
+  "date" : "2026-03-18T11:53:44+01:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
