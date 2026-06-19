@@ -1,0 +1,647 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Arbeitspaket 2 - abgeschlossen - Arbeitsgruppe WeST v1.0.0-kommentierung</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/ig.gematik.css"/>
+<script src="assets/js/ig.gematik.min.js" type="text/javascript"> </script>
+<link rel="stylesheet" href="assets/css/edge-dark.min.css"/>
+<script src="assets/js/ig.api.doc.gematik.min.js" type="text/javascript"> </script>
+<link rel="stylesheet" href="assets/css/ig.req.gematik.css"/>
+<script src="assets/js/ig.req.gematik.min.js" type="text/javascript"> </script>
+<link rel="stylesheet" href="assets/css/infomodell-view.css"/>
+<link rel="stylesheet" href="assets/css/jstree.min.css"/>
+
+<script src="assets/js/ig.bibliography.gematik.js" type="text/javascript"> </script>
+
+<style>
+    .gem-ig-headline-container {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+        background: url('assets/images/gem-headline.png') no-repeat;
+        background-position: 90% -136px;
+    }
+</style>
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+<div id="hl7-nav">
+    <a no-external="true" id="gem-ig-logo" href="./index.html">
+        <img src="assets/images/gem-mio42-logo.png" alt="Home" height="50"/>
+    </a>
+</div>
+
+
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Startseite</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Kommentierung der Arbeitspakete
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Arbeitspaket_1_-_abgeschlossen.html">Arbeitspaket 1 - abgeschlossen</a>
+      </li>
+      <li>
+        <a href="Arbeitspaket_2_-_abgeschlossen.html">Arbeitspaket 2 - abgeschlossen</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="infomodell.html">Datenmodell</a>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR-Artefakte</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+
+    <div class="segment"> 
+      <div class="container">
+        
+
+<div class="gem-ig-headline-container"> 
+    <div id="gem-ig-headline" class="col-lg-10 col-md-12">
+        <div class="gem-ig-headline-title">
+            
+Arbeitsgruppe WeST
+        </div>
+        <div id="ig-status" class="gem-ig-headline-subtitle">
+            <span style="display:inline-block;">Version 1.0.0-kommentierung - ci-build
+                
+                
+            </span>
+            
+
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Arbeitspaket 2 - abgeschlossen</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  
+  <h2>Arbeitspaket 2 - abgeschlossen</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+  <p>Seiteninhalt:</p>
+
+<ul id="markdown-toc">
+  <li><a href="#inhalt" id="markdown-toc-inhalt">Inhalt</a></li>
+  <li><a href="#kommentarauflsung" id="markdown-toc-kommentarauflsung">Kommentarauflösung</a></li>
+</ul>
+
+</div>
+
+<div class="confluence-content">
+
+  <h3 id="inhalt">Inhalt</h3>
+
+  <h4 id="arbeitspaket-2-deadline-kommentierung-30032026">Arbeitspaket 2 (Deadline Kommentierung: 30.03.2026)</h4>
+
+  <div>
+<img src="./Arbeitspaket_2_-_abgeschlossen_image-2026-3-5_15-45-6-1_version_1.png" alt="image-2026-3-5_15-45-6-1 version_1.png"/>
+</div>
+  <p>Informationsmodell</p>
+
+  <h3 id="kommentarauflsung">Kommentarauflösung</h3>
+
+  <p>Nach Abschluss der Kommentierung und der Prüfung sowie Bewertung aller eingegangenen Kommentare ist hier ein Überblick zu den eingegangenen Kommentaren und den Bewertungsergebnissen einsehbar. Hier kann entnommen werden, an welchen Stellen ein Kommentar zu einer Überarbeitung oder zur Aufnahme von Operationalisierungsempfehlungen für die umsetzenden IT-Systeme geführt haben.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>SteNa</th>
+        <th>Bedeutung</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>OK</td>
+        <td>Kommentar wird umgesetzt und eingearbeitet.</td>
+      </tr>
+      <tr>
+        <td>NOK</td>
+        <td>Änderung des Dokumentes ist nicht erforderlich, die Begründung wird angegeben.</td>
+      </tr>
+      <tr>
+        <td>Wdh.</td>
+        <td>Wiederholung – keine eigene Stellungnahme, da schon in anderem Kommentar behandelt. Auf entsprechenden Kommentar wird verwiesen.</td>
+      </tr>
+      <tr>
+        <td>Offen</td>
+        <td>Klärung steht aus (z. B. über Workshop).</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 id="allgemein">Allgemein</h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Kommentar</th>
+        <th>Betreffendes Element</th>
+        <th>SteNa</th>
+        <th>Antwort</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ein offizielles Diagramm der FHIR-Objekte wäre hilfreich.</td>
+        <td>generell</td>
+        <td>Offen</td>
+        <td>Wir nehmen das Thema als Anregung mit.</td>
+      </tr>
+      <tr>
+        <td>Codierung nach z.B. LOINC oder SNOMED (wenn nicht hart codiert) liegt im AIS üblicherweise nicht vor</td>
+        <td>generell</td>
+        <td>NOK</td>
+        <td>Uns ist bekannt, dass LOINC- oder SNOMED-CT-Codierungen in den Systemen häufig oft noch nicht vorhanden sind. Wir sehen standardisierte Codes aber als einen wichtigen Schritt Richtung Interoperabilität. Deshalb geben wir, wo möglich, Beispiel-ValueSets und Hinweise zur Codierung mit.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 id="inhalt-1">Inhalt</h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Kommentar</th>
+        <th>Betreffendes Element in FHIR</th>
+        <th>SteNa</th>
+        <th>Antwort</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Die Kennzeichnung von medizinischen Einträgen mit einer Begegnung ist in einigen AIS zentraler Bestandteil des Datenschutzes. Durch die Kennzeichnung eines Eintrags mit Arzt und Betriebsstätte über die Begegnung kann die Zugehörigkeit gekennzeichnet werden. Die Kardinalität sollte wie bei der KBV_PR_WEST_Observation_Anamnese 0..1 sein.</td>
+        <td>KBV_PR_WEST_Observation_Abdominal_Circumference  <br/><ul title="null"><li data-uuid="37d7ca5e-e291-415b-9188-b4cd1a8427bc">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Eine Referenz auf die Begegnung wurde hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>Die Kennzeichnung von medizinischen Einträgen mit einer Begegnung ist in einigen AIS zentraler Bestandteil des Datenschutzes. Durch die Kennzeichnung eines Eintrags mit Arzt und Betriebsstätte über die Begegnung kann die Zugehörigkeit gekennzeichnet werden. Die Kardinalität sollte wie bei der KBV_PR_WEST_Observation_Anamnese 0..1 sein.</td>
+        <td>KBV_PR_WEST_Observation_Blood_Pressure  <br/><ul title="null"><li data-uuid="a8cec4bc-43e3-4f26-bb7e-bf2f8a7bb207">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Eine Referenz auf die Begegnung wurde hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>Die Kennzeichnung von medizinischen Einträgen mit einer Begegnung ist in einigen AIS zentraler Bestandteil des Datenschutzes. Durch die Kennzeichnung eines Eintrags mit Arzt und Betriebsstätte über die Begegnung kann die Zugehörigkeit gekennzeichnet werden. Die Kardinalität sollte wie bei der KBV_PR_WEST_Observation_Anamnese 0..1 sein.</td>
+        <td>KBV_PR_WEST_Observation_Body_Height  <br/><ul title="null"><li data-uuid="503cc15f-610b-4ec5-a47f-e28f50eab983">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Eine Referenz auf die Begegnung wurde hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>Die Kennzeichnung von medizinischen Einträgen mit einer Begegnung ist in einigen AIS zentraler Bestandteil des Datenschutzes. Durch die Kennzeichnung eines Eintrags mit Arzt und Betriebsstätte über die Begegnung kann die Zugehörigkeit gekennzeichnet werden. Die Kardinalität sollte wie bei der KBV_PR_WEST_Observation_Anamnese 0..1 sein.</td>
+        <td>KBV_PR_WEST_Observation_Body_Temperature  <br/><ul title="null"><li data-uuid="294d0878-7774-4c7e-a1d6-4b5978a784ae">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Eine Referenz auf die Begegnung wurde hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>Die Kennzeichnung von medizinischen Einträgen mit einer Begegnung ist in einigen AIS zentraler Bestandteil des Datenschutzes. Durch die Kennzeichnung eines Eintrags mit Arzt und Betriebsstätte über die Begegnung kann die Zugehörigkeit gekennzeichnet werden. Die Kardinalität sollte wie bei der KBV_PR_WEST_Observation_Anamnese 0..1 sein.</td>
+        <td>KBV_PR_WEST_Observation_Body_Weight  <br/><ul title="null"><li data-uuid="28147c4f-62ef-4289-930e-e2c9a3f34eb2">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Eine Referenz auf die Begegnung wurde hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>Die Kennzeichnung von medizinischen Einträgen mit einer Begegnung ist in einigen AIS zentraler Bestandteil des Datenschutzes. Durch die Kennzeichnung eines Eintrags mit Arzt und Betriebsstätte über die Begegnung kann die Zugehörigkeit gekennzeichnet werden. Die Kardinalität sollte wie bei der KBV_PR_WEST_Observation_Anamnese 0..1 sein.</td>
+        <td>KBV_PR_WEST_Observation_Glucose_Concentration  <br/><ul title="null"><li data-uuid="15d45002-da85-4e11-8d8f-da347d077e30">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Eine Referenz auf die Begegnung wurde hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>Die Kennzeichnung von medizinischen Einträgen mit einer Begegnung ist in einigen AIS zentraler Bestandteil des Datenschutzes. Durch die Kennzeichnung eines Eintrags mit Arzt und Betriebsstätte über die Begegnung kann die Zugehörigkeit gekennzeichnet werden. Die Kardinalität sollte wie bei der KBV_PR_WEST_Observation_Anamnese 0..1 sein.</td>
+        <td>KBV_PR_WEST_Observation_Head_Circumference  <br/><ul title="null"><li data-uuid="45aa3ffc-7ec6-4d01-82f3-61483b99a5e7">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Eine Referenz auf die Begegnung wurde hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>Die Kennzeichnung von medizinischen Einträgen mit einer Begegnung ist in einigen AIS zentraler Bestandteil des Datenschutzes. Durch die Kennzeichnung eines Eintrags mit Arzt und Betriebsstätte über die Begegnung kann die Zugehörigkeit gekennzeichnet werden. Die Kardinalität sollte wie bei der KBV_PR_WEST_Observation_Anamnese 0..1 sein.</td>
+        <td>KBV_PR_WEST_Observation_Heart_Rate  <br/><ul title="null"><li data-uuid="847d959e-6926-4d25-90ff-d16e2756bc0d">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Eine Referenz auf die Begegnung wurde hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>Die Kennzeichnung von medizinischen Einträgen mit einer Begegnung ist in einigen AIS zentraler Bestandteil des Datenschutzes. Durch die Kennzeichnung eines Eintrags mit Arzt und Betriebsstätte über die Begegnung kann die Zugehörigkeit gekennzeichnet werden. Die Kardinalität sollte wie bei der KBV_PR_WEST_Observation_Anamnese 0..1 sein.</td>
+        <td>KBV_PR_WEST_Observation_Hip_Circumference  <br/><ul title="null"><li data-uuid="9c0a40cd-ce09-4dcc-b8c5-c0341fab2ba4">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Eine Referenz auf die Begegnung wurde hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>Die Kennzeichnung von medizinischen Einträgen mit einer Begegnung ist in einigen AIS zentraler Bestandteil des Datenschutzes. Durch die Kennzeichnung eines Eintrags mit Arzt und Betriebsstätte über die Begegnung kann die Zugehörigkeit gekennzeichnet werden. Die Kardinalität sollte wie bei der KBV_PR_WEST_Observation_Anamnese 0..1 sein.</td>
+        <td>KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation  <br/><ul title="null"><li data-uuid="e6ecb131-7fc2-4c31-ad6e-62b48e486ec0">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Eine Referenz auf die Begegnung wurde hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>Die Kennzeichnung von medizinischen Einträgen mit einer Begegnung ist in einigen AIS zentraler Bestandteil des Datenschutzes. Durch die Kennzeichnung eines Eintrags mit Arzt und Betriebsstätte über die Begegnung kann die Zugehörigkeit gekennzeichnet werden. Die Kardinalität sollte wie bei der KBV_PR_WEST_Observation_Anamnese 0..1 sein.</td>
+        <td>KBV_PR_WEST_Observation_Respiratory_Rate  <br/><ul title="null"><li data-uuid="81898dc2-95db-453f-9ac7-9d75c78468c2">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Eine Referenz auf die Begegnung wurde hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>Wie bei “KBV_PR_WEST_Observation_Abdominal_Circumference” sollte eine feste Einheit vorgegeben werden. So ist ein späterer Import gewährleistet, da nicht für alle möglichen Einheiten ein Konverter geschrieben werden muss. { “unit”: “centimeter”, “system”: “<a href="http://unitsofmeasure.org">http://unitsofmeasure.org</a><br/>”, “code”: “cm” }</td>
+        <td>KBV_PR_WEST_Observation_Body_Height  <br/><ul title="null"><li data-uuid="8512202f-8a2d-476a-a081-4561fee37fa4">value[x]:valueQuantity</li></ul></td>
+        <td>NOK</td>
+        <td>Es ist ein VS-Binding hinterlegt, welches die Einheiten Meter (m) und Centimeter (cm) erlaubt. Die Festlegung auf eine einzige Einheit löst das Problem eines eventuellen Konvertierungsbedarfs z.B. von cm in m aus unserer Sicht nicht, sondern verstärkt es. Z.B. wenn in PVS A sowie B die Einheit cm vorgesehen ist, aber in dem Profil cm vorgegeben wird, muss zweimal konvertiert werden, beim Export und Import. Wenn beide Einheiten erlaubt sind, muss nur beim Import konvertiert werden.</td>
+      </tr>
+      <tr>
+        <td>Hier wäre es sinnvoll, eine feste Codierung festzulegen. Diese sollte möglichst einheitlich über Observation erfolgen: links, rechts, beidseits.</td>
+        <td>KBV_PR_WEST_Observation_Blood_Pressure</td>
+        <td>NOK</td>
+        <td>Mit dem Element ist nicht die Körperseite, sondern die Körperstelle gemeint. Es ist jetzt ein Beispiel-Valueset in SNOMED CT bereitgestellt, das bei Bedarf verwendet werden kann: “KBV_PR_WEST_Observation_Blood_Pressure.bodySite”. Zudem wurde im Element “Methode” ein Beispiel-Valueset hinzugefügt: KBV_PR_WEST_Observation_Blood_Pressure.method</td>
+      </tr>
+      <tr>
+        <td>Hier sollte eine feste Einheit wie mmHg festgelegt werden.</td>
+        <td>KBV_PR_WEST_Observation_Blood_Pressure  <br/><ul title="null"><li data-uuid="f97525fc-6295-4a44-9f27-122a08e56164">component:SystolicBP.value[x]:valueQuantity.unit</li><li data-uuid="9c4a38b9-a7d5-47a9-ad2c-950c06ed7a85">component:DiastolicBP.value[x]:valueQuantity.unit</li><li data-uuid="867d1047-9a49-4073-8155-2a8a7787469b">component:meanBP.value[x]:valueQuantity.unit</li></ul></td>
+        <td>NOK</td>
+        <td>Unter <em>component:SystolicBP.value[x]:valueQuantity</em>, <em>component:DiastolicBP.value[x]:valueQuantity</em> und <em>component:meanBP.value[x]:valueQuantity</em> ist jeweils ein pattern hinterlegt, welches nur die Einheit “mm[Hg]” zulässt.</td>
+      </tr>
+      <tr>
+        <td>Hier sollte eine feste Einheit wie g oder kg festgelegt werden.</td>
+        <td>KBV_PR_WEST_Observation_Body_Weight  <br/><ul title="null"><li data-uuid="2044d0b1-621e-4b57-bd92-fdaebafbb22a">value[x]:valueQuantity.unit</li></ul></td>
+        <td>NOK</td>
+        <td>Unter valueQuantity ist ein VS-Binding hinterlegt, welches nur die Einheiten “kg” und “g” zulässt.</td>
+      </tr>
+      <tr>
+        <td>Hier sollte eine feste Einheit wie “1/Minute” festgelegt werden</td>
+        <td>KBV_PR_WEST_Observation_Heart_Rate  <br/><ul title="null"><li data-uuid="cdcb35c5-6b21-45fd-9949-0ff5f303fe02">value[x]:valueQuantity.unit</li></ul></td>
+        <td>NOK</td>
+        <td>Unter valueQuantity ist bereits ein pattern hinterlegt, welches nur die Einheit “/min” zulässt.</td>
+      </tr>
+      <tr>
+        <td>Hier sollte eine feste Einheit wie “1/Minute” festgelegt werden</td>
+        <td>KBV_PR_WEST_Observation_Respiratory_Rate  <br/><ul title="null"><li data-uuid="2a2695cf-1af4-4786-9e00-74c9981525d7">value[x]:valueQuantity.unit</li></ul></td>
+        <td>NOK</td>
+        <td>Unter valueQuantity ist bereits ein pattern hinterlegt, welches nur die Einheit “/min” zulässt.</td>
+      </tr>
+      <tr>
+        <td>Hier sollte eine feste Einheit wie “%” festgelegt werden</td>
+        <td>KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation  <br/><ul title="null"><li data-uuid="9faef1fc-2aff-4ed3-8791-633c8d5e7a5b">value[x]:valueQuantity.unit</li></ul></td>
+        <td>NOK</td>
+        <td>Unter valueQuantity ist bereits ein pattern hinterlegt, welches nur die Einheit “%” zulässt.</td>
+      </tr>
+      <tr>
+        <td>Hier sollte wie bei den anderen Observationen ein fester Code hinterlegt werden. Oder eine fest vorgegebene Code-Auswahl wie bspw. “nüchtern, vor Mahlzeit, nach Mahlzeit” oder die Unterscheidung zwischen 2345-7 Glucose [Mass/volume] in Serum or Plasma und 14743-9 Glucose [Moles/volume] in Capillary blood by Glucometer.</td>
+        <td>KBV_PR_WEST_Observation_Glucose_Concentration  <br/><ul title="null"><li data-uuid="9eac9503-2bca-466e-80ca-e63124f43766">code.coding:loinc</li></ul></td>
+        <td>OK</td>
+        <td>Dieses Profil beschreibt die Messung eines einzelnen Glukosespiegels als sogenannte Point-of-Care-Testung (also einer Messung am Krankenbett oder in der unmittelbaren Nähe zur behandelten Person), oder auch durch die behandelte Person selbst. Die Abbildung der von Ihnen genannten zeitlichen Kontexte erfolgt in dem Profil zum Teil schon unter unter KBV_PR_WEST_Observation_Glucose_Concentration.method.coding Die weiter vorgeschlagenen Codes (2345-7 Glucose [Mass/volume] in Serum or Plasma und 14743-9 Glucose [Moles/volume] in Capillary blood by Glucometer) beschreiben die Art der Bestimmung, wobei in diesem Profil nur “Glucose [Moles/volume] in Capillary blood by Glucometer” relevant ist. Für eine Bestimmung des Glucosespiegels in einem Labor sollte ein Profil für Laborwert verwendet werden. Wir werden die Beschreibung der Elemente sowie die Codes in Abstimmung mit dem Projekt KBV-Basis anpassen, damit der Scope des Profils deutlicher wird. Zudem wird es die Möglichkeit geben, Laborwerte abzubilden. Dies wird in enger Abstimmung mit dem Projekt MIO Laborbefund entwickelt.</td>
+      </tr>
+      <tr>
+        <td>Wenn es eine Referenz auf Encounter gibt: Welche abweichenden Informationen sollen hier eingetragen werden? Wenn Encounter vorhanden ist, könnte performer die Kardinalität 0..0 haben.</td>
+        <td>KBV_PR_WEST_Observation_Anamnese  <br/><ul title="null"><li data-uuid="f3354e74-2c71-4d13-aa44-0855cab7e844">performer</li></ul></td>
+        <td>NOK</td>
+        <td>Observation.encounter gibt den Versorgungskontext an, Observation.performer hingegen die Person, welche die Anamnese durchführt. Dies sind unterschiedliche Rollen, daher kann Performer nicht die Kardinalität 0..0 haben.</td>
+      </tr>
+      <tr>
+        <td>Hier wäre es sinnvoll, eine feste Codierung festzulegen. Diese sollte möglichst einheitlich sein: links, rechts, beidseits.</td>
+        <td>KBV_PR_WEST_Condition  <br/><ul title="null"><li data-uuid="dc851de7-9472-4694-ba9c-ba0752c3fea6">bodySite</li></ul></td>
+        <td>OK</td>
+        <td>Die Seitenlokalisation ist im ICD-Code enthalten. Das Element “Bodysite”, um das es hier geht, meint die Körperstelle. Alle hier möglichen Codes vorzugeben, würde den Rahmen sprengen. Wir haben aber ein Slice für SNOMED-CT Codes hinzugefügt mit dem Hinweis, dass dort alle Codes vom Typ “Body Structure” verwendet werden sollen.</td>
+      </tr>
+      <tr>
+        <td>Der ICD-10-GM Code sollte verpflichtend sein. Bei den anderen Codierungen ist nicht gewährleistet, dass diese wieder importiert werden können. Gerade bei einer Überweisung sind die Codes relevant für eine Abrechnung.</td>
+        <td>KBV_PR_WEST_Condition  <br/><ul title="null"><li data-uuid="d5391fae-1ae6-4b57-9a16-848dd8c18487">code.coding:ICD-10-GM</li></ul></td>
+        <td>NOK</td>
+        <td>Das Ziel der Wechselschnittstelle ist es, Daten zu transferieren und nicht, zu prüfen, ob sie vollständig sind. Die Prüfung auf Vollständigkeit sollte erfolgen, wenn Daten in verschiedenen Kontexten übertragen werden, z.B. für Abrechnungen. Prüfmechanismen für alle möglichen Kontexte festzulegen ist kein Teil der Wechselschnittstelle. Im Gegenteil ist es das Ziel der Wechselschnittstelle, so viele Daten wie möglich möglichst reibungsfrei zu übertragen.</td>
+      </tr>
+      <tr>
+        <td>Hier sollten die Codes für <em>gesichert</em><br/>, <em>ausgeschlossen</em><br/>, <em>Verdacht auf</em> <br/>etc. fest vorgegeben werden. Ein Import kann sonst eventuell nicht möglich sein, wenn die Codierung nicht in die vom ICD-10 vorgeschriebenen Kategorien zurückgemappt werden kann.</td>
+        <td>KBV_PR_WEST_Condition  <br/><ul title="null"><li data-uuid="d37ba566-70ed-42a7-899b-9a99a2d206a4">severity.coding</li></ul></td>
+        <td>NOK</td>
+        <td>Dies wird im Profil KBV_PR_WEST_Condition über das Element verificationStatus abgebildet.</td>
+      </tr>
+      <tr>
+        <td>Hier wäre eine Festlegung auf einen Datumstyp sinnvoll.</td>
+        <td>KBV_PR_WEST_Condition  <br/><ul title="null"><li data-uuid="3d6be9c1-1b07-4aef-be40-2f6679faa2f8">extension:Feststellungsdatum.value[x]</li></ul></td>
+        <td>OK</td>
+        <td>Ein Datumstyp wurde festgelegt.</td>
+      </tr>
+      <tr>
+        <td>Die Diagnosekategorie und die Diagnoseart im Profil Condition sind nicht abrufbar.</td>
+        <td>KBV_PR_WEST_Condition  <br/><ul title="null"><li data-uuid="73c4d462-1da4-49e7-a1e5-b50de3b622af">category:diagnosekategorie.coding.system</li><li data-uuid="d267f357-3553-498c-8743-bde5eff7d5a2">category:diagnoseart.coding.system</li></ul></td>
+        <td>OK</td>
+        <td>Die Links wurden in simplifier korrigiert.</td>
+      </tr>
+      <tr>
+        <td>Hier wäre es gut, wenn ein Codiersystem hinterlegt ist.</td>
+        <td>KBV_PR_WEST_Encounter  <br/><ul title="null"><li data-uuid="9df73750-8dbf-4af2-a001-c24363942d6f">serviceType.coding:KBV-Fachgruppencodierung.system</li></ul></td>
+        <td>NOK</td>
+        <td>Das Codiersystem ist bereits im Pattern des Elements serviceType.coding:KBV-Fachgruppencodierung hinterlegt. Zudem ist ein Valueset-Binding (required) vorhanden.</td>
+      </tr>
+      <tr>
+        <td><a name="l989">​</a><a href="https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen%20könnte%20besser%20beschrieben%20werden,%20um%20welche%20Inhalte%20es%20sich%20handelt.%20Dies%20wäre%20ein%20zusätzliches%20Profil.%20Für%20eine%20Verprobung%20sollte%20ein%20gesammthaftes%20Paket%20aller%20notwendigen%20Profile%20und%20Codesystem%20zusammengestellt%20werden.">https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen</a>  <br/>  Es könnte besser beschrieben werden, um welche Inhalte es sich handelt. Dies wäre ein zusätzliches Profil. Für eine Verprobung sollte ein vollständiges Paket aller notwendigen Profile und Codesysteme zusammengestellt werden.</td>
+        <td>KBV_PR_WEST_Encounter  <br/><ul title="null"><li data-uuid="1af06907-798d-471a-85dc-dcc8a7d63b1a">extension:spezielle_Begegnungsinformationen</li></ul><br/>  KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen</td>
+        <td>OK</td>
+        <td>Es handelt sich hier um einen technischen Workaround, der es im Vorgängerprojekt AWS erlaubt hat, in Ausnahmefällen Dummy-Begegnungen zu erstellen, siehe <a href="https://update.kbv.de/ita-update/371-Schnittstellen/PVS-Archivierungs-Wechsel-Schnittstelle/KBV_ITA_VGEX_Anforderungskatalog_AW_SST.pdf?utm_source=chatgpt.com">https://update.kbv.de/ita-update/371-Schnittstellen/PVS-Archivierungs-Wechsel-Schnittstelle/KBV_ITA_VGEX_Anforderungskatalog_AW_SST.pd</a>f  <br/>  Die Beschreibung wurde wie unten zu lesen angepasst. Außerdem werden wir bei Vollständigkeit des Informationsmodells prüfen, ob das Element in der WeST den gleichen Stellenwert hat wie in der AWS oder ob es entfernt werden kann.  <br/>  Angepasste Beschreibung:  <br/>  Zusatzinformationen zur Begegnung, die nicht durch die regulären Encounter-Elemente oder durch andere fachliche Profile abgebildet werden. Sie dient der Erhaltung encounter-bezogener Kontextinformationen, insbesondere, wenn ein Inhalt eine Begegnung referenziert werden muss, um technisch valide zu sein, aber fachlich keine Begegnung zugeordnet werden kann. In diesem Fall ist die Instanz der Begegnung eine Dummy-Begegnung sein, mit der Extension „spezielle Begegnungsinformationen“ und folgenden Inhalt: Typ = Dummy Inhalt = Dummy</td>
+      </tr>
+      <tr>
+        <td>Liegt im AIS üblicherweise nicht strukturiert vor.</td>
+        <td>KBV_PR_WEST_Observation_Anamnese  <br/><ul title="null"><li data-uuid="e8d2f151-e75d-4318-acc3-061060014955">code</li></ul></td>
+        <td>NOK</td>
+        <td>Der Code wird für FHIR benötigt. Der Code ist fest vorgegeben und sagt aus, dass es sich bei diesem Profil um eine <em>Anamnese</em><br/> handelt. Die Benutzung des Profils reicht aus, um diesen Code anzubieten.</td>
+      </tr>
+      <tr>
+        <td>Wird üblicherweise aus den Arzneimitteldatenbanken der AIS ermittelt. An dieser Stelle unnötig?</td>
+        <td>KBV_PR_WEST_MedicationKnowledge</td>
+        <td>Offen</td>
+        <td>Diese Ressource wurde aufgenommen, weil bestimmte Informationen daraus in der xBDT-Spezifikation aufgeführt sind. Sollten auch andere diese Ressource als unnötig sehen, können wir sie entfernen. Für Feedback wird bei einer Kommentierung Raum gegeben. Wir werden die konkrete Frage nach dem Nutzen dieser Ressource notieren und bei einer Kommentierung um weiteres Feedback bitten.</td>
+      </tr>
+      <tr>
+        <td>Beschreibung im Modell: Hier werden Angaben dazu gemacht, wie ein bestimmtes Arzneimittel eingenommen bzw. verabreicht wird oder werden soll.   <br/>   <br/>Unter Simplifier: Diese Ressource bietet die Möglichkeit anzugeben, ob eine Medikation im System als Dauermedikation deklariert wurde.”</td>
+        <td>KBV_PR_WEST_MedicationStatement</td>
+        <td>OK</td>
+        <td>Die Beschreibung in FHIR wurde entsprechend angepasst.</td>
+      </tr>
+      <tr>
+        <td>Element löschen: Da der Status immer “final” ist, werden so nur unnötige Daten für eine Migration generiert. Dieses Feld bringt keinen Mehrwert bei der Migration</td>
+        <td>KBV_PR_WEST_Observation_Anamnese  <br/><ul title="null"><li data-uuid="a0fa7284-948d-463f-9bdd-a39c9f539830">status</li></ul></td>
+        <td>NOK</td>
+        <td>Das Element ist in FHIR nicht verzichtbar.</td>
+      </tr>
+      <tr>
+        <td>Element und Sub-Elemente löschen: Im FHIR Kontext mag dieses Feld absolut seine Berechtigung haben. Wenn wir aber eine performante ressourcenschonende Migration wollen, sind solche Felder nicht sinnvoll. Im xBDT ist dies über die Feldnummer gelöst. So wird verstanden, dass es sich um die Anamese handelt. Es ist keine zusätzliche Kodifizierung nötig.</td>
+        <td>KBV_PR_WEST_Observation_Anamnese  <br/><ul title="null"><li data-uuid="77349947-efbb-4614-ad97-da85992af94c">code und alle Unterelemente</li></ul></td>
+        <td>NOK</td>
+        <td>Das Element ist in FHIR nicht verzichtbar.</td>
+      </tr>
+      <tr>
+        <td>Laut Informationsmodell ist eine Anamnese nur mit einem Typ möglich. Sollte nicht mindestens auch die Beschreibung - also der tatsächliche Inhalt - verpflichtend sein?</td>
+        <td>KBV_PR_WEST_Observation_Anamnese</td>
+        <td>OK</td>
+        <td>Ja, die Beschreibung verpflichtend zu machen, ist sinnvoll, wir haben die Kardinalität angepasst.</td>
+      </tr>
+      <tr>
+        <td>Element löschen: Der Status hat nur ein Element im ValueSet. Dieses Feld bringt keinen Mehrwert bei der Migration</td>
+        <td>KBV_PR_WEST_ServiceRequest  <br/><ul title="null"><li data-uuid="53ec8619-492b-473b-a5a5-f2e219ec9734">status</li></ul></td>
+        <td>NOK</td>
+        <td>Das Element ist in FHIR nicht verzichtbar.</td>
+      </tr>
+      <tr>
+        <td>Element löschen: Die Auftragsart hat nur ein Element im ValueSet. Dieses Feld bringt keinen Mehrwert bei der Migration</td>
+        <td>KBV_PR_WEST_ServiceRequest  <br/><ul title="null"><li data-uuid="163c7ad0-8caf-4e4d-a44f-5a6554d5cb8f">intent</li></ul></td>
+        <td>NOK</td>
+        <td>Das Element ist in FHIR nicht verzichtbar.</td>
+      </tr>
+      <tr>
+        <td>Uns ist die Angabe der Kardinalität nicht klar. Warum wird hier zwischen Patientenakte und Arbeitspaket-2 unterschieden? Wie könnte eine kurative ASV Überweisung mit der Kardinalität 1..1 abgebildet werden?</td>
+        <td>KBV_PR_WEST_ServiceRequest  <br/><ul title="null"><li data-uuid="bc757540-5374-4081-8501-19016ce9e587">category</li></ul></td>
+        <td>OK</td>
+        <td>Das ist ein Fehler unsererseits. Gültig ist nur die Kardinalität aus Arbeitspaket-2.</td>
+      </tr>
+      <tr>
+        <td>Durch die 1..1 Kardinalität muss die Referenz zur Begegnung hergestellt werden. Was passiert, wenn das exportierende System diese Referenz nicht hat?</td>
+        <td>KBV_PR_WEST_ServiceRequest  <br/><ul title="null"><li data-uuid="04644c20-defc-4400-963b-63f09c3f4908">encounter</li></ul></td>
+        <td>OK</td>
+        <td>Das zusätzliche Szenario “Patientenakte” ist ein Fehler unsererseits. Gültig ist nur das Szenario Arbeitspaket-2. Wenn keine echte Begegnung angegeben werden kann, kann eine Dummy-Begegnung angelegt werden mit der Extension „spezielle Begegnungsinformationen“ und folgenden Inhalt: Typ = Dummy Inhalt = Dummy</td>
+      </tr>
+      <tr>
+        <td>Uns ist die Angabe der Kardinalität nicht klar. Warum wird hier zwischen Patientenakte und Arbeitspaket-2 unterschieden? Warum kann auf einmal das Ausstellungdatum optional sein?</td>
+        <td>KBV_PR_WEST_ServiceRequest  <br/><ul title="null"><li data-uuid="eb83e886-4c89-4c63-b296-602dcec2442d"><span>authoredOn</span></li></ul></td>
+        <td>OK</td>
+        <td>Das ist ein Fehler unsererseits. Gültig ist nur die Kardinalität aus Arbeitspaket-2, also die Kardinalität 0..1</td>
+      </tr>
+      <tr>
+        <td>Im Informationsmodell des AP2 fehlt eine Ressource zur Abbildung durchgeführter medizinischer Maßnahmen (FHIR Procedure). Prozeduren sind ein zentraler Bestandteil der Patientenakte und umfassen diagnostische Eingriffe (z.B. Endoskopien, Biopsien, bildgebende Untersuchungen), therapeutische Maßnahmen (Operationen, Interventionen) sowie präventive Leistungen (Screenings, Früherkennungsuntersuchungen). Ohne ein Procedure-Profil können wesentliche Teile der Behandlungshistorie bei einem Systemwechsel nicht übertragen werden.   <br/>   <br/>Beispiel: Im Lungenkrebs-Screening (KBV-Screening-Programm als GKV-Leistung, ab 01.04.2026) ist die Dokumentation der durchgeführten Niedrigdosis-CT als Prozedur mit OPS-Kodierung essenziell. Auch die S3-Leitlinie ‘Rauchen und Tabakabhängigkeit’ (AWMF 076-006, Empfehlung 4.7.3.3) verweist explizit auf OPS 9-501 zur Tabakentwöhnung als kodierbare Prozedur im DRG-System.   <br/>   <br/>Änderungsvorschlag: Aufnahme eines Procedure-Profils in das Informationsmodell, das diagnostische, therapeutische und präventive Maßnahmen mit z.B. OPS-Kodierung abbilden kann.</td>
+        <td>&nbsp;</td>
+        <td>OK</td>
+        <td>Die Möglichkeit Abbildung einer Prozedur ist geplant und wird im abgeschlossenen Informationsmodell vorhanden sein.</td>
+      </tr>
+      <tr>
+        <td>Es fehlt ein Profil für diagnostische Berichte (FHIR DiagnosticReport). Befundberichte aus Bildgebung, Labor und Pathologie sind ein wesentlicher Bestandteil der hausärztlichen Patientenakte und werden regelmäßig von anderen Leistungserbringern empfangen. Ohne DiagnosticReport können strukturierte Befunde – im Unterschied zu reinen Freitextdokumenten – nicht über die Wechselschnittstelle übertragen werden.   <br/>   <br/>Beispiel: Im Lungenkrebs-Screening enthalten LDCT-Befundberichte strukturierte Angaben z.B. zur Klassifikation (Lung-RADS), die für den Hausarzt in der Nachverfolgung entscheidend sind.   <br/>   <br/>Änderungsvorschlag: Aufnahme eines DiagnosticReport-Profils, das bildgebende, labormedizinische und pathologische Befunde strukturiert abbilden kann.</td>
+        <td>&nbsp;</td>
+        <td>OK</td>
+        <td>Die Möglichkeit Abbildung eines Befundberichtes (DiagnosticReport) ist geplant und wird im abgeschlossenen Informationsmodell vorhanden sein. Die Gruppe Freitextanamnese ist davon getrennt modelliert worden und für verschiedenste Notizen eines Arztes gedacht, die nicht die Struktur und Tiefe eines Befundberichtes haben.</td>
+      </tr>
+      <tr>
+        <td>Das Anamnese-Profil ist generisch gehalten und erlaubt keine strukturierte Erfassung spezifischer Risikofaktoren. In der hausärztlichen Versorgung werden zahlreiche verhaltens- und expositionsbezogene Risikofaktoren erhoben (Raucherstatus, Alkoholkonsum, berufliche Exposition, Ernährungsgewohnheiten), die für Prävention, Screening und Therapieentscheidungen relevant sind. Das aktuelle Profil bietet keine Möglichkeit, diese Informationen kodiert und strukturiert zu übertragen.   <br/>   <br/>Beispiel: Für das Lungenkrebs-Screening ist die Raucheranamnese mit Pack-Years, Rauchdauer und Rauchstopp-Zeitpunkt gemäß LuKrFrühErkV zwingend erforderlich (LOINC 72166-2 Tobacco smoking status). Bei einem Wechsel gehen diese strukturierten Daten verloren.   <br/>   <br/>Änderungsvorschlag: Erweiterung des Anamnese-Profils um strukturierte, kodierte Felder für verhaltensbezogene und expositionsbezogene Risikofaktoren (z.B. über LOINC-kodierte Observations).</td>
+        <td>&nbsp;</td>
+        <td>Offen</td>
+        <td>Einzelne ausgewählte Spezial-Profile wie Raucherstatus <strong>und Schmerzskala</strong> sind in Planung. <strong>Außerdem wird das Modell um ein allgemeines Assessment und einen DignosticReport ergänzt.</strong>  <br/>  Für Inhalte, die vermutlich in vielen PVS nicht in einer mit FHIR vergleichbaren Strukturiertheit vorliegen, muss zwischen klinischem Nutzen, den wir durchaus sehen, und der praktischen Realisierbarkeit, die bereits bei dem Vorgängerprojekt AWS 1.3.0 ein Problem darstellte, abgewogen werden.  <br/>  Es kann daher sein, dass die strukturierte Abbildung komplexer medizinischer Sachverhalte zunächst nicht in vollem Ausmaß realisiert werden kann.  <br/>  Wir nehmen das Thema mit und versuchen, eine Lösung zu finden, die wir für die weitere Entwicklung berücksichtigen werden.</td>
+      </tr>
+      <tr>
+        <td>Die vorhandenen Observation-Profile beschränken sich auf klassische Vitalzeichen und Körpermaße. In der hausärztlichen Versorgung werden darüber hinaus regelmäßig klinische Scores und funktionelle Parameter erhoben, die nicht abgebildet werden können: Leistungsstatus (ECOG, Karnofsky), Schmerzskalen (NRS/VAS), funktionelle Assessments (z.B. geriatrisches Assessment, Barthel-Index) sowie krankheitsspezifische Scores (z.B. COPD Assessment Test, HbA1c-Verlauf).   <br/>   <br/>Beispiel: In der onkologischen Nachsorge bei Lungenkrebspatienten sind ECOG-Performance-Status und Schmerzskalen essenziell für Therapieentscheidungen und die Verlaufsbeurteilung.   <br/>   <br/>Änderungsvorschlag: Ergänzung eines generischen Observation-Profils für klinische Scores und funktionelle Parameter oder Erweiterung des Modells über die bisherigen Vitalzeichen hinaus.</td>
+        <td>&nbsp;</td>
+        <td>Offen</td>
+        <td>Einzelne ausgewählte Spezial-Profile wie Raucherstatus <strong>und Schmerzskala</strong> sind in Planung. <strong>Außerdem wird das Modell um ein allgemeines Assessment und einen DignosticReport ergänzt.</strong>  Für Inhalte, die vermutlich in vielen PVS nicht in einer mit FHIR vergleichbaren Strukturiertheit vorliegen, muss zwischen klinischem Nutzen, den wir durchaus sehen, und der praktischen Realisierbarkeit, die bereits bei dem Vorgängerprojekt AWS 1.3.0 ein Problem darstellte, abgewogen werden.  Es kann daher sein, dass die strukturierte Abbildung komplexer medizinischer Sachverhalte zunächst nicht in vollem Ausmaß realisiert werden kann.  Wir nehmen das Thema mit und versuchen, eine Lösung zu finden, die wir für die weitere Entwicklung berücksichtigen werden.</td>
+      </tr>
+      <tr>
+        <td>Das Condition-Profil unterstützt ICD-10-GM, SNOMED CT, Alpha-ID und Orphanet. Für Erkrankungen, die eine Stadien- oder Schweregradklassifikation erfordern, fehlt jedoch die Möglichkeit, diese strukturiert abzubilden. Dies betrifft nicht nur onkologische Erkrankungen (TNM-Klassifikation, UICC-Stadium, Grading), sondern auch z.B. chronische Niereninsuffizienz (KDIGO-Stadien), Herzinsuffizienz (NYHA-Klassen) oder COPD (GOLD-Stadien).   <br/>   <br/>Beispiel: Bei Lungenkrebspatienten ist das TNM-Stadium (cTNM/pTNM) mit UICC-Gesamtstadium therapieentscheidend und muss bei sektorübergreifender Versorgung (&sect; 374 SGB V) übertragbar sein.   <br/>   <br/>Änderungsvorschlag: Ergänzung von Extensions oder Referenzen auf Observation-Ressourcen für strukturierte Stadienklassifikationen und Schweregrade im Kontext der Diagnose.</td>
+        <td>&nbsp;</td>
+        <td>OK</td>
+        <td>Wir haben das Informationsmodell um das Stadium erweitert. Ein offenes Assessment-Modell, auf das in der Stadienbeschreibung verwiesen werden kann, wird später hinzugefügt.</td>
+      </tr>
+      <tr>
+        <td>In der modernen Medizin werden zunehmend Biomarker und molekulare Befunde für Therapieentscheidungen herangezogen. Das aktuelle Informationsmodell bietet keine Möglichkeit, solche Befunde strukturiert zu übertragen. Dies betrifft molekularpathologische Marker, genetische Prädispositionen, immunologische Parameter und prädiktive Biomarker, die in vielen Fachdisziplinen relevant sind (Onkologie, Rheumatologie, Endokrinologie, Kardiologie).   <br/>   <br/>Beispiel: Bei nicht-kleinzelligem Lungenkarzinom sind molekulare Marker wie EGFR, ALK, PD-L1, ROS1, BRAF V600E und KRAS G12C therapieentscheidend und werden auch in der hausärztlichen Nachsorge benötigt.   <br/>   <br/>Änderungsvorschlag: Aufnahme eines Observation-Profils für Biomarker und molekulare Befunde oder Integration in ein DiagnosticReport-Profil mit Referenz auf die zugehörige Condition.</td>
+        <td>&nbsp;</td>
+        <td>Offen</td>
+        <td>Einzelne ausgewählte Spezial-Profile wie Raucherstatus <strong>und Schmerzskala</strong> sind in Planung. <strong>Außerdem wird das Modell um ein allgemeines Assessment und einen DignosticReport ergänzt.</strong>  Für Inhalte, die vermutlich in vielen PVS nicht in einer mit FHIR vergleichbaren Strukturiertheit vorliegen, muss zwischen klinischem Nutzen, den wir durchaus sehen, und der praktischen Realisierbarkeit, die bereits bei dem Vorgängerprojekt AWS 1.3.0 ein Problem darstellte, abgewogen werden.  Es kann daher sein, dass die strukturierte Abbildung komplexer medizinischer Sachverhalte zunächst nicht in vollem Ausmaß realisiert werden kann.  Wir nehmen das Thema mit und versuchen, eine Lösung zu finden, die wir für die weitere Entwicklung berücksichtigen werden.</td>
+      </tr>
+      <tr>
+        <td>Es fehlt ein CarePlan-Profil zur Abbildung von Behandlungs- und Nachsorgeplänen. Strukturierte Behandlungspläne mit definierten Kontrollintervallen und geplanten Maßnahmen sind ein wesentliches Element der hausärztlichen Versorgungskoordination – insbesondere bei chronischen Erkrankungen, DMP-Programmen und Nachsorge. Ohne CarePlan können diese Informationen bei einem Systemwechsel nicht strukturiert übertragen werden.   <br/>   <br/>Beispiel: Nach einer Lungenkrebsdiagnose werden Nachsorgepläne mit definierten Kontrollintervallen (mind. 12 Monate) erstellt; im Screening-Programm ist das jährliche LDCT-Intervall (<span class="fhir-conformance"> 2 Abs. 1 Nr. 2, </span><span class="fhir-conformance"> 2 Abs. 1 Nr. 2, </span><br/>   <br/>Änderungsvorschlag: Aufnahme eines CarePlan-Profils, das Behandlungspläne, Nachsorge-Intervalle und geplante Maßnahmen strukturiert abbilden kann.</td>
+        <td>&nbsp;</td>
+        <td>Offen</td>
+        <td>Einzelne ausgewählte Spezial-Profile wie Raucherstatus <strong>und Schmerzskala</strong> sind in Planung. <strong>Außerdem wird das Modell um ein allgemeines Assessment und einen DignosticReport ergänzt.</strong>  Für Inhalte, die vermutlich in vielen PVS nicht in einer mit FHIR vergleichbaren Strukturiertheit vorliegen, muss zwischen klinischem Nutzen, den wir durchaus sehen, und der praktischen Realisierbarkeit, die bereits bei dem Vorgängerprojekt AWS 1.3.0 ein Problem darstellte, abgewogen werden.  Es kann daher sein, dass die strukturierte Abbildung komplexer medizinischer Sachverhalte zunächst nicht in vollem Ausmaß realisiert werden kann.  Wir nehmen das Thema mit und versuchen, eine Lösung zu finden, die wir für die weitere Entwicklung berücksichtigen werden.</td>
+      </tr>
+      <tr>
+        <td>Das Informationsmodell enthält keine Questionnaire-/QuestionnaireResponse-Profile. In der hausärztlichen Versorgung werden zahlreiche standardisierte Fragebögen und Assessments eingesetzt: geriatrische Assessments, Depressions-Screenings (PHQ-9), Lebensqualitätserhebungen und krankheitsspezifische Fragebögen. Die strukturierte Übertragung dieser Assessments ist bei einem Systemwechsel nicht möglich.   <br/>   <br/>Beispiel: Im Lungenkrebs-Screening ist ein strukturierter Bericht erforderlich; in der Nachsorge können z.B. Lebensqualitäts-Fragebögen (z.B. EORTC QLQ-C30) eingesetzt werden.   <br/>   <br/>Änderungsvorschlag: Aufnahme von Questionnaire-/QuestionnaireResponse-Profilen oder Berücksichtigung strukturierter Assessments im Informationsmodell.</td>
+        <td>&nbsp;</td>
+        <td>Offen</td>
+        <td>Einzelne ausgewählte Spezial-Profile wie Raucherstatus <strong>und Schmerzskala</strong> sind in Planung. <strong>Außerdem wird das Modell um ein allgemeines Assessment und einen DignosticReport ergänzt.</strong>  Für Inhalte, die vermutlich in vielen PVS nicht in einer mit FHIR vergleichbaren Strukturiertheit vorliegen, muss zwischen klinischem Nutzen, den wir durchaus sehen, und der praktischen Realisierbarkeit, die bereits bei dem Vorgängerprojekt AWS 1.3.0 ein Problem darstellte, abgewogen werden.  Es kann daher sein, dass die strukturierte Abbildung komplexer medizinischer Sachverhalte zunächst nicht in vollem Ausmaß realisiert werden kann.  Wir nehmen das Thema mit und versuchen, eine Lösung zu finden, die wir für die weitere Entwicklung berücksichtigen werden.</td>
+      </tr>
+      <tr>
+        <td>Es fehlt ein DocumentReference-Profil zur Referenzierung externer Dokumente. In der hausärztlichen Versorgung fallen zahlreiche Fremddokumente an, die Teil der Patientenakte sind, z.B. Arztbriefe. Die Wechselschnittstelle sollte zumindest Metadaten und Referenzen auf diese Dokumente übertragen können, um die Vollständigkeit der Patientenakte bei einem Systemwechsel gemäß &sect; 371 SGB V sicherzustellen.   <br/>   <br/>Beispiel: Im Lungenkrebsbehandlungspfad sind z.B. Arztbriefe von Onkologen nach stationärer Behandlung für den Hausarzt in der Nachsorge unverzichtbar.    <br/>   <br/>Änderungsvorschlag: Aufnahme eines DocumentReference-Profils zur strukturierten Verknüpfung klinischer Dokumente (Typ, Datum, Ersteller, Kategorie, Verweis auf Inhalt).</td>
+        <td>&nbsp;</td>
+        <td>OK</td>
+        <td>Ein DocumentReference-Profil ist in Planung und wird im vollständigen Informationsmodell enthalten sein.</td>
+      </tr>
+      <tr>
+        <td>Das MedicationStatement-Profil ist auf Dauermedikation ausgerichtet. Zeitlich begrenzte, zyklische oder protokollbasierte Therapien können damit nicht adäquat abgebildet werden. Dies betrifft nicht nur onkologische Therapieschemata, sondern auch z.B. Antibiotikatherapien, Kortisonstoßtherapien, immunsuppressive Induktionstherapien oder zeitlich befristete Schmerztherapien. Therapiezyklen, Dosisanpassungen und Therapieabbrüche/-wechsel mit Begründung können nicht strukturiert dokumentiert werden.   <br/>   <br/>Beispiel: In der Lungenkrebstherapie kommen zyklische Chemotherapie-, Immuntherapie- und zielgerichtete Therapieschemata zum Einsatz, deren Verlauf für den Hausarzt nachvollziehbar sein muss.   <br/>   <br/>Änderungsvorschlag: Erweiterung des MedicationStatement um zeitlich begrenzte Therapien oder Ergänzung eines MedicationRequest-Profils mit Informationen zu Therapiezyklen und -protokollen.</td>
+        <td>&nbsp;</td>
+        <td>Offen</td>
+        <td>Einzelne ausgewählte Spezial-Profile wie Raucherstatus <strong>und Schmerzskala</strong> sind in Planung. <strong>Außerdem wird das Modell um ein allgemeines Assessment und einen DignosticReport ergänzt.</strong>  <br/>  Für Inhalte, die vermutlich in vielen PVS nicht in einer mit FHIR vergleichbaren Strukturiertheit vorliegen, muss zwischen klinischem Nutzen, den wir durchaus sehen, und der praktischen Realisierbarkeit, die bereits bei dem Vorgängerprojekt AWS 1.3.0 ein Problem darstellte, abgewogen werden.  <br/>  Es kann daher sein, dass die strukturierte Abbildung komplexer medizinischer Sachverhalte zunächst nicht in vollem Ausmaß realisiert werden kann.  <br/>  Wir nehmen das Thema mit und versuchen, eine Lösung zu finden, die wir für die weitere Entwicklung berücksichtigen werden.</td>
+      </tr>
+      <tr>
+        <td>Die supportingInfo-Slices im ServiceRequest (befund_Medikation und Ausnahmeindikation) sind eng gefasst und decken nur spezifische Anwendungsfälle ab. Bei Überweisungen werden jedoch häufig weitergehende klinische Kontextinformationen mitgegeben: relevante Vorbefunde, Risikofaktoren, Nachweise für spezielle Leistungen oder konkrete Fragestellungen an den Empfänger. Eine flexible Erweiterung der supportingInfo wäre notwendig.   <br/>   <br/>Beispiel: Raucherstatus, Pack-Years, etc. beim Lungenkrebs-Screening   <br/>   <br/>Änderungsvorschlag: Ergänzung weiterer supportingInfo-Slices oder offenere Gestaltung der Referenzmöglichkeiten auf beliebige Observation-/Condition-Ressourcen als klinischer Kontext.</td>
+        <td>&nbsp;</td>
+        <td>OK</td>
+        <td>Eine Möglichkeit für weitere Referenzen wurde hinzugefügt. Das stimmt überein mit einer möglichen Erweiterung der Überweisung im Rahmen der geplanten eÜberweisung.</td>
+      </tr>
+      <tr>
+        <td>Die vorhandenen Observation-Profile enthalten keine Abbildung von Laborwerten. Laborergebnisse sind ein zentraler Bestandteil nahezu jeder Patientenakte und werden in der hausärztlichen Versorgung regelmäßig erhoben und ausgewertet (Blutbild, Stoffwechselparameter, Organfunktionswerte, Entzündungsmarker, Schilddrüsenwerte u.v.m.).   <br/>   <br/>Beispiel: In der Lungenkrebsnachsorge sind regelmäßige Laborkontrollen (Blutbild, LDH, Leber-/Nierenwerte) zur Therapieüberwachung und Rezidiverkennung Standard.   <br/>   <br/>Änderungsvorschlag: Aufnahme eines generischen Laborwert-Observation-Profils oder eines DiagnosticReport-Profils für Laborbefunde in das Informationsmodell.</td>
+        <td>&nbsp;</td>
+        <td>OK</td>
+        <td>Ein DiagnosticReport-Profil ist in Planung und wird im vollständigen Informationsmodell enthalten sein.</td>
+      </tr>
+      <tr>
+        <td>Das Informationsmodell bietet keine strukturierte Erfassung der Familienanamnese (FHIR FamilyMemberHistory). Die familiäre Krankheitsgeschichte ist für die hausärztliche Risikoeinschätzung bei zahlreichen Erkrankungen relevant: kardiovaskuläre Risiken, hereditäre Tumorprädispositionssyndrome, Diabetes, psychische Erkrankungen u.a. Diese Informationen werden typischerweise einmalig erhoben und über die gesamte Behandlungsdauer fortgeschrieben.   <br/>   <br/>Beispiel: Bei Lungenkrebs erhöhen erstgradige Verwandte mit Lungenkarzinom das individuelle Risiko und sind für die Beurteilung der Screening-Indikation relevant.   <br/>   <br/>Änderungsvorschlag: Ergänzung eines FamilyMemberHistory-Profils oder strukturierter Felder in der Anamnese zur kodierten Erfassung der familiären Krankheitsgeschichte.</td>
+        <td>&nbsp;</td>
+        <td>Offen</td>
+        <td>Einzelne ausgewählte Spezial-Profile wie Raucherstatus <strong>und Schmerzskala</strong> sind in Planung. <strong>Außerdem wird das Modell um ein allgemeines Assessment und einen DignosticReport ergänzt.</strong>  <br/>  Für Inhalte, die vermutlich in vielen PVS nicht in einer mit FHIR vergleichbaren Strukturiertheit vorliegen, muss zwischen klinischem Nutzen, den wir durchaus sehen, und der praktischen Realisierbarkeit, die bereits bei dem Vorgängerprojekt AWS 1.3.0 ein Problem darstellte, abgewogen werden.  <br/>  Es kann daher sein, dass die strukturierte Abbildung komplexer medizinischer Sachverhalte zunächst nicht in vollem Ausmaß realisiert werden kann.  <br/>  Wir nehmen das Thema mit und versuchen, eine Lösung zu finden, die wir für die weitere Entwicklung berücksichtigen werden.</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+  <script src="assets/js/jstree.min.js" type="text/javascript"> </script>
+
+
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Mon, Jun 1, 2026 12:00+0200">2026-06-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

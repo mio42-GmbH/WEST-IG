@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="fafb4053-2267-4a53-8bf3-b808fb705277"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Height|1.0.0-kommentierung"/>
+  </meta>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <version value="2.74"/>
+      <code value="8302-2"/>
+      <display value="Body height"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
+      <code value="1153637007"/>
+      <display value="Body height (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+  </subject>
+  <effectiveDateTime value="2020-01-02"/>
+  <valueQuantity>
+    <value value="166"/>
+    <unit value="centimeter"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="cm"/>
+  </valueQuantity>
+  <note>
+    <authorString value="Mueller"/>
+    <time value="2020-01-02"/>
+    <text value="ausgedacht"/>
+  </note>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20240515"/>
+      <code value="38266002"/>
+      <display value="Entire body as a whole (body structure)"/>
+    </coding>
+  </bodySite>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <version value="http://snomed.info/sct/11000274103/version/20240515"/>
+      <code value="51791000"/>
+      <display value="Measuring tape"/>
+    </coding>
+  </method>
+</Observation>

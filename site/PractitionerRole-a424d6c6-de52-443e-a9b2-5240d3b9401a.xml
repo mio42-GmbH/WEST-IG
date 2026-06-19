@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_PractitionerRole|1.0.0-kommentierung"/>
+  </meta>
+  <practitioner>
+    <reference value="urn:uuid:2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
+  </practitioner>
+  <organization>
+    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7f"/>
+  </organization>
+  <specialty>
+    <coding>
+      <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE"/>
+      <version value="1.03"/>
+      <code value="01"/>
+      <display value="Allgemeinmedizin"/>
+    </coding>
+  </specialty>
+</PractitionerRole>

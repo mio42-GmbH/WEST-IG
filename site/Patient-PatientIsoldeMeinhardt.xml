@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="PatientIsoldeMeinhardt"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient|1.0.0-kommentierung"/>
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-citizenship">
+    <extension url="code">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"/>
+          <code value="D"/>
+          <display value="Deutschland"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type"/>
+        <code value="kvk"/>
+      </coding>
+    </type>
+    <system value="http://fhir.de/sid/gkv/kvk-versichertennummer"/>
+    <value value="111111"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Meinhardt">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Meinhardt"/>
+      </extension>
+    </family>
+    <given value="Isolde"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="010 11101"/>
+  </telecom>
+  <telecom>
+    <system value="phone"/>
+    <value value="0164 11011101"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="isolde@mio42.de"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1948-11-11"/>
+  <address>
+    <type value="both"/>
+    <line value="Schulstraße 1"/>
+    <city value="Neustadt"/>
+    <postalCode value="10000"/>
+    <country value="D"/>
+  </address>
+  <photo>
+    <contentType value="image/jpeg"/>
+    <url value="Binary/f016"/>
+  </photo>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47"/>
+        <version value="2.0.1"/>
+        <code value="de"/>
+        <display value="German"/>
+      </coding>
+    </language>
+    <preferred value="true"/>
+  </communication>
+  <generalPractitioner>
+    <reference value="PractitionerRole/PractitionerRoleMinnaKuehn"/>
+  </generalPractitioner>
+</Patient>

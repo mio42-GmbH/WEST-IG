@@ -1,0 +1,55 @@
+# PractitionerMinnaKuehn - Arbeitsgruppe WeST v1.0.0-kommentierung
+
+Arbeitsgruppe WeST
+
+Version 1.0.0-kommentierung - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **PractitionerMinnaKuehn**
+
+## Example Practitioner: PractitionerMinnaKuehn
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Practitioner",
+  "id" : "PractitionerMinnaKuehn",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner|1.0.0-kommentierung"]
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "LANR"
+      }]
+    },
+    "system" : "https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR",
+    "value" : "222222201"
+  }],
+  "name" : [{
+    "use" : "official",
+    "text" : "Dr. med. Minna Kühn",
+    "family" : "Kühn",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+        "valueString" : "Kühn"
+      }]
+    },
+    "given" : ["Minna"],
+    "prefix" : ["Dr. med."],
+    "_prefix" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+        "valueCode" : "AC"
+      }]
+    }]
+  }]
+}
+
+```

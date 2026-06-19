@@ -1,0 +1,62 @@
+{
+  "resourceType" : "Condition",
+  "id" : "67796ba0-61d0-4120-9d31-f9690fd88eaa",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition|1.0.0-kommentierung"]
+  },
+  "extension" : [{
+    "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant",
+    "valueBoolean" : true
+  }],
+  "code" : {
+    "coding" : [{
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen",
+        "valueCoding" : {
+          "system" : "http://fhir.de/CodeSystem/icd-10-gm-mehrfachcodierungs-kennzeichen",
+          "code" : "*",
+          "display" : "*"
+        }
+      },
+      {
+        "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+        "valueCoding" : {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+          "code" : "B",
+          "display" : "beiderseits"
+        }
+      },
+      {
+        "url" : "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit",
+        "valueCoding" : {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_DIAGNOSESICHERHEIT",
+          "code" : "Z",
+          "display" : "Zustand nach"
+        }
+      }],
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2025",
+      "code" : "A00.0",
+      "display" : "Cholera durch Vibrio cholerae O:1, Biovar cholerae"
+    },
+    {
+      "system" : "http://fhir.de/CodeSystem/bfarm/alpha-id",
+      "version" : "2020",
+      "code" : "I6158"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "version" : "http://snomed.info/sct/11000274103/version/20250515",
+      "code" : "404684003",
+      "display" : "Clinical finding"
+    },
+    {
+      "system" : "http://www.orpha.net",
+      "version" : "2024",
+      "code" : "104075"
+    }]
+  },
+  "subject" : {
+    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+  }
+}

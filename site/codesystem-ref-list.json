@@ -1,0 +1,92 @@
+{
+  "codeSystems" : [{
+    "url" : "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen",
+    "version" : "8.00",
+    "status" : "active",
+    "name" : "DeuevAnlage8Laenderkennzeichen",
+    "title" : "Gültige Länderkennzeichen DEÜV8",
+    "description" : "Staatsangehörigkeit und Länderkennzeichen für Auslandsanschriften. Diese Übersicht basiert auf dem in der Staats- und Gebietssystematik des statistischen Bundesamtes verwendeten Schlüsselverzeichnis. Insofern wird bei den folgenden verwendeten Bezeichnungen, ihrer Auswahl und der Art der Wiedergabe des Inhalts nicht zum völker- oder staatsrechtlichen Status von Ländern, Hoheitsgebieten, Städten oder Gebieten oder ihrer Behörden oder zum Verlauf ihrer Grenzen oder Grenzlinien Stellung genommen.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=kbv.basis@1.8.0&canonical=https://fhir.kbv.de/ValueSet/KBV_VS_Base_Deuev_Anlage_8" : "Land/Wohnsitzländercode"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ConditionCategoryCodes",
+    "title" : "Condition Category Codes",
+    "description" : "Preferred value set for Condition Categories.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1073"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-condition-category.html" : "Condition Category Codes"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+    "title" : "KBV_CS_WEST_BDT_Betriebsstaettenstatus",
+    "description" : "Dieses CodeSystem enthält die Codes zur Beschreibung vom BDT Betriebsstaettenstatus",
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-BDT-Betriebsstaettenstatus.html" : "KBV_VS_WEST_BDT_Betriebsstaettenstatus"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnoseart",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Diagnoseart",
+    "title" : "KBV_CS_WEST_Diagnoseart",
+    "description" : "Diagnosearten",
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-Diagnoseart.html" : "KBV_VS_WEST_Diagnoseart"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Diagnosekategorie",
+    "title" : "KBV_CS_WEST_Diagnosekategorie",
+    "description" : "Diagnosekategorien",
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-Diagnosekategorie.html" : "KBV_VS_WEST_Diagnosekategorie"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Leistungsart",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Leistungsart",
+    "title" : "KBV_CS_WEST_Leistungsart",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_WEST_Leistungsart.",
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-Leistungsart.html" : "KBV_VS_WEST_Leistungsart"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Preistyp_Code",
+    "version" : "1.0.0-kommentierung",
+    "status" : "draft",
+    "name" : "KBV_CS_WEST_Preistyp_Code",
+    "title" : "KBV_CS_WEST_Preistyp_Code",
+    "description" : "Dieses Codesystem enthält die Codes für deutsche Bezeichner für KBV_CS_WEST_Preistyp_Code.",
+    "uses" : {
+    },
+    "ValueSet-KBV-VS-WEST-Preistyp-Code.html" : "KBV_VS_WEST_Preistyp_Code"
+  }]
+}

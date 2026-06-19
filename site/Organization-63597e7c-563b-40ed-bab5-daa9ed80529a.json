@@ -1,0 +1,8 @@
+{
+  "resourceType" : "Organization",
+  "id" : "63597e7c-563b-40ed-bab5-daa9ed80529a",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization|1.0.0-kommentierung"]
+  },
+  "name" : "Praxis X"
+}

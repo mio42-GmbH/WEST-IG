@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner|1.0.0-kommentierung"/>
+  </meta>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+    <valueString value="test"/>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="LANR"/>
+      </coding>
+    </type>
+    <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR"/>
+    <value value="123456789"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <text value="Dr. Hans Glücklich"/>
+    <family value="Hans">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Glücklich"/>
+      </extension>
+      <extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+        <valueString value="Prinz"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+        <valueString value="von"/>
+      </extension>
+    </family>
+    <given value="Hans"/>
+    <prefix value="Dr">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="AC"/>
+      </extension>
+    </prefix>
+  </name>
+  <birthDate value="1987-11-11"/>
+</Practitioner>

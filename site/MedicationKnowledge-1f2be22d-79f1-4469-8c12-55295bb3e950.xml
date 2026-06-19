@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationKnowledge xmlns="http://hl7.org/fhir">
+  <id value="1f2be22d-79f1-4469-8c12-55295bb3e950"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge|1.0.0-kommentierung"/>
+  </meta>
+</MedicationKnowledge>

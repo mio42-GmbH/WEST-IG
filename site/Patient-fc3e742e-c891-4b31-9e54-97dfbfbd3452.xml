@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="fc3e742e-c891-4b31-9e54-97dfbfbd3452"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient|1.0.0-kommentierung"/>
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type"/>
+        <code value="kvk"/>
+      </coding>
+    </type>
+    <system value="http://fhir.de/sid/gkv/kvk-versichertennummer"/>
+    <value value="111111"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Doe">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Doe"/>
+      </extension>
+    </family>
+    <given value="John"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1948-11-11"/>
+  <photo>
+    <contentType value="image/jpeg"/>
+    <url value="Binary/f016"/>
+  </photo>
+</Patient>

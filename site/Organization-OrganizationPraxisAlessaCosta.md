@@ -1,0 +1,50 @@
+# OrganizationPraxisAlessaCosta - Arbeitsgruppe WeST v1.0.0-kommentierung
+
+Arbeitsgruppe WeST
+
+Version 1.0.0-kommentierung - ci-build 
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **OrganizationPraxisAlessaCosta**
+
+## Example Organization: OrganizationPraxisAlessaCosta
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Organization",
+  "id" : "OrganizationPraxisAlessaCosta",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization|1.0.0-kommentierung"]
+  },
+  "name" : "Allgemeinmedizinische Praxis",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "010 1116"
+  },
+  {
+    "system" : "fax",
+    "value" : "010 2226"
+  },
+  {
+    "system" : "email",
+    "value" : "praxis@allgemeinmedizin-alessa-costa.de"
+  },
+  {
+    "system" : "email",
+    "value" : "allgemeinmedizin-alessa-costa@mio42.kim.telematik"
+  }],
+  "address" : [{
+    "type" : "both",
+    "line" : ["Hauptstraße 6"],
+    "city" : "Neustadt",
+    "postalCode" : "10000",
+    "country" : "D"
+  }]
+}
+
+```

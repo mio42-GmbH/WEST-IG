@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Observation",
+  "id" : "d70f568e-e758-4793-9fd9-7293de309c10",
+  "meta" : {
+    "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese|1.0.0-kommentierung"]
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "365854008"
+    }]
+  },
+  "subject" : {
+    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+  },
+  "valueString" : "testAnamnese"
+}

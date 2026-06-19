@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="6806ffd0-9535-453d-a1fe-228f3d786b9f"/>
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement|1.0.0-kommentierung"/>
+  </meta>
+  <status value="active"/>
+  <medicationReference>
+    <reference value="urn:uuid:ce1bd084-3616-48a8-8926-98cf371d4124"/>
+  </medicationReference>
+  <subject>
+    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+  </subject>
+</MedicationStatement>
