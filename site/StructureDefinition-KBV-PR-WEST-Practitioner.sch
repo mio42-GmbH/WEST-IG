@@ -18,7 +18,7 @@
       <sch:assert test="count(f:extension[@url = 'https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment']) &lt;= 1">extension with URL = 'https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:active) &lt;= 0">active: maximum cardinality of 'active' is 0</sch:assert>
       <sch:assert test="count(f:photo) &lt;= 0">photo: maximum cardinality of 'photo' is 0</sch:assert>
-      <sch:assert test="count(f:qualification) &lt;= 1">qualification: maximum cardinality of 'qualification' is 1</sch:assert>
+      <sch:assert test="count(f:qualification) &lt;= 0">qualification: maximum cardinality of 'qualification' is 0</sch:assert>
       <sch:assert test="count(f:communication) &lt;= 0">communication: maximum cardinality of 'communication' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -173,14 +173,6 @@
     <sch:title>f:Practitioner/f:gender</sch:title>
     <sch:rule context="f:Practitioner/f:gender">
       <sch:assert test="count(f:extension[@url = 'http://fhir.de/StructureDefinition/gender-amtlich-de']) &lt;= 1">extension with URL = 'http://fhir.de/StructureDefinition/gender-amtlich-de': maximum cardinality of 'extension' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:Practitioner/f:qualification</sch:title>
-    <sch:rule context="f:Practitioner/f:qualification">
-      <sch:assert test="count(f:identifier) &lt;= 0">identifier: maximum cardinality of 'identifier' is 0</sch:assert>
-      <sch:assert test="count(f:period) &lt;= 0">period: maximum cardinality of 'period' is 0</sch:assert>
-      <sch:assert test="count(f:issuer) &lt;= 0">issuer: maximum cardinality of 'issuer' is 0</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

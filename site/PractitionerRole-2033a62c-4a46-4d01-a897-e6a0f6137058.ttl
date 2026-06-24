@@ -16,12 +16,12 @@
      ] )
   ] ; # 
   fhir:practitioner [
-     fhir:l <urn:uuid:6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8> ;
-     fhir:reference [ fhir:v "urn:uuid:6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8" ]
+     fhir:l <https://fhir.kbv.de/Practitioner/6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8> ;
+     fhir:reference [ fhir:v "Practitioner/6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8" ]
   ] ; # 
   fhir:organization [
-     fhir:l <urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7f> ;
-     fhir:reference [ fhir:v "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7f" ]
+     fhir:l <https://fhir.kbv.de/Organization/b65dfcca-c6ce-4dac-8742-8da00c192c7f> ;
+     fhir:reference [ fhir:v "Organization/b65dfcca-c6ce-4dac-8742-8da00c192c7f" ]
   ] ; # 
   fhir:specialty ( [
      fhir:coding ( [

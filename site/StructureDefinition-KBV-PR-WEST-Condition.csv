@@ -106,6 +106,30 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"Condition.extension:istDauerdiagnose","Condition.extension","istDauerdiagnose","","",0,1,"Y","","","Extension {[CanonicalType[https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Diagnose_istDauerdiagnose]]} {[]}
+","istDauerdiagnose","Mit diesem Element kann angegeben werden, ob die Diagnose als Dauerdiagnose typisiert ist.
+0= Keine Dauerdiagnose 
+1 = Dauerdiagnose","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.extension:istDauerdiagnose.id","Condition.extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"Condition.extension:istDauerdiagnose.extension","Condition.extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Condition.extension:istDauerdiagnose.url","Condition.extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Diagnose_istDauerdiagnose""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"Condition.extension:istDauerdiagnose.value[x]","Condition.extension.value[x]","","","",1,1,"","","","boolean {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"Condition.extension:istDauerdiagnose.value[x]:valueBoolean","Condition.extension.value[x]","valueBoolean","","",1,1,"Y","","","boolean {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "Condition.extension:istAbrechnungsrelevant","Condition.extension","istAbrechnungsrelevant","","",1,1,"Y","","","Extension {[CanonicalType[https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_istAbrechnungsrelevant]]} {[]}
 ","istAbrechnungsrelevant","Kennzeichnung, ob die dokumentierten Informationen für die Abrechnung der Behandlung (z.B. im KVDT) relevant sind.
 0 = nicht relevant
@@ -245,7 +269,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Condition.category:diagnosekategorie","Condition.category","diagnosekategorie","","",0,1,"Y","","","CodeableConcept {[]} {[]}
-","problem-list-item | encounter-diagnosis","Die Diagnosekategorie hat folgende Auswahlmöglichkeiten: Eigendiagnose, Fremddiagnose","The categorization is often highly contextual and may appear poorly differentiated or not very useful in other contexts.","","","","","","","","",,"required","Diagnosekategorie","http://hl7.org/fhir/ValueSet/condition-category","",,,,"Condition.category",0,*,"ele-1
+","problem-list-item | encounter-diagnosis","Die Diagnosekategorie hat folgende Auswahlmöglichkeiten: Eigendiagnose, Fremddiagnose","The categorization is often highly contextual and may appear poorly differentiated or not very useful in other contexts.","","","","","","","","",,"required","Diagnosekategorie","https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnosekategorie","",,,,"Condition.category",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Condition.category:diagnosekategorie.id","Condition.category.id","","","",0,1,"","","","string {[]} {[]}
@@ -269,7 +293,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Condition.category:diagnosekategorie.coding.system","Condition.category.coding.system","","","",1,1,"Y","","Y","uri {[]} {[]}
-","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://terminology.hl7.org/CodeSystem/condition-category""/>","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
+","Identity of the terminology system","The identification of the code system that defines the meaning of the symbol in the code.","The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.","Need to be unambiguous about the source of the definition of the symbol.","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie""/>","","","","",,,,,"",,,,"Coding.system",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Condition.category:diagnosekategorie.coding.version","Condition.category.coding.version","","","",0,0,"","","Y","string {[]} {[]}
@@ -1104,7 +1128,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Condition.stage","Condition.stage","","","",0,1,"Y","","","BackboneElement {[]} {[]}
+"Condition.stage","Condition.stage","","","",0,0,"","","","BackboneElement {[]} {[]}
 ","Stage/grade, usually assessed formally","Clinical stage or grade of a condition. May include formal severity assessments.","","","","","","","","","",,,,,"",,,,"Condition.stage",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 con-1:Stage SHALL have summary or assessment {summary.exists() or assessment.exists()}"

@@ -27,7 +27,7 @@ Version 1.0.0-kommentierung - ci-build
       "system" : "http://snomed.info/sct",
       "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "275942009",
-      "display" : "New medication added"
+      "display" : "Neues Medikament hinzugefügt"
     }]
   }],
   "medicationReference" : {
@@ -65,7 +65,7 @@ Version 1.0.0-kommentierung - ci-build
         "system" : "http://snomed.info/sct",
         "version" : "http://snomed.info/sct/11000274103/version/20250515",
         "code" : "422400008",
-        "display" : "Vomiting"
+        "display" : "Vomitus"
       }],
       "text" : "Erbrechen"
     },
@@ -74,7 +74,7 @@ Version 1.0.0-kommentierung - ci-build
         "system" : "http://snomed.info/sct",
         "version" : "http://snomed.info/sct/11000274103/version/20250515",
         "code" : "442083009",
-        "display" : "Anatomical or acquired body structure"
+        "display" : "Anatomische oder erworbene Körperstruktur"
       }],
       "text" : "Oral"
     },
@@ -83,13 +83,13 @@ Version 1.0.0-kommentierung - ci-build
         "system" : "http://snomed.info/sct",
         "version" : "http://snomed.info/sct/11000274103/version/20250515",
         "code" : "26643006",
-        "display" : "Oral route"
+        "display" : "Peroral"
       },
       {
         "system" : "http://standardterms.edqm.eu",
         "version" : "4.0.1",
         "code" : "20053000",
-        "display" : "Oral use"
+        "display" : "Peroral"
       }]
     },
     "doseAndRate" : [{

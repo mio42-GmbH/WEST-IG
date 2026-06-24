@@ -150,7 +150,7 @@
       "coding" : [{
         "system" : "urn:ietf:bcp:47",
         "code" : "hr",
-        "display" : "Croatian"
+        "display" : "Kroatisch"
       }]
     },
     "preferred" : false

@@ -31,25 +31,25 @@ Version 1.0.0-kommentierung - ci-build
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "version" : "2.74",
+      "version" : "2.81",
       "code" : "2708-6",
-      "display" : "Oxygen saturation in Arterial blood"
+      "display" : "Sauerstoffsättigung in arteriellem Blut"
     },
     {
       "system" : "http://snomed.info/sct",
       "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "431314004",
-      "display" : "Peripheral oxygen saturation (observable entity)"
+      "display" : "Periphere Sauerstoffsättigung"
     },
     {
       "system" : "http://loinc.org",
-      "version" : "2.74",
+      "version" : "2.81",
       "code" : "59408-5",
-      "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
+      "display" : "Sauerstoffsättigung in arteriellem Blut mittels Pulsoximetrie"
     }]
   },
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   },
   "effectiveDateTime" : "2020-01-02",
   "valueQuantity" : {
@@ -66,53 +66,9 @@ Version 1.0.0-kommentierung - ci-build
       "system" : "http://snomed.info/sct",
       "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "448703006",
-      "display" : "Pulse oximeter"
+      "display" : "Pulsoxymeter"
     }]
-  },
-  "component" : [{
-    "code" : {
-      "coding" : [{
-        "system" : "http://loinc.org",
-        "version" : "2.74",
-        "code" : "3151-8",
-        "display" : "Inhaled oxygen flow rate"
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/11000274103/version/20231115",
-        "code" : "427081008",
-        "display" : "Delivered oxygen flow rate"
-      }]
-    },
-    "valueQuantity" : {
-      "value" : 6,
-      "unit" : "l/min",
-      "system" : "http://unitsofmeasure.org",
-      "code" : "L/min"
-    }
-  },
-  {
-    "code" : {
-      "coding" : [{
-        "system" : "http://loinc.org",
-        "version" : "2.74",
-        "code" : "3150-0",
-        "display" : "Inhaled oxygen concentration"
-      },
-      {
-        "system" : "http://snomed.info/sct",
-        "version" : "http://snomed.info/sct/11000274103/version/20231115",
-        "code" : "425608004",
-        "display" : "Delivered oxygen concentration"
-      }]
-    },
-    "valueQuantity" : {
-      "value" : 45,
-      "unit" : "%",
-      "system" : "http://unitsofmeasure.org",
-      "code" : "%"
-    }
-  }]
+  }
 }
 
 ```

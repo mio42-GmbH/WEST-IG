@@ -135,7 +135,7 @@
       <coding>
         <system value="urn:ietf:bcp:47"/>
         <code value="hr"/>
-        <display value="Croatian"/>
+        <display value="Kroatisch"/>
       </coding>
     </language>
     <preferred value="false"/>

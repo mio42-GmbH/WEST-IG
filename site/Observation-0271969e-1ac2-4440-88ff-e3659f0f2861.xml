@@ -17,17 +17,17 @@
       <system value="http://loinc.org"/>
       <version value="2.81"/>
       <code value="2339-0"/>
-      <display value="Glucose [Mass/volume] in Blood"/>
+      <display value="Glucose [Masse/Volumen] in Blut"/>
     </coding>
     <coding>
       <system value="http://snomed.info/sct"/>
       <version value="http://snomed.info/sct/11000274103/version/20250515"/>
       <code value="434912009"/>
-      <display value="Blood glucose concentration"/>
+      <display value="Blutzuckerkonzentration"/>
     </coding>
   </code>
   <subject>
-    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
   </subject>
   <effectiveDateTime value="2020-01-02"/>
   <valueQuantity>

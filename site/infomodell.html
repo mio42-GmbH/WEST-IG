@@ -290,10 +290,10 @@ Die detailliertere Zuweisung von Kardinalitäten und Konformitäten der einzelne
 </div>
 
   <p>
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#expand-szenario" aria-expanded="false" aria-controls="expand-szenario">Szenario: Arbeitspaket 1
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#expand-szenario-1" aria-expanded="false" aria-controls="expand-szenario-1">Szenario: Arbeitspaket 1
 </button>
 </p>
-  <div class="collapse" id="expand-szenario">
+  <div class="collapse" id="expand-szenario-1">
     <div class="card card-body">
       <table class="table">
 <tr>
@@ -1312,10 +1312,10 @@ Die detailliertere Zuweisung von Kardinalitäten und Konformitäten der einzelne
   </div>
 
   <p>
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#expand-szenario" aria-expanded="false" aria-controls="expand-szenario">Szenario: Arbeitspaket 2
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#expand-szenario-2" aria-expanded="false" aria-controls="expand-szenario-2">Szenario: Arbeitspaket 2
 </button>
 </p>
-  <div class="collapse" id="expand-szenario">
+  <div class="collapse" id="expand-szenario-2">
     <div class="card card-body">
       <table class="table">
 <tr>
@@ -5427,6 +5427,1224 @@ Die detailliertere Zuweisung von Kardinalitäten und Konformitäten der einzelne
     </div>
   </div>
 
+  <p>
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#expand-szenario-3" aria-expanded="false" aria-controls="expand-szenario-3">Szenario: Arbeitspaket 3
+</button>
+</p>
+  <div class="collapse" id="expand-szenario-3">
+    <div class="card card-body">
+      <table class="table">
+<tr>
+<th>Name</th>
+<th>Kardinalität</th>
+<th>Konformität</th>
+<th>Datentyp</th>
+</tr>
+<tr>
+<td style="white-space:pre">ARBEITSPAKET-3</td>
+<td>0..1 </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">  Befund/Bericht</td>
+<td>0..1 </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    Status</td>
+<td>1..1 </td>
+<td>M</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Kategorie - Code/Bezeichnung</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Code-Auswahl</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Diagnostic Service Section Codes</td>
+<td>0..* </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Code aus einem anderen Codesystem</td>
+<td>0..* </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Bezeichnung</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Befund/Bericht - Code/Bezeichnung</td>
+<td>1..1 </td>
+<td>M</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Code-Auswahl</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Code aus einem anderen Codesystem</td>
+<td>0..* </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Bezeichnung</td>
+<td>1..1 </td>
+<td>M</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Gesamtbeurteilung</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Relevanter Zeitpunkt-/raum</td>
+<td>1..1 </td>
+<td>M</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Zeitraum</td>
+<td>0..1 </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        von</td>
+<td>0..1 </td>
+<td>O</td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">        bis</td>
+<td>0..1 </td>
+<td>O</td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Zeitpunkt</td>
+<td>0..1 </td>
+<td>O</td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Referenz Ergebnis</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Referenz Vitalzeichen und Körpermaße</td>
+<td>1..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Vitalzeichen und Körpermaße</td>
+<td>1..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Referenz Durchführende Person</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Behandelnde Person</td>
+<td>1..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Referenz Dokument</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Dokumentenverweis/Anhang</td>
+<td>1..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">  Kontaktperson</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    Beziehung - Code/Bezeichnung</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Code-Auswahl</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Patient relationship type</td>
+<td>0..* </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Code aus einem anderen Codesystem</td>
+<td>0..* </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Bezeichnung</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Administratives Geschlecht</td>
+<td>0..1 </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Name</td>
+<td>0..1 </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Vollständiger Name</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Vorsatzwort</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Namenszusatz</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Titel</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Nachname</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Vorname</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Anschrift</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Straßenanschrift</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Straße</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Hausnummer</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Anschriftenzusatz</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Stadtteil</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Postleitzahl</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Ort</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Land/Wohnsitzländercode</td>
+<td>0..1 </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Postfach</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Postfach</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Stadtteil</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Postleitzahl</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Ort</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Land/Wohnsitzländercode</td>
+<td>0..1 </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Kontaktdaten</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Kontaktkanal</td>
+<td>1..1 </td>
+<td>M</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Wert</td>
+<td>1..1 </td>
+<td>M</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Hinweis</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">  Dokumentenverweis/Anhang</td>
+<td>0..* </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    Status</td>
+<td>1..1 </td>
+<td>M</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Typ - Code/Bezeichnung</td>
+<td>0..1 </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Code-Auswahl</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        XDS</td>
+<td>0..1 </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        KBV</td>
+<td>0..1 </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Code aus einem anderen Codesystem</td>
+<td>0..* </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Bezeichnung</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Kategorie - Code/Bezeichnung</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Code-Auswahl</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        XDS</td>
+<td>0..1 </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Code aus einem anderen Codesystem</td>
+<td>0..* </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Bezeichnung</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Dokumentenverweis</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Name des Dokumentes</td>
+<td>1..1 </td>
+<td>M</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      URI des Dokuments</td>
+<td>1..1 </td>
+<td>M</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Dokumentanhang</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Titel</td>
+<td>1..1 </td>
+<td>M</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Dateiformat</td>
+<td>1..1 </td>
+<td>M</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Datei</td>
+<td>1..1 </td>
+<td>M</td>
+<td>blob</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Zeitpunkt der Erstellung des Dokumentes</td>
+<td>0..1 </td>
+<td>O</td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Autor:in</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Behandelnde Person</td>
+<td>0..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Behandelnde Person/Einrichtung</td>
+<td>0..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Beschreibung des Dokuments</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">  Herkunftsinformation</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    Referenz auf das Ziel</td>
+<td>1..* </td>
+<td>M</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Referenz</td>
+<td>1..1 </td>
+<td>M</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    Ursprungs-Information</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Art der Nutzung</td>
+<td>1..1 </td>
+<td>M</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Verantwortliche Person/Entität</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Referenz auf Person/Entität</td>
+<td>1..1 </td>
+<td>M</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">          Behandelnde Person</td>
+<td>0..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Behandelnde Person/Einrichtung</td>
+<td>0..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Art der Beteiligung</td>
+<td>0..1 </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Rolle der Person</td>
+<td>0..* </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Referenz auf die Ursprungs-Information</td>
+<td>1..1 </td>
+<td>M</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Referenz</td>
+<td>1..1 </td>
+<td>M</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    Beteiligte Person/Entität</td>
+<td>1..* </td>
+<td>M</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Referenz auf Person/Entität</td>
+<td>1..1 </td>
+<td>M</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Art der Beteiligung</td>
+<td>0..1 </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Rolle der Person/Entität</td>
+<td>0..* </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Zeitpunkt der durchgeführten Aktivität</td>
+<td>0..1 </td>
+<td>O</td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">  Krankenversicherung</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    Versichertennummer</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      VersichertenID_GKV</td>
+<td>0..1 </td>
+<td>R</td>
+<td>identifier</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Versichertennummer_KVK</td>
+<td>0..1 </td>
+<td>R</td>
+<td>identifier</td>
+</tr>
+<tr>
+<td style="white-space:pre">      VersichertenID_PKV</td>
+<td>0..1 </td>
+<td>R</td>
+<td>identifier</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Versichertennummer_PKV</td>
+<td>0..1 </td>
+<td>R</td>
+<td>identifier</td>
+</tr>
+<tr>
+<td style="white-space:pre">      VersichertenID_Pseudo</td>
+<td>0..1 </td>
+<td>R</td>
+<td>identifier</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Status</td>
+<td>1..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Hauptversicherte Person</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Referenz</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Kontaktperson</td>
+<td>0..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Patient:in</td>
+<td>0..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Versichertennummer</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Typ</td>
+<td>0..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Wert</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Referenz Patient</td>
+<td>1..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Patient:in</td>
+<td>1..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Zeitraum</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      von</td>
+<td>1..1 </td>
+<td>R</td>
+<td>date</td>
+</tr>
+<tr>
+<td style="white-space:pre">      bis</td>
+<td>0..1 </td>
+<td>R</td>
+<td>date</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Kostenträger</td>
+<td>2..3 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Kostenträgertyp</td>
+<td>1..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Referenz</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Einrichtung/Organisationseinheit</td>
+<td>0..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Institutionskennzeichen</td>
+<td>0..1 </td>
+<td>R</td>
+<td>identifier</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Kostenträgername</td>
+<td>1..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Einlesedatum</td>
+<td>0..1 </td>
+<td>R</td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Prüfnachweis</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Prüfziffer</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Error-Code</td>
+<td>0..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Ergebnis</td>
+<td>0..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Datum</td>
+<td>0..1 </td>
+<td>R</td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Version-eGK</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Generation-eGK</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Versichertenart</td>
+<td>0..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Kostenerstattung</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Veranlasste Leistungen</td>
+<td>0..1 </td>
+<td>R</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Stationärer Sektor</td>
+<td>0..1 </td>
+<td>R</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Zahnärztlicher Sektor</td>
+<td>0..1 </td>
+<td>R</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Ärztliche Sektor</td>
+<td>0..1 </td>
+<td>R</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Wohnortprinzip</td>
+<td>0..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Besondere Personengruppe</td>
+<td>0..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    DMP-Kennzeichen</td>
+<td>0..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Ruhender Leistungsanspruch</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Art</td>
+<td>0..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Zeitraum</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        von</td>
+<td>0..1 </td>
+<td>R</td>
+<td>date</td>
+</tr>
+<tr>
+<td style="white-space:pre">        bis</td>
+<td>0..1 </td>
+<td>R</td>
+<td>date</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Zuzahlungsstatus</td>
+<td>0..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Status</td>
+<td>0..1 </td>
+<td>R</td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Gültigkeitsende</td>
+<td>0..1 </td>
+<td>R</td>
+<td>date</td>
+</tr>
+<tr>
+<td style="white-space:pre">    SKT-Zusatzangabe</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">  Mitarbeiter</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    Mitarbeiternummer</td>
+<td>1..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Name</td>
+<td>1..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Vollständiger Name</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Vorsatzwort</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Namenszusatz</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Titel</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Nachname</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Vorname</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Straßenanschrift</td>
+<td>0..1 </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Straße</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Hausnummer</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Anschriftenzusatz</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Stadtteil</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Postleitzahl</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Ort</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Land/Wohnsitzländercode</td>
+<td>0..1 </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Kontaktdaten</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Kontaktkanal</td>
+<td>1..1 </td>
+<td>M</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Wert</td>
+<td>1..1 </td>
+<td>M</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Administratives Geschlecht</td>
+<td>0..1 </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">  Hausbesuch</td>
+<td>0..* </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    Status</td>
+<td>1..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Klassifikation</td>
+<td>1..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Referenz Patient</td>
+<td>1..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Patient:in</td>
+<td>0..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Grund</td>
+<td>0..1 </td>
+<td>O</td>
+<td>complex</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Ort</td>
+<td>1..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Ort Hausbesuch</td>
+<td>0..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Entfernungsinformationen</td>
+<td>1..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Zone Besuchsort</td>
+<td>1..1 </td>
+<td>R</td>
+<td>complex</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Einfache Entfernung</td>
+<td>1..1 </td>
+<td>R</td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Referenz Begegnung</td>
+<td>1..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Begegnung/Aufenthalt</td>
+<td>0..1 </td>
+<td>R</td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">  Ort Hausbesuch</td>
+<td>1..1 </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    Typ</td>
+<td>1..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Kontaktdaten</td>
+<td>0..* </td>
+<td>R</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Kontaktkanal</td>
+<td>1..1 </td>
+<td>R</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Wert</td>
+<td>1..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Straßenanschrift</td>
+<td>0..1 </td>
+<td>O</td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Straße</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Hausnummer</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Anschriftenzusatz</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Postleitzahl</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Ort</td>
+<td>0..1 </td>
+<td>O</td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Land/Wohnsitzländercode</td>
+<td>0..1 </td>
+<td>O</td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Unstrukturierte Straßenanschrift</td>
+<td>0..1 </td>
+<td>R</td>
+<td>string</td>
+</tr>
+</table>
+
+    </div>
+  </div>
+
   <script type="text/javascript" src="assets/js/jquery.js"> </script>
 
   <script type="text/javascript" src="assets/js/jstree.min.js"> </script>
@@ -5458,7 +6676,7 @@ Die detailliertere Zuweisung von Kardinalitäten und Konformitäten der einzelne
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Mon, Jun 1, 2026 12:00+0200">2026-06-01</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Jun 24, 2026 16:51+0200">2026-06-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

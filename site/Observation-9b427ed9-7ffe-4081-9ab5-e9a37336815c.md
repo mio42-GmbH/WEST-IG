@@ -21,7 +21,7 @@ Version 1.0.0-kommentierung - ci-build
   "meta" : {
     "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration|1.0.0-kommentierung"]
   },
-  "status" : "final",
+  "status" : "amended",
   "category" : [{
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
@@ -33,17 +33,17 @@ Version 1.0.0-kommentierung - ci-build
       "system" : "http://loinc.org",
       "version" : "2.81",
       "code" : "2339-0",
-      "display" : "Glucose [Mass/volume] in Blood"
+      "display" : "Glucose [Masse/Volumen] in Blut"
     },
     {
       "system" : "http://snomed.info/sct",
       "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "434912009",
-      "display" : "Blood glucose concentration"
+      "display" : "Blutzuckerkonzentration"
     }]
   },
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   },
   "effectiveDateTime" : "2020-01-02",
   "valueQuantity" : {
@@ -60,11 +60,6 @@ Version 1.0.0-kommentierung - ci-build
       "display" : "365811003|Finding of glucose level|:{363713009|Has interpretation|=260369004|Increasing|}"
     }]
   }],
-  "note" : [{
-    "authorString" : "Mueller",
-    "time" : "2020-01-02",
-    "text" : "ausgedacht"
-  }],
   "bodySite" : {
     "text" : "Finger"
   },
@@ -73,7 +68,7 @@ Version 1.0.0-kommentierung - ci-build
       "system" : "http://snomed.info/sct",
       "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "359776002",
-      "display" : "Glucose measurement by monitoring device (procedure)"
+      "display" : "Glucose measurement by monitoring device"
     }]
   },
   "referenceRange" : [{
@@ -92,7 +87,7 @@ Version 1.0.0-kommentierung - ci-build
     "type" : {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
-        "version" : "4.0.1",
+        "version" : "1.0.1",
         "code" : "therapeutic",
         "display" : "Therapeutic Desired Level"
       }]

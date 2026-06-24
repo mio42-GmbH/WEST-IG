@@ -23,18 +23,6 @@
     "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings"
   },
   {
-    "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
-    "version" : "2.0.0",
-    "status" : "active",
-    "name" : "ConditionCategoryCodes",
-    "title" : "Condition Category Codes",
-    "description" : "Preferred value set for Condition Categories.",
-    "oids" : ["2.16.840.1.113883.4.642.1.1073"],
-    "uses" : {
-    },
-    "http://hl7.org/fhir/R4/valueset-condition-category.html" : "Condition Category Codes"
-  },
-  {
     "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus",
     "version" : "1.0.0-kommentierung",
     "status" : "draft",

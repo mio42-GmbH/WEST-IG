@@ -13,7 +13,7 @@ Version 1.0.0-kommentierung - ci-build
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnosekategorie | *Version*:1.0.0-kommentierung |
-| Draft as of 2026-05-29 | *Computable Name*:KBV_VS_WEST_Diagnosekategorie |
+| Draft as of 2026-06-24 | *Computable Name*:KBV_VS_WEST_Diagnosekategorie |
 | **Copyright/Legal**: Kassenaerztliche Bundesvereinigung | |
 
  
@@ -21,7 +21,7 @@ Diagnosekategorien
 
  **References** 
 
-This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+* [KBV_PR_WEST_Condition](StructureDefinition-KBV-PR-WEST-Condition.md)
 
 ### Logical Definition (CLD)
 
@@ -56,7 +56,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "KBV_VS_WEST_Diagnosekategorie",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-29T11:10:04+02:00",
+  "date" : "2026-06-24T16:51:19+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

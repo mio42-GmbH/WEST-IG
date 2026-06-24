@@ -31,34 +31,34 @@ Version 1.0.0-kommentierung - ci-build
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "version" : "2.74",
+      "version" : "2.81",
       "code" : "85354-9",
-      "display" : "Blood pressure panel with all children optional"
+      "display" : "Blutdruck (Liste) optional mit allen Unterbegriffen"
     },
     {
       "system" : "http://snomed.info/sct",
       "version" : "http://snomed.info/sct/11000274103/version/20250515",
       "code" : "75367002",
-      "display" : "Blood pressure"
+      "display" : "Blutdruck"
     }]
   },
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   },
   "effectiveDateTime" : "2020-01-02",
   "component" : [{
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
-        "version" : "2.74",
+        "version" : "2.81",
         "code" : "8480-6",
-        "display" : "Systolic blood pressure"
+        "display" : "Systolischer Blutdruck"
       },
       {
         "system" : "http://snomed.info/sct",
         "version" : "http://snomed.info/sct/11000274103/version/20250515",
         "code" : "271649006",
-        "display" : "Systolic blood pressure"
+        "display" : "Systolischer Blutdruck"
       }]
     },
     "valueQuantity" : {
@@ -72,15 +72,15 @@ Version 1.0.0-kommentierung - ci-build
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
-        "version" : "2.74",
+        "version" : "2.81",
         "code" : "8462-4",
-        "display" : "Diastolic blood pressure"
+        "display" : "Diastolischer Blutdruck"
       },
       {
         "system" : "http://snomed.info/sct",
         "version" : "http://snomed.info/sct/11000274103/version/20250515",
         "code" : "271650006",
-        "display" : "Diastolic blood pressure"
+        "display" : "Diastolischer Blutdruck"
       }]
     },
     "valueQuantity" : {

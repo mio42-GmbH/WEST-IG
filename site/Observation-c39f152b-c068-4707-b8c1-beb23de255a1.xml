@@ -5,7 +5,7 @@
   <meta>
     <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Blood_Pressure|1.0.0-kommentierung"/>
   </meta>
-  <status value="final"/>
+  <status value="amended"/>
   <category>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
@@ -15,59 +15,38 @@
   <code>
     <coding>
       <system value="http://loinc.org"/>
-      <version value="2.74"/>
+      <version value="2.81"/>
       <code value="85354-9"/>
-      <display value="Blood pressure panel with all children optional"/>
+      <display value="Blutdruck (Liste) optional mit allen Unterbegriffen"/>
     </coding>
     <coding>
       <system value="http://snomed.info/sct"/>
       <version value="http://snomed.info/sct/11000274103/version/20250515"/>
       <code value="75367002"/>
-      <display value="Blood pressure"/>
+      <display value="Blutdruck"/>
     </coding>
   </code>
   <subject>
-    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
   </subject>
   <effectiveDateTime value="2020-01-02"/>
-  <note>
-    <authorString value="Mueller"/>
-    <time value="2020-01-02"/>
-    <text value="ausgedacht"/>
-  </note>
-  <bodySite>
-    <coding>
-      <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
-      <code value="53120007"/>
-      <display value="Upper limb structure"/>
-    </coding>
-  </bodySite>
-  <method>
-    <coding>
-      <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
-      <code value="37931006"/>
-      <display value="Auscultation (procedure)"/>
-    </coding>
-  </method>
   <component>
     <code>
       <coding>
         <system value="http://loinc.org"/>
-        <version value="2.74"/>
+        <version value="2.81"/>
         <code value="8480-6"/>
-        <display value="Systolic blood pressure"/>
+        <display value="Systolischer Blutdruck"/>
       </coding>
       <coding>
         <system value="http://snomed.info/sct"/>
         <version value="http://snomed.info/sct/11000274103/version/20250515"/>
         <code value="271649006"/>
-        <display value="Systolic blood pressure"/>
+        <display value="Systolischer Blutdruck"/>
       </coding>
     </code>
     <valueQuantity>
-      <value value="69"/>
+      <value value="40"/>
       <unit value="mm Hg"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="mm[Hg]"/>
@@ -77,41 +56,19 @@
     <code>
       <coding>
         <system value="http://loinc.org"/>
-        <version value="2.74"/>
+        <version value="2.81"/>
         <code value="8462-4"/>
-        <display value="Diastolic blood pressure"/>
+        <display value="Diastolischer Blutdruck"/>
       </coding>
       <coding>
         <system value="http://snomed.info/sct"/>
         <version value="http://snomed.info/sct/11000274103/version/20250515"/>
         <code value="271650006"/>
-        <display value="Diastolic blood pressure"/>
+        <display value="Diastolischer Blutdruck"/>
       </coding>
     </code>
     <valueQuantity>
-      <value value="44"/>
-      <unit value="mm Hg"/>
-      <system value="http://unitsofmeasure.org"/>
-      <code value="mm[Hg]"/>
-    </valueQuantity>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <version value="2.74"/>
-        <code value="8478-0"/>
-        <display value="Mean blood pressure"/>
-      </coding>
-      <coding>
-        <system value="http://snomed.info/sct"/>
-        <version value="http://snomed.info/sct/11000274103/version/20250515"/>
-        <code value="6797001"/>
-        <display value="Mean blood pressure"/>
-      </coding>
-    </code>
-    <valueQuantity>
-      <value value="66"/>
+      <value value="40"/>
       <unit value="mm Hg"/>
       <system value="http://unitsofmeasure.org"/>
       <code value="mm[Hg]"/>

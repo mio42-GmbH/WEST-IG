@@ -12,6 +12,7 @@
 * [Vorgaben](west_requirements.md)
 * [Szenario Arbeitspaket 1](west_scenario_Arbeitspaket_1.md)
 * [Szenario Arbeitspaket 2](west_scenario_Arbeitspaket_2.md)
+* [Szenario Arbeitspaket 3](west_scenario_Arbeitspaket_3.md)
 
 ## Resources
 

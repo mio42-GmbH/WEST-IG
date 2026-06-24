@@ -84,7 +84,6 @@ Version 1.0.0-kommentierung - ci-build
     "language" : {
       "coding" : [{
         "system" : "urn:ietf:bcp:47",
-        "version" : "2.0.1",
         "code" : "de",
         "display" : "German"
       }]

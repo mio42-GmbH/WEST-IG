@@ -21,63 +21,22 @@ Version 1.0.0-kommentierung - ci-build
   "meta" : {
     "profile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter|1.0.0-kommentierung"]
   },
-  "extension" : [{
-    "extension" : [{
-      "url" : "typ",
-      "valueCodeableConcept" : {
-        "text" : "1"
-      }
-    },
-    {
-      "url" : "inhalt",
-      "valueString" : "test"
-    }],
-    "url" : "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen"
-  }],
-  "identifier" : [{
-    "value" : "123456"
-  }],
   "status" : "planned",
   "class" : {
     "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
     "code" : "AMB"
   },
-  "serviceType" : {
-    "coding" : [{
-      "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE",
-      "version" : "1.03",
-      "code" : "01",
-      "display" : "Allgemeinmedizin"
-    }]
-  },
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   },
   "participant" : [{
-    "type" : [{
-      "coding" : [{
-        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-        "code" : "ATND",
-        "display" : "attender"
-      }]
-    }],
     "individual" : {
       "reference" : "urn:uuid:9df81f65-7b3c-410b-b8f1-6426649fcde4"
     }
   }],
   "period" : {
-    "start" : "2021-11-15",
-    "end" : "2021-11-19"
+    "start" : "2021-11-15"
   },
-  "reasonCode" : [{
-    "coding" : [{
-      "system" : "http://snomed.info/sct",
-      "code" : "404684003"
-    }]
-  }],
-  "reasonReference" : [{
-    "reference" : "urn:uuid:8d84156a-fe2b-4eb8-b87e-57fe51b641d0"
-  }],
   "serviceProvider" : {
     "reference" : "urn:uuid:1e02c811-9ac0-4120-b8b7-58538c6d549f"
   }

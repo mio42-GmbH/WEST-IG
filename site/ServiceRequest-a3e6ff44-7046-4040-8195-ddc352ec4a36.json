@@ -18,48 +18,11 @@
       "display" : "Kurativ"
     }]
   }],
-  "code" : {
-    "text" : "test service request"
-  },
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   },
   "encounter" : {
-    "reference" : "urn:uuid:b8256177-8c41-46c6-a35e-94eb3dcfdf94"
+    "reference" : "Encounter/b8256177-8c41-46c6-a35e-94eb3dcfdf94"
   },
-  "authoredOn" : "2022-01-01",
-  "requester" : {
-    "reference" : "urn:uuid:a424d6c6-de52-443e-a9b2-5240d3b9401a"
-  },
-  "performer" : [{
-    "reference" : "urn:uuid:a424d6c6-de52-443e-a9b2-5240d3b9401a"
-  }],
-  "reasonCode" : [{
-    "text" : "test reason code"
-  }],
-  "reasonReference" : [{
-    "reference" : "urn:uuid:8d84156a-fe2b-4eb8-b87e-57fe51b641d0"
-  }],
-  "supportingInfo" : [{
-    "reference" : "Medication/149e683b-729a-41e2-a3ce-b21f4a2b55e2",
-    "identifier" : {
-      "type" : {
-        "coding" : [{
-          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Ueberweisung_KH-Einweisung_Kategorien",
-          "code" : "Befund_Medikation"
-        }]
-      }
-    }
-  },
-  {
-    "identifier" : {
-      "type" : {
-        "coding" : [{
-          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Ueberweisung_KH-Einweisung_Kategorien",
-          "code" : "Ausnahmeindikation"
-        }]
-      }
-    },
-    "display" : "test"
-  }]
+  "authoredOn" : "2022-01-01"
 }

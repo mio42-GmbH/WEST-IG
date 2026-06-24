@@ -104,16 +104,7 @@ Version 1.0.0-kommentierung - ci-build
       }
     }]
   },
-  "birthDate" : "1987-11-11",
-  "qualification" : [{
-    "code" : {
-      "coding" : [{
-        "system" : "http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern",
-        "code" : "011001",
-        "display" : "FA Allgemeinmedizin"
-      }]
-    }
-  }]
+  "birthDate" : "1987-11-11"
 }
 
 ```

@@ -8,27 +8,12 @@
   <status value="final"/>
   <code>
     <coding>
-      <system value="http://loinc.org"/>
-      <version value="2.74"/>
-      <code value="10164-2"/>
-      <display value="History of Present illness Narrative"/>
-    </coding>
-    <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
       <code value="365854008"/>
-      <display value="History finding"/>
     </coding>
   </code>
   <subject>
-    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
   </subject>
-  <encounter>
-    <reference value="urn:uuid:b8256177-8c41-46c6-a35e-94eb3dcfdf94"/>
-  </encounter>
-  <effectiveDateTime value="2020-01-01"/>
-  <performer>
-    <reference value="urn:uuid:2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
-  </performer>
   <valueString value="testAnamnese"/>
 </Observation>

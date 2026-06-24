@@ -28,7 +28,7 @@ Version 1.0.0-kommentierung - ci-build
         "system" : "http://snomed.info/sct",
         "version" : "http://snomed.info/sct/11000274103/version/20250515",
         "code" : "763158003",
-        "display" : "Medicinal product (product)"
+        "display" : "Arzneimittel"
       }]
     }
   },
@@ -56,7 +56,6 @@ Version 1.0.0-kommentierung - ci-build
     }],
     "text" : "Metoprolol-ratiopharm® 100 mg Tabletten"
   },
-  "status" : "active",
   "form" : {
     "coding" : [{
       "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM",
@@ -108,11 +107,7 @@ Version 1.0.0-kommentierung - ci-build
         "code" : "1"
       }
     }
-  }],
-  "batch" : {
-    "lotNumber" : "76282",
-    "expirationDate" : "2027-01-01"
-  }
+  }]
 }
 
 ```

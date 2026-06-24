@@ -36,7 +36,7 @@
        ] ;
        fhir:version [ fhir:v "2.81" ] ;
        fhir:code [ fhir:v "2339-0" ] ;
-       fhir:display [ fhir:v "Glucose [Mass/volume] in Blood" ]
+       fhir:display [ fhir:v "Glucose [Masse/Volumen] in Blut" ]
      ] [
        a sct:434912009 ;
        fhir:system [
@@ -45,12 +45,12 @@
        ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
        fhir:code [ fhir:v "434912009" ] ;
-       fhir:display [ fhir:v "Blood glucose concentration" ]
+       fhir:display [ fhir:v "Blutzuckerkonzentration" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
-     fhir:reference [ fhir:v "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
+     fhir:l <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
   ] ; # 
   fhir:effective [
      a fhir:DateTime ;

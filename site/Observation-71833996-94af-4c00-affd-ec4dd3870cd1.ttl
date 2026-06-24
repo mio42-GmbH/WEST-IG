@@ -34,9 +34,9 @@
          fhir:v "http://loinc.org"^^xsd:anyURI ;
          fhir:l <http://loinc.org>
        ] ;
-       fhir:version [ fhir:v "2.74" ] ;
+       fhir:version [ fhir:v "2.81" ] ;
        fhir:code [ fhir:v "85354-9" ] ;
-       fhir:display [ fhir:v "Blood pressure panel with all children optional" ]
+       fhir:display [ fhir:v "Blutdruck (Liste) optional mit allen Unterbegriffen" ]
      ] [
        a sct:75367002 ;
        fhir:system [
@@ -45,12 +45,12 @@
        ] ;
        fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
        fhir:code [ fhir:v "75367002" ] ;
-       fhir:display [ fhir:v "Blood pressure" ]
+       fhir:display [ fhir:v "Blutdruck" ]
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
-     fhir:reference [ fhir:v "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
+     fhir:l <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
   ] ; # 
   fhir:effective [
      a fhir:DateTime ;
@@ -64,9 +64,9 @@
            fhir:v "http://loinc.org"^^xsd:anyURI ;
            fhir:l <http://loinc.org>
          ] ;
-         fhir:version [ fhir:v "2.74" ] ;
+         fhir:version [ fhir:v "2.81" ] ;
          fhir:code [ fhir:v "8480-6" ] ;
-         fhir:display [ fhir:v "Systolic blood pressure" ]
+         fhir:display [ fhir:v "Systolischer Blutdruck" ]
        ] [
          a sct:271649006 ;
          fhir:system [
@@ -75,7 +75,7 @@
          ] ;
          fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
          fhir:code [ fhir:v "271649006" ] ;
-         fhir:display [ fhir:v "Systolic blood pressure" ]
+         fhir:display [ fhir:v "Systolischer Blutdruck" ]
        ] )
      ] ;
      fhir:value [
@@ -96,9 +96,9 @@
            fhir:v "http://loinc.org"^^xsd:anyURI ;
            fhir:l <http://loinc.org>
          ] ;
-         fhir:version [ fhir:v "2.74" ] ;
+         fhir:version [ fhir:v "2.81" ] ;
          fhir:code [ fhir:v "8462-4" ] ;
-         fhir:display [ fhir:v "Diastolic blood pressure" ]
+         fhir:display [ fhir:v "Diastolischer Blutdruck" ]
        ] [
          a sct:271650006 ;
          fhir:system [
@@ -107,7 +107,7 @@
          ] ;
          fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
          fhir:code [ fhir:v "271650006" ] ;
-         fhir:display [ fhir:v "Diastolic blood pressure" ]
+         fhir:display [ fhir:v "Diastolischer Blutdruck" ]
        ] )
      ] ;
      fhir:value [

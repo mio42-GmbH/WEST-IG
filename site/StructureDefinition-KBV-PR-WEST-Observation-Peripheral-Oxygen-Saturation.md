@@ -13,7 +13,7 @@ Version 1.0.0-kommentierung - ci-build
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation | *Version*:1.0.0-kommentierung |
-| Draft as of 2026-05-29 | *Computable Name*:KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation |
+| Draft as of 2026-06-24 | *Computable Name*:KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation |
 | **Copyright/Legal**: Im folgenden Profil können Codes aus den Code-Systemen SNOMED CT®, LOINC, Ucum, ATC, ICD-10-GM, ICD-10-WHO, OPS, Alpha-ID/Alpha-ID-SE und ICF enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED CT® Clinical Terms® (SNOMED CT® CT®) which is used by permission of SNOMED CT® International. All rights reserved. SNOMED CT® CT®, was originally created by The College of American Pathologists. SNOMED CT® and SNOMED CT® CT are registered trademarks of SNOMED CT® International. Implementers of these artefacts must have the appropriate SNOMED CT® CT Affiliate license. This material contains content from LOINC (http://LOINC.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://LOINC.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED ‘AS IS.’ ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. Dieses Material enthält Inhalte aus ATC. Die Erstellung erfolgte unter Verwendung der Datenträger der amtlichen Fassung der ATC-Klassifikation mit DDD des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICD-10-GM, ICD-10-WHO, OPS Alpha-ID ans Alpha-ID-SE. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). Dieses Material enthält Inhalte aus ICF. Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Deutschen Instituts für Medizinische Dokumentation und Information (DIMDI). ICF-Kodes, -Begriffe und -Texte © Weltgesundheitsorganisation, übersetzt und herausgegeben durch das Deutsche Institut für Medizinische Dokumentation und Information von der International classification of functioning, disability and health – ICF, herausgegeben durch die Weltgesundheitsorganisation. | |
 
  
@@ -23,7 +23,7 @@ Dieses Profil bildet die periphere arterielle Sauerstoffsättigung ab.
 
 * Examples for this Profile: [Observation/1b7000ea-84b8-42cd-9fbd-64d292fee395](Observation-1b7000ea-84b8-42cd-9fbd-64d292fee395.md) and [Observation/fccf147d-6bf7-49a5-a7f8-e516af80060d](Observation-fccf147d-6bf7-49a5-a7f8-e516af80060d.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/kbv.mio.west|current/StructureDefinition/KBV-PR-WEST-Observation-Peripheral-Oxygen-Saturation)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/kbv.mio.west|current/StructureDefinition/StructureDefinition-KBV-PR-WEST-Observation-Peripheral-Oxygen-Saturation.json)
 
 ### Formal Views of Profile Content
 
@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
   "name" : "KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation",
   "title" : "KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation",
   "status" : "draft",
-  "date" : "2026-05-29T11:10:04+02:00",
+  "date" : "2026-06-24T16:51:19+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
@@ -169,7 +169,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
       "patternCoding" : {
         "system" : "http://loinc.org",
         "code" : "2708-6",
-        "display" : "Oxygen saturation in Arterial blood"
+        "display" : "Sauerstoffsättigung in arteriellem Blut"
       },
       "mustSupport" : true
     },
@@ -205,7 +205,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
         "code" : "431314004",
-        "display" : "Peripheral oxygen saturation (observable entity)"
+        "display" : "Periphere Sauerstoffsättigung"
       },
       "mustSupport" : true
     },
@@ -241,7 +241,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
       "patternCoding" : {
         "system" : "http://loinc.org",
         "code" : "59408-5",
-        "display" : "Oxygen saturation in Arterial blood by Pulse oximetry"
+        "display" : "Sauerstoffsättigung in arteriellem Blut mittels Pulsoximetrie"
       },
       "mustSupport" : true
     },
@@ -309,33 +309,6 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
     {
       "id" : "Observation.encounter",
       "path" : "Observation.encounter",
-      "short" : "Begegnung",
-      "definition" : "Referenz zur Ressource Begegnung",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter|1.0.0-kommentierung"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.encounter.reference",
-      "path" : "Observation.encounter.reference",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Observation.encounter.type",
-      "path" : "Observation.encounter.type",
-      "max" : "0"
-    },
-    {
-      "id" : "Observation.encounter.identifier",
-      "path" : "Observation.encounter.identifier",
-      "max" : "0"
-    },
-    {
-      "id" : "Observation.encounter.display",
-      "path" : "Observation.encounter.display",
       "max" : "0"
     },
     {
@@ -406,7 +379,6 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
       "id" : "Observation.value[x]:valueQuantity.unit",
       "path" : "Observation.value[x].unit",
       "definition" : "Hier wird die Einheit des Messwerts angegeben.",
-      "fixedString" : "%",
       "mustSupport" : true
     },
     {
@@ -549,7 +521,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
           "system" : "http://snomed.info/sct",
           "version" : "http://snomed.info/sct/11000274103/version/20250515",
           "code" : "448703006",
-          "display" : "Pulse oximeter"
+          "display" : "Pulsoxymeter"
         }]
       },
       "mustSupport" : true
@@ -637,7 +609,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
       "patternCoding" : {
         "system" : "http://loinc.org",
         "code" : "3151-8",
-        "display" : "Inhaled oxygen flow rate"
+        "display" : "Inhalierter Sauerstoff - Flussrate"
       },
       "mustSupport" : true
     },
@@ -673,7 +645,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
         "code" : "427081008",
-        "display" : "Delivered oxygen flow rate"
+        "display" : "Delivered oxygen flow rate (observable entity)"
       },
       "mustSupport" : true
     },
@@ -795,7 +767,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
       "patternCoding" : {
         "system" : "http://loinc.org",
         "code" : "3150-0",
-        "display" : "Inhaled oxygen concentration"
+        "display" : "Inhalierte Sauerstoffkonzentration"
       },
       "mustSupport" : true
     },
@@ -831,7 +803,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Observat
       "patternCoding" : {
         "system" : "http://snomed.info/sct",
         "code" : "425608004",
-        "display" : "Delivered oxygen concentration"
+        "display" : "Delivered oxygen concentration (observable entity)"
       },
       "mustSupport" : true
     },

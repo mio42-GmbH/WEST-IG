@@ -11,13 +11,16 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/condition-assertedDate">
     <valueDateTime value="2012"/>
   </extension>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Diagnose_istDauerdiagnose">
+    <valueBoolean value="true"/>
+  </extension>
   <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
     <valueString value="Diagnoseausnahmetatbestand: Ja"/>
   </extension>
   <clinicalStatus>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
-      <version value="4.0.1"/>
+      <version value="3.0.0"/>
       <code value="resolved"/>
       <display value="Resolved"/>
     </coding>
@@ -25,23 +28,17 @@
   <verificationStatus>
     <coding>
       <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
-      <version value="4.0.1"/>
+      <version value="2.0.1"/>
       <code value="confirmed"/>
       <display value="Confirmed"/>
     </coding>
   </verificationStatus>
-  <category>
-    <coding>
-      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
-      <code value="encounter-diagnosis"/>
-    </coding>
-  </category>
   <severity>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <version value="http://snomed.info/sct/900000000000207008"/>
+      <version value="http://snomed.info/sct/11000274103/version/20250515"/>
       <code value="24484000"/>
-      <display value="Severe"/>
+      <display value="Stark"/>
     </coding>
   </severity>
   <code>
@@ -81,7 +78,7 @@
       <system value="http://snomed.info/sct"/>
       <version value="http://snomed.info/sct/11000274103/version/20250515"/>
       <code value="404684003"/>
-      <display value="Clinical finding"/>
+      <display value="Klinisch relevante Erscheinung"/>
     </coding>
     <coding>
       <system value="http://www.orpha.net"/>
@@ -94,11 +91,11 @@
       <system value="http://snomed.info/sct"/>
       <version value="http://snomed.info/sct/11000274103/version/20250515"/>
       <code value="76505004"/>
-      <display value="Thumb structure"/>
+      <display value="Thumb"/>
     </coding>
   </bodySite>
   <subject>
-    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
   </subject>
   <onsetPeriod>
     <start value="2016-01-01"/>
@@ -107,9 +104,6 @@
     <start value="2018-01-01"/>
   </abatementPeriod>
   <recordedDate value="2020-05-07"/>
-  <asserter>
-    <reference value="urn:uuid:2b946366-cf18-4d89-a29c-00bf69ac90f6"/>
-  </asserter>
   <note>
     <authorString value="Mueller"/>
     <time value="2020-01-02"/>

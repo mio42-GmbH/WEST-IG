@@ -104,7 +104,6 @@
            fhir:v "urn:ietf:bcp:47"^^xsd:anyURI ;
            fhir:l <urn:ietf:bcp:47>
          ] ;
-         fhir:version [ fhir:v "2.0.1" ] ;
          fhir:code [ fhir:v "de" ] ;
          fhir:display [ fhir:v "German" ]
        ] )

@@ -155,19 +155,7 @@
        ]
      ] )
   ] ; # 
-  fhir:birthDate [ fhir:v "1987-11-11"^^xsd:date] ; # 
-  fhir:qualification ( [
-     fhir:code [
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern"^^xsd:anyURI ;
-           fhir:l <http://ihe-d.de/CodeSystems/FacharzttitelDerAerztekammern>
-         ] ;
-         fhir:code [ fhir:v "011001" ] ;
-         fhir:display [ fhir:v "FA Allgemeinmedizin" ]
-       ] )
-     ]
-  ] ) . # 
+  fhir:birthDate [ fhir:v "1987-11-11"^^xsd:date] . # 
 
 # -------------------------------------------------------------------------------------
 

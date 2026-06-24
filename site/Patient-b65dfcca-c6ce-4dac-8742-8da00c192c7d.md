@@ -167,7 +167,7 @@ Version 1.0.0-kommentierung - ci-build
       "coding" : [{
         "system" : "urn:ietf:bcp:47",
         "code" : "hr",
-        "display" : "Croatian"
+        "display" : "Kroatisch"
       }]
     },
     "preferred" : false

@@ -22,8 +22,8 @@
      fhir:reference [ fhir:v "urn:uuid:ce1bd084-3616-48a8-8926-98cf371d4124" ]
   ] ; # 
   fhir:subject [
-     fhir:l <urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
-     fhir:reference [ fhir:v "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
+     fhir:l <https://fhir.kbv.de/Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d> ;
+     fhir:reference [ fhir:v "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d" ]
   ] . # 
 
 # -------------------------------------------------------------------------------------

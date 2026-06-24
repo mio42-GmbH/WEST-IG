@@ -31,7 +31,7 @@
          ] ;
          fhir:version [ fhir:v "http://snomed.info/sct/11000274103/version/20250515" ] ;
          fhir:code [ fhir:v "763158003" ] ;
-         fhir:display [ fhir:v "Medicinal product (product)" ]
+         fhir:display [ fhir:v "Arzneimittel" ]
        ] )
      ]
   ] [
@@ -72,7 +72,6 @@
      ] ) ;
      fhir:text [ fhir:v "Metoprolol-ratiopharm® 100 mg Tabletten" ]
   ] ; # 
-  fhir:status [ fhir:v "active"] ; # 
   fhir:form [
      fhir:coding ( [
        fhir:system [
@@ -146,11 +145,7 @@
          fhir:code [ fhir:v "1" ]
        ]
      ]
-  ] ) ; # 
-  fhir:batch [
-     fhir:lotNumber [ fhir:v "76282" ] ;
-     fhir:expirationDate [ fhir:v "2027-01-01"^^xsd:date ]
-  ] . # 
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

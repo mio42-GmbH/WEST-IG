@@ -18,48 +18,11 @@
       <display value="Kurativ"/>
     </coding>
   </category>
-  <code>
-    <text value="test service request"/>
-  </code>
   <subject>
-    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
   </subject>
   <encounter>
-    <reference value="urn:uuid:b8256177-8c41-46c6-a35e-94eb3dcfdf94"/>
+    <reference value="Encounter/b8256177-8c41-46c6-a35e-94eb3dcfdf94"/>
   </encounter>
   <authoredOn value="2022-01-01"/>
-  <requester>
-    <reference value="urn:uuid:a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
-  </requester>
-  <performer>
-    <reference value="urn:uuid:a424d6c6-de52-443e-a9b2-5240d3b9401a"/>
-  </performer>
-  <reasonCode>
-    <text value="test reason code"/>
-  </reasonCode>
-  <reasonReference>
-    <reference value="urn:uuid:8d84156a-fe2b-4eb8-b87e-57fe51b641d0"/>
-  </reasonReference>
-  <supportingInfo>
-    <reference value="Medication/149e683b-729a-41e2-a3ce-b21f4a2b55e2"/>
-    <identifier>
-      <type>
-        <coding>
-          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Ueberweisung_KH-Einweisung_Kategorien"/>
-          <code value="Befund_Medikation"/>
-        </coding>
-      </type>
-    </identifier>
-  </supportingInfo>
-  <supportingInfo>
-    <identifier>
-      <type>
-        <coding>
-          <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Ueberweisung_KH-Einweisung_Kategorien"/>
-          <code value="Ausnahmeindikation"/>
-        </coding>
-      </type>
-    </identifier>
-    <display value="test"/>
-  </supportingInfo>
 </ServiceRequest>

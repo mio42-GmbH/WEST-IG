@@ -15,25 +15,25 @@
   <code>
     <coding>
       <system value="http://loinc.org"/>
-      <version value="2.74"/>
+      <version value="2.81"/>
       <code value="2708-6"/>
-      <display value="Oxygen saturation in Arterial blood"/>
+      <display value="Sauerstoffsättigung in arteriellem Blut"/>
     </coding>
     <coding>
       <system value="http://snomed.info/sct"/>
       <version value="http://snomed.info/sct/11000274103/version/20250515"/>
       <code value="431314004"/>
-      <display value="Peripheral oxygen saturation (observable entity)"/>
+      <display value="Periphere Sauerstoffsättigung"/>
     </coding>
     <coding>
       <system value="http://loinc.org"/>
-      <version value="2.74"/>
+      <version value="2.81"/>
       <code value="59408-5"/>
-      <display value="Oxygen saturation in Arterial blood by Pulse oximetry"/>
+      <display value="Sauerstoffsättigung in arteriellem Blut mittels Pulsoximetrie"/>
     </coding>
   </code>
   <subject>
-    <reference value="urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
+    <reference value="Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"/>
   </subject>
   <effectiveDateTime value="2020-01-02"/>
   <valueQuantity>
@@ -50,51 +50,7 @@
       <system value="http://snomed.info/sct"/>
       <version value="http://snomed.info/sct/11000274103/version/20250515"/>
       <code value="448703006"/>
-      <display value="Pulse oximeter"/>
+      <display value="Pulsoxymeter"/>
     </coding>
   </method>
-  <component>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <version value="2.74"/>
-        <code value="3151-8"/>
-        <display value="Inhaled oxygen flow rate"/>
-      </coding>
-      <coding>
-        <system value="http://snomed.info/sct"/>
-        <version value="http://snomed.info/sct/11000274103/version/20231115"/>
-        <code value="427081008"/>
-        <display value="Delivered oxygen flow rate"/>
-      </coding>
-    </code>
-    <valueQuantity>
-      <value value="6"/>
-      <unit value="l/min"/>
-      <system value="http://unitsofmeasure.org"/>
-      <code value="L/min"/>
-    </valueQuantity>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <version value="2.74"/>
-        <code value="3150-0"/>
-        <display value="Inhaled oxygen concentration"/>
-      </coding>
-      <coding>
-        <system value="http://snomed.info/sct"/>
-        <version value="http://snomed.info/sct/11000274103/version/20231115"/>
-        <code value="425608004"/>
-        <display value="Delivered oxygen concentration"/>
-      </coding>
-    </code>
-    <valueQuantity>
-      <value value="45"/>
-      <unit value="%"/>
-      <system value="http://unitsofmeasure.org"/>
-      <code value="%"/>
-    </valueQuantity>
-  </component>
 </Observation>

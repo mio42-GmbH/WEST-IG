@@ -24,6 +24,8 @@
       "url": "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen",
       "title": "KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen",
       "types": [
+        "string",
+        "string",
         "CodeableConcept",
         "CodeableConcept",
         "string",
@@ -718,6 +720,9 @@
     ],
     "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Betriebsstaette_Hierarchie": [
       "Organization"
+    ],
+    "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Diagnose_istDauerdiagnose": [
+      "Condition"
     ],
     "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_MedicationKnowledge_Alternativen": [
       "MedicationKnowledge"

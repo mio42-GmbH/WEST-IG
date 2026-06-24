@@ -64,7 +64,6 @@
     <language>
       <coding>
         <system value="urn:ietf:bcp:47"/>
-        <version value="2.0.1"/>
         <code value="de"/>
         <display value="German"/>
       </coding>

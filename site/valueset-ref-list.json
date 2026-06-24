@@ -40,20 +40,6 @@
     "StructureDefinition-KBV-PR-WEST-ServiceRequest.html" : "KBV_PR_WEST_ServiceRequest"
   },
   {
-    "url" : "http://hl7.org/fhir/ValueSet/condition-category",
-    "version" : "4.0.1",
-    "status" : "draft",
-    "name" : "ConditionCategoryCodes",
-    "title" : "Condition Category Codes",
-    "description" : "Preferred value set for Condition Categories.",
-    "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
-    "oids" : ["2.16.840.1.113883.4.642.3.162"],
-    "sources" : ["2.16.840.1.113883.4.642.3.162"],
-    "uses" : {
-    },
-    "StructureDefinition-KBV-PR-WEST-Condition.html" : "KBV_PR_WEST_Condition"
-  },
-  {
     "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_Base_CommonLanguages",
     "version" : "1.8.0",
     "status" : "active",
@@ -87,8 +73,8 @@
     "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus"],
     "uses" : {
     },
-    "StructureDefinition-KBV-PR-WEST-Betriebsstaette.html" : "KBV_PR_WEST_Betriebsstaette",
-    "StructureDefinition-KBV-PR-WEST-Organization.html" : "KBV_PR_WEST_Organization"
+    "StructureDefinition-KBV-PR-WEST-Organization.html" : "KBV_PR_WEST_Organization",
+    "StructureDefinition-KBV-PR-WEST-Betriebsstaette.html" : "KBV_PR_WEST_Betriebsstaette"
   },
   {
     "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnoseart",
@@ -109,7 +95,10 @@
     "name" : "KBV_VS_WEST_Diagnosekategorie",
     "title" : "KBV_VS_WEST_Diagnosekategorie",
     "description" : "Diagnosekategorien",
-    "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie"]
+    "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_Diagnosekategorie"],
+    "uses" : {
+    },
+    "StructureDefinition-KBV-PR-WEST-Condition.html" : "KBV_PR_WEST_Condition"
   },
   {
     "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Leistungsart",

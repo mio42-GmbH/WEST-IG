@@ -11,7 +11,7 @@
         <system value="http://snomed.info/sct"/>
         <version value="http://snomed.info/sct/11000274103/version/20250515"/>
         <code value="763158003"/>
-        <display value="Medicinal product (product)"/>
+        <display value="Arzneimittel"/>
       </coding>
     </valueCodeableConcept>
   </extension>
@@ -38,7 +38,6 @@
     </coding>
     <text value="Metoprolol-ratiopharm® 100 mg Tabletten"/>
   </code>
-  <status value="active"/>
   <form>
     <coding>
       <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_KBV_DARREICHUNGSFORM"/>
@@ -91,8 +90,4 @@
       </denominator>
     </strength>
   </ingredient>
-  <batch>
-    <lotNumber value="76282"/>
-    <expirationDate value="2027-01-01"/>
-  </batch>
 </Medication>

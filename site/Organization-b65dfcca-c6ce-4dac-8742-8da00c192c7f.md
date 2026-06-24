@@ -67,7 +67,7 @@ Version 1.0.0-kommentierung - ci-build
   }],
   "type" : [{
     "coding" : [{
-      "system" : "https://fhir.kbv.de/CodeSystem/KBV-CS-WEST-BDT-Betriebsstaettenstatus",
+      "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus",
       "version" : "1.0.0-kommentierung",
       "code" : "1",
       "display" : "Arztpraxis"

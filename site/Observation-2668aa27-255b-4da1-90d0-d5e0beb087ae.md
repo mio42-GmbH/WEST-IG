@@ -31,9 +31,9 @@ Version 1.0.0-kommentierung - ci-build
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "version" : "2.74",
+      "version" : "2.81",
       "code" : "9843-4",
-      "display" : "Head Occipital-frontal circumference"
+      "display" : "Kopfumfang okzipital-frontal"
     },
     {
       "system" : "http://snomed.info/sct",
@@ -43,7 +43,7 @@ Version 1.0.0-kommentierung - ci-build
     }]
   },
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   },
   "effectiveDateTime" : "2020-01-02",
   "valueQuantity" : {

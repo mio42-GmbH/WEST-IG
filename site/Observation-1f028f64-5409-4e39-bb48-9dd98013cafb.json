@@ -7,27 +7,12 @@
   "status" : "final",
   "code" : {
     "coding" : [{
-      "system" : "http://loinc.org",
-      "version" : "2.74",
-      "code" : "10164-2",
-      "display" : "History of Present illness Narrative"
-    },
-    {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/11000274103/version/20250515",
-      "code" : "365854008",
-      "display" : "History finding"
+      "code" : "365854008"
     }]
   },
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   },
-  "encounter" : {
-    "reference" : "urn:uuid:b8256177-8c41-46c6-a35e-94eb3dcfdf94"
-  },
-  "effectiveDateTime" : "2020-01-01",
-  "performer" : [{
-    "reference" : "urn:uuid:2b946366-cf18-4d89-a29c-00bf69ac90f6"
-  }],
   "valueString" : "testAnamnese"
 }

@@ -12,7 +12,7 @@ Version 1.0.0-kommentierung - ci-build
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.kbv.de/ImplementationGuide/kbv.mio.west | *Version*:1.0.0-kommentierung |
-| Draft as of 2026-05-29 | *Computable Name*:ArbeitsgruppeWeST |
+| Draft as of 2026-06-24 | *Computable Name*:ArbeitsgruppeWeST |
 
 Die mio42 wurde beauftragt eine Wechselschnittstelle nach § 371 Abs. 1 SGB V zu entwickeln, welche dazu dient, Patientendaten bei einem Wechsel des Praxisverwaltungssystems (PVS) sicher, einheitlich und verbindlich zu übertragen. Sie soll durch einen möglichst umfassenden Datentransfer dazu beitragen, bestehende Wechselhürden abzubauen – etwa durch proprietäre Datenformate, Cloud-Hosting, hohe Kosten oder eingeschränkte Usability – und damit echte Systemwahlfreiheit für Arztpraxen ermöglichen. Der Fokus liegt dabei auf einem möglichst holistischen Datenmodell für Interoperabilität und Standardisierung sowie der Sicherstellung einer angemessenen Performanz im Wechselprozess.
 
@@ -56,7 +56,7 @@ Stand Dez 25
   "title" : "Arbeitsgruppe WeST",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-29T11:10:04+02:00",
+  "date" : "2026-06-24T16:51:19+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
@@ -88,7 +88,7 @@ Stand Dez 25
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.1.0"
+    "version" : "7.2.0"
   },
   {
     "id" : "hl7ext",
@@ -2090,6 +2090,7 @@ Stand Dez 25
         "reference" : "Observation/014ec6b1-2352-448e-ab16-b456f1842fbd"
       },
       "name" : "014ec6b1-2352-448e-ab16-b456f1842fbd",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Respiratory_Rate für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Respiratory_Rate"
     },
     {
@@ -2101,6 +2102,7 @@ Stand Dez 25
         "reference" : "Observation/0271969e-1ac2-4440-88ff-e3659f0f2861"
       },
       "name" : "0271969e-1ac2-4440-88ff-e3659f0f2861",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Glucose_Concentration für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration"
     },
     {
@@ -2112,6 +2114,7 @@ Stand Dez 25
         "reference" : "Observation/1b7000ea-84b8-42cd-9fbd-64d292fee395"
       },
       "name" : "1b7000ea-84b8-42cd-9fbd-64d292fee395",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation"
     },
     {
@@ -2123,6 +2126,7 @@ Stand Dez 25
         "reference" : "Observation/1f028f64-5409-4e39-bb48-9dd98013cafb"
       },
       "name" : "1f028f64-5409-4e39-bb48-9dd98013cafb",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Anamnese für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese"
     },
     {
@@ -2134,6 +2138,7 @@ Stand Dez 25
         "reference" : "MedicationKnowledge/1f2be22d-79f1-4469-8c12-55295bb3e950"
       },
       "name" : "1f2be22d-79f1-4469-8c12-55295bb3e950",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_MedicationKnowledge für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge"
     },
     {
@@ -2145,6 +2150,7 @@ Stand Dez 25
         "reference" : "PractitionerRole/2033a62c-4a46-4d01-a897-e6a0f6137058"
       },
       "name" : "2033a62c-4a46-4d01-a897-e6a0f6137058",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_PractitionerRole für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_PractitionerRole"
     },
     {
@@ -2156,6 +2162,7 @@ Stand Dez 25
         "reference" : "Observation/21a4f872-d221-4196-83ca-e19d0c979513"
       },
       "name" : "21a4f872-d221-4196-83ca-e19d0c979513",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Heart_Rate für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Heart_Rate"
     },
     {
@@ -2167,6 +2174,7 @@ Stand Dez 25
         "reference" : "Observation/2336103a-c86d-40fa-8376-9ec1c47532ee"
       },
       "name" : "2336103a-c86d-40fa-8376-9ec1c47532ee",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Abdominal_Circumference für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Abdominal_Circumference"
     },
     {
@@ -2178,6 +2186,7 @@ Stand Dez 25
         "reference" : "Encounter/23fd3c7e-03fb-4391-af3a-9178be31651f"
       },
       "name" : "23fd3c7e-03fb-4391-af3a-9178be31651f",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Encounter für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter"
     },
     {
@@ -2189,6 +2198,7 @@ Stand Dez 25
         "reference" : "Observation/2668aa27-255b-4da1-90d0-d5e0beb087ae"
       },
       "name" : "2668aa27-255b-4da1-90d0-d5e0beb087ae",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Head_Circumference für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Head_Circumference"
     },
     {
@@ -2200,6 +2210,7 @@ Stand Dez 25
         "reference" : "Practitioner/2b946366-cf18-4d89-a29c-00bf69ac90f6"
       },
       "name" : "2b946366-cf18-4d89-a29c-00bf69ac90f6",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Practitioner für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner"
     },
     {
@@ -2211,6 +2222,7 @@ Stand Dez 25
         "reference" : "Observation/4391d2b4-a2be-4c19-a3a6-0d799bb1427e"
       },
       "name" : "4391d2b4-a2be-4c19-a3a6-0d799bb1427e",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Temperature für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Temperature"
     },
     {
@@ -2222,6 +2234,7 @@ Stand Dez 25
         "reference" : "Medication/4858b0cf-837d-44fd-89a4-49538e44a9c1"
       },
       "name" : "4858b0cf-837d-44fd-89a4-49538e44a9c1",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Medication für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication"
     },
     {
@@ -2233,6 +2246,7 @@ Stand Dez 25
         "reference" : "Observation/49788959-8d60-4988-9069-0ba6a773e7fb"
       },
       "name" : "49788959-8d60-4988-9069-0ba6a773e7fb",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Hip_Circumference für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Hip_Circumference"
     },
     {
@@ -2244,6 +2258,7 @@ Stand Dez 25
         "reference" : "Observation/4b30f538-8da8-4fb6-87c2-b4735aead90b"
       },
       "name" : "4b30f538-8da8-4fb6-87c2-b4735aead90b",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Temperature für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Temperature"
     },
     {
@@ -2255,6 +2270,7 @@ Stand Dez 25
         "reference" : "Observation/4e2824ac-4134-442b-b5e8-2260974baa64"
       },
       "name" : "4e2824ac-4134-442b-b5e8-2260974baa64",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Weight für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Weight"
     },
     {
@@ -2266,6 +2282,7 @@ Stand Dez 25
         "reference" : "Observation/50157a4b-98c9-4f66-87b5-fb827c3ed8f6"
       },
       "name" : "50157a4b-98c9-4f66-87b5-fb827c3ed8f6",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Height für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Height"
     },
     {
@@ -2277,6 +2294,7 @@ Stand Dez 25
         "reference" : "MedicationStatement/5af292a5-0972-4937-a005-ac480aeb60ba"
       },
       "name" : "5af292a5-0972-4937-a005-ac480aeb60ba",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_MedicationStatement für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement"
     },
     {
@@ -2288,6 +2306,7 @@ Stand Dez 25
         "reference" : "ServiceRequest/5b57f38a-af6c-4093-84e7-2047e4ee524c"
       },
       "name" : "5b57f38a-af6c-4093-84e7-2047e4ee524c",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_ServiceRequest für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest"
     },
     {
@@ -2299,6 +2318,7 @@ Stand Dez 25
         "reference" : "Observation/611cd0f1-482d-4246-a9ea-329d925749c4"
       },
       "name" : "611cd0f1-482d-4246-a9ea-329d925749c4",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Head_Circumference für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Head_Circumference"
     },
     {
@@ -2310,6 +2330,7 @@ Stand Dez 25
         "reference" : "Observation/6352e4f6-6b9a-4e2a-bdd4-80fbaae601c6"
       },
       "name" : "6352e4f6-6b9a-4e2a-bdd4-80fbaae601c6",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Weight für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Weight"
     },
     {
@@ -2321,6 +2342,7 @@ Stand Dez 25
         "reference" : "Organization/63597e7c-563b-40ed-bab5-daa9ed80529a"
       },
       "name" : "63597e7c-563b-40ed-bab5-daa9ed80529a",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Organization für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization"
     },
     {
@@ -2332,6 +2354,7 @@ Stand Dez 25
         "reference" : "Condition/67796ba0-61d0-4120-9d31-f9690fd88eaa"
       },
       "name" : "67796ba0-61d0-4120-9d31-f9690fd88eaa",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Condition für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition"
     },
     {
@@ -2343,6 +2366,7 @@ Stand Dez 25
         "reference" : "MedicationStatement/6806ffd0-9535-453d-a1fe-228f3d786b9f"
       },
       "name" : "6806ffd0-9535-453d-a1fe-228f3d786b9f",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_MedicationStatement für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationStatement"
     },
     {
@@ -2354,6 +2378,7 @@ Stand Dez 25
         "reference" : "Practitioner/6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8"
       },
       "name" : "6c5782a3-f6d6-49c8-837a-d0b1c3e77ac8",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Practitioner für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner"
     },
     {
@@ -2365,6 +2390,7 @@ Stand Dez 25
         "reference" : "Observation/71833996-94af-4c00-affd-ec4dd3870cd1"
       },
       "name" : "71833996-94af-4c00-affd-ec4dd3870cd1",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Blood_Pressure für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Blood_Pressure"
     },
     {
@@ -2376,6 +2402,7 @@ Stand Dez 25
         "reference" : "Medication/7f88fa28-c2c0-47ce-a0a9-043a54a23f5e"
       },
       "name" : "7f88fa28-c2c0-47ce-a0a9-043a54a23f5e",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Medication für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Medication"
     },
     {
@@ -2387,6 +2414,7 @@ Stand Dez 25
         "reference" : "Condition/8d84156a-fe2b-4eb8-b87e-57fe51b641d0"
       },
       "name" : "8d84156a-fe2b-4eb8-b87e-57fe51b641d0",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Condition für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Condition"
     },
     {
@@ -2398,6 +2426,7 @@ Stand Dez 25
         "reference" : "Observation/9b427ed9-7ffe-4081-9ab5-e9a37336815c"
       },
       "name" : "9b427ed9-7ffe-4081-9ab5-e9a37336815c",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Glucose_Concentration für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Glucose_Concentration"
     },
     {
@@ -2409,6 +2438,7 @@ Stand Dez 25
         "reference" : "ServiceRequest/a3e6ff44-7046-4040-8195-ddc352ec4a36"
       },
       "name" : "a3e6ff44-7046-4040-8195-ddc352ec4a36",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_ServiceRequest für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_ServiceRequest"
     },
     {
@@ -2420,6 +2450,7 @@ Stand Dez 25
         "reference" : "PractitionerRole/a424d6c6-de52-443e-a9b2-5240d3b9401a"
       },
       "name" : "a424d6c6-de52-443e-a9b2-5240d3b9401a",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_PractitionerRole für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_PractitionerRole"
     },
     {
@@ -2431,6 +2462,7 @@ Stand Dez 25
         "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
       },
       "name" : "b65dfcca-c6ce-4dac-8742-8da00c192c7d",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Patient für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient"
     },
     {
@@ -2442,6 +2474,7 @@ Stand Dez 25
         "reference" : "Organization/b65dfcca-c6ce-4dac-8742-8da00c192c7f"
       },
       "name" : "b65dfcca-c6ce-4dac-8742-8da00c192c7f",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Organization für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization"
     },
     {
@@ -2453,6 +2486,7 @@ Stand Dez 25
         "reference" : "Encounter/b8256177-8c41-46c6-a35e-94eb3dcfdf94"
       },
       "name" : "b8256177-8c41-46c6-a35e-94eb3dcfdf94",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Encounter für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Encounter"
     },
     {
@@ -2464,6 +2498,7 @@ Stand Dez 25
         "reference" : "Observation/b981d772-45c4-4299-a581-ee6d5705397b"
       },
       "name" : "b981d772-45c4-4299-a581-ee6d5705397b",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Hip_Circumference für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Hip_Circumference"
     },
     {
@@ -2475,6 +2510,7 @@ Stand Dez 25
         "reference" : "Observation/c39f152b-c068-4707-b8c1-beb23de255a1"
       },
       "name" : "c39f152b-c068-4707-b8c1-beb23de255a1",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Blood_Pressure für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Blood_Pressure"
     },
     {
@@ -2486,6 +2522,7 @@ Stand Dez 25
         "reference" : "Observation/c9852d64-43c6-4660-a9a0-7be6324853fe"
       },
       "name" : "c9852d64-43c6-4660-a9a0-7be6324853fe",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Heart_Rate für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Heart_Rate"
     },
     {
@@ -2497,6 +2534,7 @@ Stand Dez 25
         "reference" : "MedicationKnowledge/d07718e0-8ac6-43e6-afc6-a662f8ef107a"
       },
       "name" : "d07718e0-8ac6-43e6-afc6-a662f8ef107a",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_MedicationKnowledge für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_MedicationKnowledge"
     },
     {
@@ -2508,6 +2546,7 @@ Stand Dez 25
         "reference" : "Observation/d70f568e-e758-4793-9fd9-7293de309c10"
       },
       "name" : "d70f568e-e758-4793-9fd9-7293de309c10",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Anamnese für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Anamnese"
     },
     {
@@ -2519,6 +2558,7 @@ Stand Dez 25
         "reference" : "Observation/d85ec119-de39-4a3b-b439-68d294b44536"
       },
       "name" : "d85ec119-de39-4a3b-b439-68d294b44536",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Abdominal_Circumference für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Abdominal_Circumference"
     },
     {
@@ -2530,6 +2570,7 @@ Stand Dez 25
         "reference" : "Observation/f2fe0985-69d7-4b45-a9bf-589192639845"
       },
       "name" : "f2fe0985-69d7-4b45-a9bf-589192639845",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Respiratory_Rate für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Respiratory_Rate"
     },
     {
@@ -2541,6 +2582,7 @@ Stand Dez 25
         "reference" : "Observation/fafb4053-2267-4a53-8bf3-b808fb705277"
       },
       "name" : "fafb4053-2267-4a53-8bf3-b808fb705277",
+      "description" : "Maximale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Body_Height für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Body_Height"
     },
     {
@@ -2552,6 +2594,7 @@ Stand Dez 25
         "reference" : "Patient/fc3e742e-c891-4b31-9e54-97dfbfbd3452"
       },
       "name" : "fc3e742e-c891-4b31-9e54-97dfbfbd3452",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Patient für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient"
     },
     {
@@ -2563,6 +2606,7 @@ Stand Dez 25
         "reference" : "Observation/fccf147d-6bf7-49a5-a7f8-e516af80060d"
       },
       "name" : "fccf147d-6bf7-49a5-a7f8-e516af80060d",
+      "description" : "Minimale Beispielinstanz für das Profil KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation für das Arbeitspaket 2",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Observation_Peripheral_Oxygen_Saturation"
     },
     {
@@ -2670,7 +2714,7 @@ Stand Dez 25
         "reference" : "StructureDefinition/KBV-EX-WEST-Begegnung-Spezielle-Begegnungsinformationen"
       },
       "name" : "KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen",
-      "description" : "Zusatzinformationen zur Begegnung, die nicht durch die regulären Encounter-Elemente oder durch andere fachliche Profile abgebildet werden. Sie dient der Erhaltung encounter-bezogener Kontextinformationen, insbesondere, wenn ein Inhalt eine Begegnung referenziert werden muss, um technisch valide zu sein, aber fachlich keine Begegnung zugeordnet werden kann. In diesem Fall ist die Instanz der Begegnung eine Dummy-Begegnung sein, mit der Extension „spezielle Begegnungsinformationen“ und folgenden Inhalt: Typ = Dummy Inhalt = Dummy",
+      "description" : "Spezielle Begegnungsinformationen",
       "exampleBoolean" : false
     },
     {
@@ -2870,7 +2914,7 @@ Stand Dez 25
         "reference" : "StructureDefinition/KBV-PR-WEST-MedicationStatement"
       },
       "name" : "KBV_PR_WEST_MedicationStatement",
-      "description" : "Hier werden Angaben dazu gemacht, wie ein bestimmtes Arzneimittel eingenommen bzw. verabreicht wird oder werden soll.",
+      "description" : "Diese Ressource bietet die Möglichkeit anzugeben, ob eine Medikation im System als Dauermedikation deklariert wurde.",
       "exampleBoolean" : false
     },
     {
@@ -3158,6 +3202,7 @@ Stand Dez 25
         "reference" : "Organization/OrganizationPraxisAlessaCosta"
       },
       "name" : "OrganizationPraxisAlessaCosta",
+      "description" : "Beispielinstanz für das Profil KBV_PR_WEST_Organization für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization"
     },
     {
@@ -3169,6 +3214,7 @@ Stand Dez 25
         "reference" : "Organization/OrganizationPraxisMinnaKuehn"
       },
       "name" : "OrganizationPraxisMinnaKuehn",
+      "description" : "Beispielinstanz für das Profil KBV_PR_WEST_Organization für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Organization"
     },
     {
@@ -3180,6 +3226,7 @@ Stand Dez 25
         "reference" : "Patient/PatientIsoldeMeinhardt"
       },
       "name" : "PatientIsoldeMeinhardt",
+      "description" : "Beispielinstanz für das Profil KBV_PR_WEST_Patient für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Patient"
     },
     {
@@ -3191,6 +3238,7 @@ Stand Dez 25
         "reference" : "Practitioner/PractitionerMinnaKuehn"
       },
       "name" : "PractitionerMinnaKuehn",
+      "description" : "Beispielinstanz für das Profil KBV_PR_WEST_Practitioner für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_Practitioner"
     },
     {
@@ -3202,6 +3250,7 @@ Stand Dez 25
         "reference" : "PractitionerRole/PractitionerRoleMinnaKuehn"
       },
       "name" : "PractitionerRoleMinnaKuehn",
+      "description" : "Beispielinstanz für das Profil KBV_PR_WEST_PractitionerRole für das Arbeitspaket 1",
       "exampleCanonical" : "https://fhir.kbv.de/StructureDefinition/KBV_PR_WEST_PractitionerRole"
     }],
     "page" : {
@@ -3242,10 +3291,10 @@ Stand Dez 25
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Arbeitspaket_2.html"
+          "valueUrl" : "Arbeitspaket_2_-_abgeschlossen.html"
         }],
-        "nameUrl" : "Arbeitspaket_2.html",
-        "title" : "Arbeitspaket 2",
+        "nameUrl" : "Arbeitspaket_2_-_abgeschlossen.html",
+        "title" : "Arbeitspaket 2 - abgeschlossen",
         "generation" : "markdown"
       },
       {
@@ -3291,6 +3340,15 @@ Stand Dez 25
         }],
         "nameUrl" : "west_scenario_Arbeitspaket_2.html",
         "title" : "Szenario Arbeitspaket 2",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "west_scenario_Arbeitspaket_3.html"
+        }],
+        "nameUrl" : "west_scenario_Arbeitspaket_3.html",
+        "title" : "Szenario Arbeitspaket 3",
         "generation" : "markdown"
       }]
     },

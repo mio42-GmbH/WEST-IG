@@ -251,7 +251,7 @@
            fhir:l <urn:ietf:bcp:47>
          ] ;
          fhir:code [ fhir:v "hr" ] ;
-         fhir:display [ fhir:v "Croatian" ]
+         fhir:display [ fhir:v "Kroatisch" ]
        ] )
      ] ;
      fhir:preferred [ fhir:v false ]

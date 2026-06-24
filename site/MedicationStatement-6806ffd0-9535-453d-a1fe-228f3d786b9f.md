@@ -26,7 +26,7 @@ Version 1.0.0-kommentierung - ci-build
     "reference" : "urn:uuid:ce1bd084-3616-48a8-8926-98cf371d4124"
   },
   "subject" : {
-    "reference" : "urn:uuid:b65dfcca-c6ce-4dac-8742-8da00c192c7d"
+    "reference" : "Patient/b65dfcca-c6ce-4dac-8742-8da00c192c7d"
   }
 }
 
