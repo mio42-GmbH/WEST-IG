@@ -13,7 +13,7 @@ Version 1.0.0-kommentierung - ci-build
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnoseart | *Version*:1.0.0-kommentierung |
-| Draft as of 2026-06-24 | *Computable Name*:KBV_VS_WEST_Diagnoseart |
+| Draft as of 2026-06-26 | *Computable Name*:KBV_VS_WEST_Diagnoseart |
 | **Copyright/Legal**: Kassenaerztliche Bundesvereinigung | |
 
  
@@ -56,7 +56,7 @@ Diagnosearten
   "title" : "KBV_VS_WEST_Diagnoseart",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-24T16:51:19+02:00",
+  "date" : "2026-06-26T18:38:01+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

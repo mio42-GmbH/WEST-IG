@@ -62,8 +62,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -99,6 +99,22 @@
 <ul class="nav navbar-nav">
   <li>
     <a href="index.html">Startseite</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Grundlagen
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Hintergrundinformationen.html">Hintergrundinformationen</a>
+      </li>
+      <li>
+        <a href="Ziele_und_Nutzen.html">Ziele und Nutzen</a>
+      </li>
+      <li>
+        <a href="Arbeitsmodus.html">Arbeitsmodus</a>
+      </li>
+    </ul>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Kommentierung der Arbeitspakete
@@ -438,7 +454,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <td>Das Codiersystem ist bereits im Pattern des Elements serviceType.coding:KBV-Fachgruppencodierung hinterlegt. Zudem ist ein Valueset-Binding (required) vorhanden.</td>
       </tr>
       <tr>
-        <td><a name="l989">​</a><a href="https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen%20könnte%20besser%20beschrieben%20werden,%20um%20welche%20Inhalte%20es%20sich%20handelt.%20Dies%20wäre%20ein%20zusätzliches%20Profil.%20Für%20eine%20Verprobung%20sollte%20ein%20gesammthaftes%20Paket%20aller%20notwendigen%20Profile%20und%20Codesystem%20zusammengestellt%20werden.">https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen</a>  <br/>  Es könnte besser beschrieben werden, um welche Inhalte es sich handelt. Dies wäre ein zusätzliches Profil. Für eine Verprobung sollte ein vollständiges Paket aller notwendigen Profile und Codesysteme zusammengestellt werden.</td>
+        <td><a name="l1018">​</a><a href="https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen%20könnte%20besser%20beschrieben%20werden,%20um%20welche%20Inhalte%20es%20sich%20handelt.%20Dies%20wäre%20ein%20zusätzliches%20Profil.%20Für%20eine%20Verprobung%20sollte%20ein%20gesammthaftes%20Paket%20aller%20notwendigen%20Profile%20und%20Codesystem%20zusammengestellt%20werden.">https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen</a>  <br/>  Es könnte besser beschrieben werden, um welche Inhalte es sich handelt. Dies wäre ein zusätzliches Profil. Für eine Verprobung sollte ein vollständiges Paket aller notwendigen Profile und Codesysteme zusammengestellt werden.</td>
         <td>KBV_PR_WEST_Encounter  <br/><ul title="null"><li data-uuid="1af06907-798d-471a-85dc-dcc8a7d63b1a">extension:spezielle_Begegnungsinformationen</li></ul><br/>  KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen</td>
         <td>OK</td>
         <td>Es handelt sich hier um einen technischen Workaround, der es im Vorgängerprojekt AWS erlaubt hat, in Ausnahmefällen Dummy-Begegnungen zu erstellen, siehe <a href="https://update.kbv.de/ita-update/371-Schnittstellen/PVS-Archivierungs-Wechsel-Schnittstelle/KBV_ITA_VGEX_Anforderungskatalog_AW_SST.pdf?utm_source=chatgpt.com">https://update.kbv.de/ita-update/371-Schnittstellen/PVS-Archivierungs-Wechsel-Schnittstelle/KBV_ITA_VGEX_Anforderungskatalog_AW_SST.pd</a>f  <br/>  Die Beschreibung wurde wie unten zu lesen angepasst. Außerdem werden wir bei Vollständigkeit des Informationsmodells prüfen, ob das Element in der WeST den gleichen Stellenwert hat wie in der AWS oder ob es entfernt werden kann.  <br/>  Angepasste Beschreibung:  <br/>  Zusatzinformationen zur Begegnung, die nicht durch die regulären Encounter-Elemente oder durch andere fachliche Profile abgebildet werden. Sie dient der Erhaltung encounter-bezogener Kontextinformationen, insbesondere, wenn ein Inhalt eine Begegnung referenziert werden muss, um technisch valide zu sein, aber fachlich keine Begegnung zugeordnet werden kann. In diesem Fall ist die Instanz der Begegnung eine Dummy-Begegnung sein, mit der Extension „spezielle Begegnungsinformationen“ und folgenden Inhalt: Typ = Dummy Inhalt = Dummy</td>
@@ -613,7 +629,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Jun 24, 2026 16:51+0200">2026-06-24</span>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Fri, Jun 26, 2026 18:38+0200">2026-06-26</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

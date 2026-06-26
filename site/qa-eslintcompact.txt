@@ -9,6 +9,10 @@ Generic: line 0, col 0, Info - The html source does not contain the publish box;
 Generic: line 0, col 0, Warning - The link 'https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Patient_VSDM_Gender' for "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Patient_VSDM_Gender" is a canonical link and is therefore unsafe with regard to versions (NOTFOUND)
 Generic: line 0, col 0, Info - No conformance term found in the text:  2 Abs. 1 Nr. 2,  (BUSINESSRULE)
 Generic: line 0, col 0, Error - The link 'https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen%20könnte%20besser%20beschrieben%20werden,%20um%20welche%20Inhalte%20es%20sich%20handelt.%20Dies%20wäre%20ein%20zusätzliches%20Profil.%20Für%20eine%20Verprobung%20sollte%20ein%20gesammthaftes%20Paket%20aller%20notwendigen%20Profile%20und%20Codesystem%20zusammengestellt%20werden.' for "https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link '/spaces/WEST1X0X0/pages/372152670/Hintergrundinformationen' for "Hintergrundinformationen" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link '/spaces/WEST1X0X0/pages/375455764/Ziele+Nutzen' for "Ziele/ Nutzen" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link '/spaces/WEST1X0X0/pages/372152675/Arbeitsmodus' for "Arbeitsmodus" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Info - No conformance term found in the text:  371 Absatz 1 Nummer 1 und  (BUSINESSRULE)
 Generic: line 0, col 0, Error - The link 'https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Betriebsstaetten_Hierarchie' for "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Betriebsstaetten_Hierarchie" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Betriebsstaetten_Hierarchie' for "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Betriebsstaetten_Hierarchie" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Betriebsstaetten_Hierarchie' for "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Betriebsstaetten_Hierarchie" cannot be resolved (NOTFOUND)
@@ -555,5 +559,5 @@ C:\Mio42\WeST-AG\input\vocabulary\KBV_VS_WEST_Preistyp_Code.json: line 1, col 35
 C:\Mio42\WeST-AG\input\vocabulary\KBV_VS_West_Leistungsart.json: line 1, col 1980, Warning - Das CodeSystem urn:iso:std:iso:3166 ist unbekannt (NOTFOUND)
 C:\Mio42\WeST-AG\input\vocabulary\KBV_VS_West_Leistungsart.json: line 1, col 4126, Info - The concepts in the value set include have not been validated because there is no terminology server (BUSINESSRULE)
 
-err = 21, warn = 328, info = 188
+err = 21, warn = 328, info = 189
 IG Publisher Version: 2.2.8

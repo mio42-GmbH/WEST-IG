@@ -1,0 +1,29 @@
+# Ziele & Nutzen - Arbeitsgruppe WeST v1.0.0-kommentierung
+
+Arbeitsgruppe WeST
+
+Version 1.0.0-kommentierung - ci-build 
+
+* [**Table of Contents**](toc.md)
+* **Ziele & Nutzen**
+
+## Ziele & Nutzen
+
+### Kurzfristige Ziele: Datenverfügbarkeit, Datenqualität und Standardisierung
+
+Kurzfristig sollen Leistungserbringende in Praxen ermächtigt werden, frei und flexibel ihr PVS entsprechend ihrer Bedürfnisse wechseln zu können. Ein PVS mit einem effizienten Programmaufbau, ermöglicht Praxen ihre Arbeitsabläufe zu optimieren und damit mehr Zeit für die Patientenbehandlung zu gewinnen. Studien belegen, dass die Usability von PVS-Systemen stark variiert und häufig zu Fehlern führt, die den Praxisbetrieb erheblich stören (Zentralinstitut Kassenärztliche Versorgung, 2025). Diese Fehlerquellen und die damit verbundene Unzufriedenheit der Nutzer haben dazu geführt, dass nur rund 28% der Praxen mit ihrem derzeit genutzten PVS zufrieden sind (Zentralinstitut Kassenärztliche Versorgung, 2025). Der aktuelle Zustand des Marktes ist durch eine starke Abhängigkeit von einzelnen auf den Wechselprozess spezialisierten Dienstleistern mit teilweise hohen Lizenzkosten geprägt, was viele Praxen in ihrer Entscheidungsfreiheit einschränkt und vor einem gewünschten Wechsel abhält (Vendor Lock-In). Darüber hinaus ist der Wechsel oft, trotz auf den Wechsel spezialisierten Dienstleistern, aufgrund von hohen Inkompatibilitäten, Datenverschlüsselungen oder Cloud-Hosting nicht ohne Weiteres möglich.
+
+Eine Wechselschnittstelle kann durch den Abbau von Barrieren und die Erleichterung eines freien Wechsels zwischen Systemen dazu beitragen, diese Abhängigkeiten zu reduzieren und den Praxen mehr Handlungsspielraum für zukunftssichere, flexiblere und unabhängige Lösungen zu verschaffen, ohne Einschränkungen bei der Performance oder Funktionalität in Kauf nehmen zu müssen. Der Wechselprozess sollte dabei schnell und zuverlässig ablaufen, um eine nachhaltige Option für die Patientenverwaltung zu schaffen. Daraus kann nicht nur ein direkter Gewinn für die Praxisverwaltung durch eine signifikante Zeitersparnis im Praxisalltag entstehen, sondern auch eine Entlastung für die Mitarbeitenden, die oft mit den komplexen und fehleranfälligen Interfaces zu kämpfen haben. Ein PVS-Wechsel sollte weitestgehend ohne Verluste stattfinden und Leistungserbringende ermächtigen, herstellerunabhängig alle Daten zu erhalten, die sie für ihren Praxisalltag benötigen. Dies kann gelingen, indem einerseits technischen Hürden wie Verschlüsselung oder Cloud-Beschränkungen, die den Zugriff auf Daten verhindern, abgebaut werden und andererseits eine Wechselschnittstelle mit einem einheitlich definierten Informationsumfang und vorgeschriebenen Datenformaten definiert wird, der die Qualität der zu übertragenden Daten verbessert und den ersten Schritt Richtung Standardisierung ermöglicht.
+
+### Mittelfristige Ziele: Innovation und Interoperabilität
+
+Langfristig betrachtet, zielt die Einführung einer Wechselschnittstelle auf die Stärkung der Innovationsfähigkeit im Gesundheitswesen ab. Durch die Reduktion von Abhängigkeiten und die Förderung eines offenen Marktes können neue, innovative Lösungen den Praxen echte Mehrwerte bieten. Dies soll zu einer Steigerung der Qualität und Effizienz in der medizinischen Versorgung führen.
+
+Die Zukunftsfähigkeit der Schnittstelle ist ein entscheidender Aspekt dieses Projektes. Eine Wechselschnittstelle, die auf Zukunftsfähigkeit ausgelegt ist, kann weit über den einfachen Datenaustausch zwischen verschiedenen Praxisverwaltungssystemen hinausgehen und als Mehrwertschnittstelle nachgenutzt werden. Eine Mehrwertschnittstelle birgt Mehrwerte, die nicht nur den PVS-Wechsel ermöglichen, sondern auch eine lückenlose Integration moderner Technologien und Drittanbieter-Services wie z.B. Geräte, Terminmanagement, Telefonassistenten, digitale Anamnese, Spracherkennung, Materialverwaltung, Medikamentenbestellung, Labormanagement, Verordnungssoftware, Videosprechstunden oder virtuelle Sprechstundenassistenz vorsieht. Die Vision einer solchen Mehrwertschnittstelle ist es, Praxen eine vollständige Vernetzung zu ermöglichen, die ihre Arbeitsprozesse optimiert, die Nutzererfahrung verbessert und innovative Lösungen integriert.
+
+Ein weiterer, über den Wechselprozess hinausgehender Mehrwert entsteht außerdem durch den Best-of-Breed-Ansatz – also die Auswahl des jeweils besten Systems für verschiedene Funktionen. Dieser Ansatz stellt sicher, dass Praxen nicht in ein System gebunden sind, das in einem Bereich gut funktioniert, aber in anderen Bereichen Schwächen aufweist. Stattdessen können sie maßgeschneiderte Lösungen kombinieren und so ihre Arbeitsprozesse weiter optimieren.
+
+Eine einheitliche Wechsel- und Mehrwertschnittstelle kann dann nicht nur die Interoperabilität zwischen PVS-Systemen verbessern, sondern auch die Patientenbehandlung optimieren, sowie Qualität und Sicherheit der Patientendaten und der Kommunikation im Gesundheitssystem insgesamt steigern. Sie schafft die Grundlage für ein interoperables Ökosystem, in dem innovative digitale Tools flexibel eingebunden werden können und Patientendaten z.B. bei einem Arztwechsel schnell von einem System zum Anderen übertragen werden können. So lassen sich echte Mehrwerte im Alltag nutzen und Prozesse effizienter sowie sicherer gestalten. Gleichzeitig hilft sie dabei, Innovation im Gesundheitswesen zu beschleunigen und bildet die Basis für ein flexibleres, moderneres und patientenorientiertes Gesundheitssystem. Im besten Fall leistet die Schnittstelle langfristig einen Betrag zur wachsenden Interoperabilität des deutschen Gesundheitswesens, was nicht nur den Praxen, sondern auch den Patienten zugutekommt.
+
+Die langfristige Vision ist eine vollständig vernetzte, moderne Praxiswelt, in der Technologien nahtlos und ohne Reibungsverluste ineinandergreifen.
+

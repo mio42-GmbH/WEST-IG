@@ -3,9 +3,12 @@
 ## Pages
 
 * [Wechselschnittstelle - Startseite](index.md)
+* [Arbeitsmodus](Arbeitsmodus.md)
 * [Arbeitspaket 1 - abgeschlossen](Arbeitspaket_1_-_abgeschlossen.md)
 * [Arbeitspaket 2 - abgeschlossen](Arbeitspaket_2_-_abgeschlossen.md)
 * [Artifacts Summary](artifacts.md)
+* [Grundlagen](Grundlagen.md)
+* [Hintergrundinformationen](Hintergrundinformationen.md)
 * [Datenmodell](infomodell.md)
 * [Kommentierung der Arbeitspakete](Kommentierung_der_Arbeitspakete.md)
 * [Operationalisierungshinweise](west_operationalisations.md)
@@ -13,6 +16,7 @@
 * [Szenario Arbeitspaket 1](west_scenario_Arbeitspaket_1.md)
 * [Szenario Arbeitspaket 2](west_scenario_Arbeitspaket_2.md)
 * [Szenario Arbeitspaket 3](west_scenario_Arbeitspaket_3.md)
+* [Ziele & Nutzen](Ziele_und_Nutzen.md)
 
 ## Resources
 

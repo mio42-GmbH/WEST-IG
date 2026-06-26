@@ -21,7 +21,7 @@
   fhir:name [ fhir:v "KBV_EX_WEST_Adressbuch_Schlusssatz"] ; # 
   fhir:title [ fhir:v "KBV_EX_WEST_Adressbuch_Schlusssatz"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-06-24T16:51:19+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-06-26T18:38:01+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "mio42 GmbH" ] ;

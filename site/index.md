@@ -12,7 +12,7 @@ Version 1.0.0-kommentierung - ci-build
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.kbv.de/ImplementationGuide/kbv.mio.west | *Version*:1.0.0-kommentierung |
-| Draft as of 2026-06-24 | *Computable Name*:ArbeitsgruppeWeST |
+| Draft as of 2026-06-26 | *Computable Name*:ArbeitsgruppeWeST |
 
 Die mio42 wurde beauftragt eine Wechselschnittstelle nach § 371 Abs. 1 SGB V zu entwickeln, welche dazu dient, Patientendaten bei einem Wechsel des Praxisverwaltungssystems (PVS) sicher, einheitlich und verbindlich zu übertragen. Sie soll durch einen möglichst umfassenden Datentransfer dazu beitragen, bestehende Wechselhürden abzubauen – etwa durch proprietäre Datenformate, Cloud-Hosting, hohe Kosten oder eingeschränkte Usability – und damit echte Systemwahlfreiheit für Arztpraxen ermöglichen. Der Fokus liegt dabei auf einem möglichst holistischen Datenmodell für Interoperabilität und Standardisierung sowie der Sicherstellung einer angemessenen Performanz im Wechselprozess.
 
@@ -30,17 +30,15 @@ Nach dem erfolgreichen Kick-Off der Co-Creation-Phase wurde der Weg für eine en
 
 Im Fokus stand vor allem die Frage, wie die bestehende Schnittstelle auf Basis des FHIR-Standards weiter optimiert und gleichzeitig praktikabel gestaltet werden kann. Das Format wird nun anhand der Handlungsempfehlungen aus dem Positionspapier des Interop Council kritisch auf die Probe gestellt. Diese Empfehlungen beinhalten unter anderem Ansätze zur Modularisierung der FHIR-Profile und zur Reduzierung von Datenmengen, um die Performance bei großen Datenbeständen zu verbessern.
 
-Derzeit befinden sich die ersten Arbeitspakete des Projekts in der Erstellung. Ziel der ersten Arbeitspakete ist es, eine erste funktionsfähige Implementierung der optimierten Wechselschnittstelle zu entwickeln, die als Grundlage für zukünftige Iterationen und Anpassungen dienen wird.
+Die ersten beiden Arbeitspakete des Projekts wurden erstellt und kommentiert. Ziel der ersten Arbeitspakete ist es, eine erste funktionsfähige Implementierung der optimierten Wechselschnittstelle zu entwickeln, die als Grundlage für zukünftige Iterationen und Anpassungen dienen wird.
 
 #### Nächste Schritte
 
-Im weiteren Verlauf des Projekts stehen nun mehrere entscheidende Schritte an, um die Entwicklung der Wechselschnittstelle voranzutreiben und sicherzustellen, dass die optimierte Lösung sowohl technisch als auch praktisch den Anforderungen entspricht. Dabei gehen wir in iterativen Phasen vor, die durch mehrfache Feedbackschleifen eine flexible und schnelle Optimierung ermöglichen. So Soll in Zusammenarbeit mit allen Stakeholdern eine eng abgestimmte und praxistaugliche Schnittstelle entstehen.
+Im weiteren Verlauf des Projekts stehen nun mehrere entscheidende Schritte an, um die Entwicklung der Wechselschnittstelle voranzutreiben und sicherzustellen, dass die optimierte Lösung sowohl technisch als auch praktisch den Anforderungen entspricht.
 
-Zunächst wird das Informationsmodell sowie die FHIR-Profilierung eines Arbeitspakets abgeschlossen. Anschließend erfolgt die Kommentierung, bei der alle relevanten Stakeholder ihre Rückmeldungen einbringen können. Mio42 nimmt auf Basis der Kommentierung etwaige Optimierungen und Anpassungen vor. Sobald ein Arbeitspaket finalisiert und kommentiert wurde, wird mit derErstellung und Kommentierung des nächsten Arbeitspakets fortgefahren.
+Anhand der ertsten beiden Arbeitspakete erfolgt eine umfassende Vertestung der Schnittstelle unter Berücksichtigung der Handlungsempfehlungen aus dem Positionspapier des Interop Councils. Diese Testphase wird sicherstellen, dass die entwickelten Lösungen in der Praxis funktionieren und den gewünschten Leistungsanforderungen gerecht werden. Ziel der Tests soll sein, die Performanzverbesserungen für die Wechselschnittstelle zu evaluieren und die Testergebnisse für zukünftige Anpassungen zu nutzen. Dabei wird der weitere Projektverlauf und die Entwicklung der Wechselschnittstelle evaluiert.
 
-Anhand der ertsten beiden Arbeitspakete erfolgt eine umfassende Vertestung der Schnittstelle unter Berücksichtigung der Handlungsempfehlungen aus dem Positionspapier des Interop Councils. Diese Testphase wird sicherstellen, dass die entwickelten Lösungen in der Praxis funktionieren und den gewünschten Leistungsanforderungen gerecht werden. Ziel der Tests soll sein, die Eignung von FHIR als Datenformat für die Wechselschnittstelle zu evaluieren und die Testergebnisse für zukünftige Iterationen und Anpassungen zu nutzen. Dabei wird überprüft, ob FHIR die nötige Performanz und Praktikabilität bietet, um als dauerhaft tragfähiger Standard für den Datenaustausch zwischen den Systemen zu dienen.
-
-Stand Dez 25
+Stand Apr 26
 
 
 
@@ -56,7 +54,7 @@ Stand Dez 25
   "title" : "Arbeitsgruppe WeST",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-24T16:51:19+02:00",
+  "date" : "2026-06-26T18:38:01+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
@@ -3268,6 +3266,42 @@ Stand Dez 25
         }],
         "nameUrl" : "index.html",
         "title" : "Wechselschnittstelle - Startseite",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Grundlagen.html"
+        }],
+        "nameUrl" : "Grundlagen.html",
+        "title" : "Grundlagen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Hintergrundinformationen.html"
+        }],
+        "nameUrl" : "Hintergrundinformationen.html",
+        "title" : "Hintergrundinformationen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Ziele_und_Nutzen.html"
+        }],
+        "nameUrl" : "Ziele_und_Nutzen.html",
+        "title" : "Ziele & Nutzen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Arbeitsmodus.html"
+        }],
+        "nameUrl" : "Arbeitsmodus.html",
+        "title" : "Arbeitsmodus",
         "generation" : "markdown"
       },
       {

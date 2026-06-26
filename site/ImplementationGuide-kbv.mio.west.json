@@ -11,7 +11,7 @@
   "title" : "Arbeitsgruppe WeST",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-24T16:51:19+02:00",
+  "date" : "2026-06-26T18:38:01+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
@@ -3223,6 +3223,42 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Wechselschnittstelle - Startseite",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Grundlagen.html"
+        }],
+        "nameUrl" : "Grundlagen.html",
+        "title" : "Grundlagen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Hintergrundinformationen.html"
+        }],
+        "nameUrl" : "Hintergrundinformationen.html",
+        "title" : "Hintergrundinformationen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Ziele_und_Nutzen.html"
+        }],
+        "nameUrl" : "Ziele_und_Nutzen.html",
+        "title" : "Ziele & Nutzen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Arbeitsmodus.html"
+        }],
+        "nameUrl" : "Arbeitsmodus.html",
+        "title" : "Arbeitsmodus",
         "generation" : "markdown"
       },
       {

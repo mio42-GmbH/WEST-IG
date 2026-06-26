@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d6dc7de1-d202-4540-bb71-e643c024d03e",
+  "id" : "514eaf26-ad03-4f83-9b81-34089441cf8f",
   "meta" : {
-    "lastUpdated" : "2026-06-24T16:51:19.785+02:00"
+    "lastUpdated" : "2026-06-26T18:38:01.099+02:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "KBV_VS_WEST_BDT_Betriebsstaettenstatus",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-06-24T16:51:19+02:00",
+      "date" : "2026-06-26T18:38:01+02:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -29,8 +29,8 @@
       }],
       "immutable" : false,
       "expansion" : {
-        "identifier" : "urn:uuid:b9a52123-d340-425b-b870-3f103cea8d9d",
-        "timestamp" : "2026-06-24T16:59:56+02:00",
+        "identifier" : "urn:uuid:3865c217-cb3e-4b0b-8e19-f6fb3dd481d9",
+        "timestamp" : "2026-06-26T18:45:26+02:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -94,7 +94,7 @@
       "title" : "KBV_VS_WEST_Diagnoseart",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-06-24T16:51:19+02:00",
+      "date" : "2026-06-26T18:38:01+02:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -103,8 +103,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:021f4918-e306-4878-ad4e-e78008bdb5c7",
-        "timestamp" : "2026-06-24T16:59:12+02:00",
+        "identifier" : "urn:uuid:f401f87f-6e1c-40ab-a5e6-4a5b3322593f",
+        "timestamp" : "2026-06-26T18:44:43+02:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -152,7 +152,7 @@
       "title" : "KBV_VS_WEST_Diagnosekategorie",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-06-24T16:51:19+02:00",
+      "date" : "2026-06-26T18:38:01+02:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -161,8 +161,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:ba1f6995-3888-4aa4-916b-6582f553a214",
-        "timestamp" : "2026-06-24T16:59:12+02:00",
+        "identifier" : "urn:uuid:b1396d87-e0f8-44d3-b77a-3d285f491e55",
+        "timestamp" : "2026-06-26T18:44:43+02:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -210,7 +210,7 @@
       "title" : "KBV_VS_WEST_Patient_VSDM_Gender",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-06-24T16:51:19+02:00",
+      "date" : "2026-06-26T18:38:01+02:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -220,8 +220,8 @@
       }],
       "immutable" : false,
       "expansion" : {
-        "identifier" : "urn:uuid:4104099b-622a-484c-99a1-ae671c9c3d20",
-        "timestamp" : "2026-06-24T16:59:56+02:00",
+        "identifier" : "urn:uuid:5076ba79-7560-4672-b288-fa7d3a8e6001",
+        "timestamp" : "2026-06-26T18:45:27+02:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -293,7 +293,7 @@
       "title" : "KBV_VS_WEST_Preistyp_Code",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-06-24T16:51:19+02:00",
+      "date" : "2026-06-26T18:38:01+02:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -303,8 +303,8 @@
       }],
       "immutable" : false,
       "expansion" : {
-        "identifier" : "urn:uuid:35470423-9df1-4fca-9e5b-d3c69cdf7226",
-        "timestamp" : "2026-06-24T16:59:57+02:00",
+        "identifier" : "urn:uuid:8c0ff4cb-d3e3-4e57-9417-175f4ceeb93d",
+        "timestamp" : "2026-06-26T18:45:27+02:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -352,7 +352,7 @@
       "title" : "KBV_VS_WEST_Leistungsart",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2026-06-24T16:51:19+02:00",
+      "date" : "2026-06-26T18:38:01+02:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -362,8 +362,8 @@
       }],
       "immutable" : false,
       "expansion" : {
-        "identifier" : "urn:uuid:6009e9f2-cb22-4526-af94-c2ac2386e4dd",
-        "timestamp" : "2026-06-24T16:59:57+02:00",
+        "identifier" : "urn:uuid:8548d1f0-114b-4f7a-9ae1-404d4fa2fa8f",
+        "timestamp" : "2026-06-26T18:45:27+02:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
