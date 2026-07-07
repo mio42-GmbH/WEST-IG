@@ -11,6 +11,7 @@
 * [Hintergrundinformationen](Hintergrundinformationen.md)
 * [Datenmodell](infomodell.md)
 * [Kommentierung der Arbeitspakete](Kommentierung_der_Arbeitspakete.md)
+* [Pilotphase](Pilotphase.md)
 * [Operationalisierungshinweise](west_operationalisations.md)
 * [Vorgaben](west_requirements.md)
 * [Szenario Arbeitspaket 1](west_scenario_Arbeitspaket_1.md)

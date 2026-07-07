@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "Arbeitsgruppe WeST"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-06-26T18:38:01+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-07-06T17:54:18+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "mio42 GmbH" ] ;
@@ -6628,6 +6628,25 @@
            fhir:l fhir:Kommentierung_der_Arbeitspakete.html
          ] ;
          fhir:title [ fhir:v "Kommentierung der Arbeitspakete" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "Pilotphase.html"^^xsd:anyURI ;
+             fhir:l fhir:Pilotphase.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "Pilotphase.html"^^xsd:anyURI ;
+           fhir:l fhir:Pilotphase.html
+         ] ;
+         fhir:title [ fhir:v "Pilotphase" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

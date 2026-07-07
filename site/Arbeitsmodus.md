@@ -23,7 +23,7 @@ Die Co-Creation der Wechselschnittstelle ermöglicht durch den wertvollen Input 
 
 #### Discovery- und Testphase
 
-* Die Arbeit erfolgt in Arbeitspaketen, dabei werden im Rahmen der Discovery- und Testphase zunächst zwei Arbeitspakete erstellt, die als Grundlage für Kommentierung durch und Testimplementierung mit der Industrie dienen. Diese beiden Arbeitspakete stehen bereits zur Verfügung und können in unserem Implementation Guide eingesehen werden.
+* Die Arbeit erfolgt in Arbeitspaketen, dabei werden im Rahmen der Pilotphase zunächst zwei Arbeitspakete erstellt, die als Grundlage für Kommentierung durch und Testimplementierung mit der Industrie dienen. Diese beiden Arbeitspakete stehen bereits zur Verfügung und können in unserem Implementation Guide eingesehen werden.
 * Ziel ist es, die ersten beiden Arbeitspakete überschaubar zu halten, um eine zeitnahe Kommentierung zu ermöglichen und die Aufwände der Industrie zunächst gering zu halten.
 * Zur Erstellung eines Arbeitspaketes werden folgende Arbeiten durchgeführt: 
 * Einigung über die Inhalte des Arbeitspakets
@@ -37,7 +37,7 @@ Die Co-Creation der Wechselschnittstelle ermöglicht durch den wertvollen Input 
 
 #### Testimplementierung
 
-* Aktuell befinden wir uns in der Testphase bei der Testimplementierung der ersten beiden Arbeitspakete zur Evaluation der Performanzverbesserungen und Durchführung weiterer Optimierungen. Dafür testet die mio42 intern anhand von Testdatensätzen und mit PVS-Herstellern anhand von Testimplementierungen der ersten beiden Arbeitspakete die Handlungsempfehlungen zur Performanzoptimierung aus dem Positionspapier des Interop Councils: 
+* Aktuell befinden wir uns in der Pilotphase bei der Testimplementierung der ersten beiden Arbeitspakete zur Evaluation der Performanzverbesserungen und Durchführung weiterer Optimierungen. Dafür testet die mio42 intern anhand von Testdatensätzen und mit PVS-Herstellern anhand von Testimplementierungen der ersten beiden Arbeitspakete die Handlungsempfehlungen zur Performanzoptimierung aus dem Positionspapier des Interop Councils: 
 * FHIR Bulk Data (ndJSON)
 * Kompression
 * Datenselektion

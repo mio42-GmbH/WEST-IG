@@ -9,19 +9,25 @@ Version 1.0.0-kommentierung - ci-build
 
 ## Grundlagen
 
-#### Hintergrundinformationen
+### Hintergrundinformationen
 
 In den Hintergrundinformationen werden die rechtlichen Rahmenbedingungen, bestehende Arbeiten und Vorgaben, Best Practices und Projektbeteiligte beleuchtet.
 
 -------
 
-#### Ziele/ Nutzen
+### Ziele/ Nutzen
 
 In Ziele und Nutzen werden sowohl die kurzfristigen, als auch die Langfristigen Ziele des Projektes erläutert.
 
 -------
 
-#### Arbeitsmodus
+### Arbeitsmodus
 
 Im Arbeitsmodus wird beschrieben, wie die Erarbeitung der Wechselschnittstelle erfolgt und wie man sich beteiligen kann.
+
+-------
+
+### Pilotphase
+
+Der Abschnitt mit der Überschrift „Pilotphase“ beschreibt das allgemeine Vorgehen und die während der Pilotphase bereitgestellte Kommentierung.
 
