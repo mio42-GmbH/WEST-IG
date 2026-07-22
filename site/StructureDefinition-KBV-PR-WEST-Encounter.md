@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-KBV-PR-WEST-Encounte
   "version" : "1.0.0-kommentierung",
   "name" : "KBV_PR_WEST_Encounter",
   "status" : "draft",
-  "date" : "2026-07-22T15:49:40+02:00",
+  "date" : "2026-07-22T16:29:56+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

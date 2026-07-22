@@ -56,7 +56,7 @@ Diagnosekategorien
   "title" : "KBV_VS_WEST_Diagnosekategorie",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-22T15:49:40+02:00",
+  "date" : "2026-07-22T16:29:56+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

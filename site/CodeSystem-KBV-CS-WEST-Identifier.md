@@ -37,7 +37,7 @@ Dieses Codesystem enthält die Codes für Identifier spezifisch für die Wechsel
   "title" : "KBV_CS_WEST_Identifier",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-22T15:49:40+02:00",
+  "date" : "2026-07-22T16:29:56+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",

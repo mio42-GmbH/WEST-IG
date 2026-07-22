@@ -106,6 +106,9 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="Hintergrundinformationen.html">Rechtlicher Rahmen und Historie</a>
+      </li>
+      <li>
         <a href="Best_Practices_im_Wechselprozess.html">Best Practices im Wechselprozess</a>
       </li>
     </ul>
@@ -121,6 +124,9 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+      <li>
+        <a href="Pilotphase.html">Vorgehensweise</a>
+      </li>
       <li>
         <a href="Arbeitspaket_1_-_abgeschlossen.html">Arbeitspaket 1 - abgeschlossen</a>
       </li>
@@ -454,7 +460,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         <td>Das Codiersystem ist bereits im Pattern des Elements serviceType.coding:KBV-Fachgruppencodierung hinterlegt. Zudem ist ein Valueset-Binding (required) vorhanden.</td>
       </tr>
       <tr>
-        <td><a name="l1018">​</a><a href="https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen%20könnte%20besser%20beschrieben%20werden,%20um%20welche%20Inhalte%20es%20sich%20handelt.%20Dies%20wäre%20ein%20zusätzliches%20Profil.%20Für%20eine%20Verprobung%20sollte%20ein%20gesammthaftes%20Paket%20aller%20notwendigen%20Profile%20und%20Codesystem%20zusammengestellt%20werden.">https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen</a>  <br/>  Es könnte besser beschrieben werden, um welche Inhalte es sich handelt. Dies wäre ein zusätzliches Profil. Für eine Verprobung sollte ein vollständiges Paket aller notwendigen Profile und Codesysteme zusammengestellt werden.</td>
+        <td><a name="l1030">​</a><a href="https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen%20könnte%20besser%20beschrieben%20werden,%20um%20welche%20Inhalte%20es%20sich%20handelt.%20Dies%20wäre%20ein%20zusätzliches%20Profil.%20Für%20eine%20Verprobung%20sollte%20ein%20gesammthaftes%20Paket%20aller%20notwendigen%20Profile%20und%20Codesystem%20zusammengestellt%20werden.">https://fhir.kbv.de/StructureDefinition/KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen</a>  <br/>  Es könnte besser beschrieben werden, um welche Inhalte es sich handelt. Dies wäre ein zusätzliches Profil. Für eine Verprobung sollte ein vollständiges Paket aller notwendigen Profile und Codesysteme zusammengestellt werden.</td>
         <td>KBV_PR_WEST_Encounter  <br/><ul title="null"><li data-uuid="1af06907-798d-471a-85dc-dcc8a7d63b1a">extension:spezielle_Begegnungsinformationen</li></ul><br/>  KBV_EX_WEST_Begegnung_Spezielle_Begegnungsinformationen</td>
         <td>OK</td>
         <td>Es handelt sich hier um einen technischen Workaround, der es im Vorgängerprojekt AWS erlaubt hat, in Ausnahmefällen Dummy-Begegnungen zu erstellen, siehe <a href="https://update.kbv.de/ita-update/371-Schnittstellen/PVS-Archivierungs-Wechsel-Schnittstelle/KBV_ITA_VGEX_Anforderungskatalog_AW_SST.pdf?utm_source=chatgpt.com">https://update.kbv.de/ita-update/371-Schnittstellen/PVS-Archivierungs-Wechsel-Schnittstelle/KBV_ITA_VGEX_Anforderungskatalog_AW_SST.pd</a>f  <br/>  Die Beschreibung wurde wie unten zu lesen angepasst. Außerdem werden wir bei Vollständigkeit des Informationsmodells prüfen, ob das Element in der WeST den gleichen Stellenwert hat wie in der AWS oder ob es entfernt werden kann.  <br/>  Angepasste Beschreibung:  <br/>  Zusatzinformationen zur Begegnung, die nicht durch die regulären Encounter-Elemente oder durch andere fachliche Profile abgebildet werden. Sie dient der Erhaltung encounter-bezogener Kontextinformationen, insbesondere, wenn ein Inhalt eine Begegnung referenziert werden muss, um technisch valide zu sein, aber fachlich keine Begegnung zugeordnet werden kann. In diesem Fall ist die Instanz der Begegnung eine Dummy-Begegnung sein, mit der Extension „spezielle Begegnungsinformationen“ und folgenden Inhalt: Typ = Dummy Inhalt = Dummy</td>
@@ -629,7 +635,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Jul 22, 2026 15:49+0200">2026-07-22</span>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Jul 22, 2026 16:29+0200">2026-07-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
