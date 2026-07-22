@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "Arbeitsgruppe WeST"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-07-06T17:54:18+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-07-22T15:49:40+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "mio42 GmbH" ] ;
@@ -6542,25 +6542,6 @@
            ] ;
            fhir:value [
              a fhir:Url ;
-             fhir:v "Grundlagen.html"^^xsd:anyURI ;
-             fhir:l fhir:Grundlagen.html
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:Url ;
-           fhir:v "Grundlagen.html"^^xsd:anyURI ;
-           fhir:l fhir:Grundlagen.html
-         ] ;
-         fhir:title [ fhir:v "Grundlagen" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-           ] ;
-           fhir:value [
-             a fhir:Url ;
              fhir:v "Hintergrundinformationen.html"^^xsd:anyURI ;
              fhir:l fhir:Hintergrundinformationen.html
            ]
@@ -6571,6 +6552,25 @@
            fhir:l fhir:Hintergrundinformationen.html
          ] ;
          fhir:title [ fhir:v "Hintergrundinformationen" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "Best_Practices_im_Wechselprozess.html"^^xsd:anyURI ;
+             fhir:l fhir:Best_Practices_im_Wechselprozess.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "Best_Practices_im_Wechselprozess.html"^^xsd:anyURI ;
+           fhir:l fhir:Best_Practices_im_Wechselprozess.html
+         ] ;
+         fhir:title [ fhir:v "Best Practices im Wechselprozess" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -6609,25 +6609,6 @@
            fhir:l fhir:Arbeitsmodus.html
          ] ;
          fhir:title [ fhir:v "Arbeitsmodus" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-           ] ;
-           fhir:value [
-             a fhir:Url ;
-             fhir:v "Kommentierung_der_Arbeitspakete.html"^^xsd:anyURI ;
-             fhir:l fhir:Kommentierung_der_Arbeitspakete.html
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:Url ;
-           fhir:v "Kommentierung_der_Arbeitspakete.html"^^xsd:anyURI ;
-           fhir:l fhir:Kommentierung_der_Arbeitspakete.html
-         ] ;
-         fhir:title [ fhir:v "Kommentierung der Arbeitspakete" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

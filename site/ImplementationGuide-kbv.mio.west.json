@@ -11,7 +11,7 @@
   "title" : "Arbeitsgruppe WeST",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-06T17:54:18+02:00",
+  "date" : "2026-07-22T15:49:40+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
@@ -3228,19 +3228,19 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Grundlagen.html"
+          "valueUrl" : "Hintergrundinformationen.html"
         }],
-        "nameUrl" : "Grundlagen.html",
-        "title" : "Grundlagen",
+        "nameUrl" : "Hintergrundinformationen.html",
+        "title" : "Hintergrundinformationen",
         "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Hintergrundinformationen.html"
+          "valueUrl" : "Best_Practices_im_Wechselprozess.html"
         }],
-        "nameUrl" : "Hintergrundinformationen.html",
-        "title" : "Hintergrundinformationen",
+        "nameUrl" : "Best_Practices_im_Wechselprozess.html",
+        "title" : "Best Practices im Wechselprozess",
         "generation" : "markdown"
       },
       {
@@ -3259,15 +3259,6 @@
         }],
         "nameUrl" : "Arbeitsmodus.html",
         "title" : "Arbeitsmodus",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Kommentierung_der_Arbeitspakete.html"
-        }],
-        "nameUrl" : "Kommentierung_der_Arbeitspakete.html",
-        "title" : "Kommentierung der Arbeitspakete",
         "generation" : "markdown"
       },
       {

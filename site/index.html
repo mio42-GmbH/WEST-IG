@@ -101,26 +101,23 @@
     <a href="index.html">Startseite</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Grundlagen
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Hintergrundinformationen
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="Hintergrundinformationen.html">Hintergrundinformationen</a>
-      </li>
-      <li>
-        <a href="Ziele_und_Nutzen.html">Ziele und Nutzen</a>
-      </li>
-      <li>
-        <a href="Arbeitsmodus.html">Arbeitsmodus</a>
-      </li>
-      <li>
-        <a href="Pilotphase.html">Pilotphase</a>
+        <a href="Best_Practices_im_Wechselprozess.html">Best Practices im Wechselprozess</a>
       </li>
     </ul>
   </li>
+  <li>
+    <a href="Ziele_und_Nutzen.html">Ziele und Nutzen</a>
+  </li>
+  <li>
+    <a href="Arbeitsmodus.html">Arbeitsmodus</a>
+  </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Kommentierung der Arbeitspakete
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Pilotphase
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -224,7 +221,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2026-07-06
+            as of 2026-07-22
           
         
       </td>
@@ -248,8 +245,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+  <p>Seiteninhalt:</p>
+
+<ul id="markdown-toc">
+  <li><a href="#wo-stehen-wir" id="markdown-toc-wo-stehen-wir">Wo stehen wir?</a></li>
+  <li><a href="#nchste-schritte" id="markdown-toc-nchste-schritte">Nächste Schritte</a></li>
+</ul>
+
 </div>
 
 <div class="confluence-content">
@@ -264,7 +267,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
   <p>Die neue Wechselschnittstelle soll performant und praktikabel werden. Der Interop Council hat dazu innerhalb des Arbeitskreises “Analyse der Effizienz der AWSt” mit relevanten Expert:innen ein Positionspapier entwickelt, in dem konkrete Handlungsempfehlungen für eine optimierte Umsetzung mit FHIR aufgeführt wurden.</p>
 
-  <h4 id="wo-stehen-wir">Wo stehen wir?</h4>
+  <h3 id="wo-stehen-wir">Wo stehen wir?</h3>
 
   <p>Nach dem erfolgreichen Kick-Off der Co-Creation-Phase wurde der Weg für eine enge Zusammenarbeit zwischen allen Beteiligten geebnet. In der Discovery-Phase haben sich Mio42, Gematik und Vertreter der Industrie intensiv mit der Konzeptionierung und Lösungsfindung für die bestehenden Performance- und Praktikabilitätsprobleme der alten Archiv- und Wechselschnittstelle beschäftigt. Gemeinsame Workshops ermöglichten eine detaillierte Analyse der Herausforderungen und legten die Grundlage für die weitere Entwicklung.</p>
 
@@ -272,13 +275,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
   <p>Die ersten beiden Arbeitspakete des Projekts wurden erstellt und kommentiert. Ziel der ersten Arbeitspakete ist es, eine erste funktionsfähige Implementierung der optimierten Wechselschnittstelle zu entwickeln, die als Grundlage für zukünftige Iterationen und Anpassungen dienen wird.</p>
 
-  <h4 id="nchste-schritte">Nächste Schritte</h4>
+  <p>In unserem Implementation Guide veröffentlichen wir regelmäßig Updates zu unserem Datenmodell: <a href="https://mio42-gmbh.github.io/WEST-IG/site/infomodell.html">https://mio42-gmbh.github.io/WEST-IG/site/infomodell.html</a></p>
+
+  <h3 id="nchste-schritte">Nächste Schritte</h3>
 
   <p>Im weiteren Verlauf des Projekts stehen nun mehrere entscheidende Schritte an, um die Entwicklung der Wechselschnittstelle voranzutreiben und sicherzustellen, dass die optimierte Lösung sowohl technisch als auch praktisch den Anforderungen entspricht.</p>
 
   <p>Anhand der ertsten beiden Arbeitspakete erfolgt eine umfassende Vertestung der Schnittstelle unter Berücksichtigung der Handlungsempfehlungen aus dem Positionspapier des Interop Councils. Diese Testphase wird sicherstellen, dass die entwickelten Lösungen in der Praxis funktionieren und den gewünschten Leistungsanforderungen gerecht werden. Ziel der Tests soll sein, die Performanzverbesserungen für die Wechselschnittstelle zu evaluieren und die Testergebnisse für zukünftige Anpassungen zu nutzen. Dabei wird der weitere Projektverlauf und die Entwicklung der Wechselschnittstelle evaluiert.</p>
 
-  <p>Stand Apr 26</p>
+  <p>Stand April 26</p>
 
   <div class="row">
     <div class="column">
@@ -312,7 +317,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Mon, Jul 6, 2026 17:54+0200">2026-07-06</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Jul 22, 2026 15:49+0200">2026-07-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

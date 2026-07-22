@@ -311,8 +311,8 @@
     "uses" : {
     },
     "StructureDefinition-KBV-PR-WEST-Practitioner.html" : "KBV_PR_WEST_Practitioner",
-    "ValueSet-KBV-VS-WEST-Patient-VSDM-Gender.html" : "KBV_VS_WEST_Patient_VSDM_Gender",
-    "StructureDefinition-KBV-PR-WEST-Patient.html" : "KBV_PR_WEST_Patient"
+    "StructureDefinition-KBV-PR-WEST-Patient.html" : "KBV_PR_WEST_Patient",
+    "ValueSet-KBV-VS-WEST-Patient-VSDM-Gender.html" : "KBV_VS_WEST_Patient_VSDM_Gender"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",

@@ -12,7 +12,7 @@ Version 1.0.0-kommentierung - ci-build
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.kbv.de/ImplementationGuide/kbv.mio.west | *Version*:1.0.0-kommentierung |
-| Draft as of 2026-07-06 | *Computable Name*:ArbeitsgruppeWeST |
+| Draft as of 2026-07-22 | *Computable Name*:ArbeitsgruppeWeST |
 
 Die mio42 wurde beauftragt eine Wechselschnittstelle nach § 371 Abs. 1 SGB V zu entwickeln, welche dazu dient, Patientendaten bei einem Wechsel des Praxisverwaltungssystems (PVS) sicher, einheitlich und verbindlich zu übertragen. Sie soll durch einen möglichst umfassenden Datentransfer dazu beitragen, bestehende Wechselhürden abzubauen – etwa durch proprietäre Datenformate, Cloud-Hosting, hohe Kosten oder eingeschränkte Usability – und damit echte Systemwahlfreiheit für Arztpraxen ermöglichen. Der Fokus liegt dabei auf einem möglichst holistischen Datenmodell für Interoperabilität und Standardisierung sowie der Sicherstellung einer angemessenen Performanz im Wechselprozess.
 
@@ -24,7 +24,7 @@ Essentiell für den Erfolg des Entwicklungsprozesses ist ein praxisnaher und tra
 
 Die neue Wechselschnittstelle soll performant und praktikabel werden. Der Interop Council hat dazu innerhalb des Arbeitskreises “Analyse der Effizienz der AWSt” mit relevanten Expert:innen ein Positionspapier entwickelt, in dem konkrete Handlungsempfehlungen für eine optimierte Umsetzung mit FHIR aufgeführt wurden.
 
-#### Wo stehen wir?
+### Wo stehen wir?
 
 Nach dem erfolgreichen Kick-Off der Co-Creation-Phase wurde der Weg für eine enge Zusammenarbeit zwischen allen Beteiligten geebnet. In der Discovery-Phase haben sich Mio42, Gematik und Vertreter der Industrie intensiv mit der Konzeptionierung und Lösungsfindung für die bestehenden Performance- und Praktikabilitätsprobleme der alten Archiv- und Wechselschnittstelle beschäftigt. Gemeinsame Workshops ermöglichten eine detaillierte Analyse der Herausforderungen und legten die Grundlage für die weitere Entwicklung.
 
@@ -32,13 +32,15 @@ Im Fokus stand vor allem die Frage, wie die bestehende Schnittstelle auf Basis d
 
 Die ersten beiden Arbeitspakete des Projekts wurden erstellt und kommentiert. Ziel der ersten Arbeitspakete ist es, eine erste funktionsfähige Implementierung der optimierten Wechselschnittstelle zu entwickeln, die als Grundlage für zukünftige Iterationen und Anpassungen dienen wird.
 
-#### Nächste Schritte
+In unserem Implementation Guide veröffentlichen wir regelmäßig Updates zu unserem Datenmodell: [https://mio42-gmbh.github.io/WEST-IG/site/infomodell.html](https://mio42-gmbh.github.io/WEST-IG/site/infomodell.html)
+
+### Nächste Schritte
 
 Im weiteren Verlauf des Projekts stehen nun mehrere entscheidende Schritte an, um die Entwicklung der Wechselschnittstelle voranzutreiben und sicherzustellen, dass die optimierte Lösung sowohl technisch als auch praktisch den Anforderungen entspricht.
 
 Anhand der ertsten beiden Arbeitspakete erfolgt eine umfassende Vertestung der Schnittstelle unter Berücksichtigung der Handlungsempfehlungen aus dem Positionspapier des Interop Councils. Diese Testphase wird sicherstellen, dass die entwickelten Lösungen in der Praxis funktionieren und den gewünschten Leistungsanforderungen gerecht werden. Ziel der Tests soll sein, die Performanzverbesserungen für die Wechselschnittstelle zu evaluieren und die Testergebnisse für zukünftige Anpassungen zu nutzen. Dabei wird der weitere Projektverlauf und die Entwicklung der Wechselschnittstelle evaluiert.
 
-Stand Apr 26
+Stand April 26
 
 
 
@@ -54,7 +56,7 @@ Stand Apr 26
   "title" : "Arbeitsgruppe WeST",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-06T17:54:18+02:00",
+  "date" : "2026-07-22T15:49:40+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
@@ -3271,19 +3273,19 @@ Stand Apr 26
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Grundlagen.html"
+          "valueUrl" : "Hintergrundinformationen.html"
         }],
-        "nameUrl" : "Grundlagen.html",
-        "title" : "Grundlagen",
+        "nameUrl" : "Hintergrundinformationen.html",
+        "title" : "Hintergrundinformationen",
         "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Hintergrundinformationen.html"
+          "valueUrl" : "Best_Practices_im_Wechselprozess.html"
         }],
-        "nameUrl" : "Hintergrundinformationen.html",
-        "title" : "Hintergrundinformationen",
+        "nameUrl" : "Best_Practices_im_Wechselprozess.html",
+        "title" : "Best Practices im Wechselprozess",
         "generation" : "markdown"
       },
       {
@@ -3302,15 +3304,6 @@ Stand Apr 26
         }],
         "nameUrl" : "Arbeitsmodus.html",
         "title" : "Arbeitsmodus",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Kommentierung_der_Arbeitspakete.html"
-        }],
-        "nameUrl" : "Kommentierung_der_Arbeitspakete.html",
-        "title" : "Kommentierung der Arbeitspakete",
         "generation" : "markdown"
       },
       {
