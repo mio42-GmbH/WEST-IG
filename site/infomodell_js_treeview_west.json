@@ -6,7 +6,7 @@
     "data": {
       "name": "ARBEITSPAKET-3",
       "datatype": "",
-      "description": "<p>\n Mappings auf xBDT und BDT, tlw. Anpassung Beschreibungen: G:\\MIO-Programm\\05_Andere_Projekte\\08_AWS\\03_Inhaltliche_Erarbeitung\\02_Modellierung\\Arbeitspaket-3\\Mappings\n </p>",
+      "description": "<p>\n Mappings auf BDT, tlw. Anpassung Beschreibungen: G:\\MIO-Programm\\05_Andere_Projekte\\08_AWS\\03_Inhaltliche_Erarbeitung\\02_Modellierung\\Arbeitspaket-3\\Mappings\n </p>",
       "rationale": "",
       "cardinality": "<p>Arbeitspaket-3 : 0..1 (Optional) </p>\n<p>Basis-Kardinalitäten : 0..1 (Optional) </p>",
       "codes": "",
@@ -9402,7 +9402,7 @@
     "data": {
       "name": "Diagnosenart",
       "datatype": "code",
-      "description": "<p>\n Die Diagnoseart (in xBDT Diagnosentyp) kann folgende Auswahlmöglichkeiten haben: Behandlungsdiagnose, anamnestische Diagnose, unbekannt\n </p>",
+      "description": "<p>\n Die Diagnoseart (oder Diagnosentyp) kann folgende Auswahlmöglichkeiten haben: Behandlungsdiagnose, anamnestische Diagnose, unbekannt\n </p>",
       "rationale": "",
       "cardinality": "<p>Arbeitspaket-2 : 0..1 (Optional) </p>\n<p>Basis-Kardinalitäten : 0..1 (Optional) </p>",
       "codes": "",
@@ -12138,7 +12138,7 @@
     "data": {
       "name": "Herzfrequenz",
       "datatype": "",
-      "description": "<p>\n Dieses Element beschreibt die Messung einer einzelnen Herzfrequenz.\n </p>\n <p>\n In xBDT wird dieser Inhalt als \"Puls\" bezeichnet. Es ist davon auszugehen, dass die Herzfrequenz gemeint ist. Es ist zu berücksichtigen, dass der Puls die in den Arterien tastbare Druckwelle infolge jedes Herzschlags beschreibt und daher – etwa bei Herzrhythmusstörungen oder schwacher Durchblutung – von der tatsächlichen Herzfrequenz abweichen kann.\n </p>",
+      "description": "<p>\n Dieses Element beschreibt die Messung einer einzelnen Herzfrequenz.\n </p>\n <p>\n In anderen Modellen wird dieser Inhalt als \"Puls\" bezeichnet. Es ist davon auszugehen, dass die Herzfrequenz gemeint ist. Es ist zu berücksichtigen, dass der Puls die in den Arterien tastbare Druckwelle infolge jedes Herzschlags beschreibt und daher – etwa bei Herzrhythmusstörungen oder schwacher Durchblutung – von der tatsächlichen Herzfrequenz abweichen kann.\n </p>",
       "rationale": "",
       "cardinality": "<p>Arbeitspaket-2 : 0..* (Optional) </p>\n<p>Basis-Kardinalitäten : 0..* (Optional) </p>",
       "codes": "",
@@ -16476,7 +16476,7 @@
     "data": {
       "name": "ARBEITSPAKET-1",
       "datatype": "",
-      "description": "<p>\n Profile für RUNDE-1- Fokus auf xBDT-Abbildung von Patient, Behandelnde Person, Behandelnde Person/Einrichtung, Einrichtung/Organisationseinheit.\n </p>\n <p>\n Ein eigenes Profil für Person wurde nicht implementiert, de die Person aus Sicht des xBDT nur für Organisation.contact benötigt wird - hierfür gibt es ein Konstrukt in der KBV Basis 1.8.0.\n </p>",
+      "description": "<p>\n Profile für RUNDE-1- Abbildung von Patient, Behandelnde Person, Behandelnde Person/Einrichtung, Einrichtung/Organisationseinheit.\n </p>\n <p>\n Ein eigenes Profil für Person wurde nicht implementiert, da die Person aus praktischer Sicht nur für Organisation.contact benötigt wird - hierfür gibt es ein Konstrukt in der KBV Basis 1.8.0.\n </p>",
       "rationale": "",
       "cardinality": "<p>Arbeitspaket-1 : 0..1 (Required) </p>\n<p>Basis-Kardinalitäten : 0..1 (Optional) </p>",
       "codes": "",
