@@ -12,7 +12,7 @@ Version 1.0.0-kommentierung - ci-build
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.kbv.de/ImplementationGuide/kbv.mio.west | *Version*:1.0.0-kommentierung |
-| Draft as of 2026-07-22 | *Computable Name*:ArbeitsgruppeWeST |
+| Draft as of 2026-08-26 | *Computable Name*:ArbeitsgruppeWeST |
 
 Die mio42 wurde beauftragt eine Wechselschnittstelle nach § 371 Abs. 1 SGB V zu entwickeln, welche dazu dient, Patientendaten bei einem Wechsel des Praxisverwaltungssystems (PVS) sicher, einheitlich und verbindlich zu übertragen. Sie soll durch einen möglichst umfassenden Datentransfer dazu beitragen, bestehende Wechselhürden abzubauen – etwa durch proprietäre Datenformate, Cloud-Hosting, hohe Kosten oder eingeschränkte Usability – und damit echte Systemwahlfreiheit für Arztpraxen ermöglichen. Der Fokus liegt dabei auf einem möglichst holistischen Datenmodell für Interoperabilität und Standardisierung sowie der Sicherstellung einer angemessenen Performanz im Wechselprozess.
 
@@ -56,7 +56,7 @@ Stand April 26
   "title" : "Arbeitsgruppe WeST",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-07-22T16:29:56+02:00",
+  "date" : "2026-08-26T10:20:04+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
@@ -88,7 +88,7 @@ Stand April 26
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.2.0"
+    "version" : "7.3.0"
   },
   {
     "id" : "hl7ext",
@@ -3340,6 +3340,15 @@ Stand April 26
         }],
         "nameUrl" : "infomodell.html",
         "title" : "Datenmodell",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Beschreibung_Datenmodell.html"
+        }],
+        "nameUrl" : "Beschreibung_Datenmodell.html",
+        "title" : "Beschreibung Datenmodell",
         "generation" : "markdown"
       },
       {

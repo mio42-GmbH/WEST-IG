@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "Arbeitsgruppe WeST"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-07-22T16:29:56+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-08-26T10:20:04+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "mio42 GmbH" ] ;
@@ -65,7 +65,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.2.0" ]
+     fhir:version [ fhir:v "7.3.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -6685,6 +6685,25 @@
            fhir:l fhir:infomodell.html
          ] ;
          fhir:title [ fhir:v "Datenmodell" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "Beschreibung_Datenmodell.html"^^xsd:anyURI ;
+             fhir:l fhir:Beschreibung_Datenmodell.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "Beschreibung_Datenmodell.html"^^xsd:anyURI ;
+           fhir:l fhir:Beschreibung_Datenmodell.html
+         ] ;
+         fhir:title [ fhir:v "Beschreibung Datenmodell" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

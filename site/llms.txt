@@ -7,6 +7,7 @@
 * [Arbeitspaket 1 - abgeschlossen](Arbeitspaket_1_-_abgeschlossen.md)
 * [Arbeitspaket 2 - abgeschlossen](Arbeitspaket_2_-_abgeschlossen.md)
 * [Artifacts Summary](artifacts.md)
+* [Beschreibung Datenmodell](Beschreibung_Datenmodell.md)
 * [Best Practices im Wechselprozess](Best_Practices_im_Wechselprozess.md)
 * [Hintergrundinformationen](Hintergrundinformationen.md)
 * [Datenmodell](infomodell.md)
