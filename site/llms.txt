@@ -17,6 +17,7 @@
 * [Szenario Arbeitspaket 1](west_scenario_Arbeitspaket_1.md)
 * [Szenario Arbeitspaket 2](west_scenario_Arbeitspaket_2.md)
 * [Szenario Arbeitspaket 3](west_scenario_Arbeitspaket_3.md)
+* [Szenario Arbeitspaket 4](west_scenario_Arbeitspaket_4.md)
 * [Ziele & Nutzen](Ziele_und_Nutzen.md)
 
 ## Resources

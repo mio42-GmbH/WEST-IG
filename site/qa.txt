@@ -2,8 +2,8 @@ ArbeitsgruppeWeST : Validation Results
 =========================================
 
 err = 21, warn = 328, info = 189
-IG Publisher Version: 2.2.8 Out of date - current version is 2.3.2
-Generated Wed Aug 26 10:30:18 CEST 2026. FHIR version 4.0.1 for kbv.mio.west#1.0.0-kommentierung (canonical = https://fhir.kbv.de)
+IG Publisher Version: 2.2.8 Out of date - current version is 2.3.4
+Generated Mon Sep 28 11:43:31 CEST 2026. FHIR version 4.0.1 for kbv.mio.west#1.0.0-kommentierung (canonical = https://fhir.kbv.de)
  Build Errors : 16 / 9 / 3
  C:\Mio42\WeST-AG\fsh-generated\resources\Condition-67796ba0-61d0-4120-9d31-f9690fd88eaa : 0 / 2 / 3
  C:\Mio42\WeST-AG\fsh-generated\resources\Condition-8d84156a-fe2b-4eb8-b87e-57fe51b641d0 : 0 / 2 / 4
