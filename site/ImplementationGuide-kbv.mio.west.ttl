@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "Arbeitsgruppe WeST"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-09-28T11:32:53+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-10-06T17:56:52+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "mio42 GmbH" ] ;
@@ -6751,16 +6751,16 @@
            ] ;
            fhir:value [
              a fhir:Url ;
-             fhir:v "west_scenario_Arbeitspaket_1.html"^^xsd:anyURI ;
-             fhir:l fhir:west_scenario_Arbeitspaket_1.html
+             fhir:v "west_scenario_Abrechnungen_und_Abrechnungsnachweise.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Abrechnungen_und_Abrechnungsnachweise.html
            ]
          ] ) ;
          fhir:name [
            a fhir:Url ;
-           fhir:v "west_scenario_Arbeitspaket_1.html"^^xsd:anyURI ;
-           fhir:l fhir:west_scenario_Arbeitspaket_1.html
+           fhir:v "west_scenario_Abrechnungen_und_Abrechnungsnachweise.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Abrechnungen_und_Abrechnungsnachweise.html
          ] ;
-         fhir:title [ fhir:v "Szenario Arbeitspaket 1" ] ;
+         fhir:title [ fhir:v "Szenario Abrechnungen und Abrechnungsnachweise" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -6770,16 +6770,16 @@
            ] ;
            fhir:value [
              a fhir:Url ;
-             fhir:v "west_scenario_Arbeitspaket_2.html"^^xsd:anyURI ;
-             fhir:l fhir:west_scenario_Arbeitspaket_2.html
+             fhir:v "west_scenario_Administrative_Patientendaten.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Administrative_Patientendaten.html
            ]
          ] ) ;
          fhir:name [
            a fhir:Url ;
-           fhir:v "west_scenario_Arbeitspaket_2.html"^^xsd:anyURI ;
-           fhir:l fhir:west_scenario_Arbeitspaket_2.html
+           fhir:v "west_scenario_Administrative_Patientendaten.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Administrative_Patientendaten.html
          ] ;
-         fhir:title [ fhir:v "Szenario Arbeitspaket 2" ] ;
+         fhir:title [ fhir:v "Szenario Administrative Patientendaten" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -6789,16 +6789,16 @@
            ] ;
            fhir:value [
              a fhir:Url ;
-             fhir:v "west_scenario_Arbeitspaket_3.html"^^xsd:anyURI ;
-             fhir:l fhir:west_scenario_Arbeitspaket_3.html
+             fhir:v "west_scenario_Auftraege_Verordnungen_Leistugnsanfragen_Leistungsgenehmigungen.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Auftraege_Verordnungen_Leistugnsanfragen_Leistungsgenehmigungen.html
            ]
          ] ) ;
          fhir:name [
            a fhir:Url ;
-           fhir:v "west_scenario_Arbeitspaket_3.html"^^xsd:anyURI ;
-           fhir:l fhir:west_scenario_Arbeitspaket_3.html
+           fhir:v "west_scenario_Auftraege_Verordnungen_Leistugnsanfragen_Leistungsgenehmigungen.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Auftraege_Verordnungen_Leistugnsanfragen_Leistungsgenehmigungen.html
          ] ;
-         fhir:title [ fhir:v "Szenario Arbeitspaket 3" ] ;
+         fhir:title [ fhir:v "Szenario Aufträge, Verordnungen, Leistugnsanfragen, Leistungsgenehmigungen" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -6808,16 +6808,168 @@
            ] ;
            fhir:value [
              a fhir:Url ;
-             fhir:v "west_scenario_Arbeitspaket_4.html"^^xsd:anyURI ;
-             fhir:l fhir:west_scenario_Arbeitspaket_4.html
+             fhir:v "west_scenario_Behandlung_im_Auftrag_Ueberweisung.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Behandlung_im_Auftrag_Ueberweisung.html
            ]
          ] ) ;
          fhir:name [
            a fhir:Url ;
-           fhir:v "west_scenario_Arbeitspaket_4.html"^^xsd:anyURI ;
-           fhir:l fhir:west_scenario_Arbeitspaket_4.html
+           fhir:v "west_scenario_Behandlung_im_Auftrag_Ueberweisung.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Behandlung_im_Auftrag_Ueberweisung.html
          ] ;
-         fhir:title [ fhir:v "Szenario Arbeitspaket 4" ] ;
+         fhir:title [ fhir:v "Szenario Behandlung im Auftrag Überweisung" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "west_scenario_Behandlungskontakte.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Behandlungskontakte.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "west_scenario_Behandlungskontakte.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Behandlungskontakte.html
+         ] ;
+         fhir:title [ fhir:v "Szenario Behandlungskontakte" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "west_scenario_Diagnosen_Messwerte_und_Befunde.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Diagnosen_Messwerte_und_Befunde.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "west_scenario_Diagnosen_Messwerte_und_Befunde.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Diagnosen_Messwerte_und_Befunde.html
+         ] ;
+         fhir:title [ fhir:v "Szenario Diagnosen, Messwerte und Befunde" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "west_scenario_Geraete_Heilmittel_Hilfsmittel_Materialien.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Geraete_Heilmittel_Hilfsmittel_Materialien.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "west_scenario_Geraete_Heilmittel_Hilfsmittel_Materialien.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Geraete_Heilmittel_Hilfsmittel_Materialien.html
+         ] ;
+         fhir:title [ fhir:v "Szenario Geräte, Heilmittel, Hilfsmittel, Materialien" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "west_scenario_Laboruntersuchungen_und_Befunde.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Laboruntersuchungen_und_Befunde.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "west_scenario_Laboruntersuchungen_und_Befunde.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Laboruntersuchungen_und_Befunde.html
+         ] ;
+         fhir:title [ fhir:v "Szenario Laboruntersuchungen und Befunde" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "west_scenario_Medikation_und_Arzneimittel.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Medikation_und_Arzneimittel.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "west_scenario_Medikation_und_Arzneimittel.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Medikation_und_Arzneimittel.html
+         ] ;
+         fhir:title [ fhir:v "Szenario Medikation und Arzneimittel" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "west_scenario_Personen_Orte_und_Einrichtungen.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Personen_Orte_und_Einrichtungen.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "west_scenario_Personen_Orte_und_Einrichtungen.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Personen_Orte_und_Einrichtungen.html
+         ] ;
+         fhir:title [ fhir:v "Szenario Personen, Orte und Einrichtungen" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "west_scenario_Technik_und_Datenaustausch.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Technik_und_Datenaustausch.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "west_scenario_Technik_und_Datenaustausch.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Technik_und_Datenaustausch.html
+         ] ;
+         fhir:title [ fhir:v "Szenario west_scenario_Technik_und_Datenaustausch" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "west_scenario_Versorgung_und_Massnahmen.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Versorgung_und_Massnahmen.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "west_scenario_Versorgung_und_Massnahmen.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Versorgung_und_Massnahmen.html
+         ] ;
+         fhir:title [ fhir:v "Szenario Versorgung und Maßnahmen" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

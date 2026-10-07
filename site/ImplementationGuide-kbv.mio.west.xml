@@ -12,7 +12,7 @@
   <title value="Arbeitsgruppe WeST"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-09-28T11:32:53+02:00"/>
+  <date value="2026-10-06T17:56:52+02:00"/>
   <publisher value="mio42 GmbH"/>
   <contact>
     <name value="mio42 GmbH"/>
@@ -2674,34 +2674,98 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="west_scenario_Arbeitspaket_1.html"/>
+          <valueUrl value="west_scenario_Abrechnungen_und_Abrechnungsnachweise.html"/>
         </extension>
-        <nameUrl value="west_scenario_Arbeitspaket_1.html"/>
-        <title value="Szenario Arbeitspaket 1"/>
+        <nameUrl value="west_scenario_Abrechnungen_und_Abrechnungsnachweise.html"/>
+        <title value="Szenario Abrechnungen und Abrechnungsnachweise"/>
         <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="west_scenario_Arbeitspaket_2.html"/>
+          <valueUrl value="west_scenario_Administrative_Patientendaten.html"/>
         </extension>
-        <nameUrl value="west_scenario_Arbeitspaket_2.html"/>
-        <title value="Szenario Arbeitspaket 2"/>
+        <nameUrl value="west_scenario_Administrative_Patientendaten.html"/>
+        <title value="Szenario Administrative Patientendaten"/>
         <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="west_scenario_Arbeitspaket_3.html"/>
+          <valueUrl value="west_scenario_Auftraege_Verordnungen_Leistugnsanfragen_Leistungsgenehmigungen.html"/>
         </extension>
-        <nameUrl value="west_scenario_Arbeitspaket_3.html"/>
-        <title value="Szenario Arbeitspaket 3"/>
+        <nameUrl value="west_scenario_Auftraege_Verordnungen_Leistugnsanfragen_Leistungsgenehmigungen.html"/>
+        <title value="Szenario Aufträge, Verordnungen, Leistugnsanfragen, Leistungsgenehmigungen"/>
         <generation value="markdown"/>
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="west_scenario_Arbeitspaket_4.html"/>
+          <valueUrl value="west_scenario_Behandlung_im_Auftrag_Ueberweisung.html"/>
         </extension>
-        <nameUrl value="west_scenario_Arbeitspaket_4.html"/>
-        <title value="Szenario Arbeitspaket 4"/>
+        <nameUrl value="west_scenario_Behandlung_im_Auftrag_Ueberweisung.html"/>
+        <title value="Szenario Behandlung im Auftrag Überweisung"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_scenario_Behandlungskontakte.html"/>
+        </extension>
+        <nameUrl value="west_scenario_Behandlungskontakte.html"/>
+        <title value="Szenario Behandlungskontakte"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_scenario_Diagnosen_Messwerte_und_Befunde.html"/>
+        </extension>
+        <nameUrl value="west_scenario_Diagnosen_Messwerte_und_Befunde.html"/>
+        <title value="Szenario Diagnosen, Messwerte und Befunde"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_scenario_Geraete_Heilmittel_Hilfsmittel_Materialien.html"/>
+        </extension>
+        <nameUrl value="west_scenario_Geraete_Heilmittel_Hilfsmittel_Materialien.html"/>
+        <title value="Szenario Geräte, Heilmittel, Hilfsmittel, Materialien"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_scenario_Laboruntersuchungen_und_Befunde.html"/>
+        </extension>
+        <nameUrl value="west_scenario_Laboruntersuchungen_und_Befunde.html"/>
+        <title value="Szenario Laboruntersuchungen und Befunde"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_scenario_Medikation_und_Arzneimittel.html"/>
+        </extension>
+        <nameUrl value="west_scenario_Medikation_und_Arzneimittel.html"/>
+        <title value="Szenario Medikation und Arzneimittel"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_scenario_Personen_Orte_und_Einrichtungen.html"/>
+        </extension>
+        <nameUrl value="west_scenario_Personen_Orte_und_Einrichtungen.html"/>
+        <title value="Szenario Personen, Orte und Einrichtungen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_scenario_Technik_und_Datenaustausch.html"/>
+        </extension>
+        <nameUrl value="west_scenario_Technik_und_Datenaustausch.html"/>
+        <title value="Szenario west_scenario_Technik_und_Datenaustausch"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="west_scenario_Versorgung_und_Massnahmen.html"/>
+        </extension>
+        <nameUrl value="west_scenario_Versorgung_und_Massnahmen.html"/>
+        <title value="Szenario Versorgung und Maßnahmen"/>
         <generation value="markdown"/>
       </page>
     </page>

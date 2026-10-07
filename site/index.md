@@ -12,7 +12,7 @@ Version 1.0.0-kommentierung - ci-build
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.kbv.de/ImplementationGuide/kbv.mio.west | *Version*:1.0.0-kommentierung |
-| Draft as of 2026-09-28 | *Computable Name*:ArbeitsgruppeWeST |
+| Draft as of 2026-10-06 | *Computable Name*:ArbeitsgruppeWeST |
 
 Die mio42 wurde beauftragt eine Wechselschnittstelle nach § 371 Abs. 1 SGB V zu entwickeln, welche dazu dient, Patientendaten bei einem Wechsel des Praxisverwaltungssystems (PVS) sicher, einheitlich und verbindlich zu übertragen. Sie soll durch einen möglichst umfassenden Datentransfer dazu beitragen, bestehende Wechselhürden abzubauen – etwa durch proprietäre Datenformate, Cloud-Hosting, hohe Kosten oder eingeschränkte Usability – und damit echte Systemwahlfreiheit für Arztpraxen ermöglichen. Der Fokus liegt dabei auf einem möglichst holistischen Datenmodell für Interoperabilität und Standardisierung sowie der Sicherstellung einer angemessenen Performanz im Wechselprozess.
 
@@ -56,7 +56,7 @@ Stand April 26
   "title" : "Arbeitsgruppe WeST",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-28T11:32:53+02:00",
+  "date" : "2026-10-06T17:56:52+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
@@ -3372,37 +3372,109 @@ Stand April 26
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "west_scenario_Arbeitspaket_1.html"
+          "valueUrl" : "west_scenario_Abrechnungen_und_Abrechnungsnachweise.html"
         }],
-        "nameUrl" : "west_scenario_Arbeitspaket_1.html",
-        "title" : "Szenario Arbeitspaket 1",
+        "nameUrl" : "west_scenario_Abrechnungen_und_Abrechnungsnachweise.html",
+        "title" : "Szenario Abrechnungen und Abrechnungsnachweise",
         "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "west_scenario_Arbeitspaket_2.html"
+          "valueUrl" : "west_scenario_Administrative_Patientendaten.html"
         }],
-        "nameUrl" : "west_scenario_Arbeitspaket_2.html",
-        "title" : "Szenario Arbeitspaket 2",
+        "nameUrl" : "west_scenario_Administrative_Patientendaten.html",
+        "title" : "Szenario Administrative Patientendaten",
         "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "west_scenario_Arbeitspaket_3.html"
+          "valueUrl" : "west_scenario_Auftraege_Verordnungen_Leistugnsanfragen_Leistungsgenehmigungen.html"
         }],
-        "nameUrl" : "west_scenario_Arbeitspaket_3.html",
-        "title" : "Szenario Arbeitspaket 3",
+        "nameUrl" : "west_scenario_Auftraege_Verordnungen_Leistugnsanfragen_Leistungsgenehmigungen.html",
+        "title" : "Szenario Aufträge, Verordnungen, Leistugnsanfragen, Leistungsgenehmigungen",
         "generation" : "markdown"
       },
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "west_scenario_Arbeitspaket_4.html"
+          "valueUrl" : "west_scenario_Behandlung_im_Auftrag_Ueberweisung.html"
         }],
-        "nameUrl" : "west_scenario_Arbeitspaket_4.html",
-        "title" : "Szenario Arbeitspaket 4",
+        "nameUrl" : "west_scenario_Behandlung_im_Auftrag_Ueberweisung.html",
+        "title" : "Szenario Behandlung im Auftrag Überweisung",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "west_scenario_Behandlungskontakte.html"
+        }],
+        "nameUrl" : "west_scenario_Behandlungskontakte.html",
+        "title" : "Szenario Behandlungskontakte",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "west_scenario_Diagnosen_Messwerte_und_Befunde.html"
+        }],
+        "nameUrl" : "west_scenario_Diagnosen_Messwerte_und_Befunde.html",
+        "title" : "Szenario Diagnosen, Messwerte und Befunde",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "west_scenario_Geraete_Heilmittel_Hilfsmittel_Materialien.html"
+        }],
+        "nameUrl" : "west_scenario_Geraete_Heilmittel_Hilfsmittel_Materialien.html",
+        "title" : "Szenario Geräte, Heilmittel, Hilfsmittel, Materialien",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "west_scenario_Laboruntersuchungen_und_Befunde.html"
+        }],
+        "nameUrl" : "west_scenario_Laboruntersuchungen_und_Befunde.html",
+        "title" : "Szenario Laboruntersuchungen und Befunde",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "west_scenario_Medikation_und_Arzneimittel.html"
+        }],
+        "nameUrl" : "west_scenario_Medikation_und_Arzneimittel.html",
+        "title" : "Szenario Medikation und Arzneimittel",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "west_scenario_Personen_Orte_und_Einrichtungen.html"
+        }],
+        "nameUrl" : "west_scenario_Personen_Orte_und_Einrichtungen.html",
+        "title" : "Szenario Personen, Orte und Einrichtungen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "west_scenario_Technik_und_Datenaustausch.html"
+        }],
+        "nameUrl" : "west_scenario_Technik_und_Datenaustausch.html",
+        "title" : "Szenario west_scenario_Technik_und_Datenaustausch",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "west_scenario_Versorgung_und_Massnahmen.html"
+        }],
+        "nameUrl" : "west_scenario_Versorgung_und_Massnahmen.html",
+        "title" : "Szenario Versorgung und Maßnahmen",
         "generation" : "markdown"
       }]
     },
