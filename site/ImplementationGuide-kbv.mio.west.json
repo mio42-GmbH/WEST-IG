@@ -11,7 +11,7 @@
   "title" : "Arbeitsgruppe WeST",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-06T17:56:52+02:00",
+  "date" : "2026-10-21T17:10:40+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
@@ -3294,34 +3294,7 @@
           "valueUrl" : "infomodell.html"
         }],
         "nameUrl" : "infomodell.html",
-        "title" : "Datenmodell",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Beschreibung_Datenmodell.html"
-        }],
-        "nameUrl" : "Beschreibung_Datenmodell.html",
-        "title" : "Beschreibung Datenmodell",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "west_requirements.html"
-        }],
-        "nameUrl" : "west_requirements.html",
-        "title" : "Vorgaben",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "west_operationalisations.html"
-        }],
-        "nameUrl" : "west_operationalisations.html",
-        "title" : "Operationalisierungshinweise",
+        "title" : "Informationsmodell",
         "generation" : "markdown"
       },
       {
@@ -3430,6 +3403,33 @@
         }],
         "nameUrl" : "west_scenario_Versorgung_und_Massnahmen.html",
         "title" : "Szenario Versorgung und Maßnahmen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Dem_Informationsmodell_zugrundeliegende_Spezifikationen.html"
+        }],
+        "nameUrl" : "Dem_Informationsmodell_zugrundeliegende_Spezifikationen.html",
+        "title" : "Dem Informationsmodell zugrundeliegende Spezifikationen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Lesehilfe_Informationsmodell.html"
+        }],
+        "nameUrl" : "Lesehilfe_Informationsmodell.html",
+        "title" : "Lesehilfe Informationsmodell",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Erlaeuterungen_zum_Informationsmodell.html"
+        }],
+        "nameUrl" : "Erlaeuterungen_zum_Informationsmodell.html",
+        "title" : "Erläuterungen zum Informationsmodell",
         "generation" : "markdown"
       }]
     },

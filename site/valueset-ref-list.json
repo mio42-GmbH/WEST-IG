@@ -73,8 +73,8 @@
     "systems" : ["https://fhir.kbv.de/CodeSystem/KBV_CS_WEST_BDT_Betriebsstaettenstatus"],
     "uses" : {
     },
-    "StructureDefinition-KBV-PR-WEST-Organization.html" : "KBV_PR_WEST_Organization",
-    "StructureDefinition-KBV-PR-WEST-Betriebsstaette.html" : "KBV_PR_WEST_Betriebsstaette"
+    "StructureDefinition-KBV-PR-WEST-Betriebsstaette.html" : "KBV_PR_WEST_Betriebsstaette",
+    "StructureDefinition-KBV-PR-WEST-Organization.html" : "KBV_PR_WEST_Organization"
   },
   {
     "url" : "https://fhir.kbv.de/ValueSet/KBV_VS_WEST_Diagnoseart",

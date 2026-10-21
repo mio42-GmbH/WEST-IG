@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Datenmodell - Arbeitsgruppe WeST v1.0.0-kommentierung</title>
+    <title>Informationsmodell - Arbeitsgruppe WeST v1.0.0-kommentierung</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -136,15 +136,18 @@
     </ul>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Datenmodell
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Informationsmodell
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
       <li>
-        <a href="infomodell.html">Datenmodell</a>
+        <a href="infomodell.html">Informationsmodell</a>
       </li>
       <li>
-        <a href="Beschreibung_Datenmodell.html">Beschreibung Datenmodell</a>
+        <a href="Lesehilfe_Informationsmodell.html">Lesehilfe Informationsmodell</a>
+      </li>
+      <li>
+        <a href="Dem_Informationsmodell_zugrundeliegende_Spezifikationen.html">Dem Informationsmodell zugrundeliegende Spezifikationen</a>
       </li>
     </ul>
   </li>
@@ -187,7 +190,7 @@ Arbeitsgruppe WeST
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Datenmodell</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Informationsmodell</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -207,7 +210,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   
-  <h2>Datenmodell</h2>
+  <h2>Informationsmodell</h2>
   
 
 
@@ -234,66 +237,77 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div class="collapse" id="expand-explanation">
     <div class="card card-body">
 
-      <h6 id="erluterungen-zum-informationsmodell-allgemein">Erläuterungen zum Informationsmodell allgemein</h6>
+      <div class="confluence-content">
 
-      <p>Auf dieser Seite werden die medizinisch-fachlichen Inhalte der Wechselschnittstelle in Form eines hierarchischen Informationsmodells dargestellt. Dieses soll dem Fachpublikum eine Übersicht über die Inhalte der Spezifikation bieten und stellt gleichzeitig im Rahmen der Entwicklung eine wichtige Grundlage für die Erstellung der technischen Spezifikation dar.</p>
+        <p>Die einzelnen Elemente des Informationsmodells enthalten bestimmte Informationen, die hier kurz erläutert werden (Hinweis: nicht jedes Element enthält alle hier aufgeführten Informationen):</p>
 
-      <p>Die einzelnen Elemente des Informationsmodells enthalten bestimmte Informationen, die hier kurz erläutert werden (Hinweis: nicht jedes Element enthält alle hier aufgeführten Informationen):</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Angabe</th>
+              <th>Bedeutung</th>
+              <th>Beispiel</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td>benennt das Element.  <br />  Ein Element ist entweder eine <strong>Gruppe</strong>, die andere Elemente zusammenfasst und selbst keinen Wert trägt, oder ein <strong>Item</strong>, das einen Wert trägt.  <br />  Zusätze im Namen:  <br /><ul><li data-uuid="a87e4618-67f6-4fa4-ba4f-7cfe66e73815"><strong>(KBV-Basis)</strong>: Das Konzept stammt aus den KBV-Basisprofilen und wird an mehreren Stellen im Modell verwendet.</li><li data-uuid="54f95271-1ccd-4896-96b5-8cfad3817bc4"><strong>(Referenz)</strong>: Das Element verweist auf ein Konzept, das an anderer Stelle im Modell beschrieben ist. </li></ul></td>
+              <td><code class="language-plaintext highlighter-rouge">VersichertenID_GKV [0..1]</code><br />   <br /><code class="language-plaintext highlighter-rouge">Patient:in (KBV-Basis) [0..*]</code></td>
+            </tr>
+            <tr>
+              <td>Beschreibung</td>
+              <td>beschreibt den Inhalt des Elementes. Die Beschreibung ist die fachliche Definition: was gemeint ist und womit das Element befüllt wird. Bei Gruppen beschreibt sie, was zusammengefasst wird.</td>
+              <td>„Unveränderlicher Teil der einheitlichen Krankenversicherungsnummer der GKV gemäß § 290 SGB V.“</td>
+            </tr>
+            <tr>
+              <td>Rationale</td>
+              <td>enthält in besonderen Fällen eine Begründung, warum das Element in der vorliegenden Form in das Informationsmodell aufgenommen wurde, z. B. durch Referenzen auf externe Spezifikationen.  <br />  Häufige Quellen sind die Technische Anlage zu Anlage 4a (BMV-Ä), der HL7®-Leitfaden Basis DE oder das Valueset, aus dem die Werteliste stammt. Links führen zur Quelle.</td>
+              <td>Geburtsdatum der Patient:in:   <br />„Technische Anlage zu Anlage 4a (BMV-Ä) V1.12“</td>
+            </tr>
+            <tr>
+              <td>Datentyp</td>
+              <td>gibt den Datentyp an, mit dem das Element befüllt wird. Nur Items haben einen Datentyp, Gruppen nicht.  <br />  Die Datentypen sind fachlich gemeint. Wie ein Wert in FHIR® abgebildet wird, steht im FHIR-Mapping.</td>
+              <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
+            </tr>
+            <tr>
+              <td>Kardinalität</td>
+              <td>gibt an, wie häufig in einem bestimmten Anwendungsszenario ein Wert für das Element übermittelt werden darf. Ausgedrückt wird das mit einem minimalen und einem maximalen Wert (<code class="language-plaintext highlighter-rouge">min..max</code>).  <br />  Die Kardinalität gilt innerhalb des übergeordneten Elements. Das Anwendungsszenario heißt „Basis-Kardinalitäten“. Manche Kardinalitäten hängen von einer Bedingung ab.</td>
+              <td><code class="language-plaintext highlighter-rouge">Basis-Kardinalitäten : 0..1</code><br />   <br />Das Element darf fehlen und höchstens einmal vorkommen.</td>
+            </tr>
+            <tr>
+              <td>Terminologie-Assoziation / Wertelisten</td>
+              <td>enthält einzelne oder mehrere Codes, mit denen dieses Element gefüllt werden kann bzw. muss.  <br /><ul><li data-uuid="4d091a93-fc88-4041-b2ac-2d882b2fab44"><strong>Werteliste</strong>: die zulässigen Werte eines codierten Elements, mit dem Valueset und der Verbindlichkeit der Bindung (z. B. <code>required</code>).</li><li data-uuid="00229635-1026-4b62-8817-72e6e6a9f2c4"><strong>Terminologie-Assoziation</strong>: ein Code, der die Bedeutung des Elements selbst ausdrückt, etwa die Art einer Kennung.</li></ul></td>
+              <td>Terminologie-Assoziation:   <br /><code class="language-plaintext highlighter-rouge">GKV</code><br /> „Gesetzliche Krankenversicherung“, <code class="language-plaintext highlighter-rouge">http://fhir.de/CodeSystem/identifier-type-de-basis</code></td>
+            </tr>
+            <tr>
+              <td>MUSS/KANN/SOLL-Vorgabe</td>
+              <td>gibt die Umsetzung des Elements in Primärsystemen vor. Das Schlüsselwort nennt die Verbindlichkeit:  <br /><ul><li data-uuid="3f1b5a3f-7421-410f-a3a6-1afcbf20bde1"><strong>MUSS</strong>: verbindliche Vorgabe. Sie ist ohne Ausnahme umzusetzen.</li><li data-uuid="4dd8e37d-a159-470b-bb58-73e124fe1393"><strong>SOLL</strong>: Empfehlung. Sie ist umzusetzen, wenn nicht gewichtige Gründe dagegen sprechen. Wer abweicht, muss die Folgen kennen und abgewogen haben.</li><li data-uuid="ef8738e8-7e78-47f7-a570-04061165ee58"><strong>KANN</strong>: freigestellt. Die Vorgabe beschreibt eine zulässige Möglichkeit.</li></ul><br />  Wann eine Vorgabe gilt, steht in ihrem Text. Die Kardinalität ändert sie nicht.</td>
+              <td>MUSS, bei Einrichtung/Organisationseinheit (KBV-Basis):   <br />„Für die Abbildung einer Betriebsstätte muss die Gruppe “Betriebsstätte” verwendet werden.“</td>
+            </tr>
+            <tr>
+              <td>FHIR-Mappings</td>
+              <td>gibt an, an welcher Stelle in der technischen FHIR®-Spezifikation das Element umgesetzt ist.  <br /><ul><li data-uuid="a557f268-ce4b-486a-b4da-92d77a47311a">Vor dem ersten Punkt steht das <strong>Profil</strong>, danach der <strong>Elementpfad</strong>. Der Pfad kann Slices (<code>identifier:KrankenversichertenID</code>) und eine Typauswahl (<code>value[x]:valueBoolean</code>) enthalten.</li><li data-uuid="fc751cf1-efb6-49d2-9751-e9104193fabd"><code>KBV_PR_WEST_…</code> sind Profile dieses Leitfadens, <code>KBV_PR_Base_…</code> unverändert genutzte KBV-Basisprofile, Profile mit <code>dgLP</code> stammen aus dem ePA-Laborbefund.</li><li data-uuid="1645408c-6c77-460d-b3ab-d0a1ef0df6a8">Ein Profil ohne Pfad heißt: Das Element wird als eigene Ressource dieses Profils umgesetzt. Bei einer Referenz ist es das Zielprofil.</li><li data-uuid="0f00ebae-de54-4d48-a78f-7243296d3084">Mehrere Zeilen heißen: Das Element ist an mehreren Stellen umgesetzt.</li><li data-uuid="93d2be9f-b878-472f-8c99-3f1a91629b71">Gruppen, die nur gliedern, haben teils kein FHIR-Mapping.</li></ul><br />  Mehr unter Mappings im Informationsmodell.</td>
+              <td><code class="language-plaintext highlighter-rouge">KBV_PR_WEST_Coverage.identifier:KrankenversichertenID</code></td>
+            </tr>
+            <tr>
+              <td>Weiteres Mapping</td>
+              <td>mappt auf die zugrundeliegenden Spezifikationen, siehe Darstellung von Mappings.  <br />  Für jede Spezifikation gibt es eine eigene Tabelle „Mapping nach …“, u. a. AWS 1.3.0, KBV-Basis 1.8.0, KVDT, BDT, EHDS und ePA-Laborbefund. Die Spalte <strong>Overlap</strong> sagt, wie gut das Ziel zum WEST-Element passt: <em>deckungsgleich</em>, <em>enger</em> oder <em>weiter</em>.  <br />  Die Mappings sind Orientierungshilfen, keine verbindliche Transformationsvorschrift. Wozu sie dienen und wie sie entstanden sind, steht unter Mappings im Informationsmodell.</td>
+              <td>Mapping nach KVDT:   <br />Feld <code class="language-plaintext highlighter-rouge">3119</code><br /> „Versicherten_ID“, Satzarten 0101, 0102, 0103, 0104, 0109, deckungsgleich   <br />   <br />Mapping nach AWS 1.3.0:   <br /><code class="language-plaintext highlighter-rouge">/Krankenversicherung/Versichertennummer/VersichertenID_GKV</code><br />, deckungsgleich</td>
+            </tr>
+            <tr>
+              <td>Weitere Angaben</td>
+              <td>zusätzliche Informationen zum Element, z. B. die Version eines verwendeten Codesystems, die Herkunft eines Codesystems oder ein zugehöriges Dokument.</td>
+              <td>Version von UCUM: <code class="language-plaintext highlighter-rouge">2.1</code></td>
+            </tr>
+          </tbody>
+        </table>
 
-      <table>
-        <thead>
-          <tr>
-            <th> </th>
-            <th> </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Name/Beschreibung:</strong></td>
-            <td>benennt das Element und beschreibt, mit welchem Inhalt es befüllt wird</td>
-          </tr>
-          <tr>
-            <td><strong>Rationale:</strong></td>
-            <td>enthält eine Begründung, warum das Element in der vorliegenden Form in das Informationsmodell aufgenommen wurde, z.B. durch Referenzen auf externe Spezifikationen</td>
-          </tr>
-          <tr>
-            <td><strong>Datentyp:</strong></td>
-            <td>gibt den Datentyp an, mit dem das Element befüllt wird (siehe auch: <a href="https://hl7.org/fhir/datatypes.html">https://hl7.org/fhir/datatypes.html</a>)</td>
-          </tr>
-          <tr>
-            <td><strong>Kardinalität:</strong></td>
-            <td>gibt an, wie häufig in einem bestimmten Anwendungsszenario ein Wert für das Element übermittelt werden darf - ausgedrückt mittels eines* minimalen und eines* maximalen Wertes (siehe auch <a href="https://www.hl7.org/fhir/conformance-rules.html#cardinality">https://www.hl7.org/fhir/conformance-rules.html#cardinality</a>) sowie eine* der folgenden Konformitäten:  <br /><ul style="list-style-type: square;"><li>Mandatory (M) = es <strong>muss </strong>(mindestens) ein gültiger Wert im Element vorliegen</li><li>Required (R) = es <strong>soll </strong>(mindestens) ein gültiger Wert im Element vorliegen</li><li>Optional (O) = es <strong>kann </strong>(mindestens) ein gültiger Wert vorliegen</li><li>Not present (NP) = es <strong>darf kein</strong> Wert vorliegen</li></ul><br />  <em>*Hinweis: es können in seltenen Fällen auch mehrere Kardinalitäten/Konformitäten in Abhängigkeit von definierten Bedingungen an einem Element angegeben sein</em></td>
-          </tr>
-          <tr>
-            <td><strong>Terminologie-Assoziation / Wertelisten:</strong></td>
-            <td>enthält einzelne oder mehrere Codes, mit denen dieses Element gefüllt werden kann bzw. muss</td>
-          </tr>
-          <tr>
-            <td><strong>Operationalisierungshinweis:</strong></td>
-            <td>Hinweis zur Umsetzung des Elements in Primärsystemen (<em>“kann”</em>- oder “<em>sollte</em>“-Hinweis)</td>
-          </tr>
-          <tr>
-            <td><strong>Vorgabe:</strong></td>
-            <td>Vorgabe zur Umsetzung des Elements in Primärsystemen (“<em>muss</em>“-Hinweis)</td>
-          </tr>
-          <tr>
-            <td><strong>FHIR-Mappings:</strong></td>
-            <td>gibt an, an welcher Stelle in der technischen FHIR®-Spezifikation das Element umgesetzt ist</td>
-          </tr>
-          <tr>
-            <td><strong>(spezifische) Eigenschaften:</strong></td>
-            <td>enthält über die oben aufgeführten Informationen hinausgehende spezifische Informationen</td>
-          </tr>
-        </tbody>
-      </table>
+        <p><em>Erläuterungen zum Informationsmodell der Wechselschnittstelle</em></p>
 
-      <p><em>Erläuterungen zum Informationsmodell der Wechselschnittstelle</em></p>
+        <p>Einen detaillierten Einstieg in das Informationsmodell bietet die Seite <a href="https://mio.kbv.de/spaces/PMAWS/pages/461833233/Lesehilfe+Informationsmodell">Lesehilfe Informationsmodell</a></p>
 
-      <h6 id="grundstruktur-des-informationsmodells-der-wechselschnittstelle">Grundstruktur des Informationsmodells der Wechselschnittstelle</h6>
-
-      <p>Das Informationsmodell der Wechselschnittstelle ist in mehrere Arbeitspakete gegliedert und verschachtelt strukturiert.
-Die detailliertere Zuweisung von Kardinalitäten und Konformitäten der einzelnen Elemente des Informationsmodells kann in den Details der jeweiligen Elemente eingesehen werden.</p>
-
+      </div>
     </div>
   </div>
 
@@ -5433,7 +5447,7 @@ Die detailliertere Zuweisung von Kardinalitäten und Konformitäten der einzelne
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Oct 6, 2026 17:56+0200">2026-10-06</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Oct 21, 2026 17:10+0200">2026-10-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

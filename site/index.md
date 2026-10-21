@@ -12,7 +12,7 @@ Version 1.0.0-kommentierung - ci-build
 | | |
 | :--- | :--- |
 | *Official URL*:https://fhir.kbv.de/ImplementationGuide/kbv.mio.west | *Version*:1.0.0-kommentierung |
-| Draft as of 2026-10-06 | *Computable Name*:ArbeitsgruppeWeST |
+| Draft as of 2026-10-21 | *Computable Name*:ArbeitsgruppeWeST |
 
 Die mio42 wurde beauftragt eine Wechselschnittstelle nach § 371 Abs. 1 SGB V zu entwickeln, welche dazu dient, Patientendaten bei einem Wechsel des Praxisverwaltungssystems (PVS) sicher, einheitlich und verbindlich zu übertragen. Sie soll durch einen möglichst umfassenden Datentransfer dazu beitragen, bestehende Wechselhürden abzubauen – etwa durch proprietäre Datenformate, Cloud-Hosting, hohe Kosten oder eingeschränkte Usability – und damit echte Systemwahlfreiheit für Arztpraxen ermöglichen. Der Fokus liegt dabei auf einem möglichst holistischen Datenmodell für Interoperabilität und Standardisierung sowie der Sicherstellung einer angemessenen Performanz im Wechselprozess.
 
@@ -56,7 +56,7 @@ Stand April 26
   "title" : "Arbeitsgruppe WeST",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-10-06T17:56:52+02:00",
+  "date" : "2026-10-21T17:10:40+02:00",
   "publisher" : "mio42 GmbH",
   "contact" : [{
     "name" : "mio42 GmbH",
@@ -3339,34 +3339,7 @@ Stand April 26
           "valueUrl" : "infomodell.html"
         }],
         "nameUrl" : "infomodell.html",
-        "title" : "Datenmodell",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "Beschreibung_Datenmodell.html"
-        }],
-        "nameUrl" : "Beschreibung_Datenmodell.html",
-        "title" : "Beschreibung Datenmodell",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "west_requirements.html"
-        }],
-        "nameUrl" : "west_requirements.html",
-        "title" : "Vorgaben",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "west_operationalisations.html"
-        }],
-        "nameUrl" : "west_operationalisations.html",
-        "title" : "Operationalisierungshinweise",
+        "title" : "Informationsmodell",
         "generation" : "markdown"
       },
       {
@@ -3475,6 +3448,33 @@ Stand April 26
         }],
         "nameUrl" : "west_scenario_Versorgung_und_Massnahmen.html",
         "title" : "Szenario Versorgung und Maßnahmen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Dem_Informationsmodell_zugrundeliegende_Spezifikationen.html"
+        }],
+        "nameUrl" : "Dem_Informationsmodell_zugrundeliegende_Spezifikationen.html",
+        "title" : "Dem Informationsmodell zugrundeliegende Spezifikationen",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Lesehilfe_Informationsmodell.html"
+        }],
+        "nameUrl" : "Lesehilfe_Informationsmodell.html",
+        "title" : "Lesehilfe Informationsmodell",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Erlaeuterungen_zum_Informationsmodell.html"
+        }],
+        "nameUrl" : "Erlaeuterungen_zum_Informationsmodell.html",
+        "title" : "Erläuterungen zum Informationsmodell",
         "generation" : "markdown"
       }]
     },

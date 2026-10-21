@@ -12,7 +12,7 @@
   <title value="Arbeitsgruppe WeST"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-10-06T17:56:52+02:00"/>
+  <date value="2026-10-21T17:10:40+02:00"/>
   <publisher value="mio42 GmbH"/>
   <contact>
     <name value="mio42 GmbH"/>
@@ -2645,31 +2645,7 @@
           <valueUrl value="infomodell.html"/>
         </extension>
         <nameUrl value="infomodell.html"/>
-        <title value="Datenmodell"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Beschreibung_Datenmodell.html"/>
-        </extension>
-        <nameUrl value="Beschreibung_Datenmodell.html"/>
-        <title value="Beschreibung Datenmodell"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="west_requirements.html"/>
-        </extension>
-        <nameUrl value="west_requirements.html"/>
-        <title value="Vorgaben"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="west_operationalisations.html"/>
-        </extension>
-        <nameUrl value="west_operationalisations.html"/>
-        <title value="Operationalisierungshinweise"/>
+        <title value="Informationsmodell"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -2766,6 +2742,30 @@
         </extension>
         <nameUrl value="west_scenario_Versorgung_und_Massnahmen.html"/>
         <title value="Szenario Versorgung und Maßnahmen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Dem_Informationsmodell_zugrundeliegende_Spezifikationen.html"/>
+        </extension>
+        <nameUrl value="Dem_Informationsmodell_zugrundeliegende_Spezifikationen.html"/>
+        <title value="Dem Informationsmodell zugrundeliegende Spezifikationen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Lesehilfe_Informationsmodell.html"/>
+        </extension>
+        <nameUrl value="Lesehilfe_Informationsmodell.html"/>
+        <title value="Lesehilfe Informationsmodell"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Erlaeuterungen_zum_Informationsmodell.html"/>
+        </extension>
+        <nameUrl value="Erlaeuterungen_zum_Informationsmodell.html"/>
+        <title value="Erläuterungen zum Informationsmodell"/>
         <generation value="markdown"/>
       </page>
     </page>

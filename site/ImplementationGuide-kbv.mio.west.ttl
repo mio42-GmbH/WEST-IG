@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "Arbeitsgruppe WeST"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-10-06T17:56:52+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-10-21T17:10:40+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "mio42 GmbH" ] ;
@@ -6684,64 +6684,7 @@
            fhir:v "infomodell.html"^^xsd:anyURI ;
            fhir:l fhir:infomodell.html
          ] ;
-         fhir:title [ fhir:v "Datenmodell" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-           ] ;
-           fhir:value [
-             a fhir:Url ;
-             fhir:v "Beschreibung_Datenmodell.html"^^xsd:anyURI ;
-             fhir:l fhir:Beschreibung_Datenmodell.html
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:Url ;
-           fhir:v "Beschreibung_Datenmodell.html"^^xsd:anyURI ;
-           fhir:l fhir:Beschreibung_Datenmodell.html
-         ] ;
-         fhir:title [ fhir:v "Beschreibung Datenmodell" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-           ] ;
-           fhir:value [
-             a fhir:Url ;
-             fhir:v "west_requirements.html"^^xsd:anyURI ;
-             fhir:l fhir:west_requirements.html
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:Url ;
-           fhir:v "west_requirements.html"^^xsd:anyURI ;
-           fhir:l fhir:west_requirements.html
-         ] ;
-         fhir:title [ fhir:v "Vorgaben" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [
-             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
-             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
-           ] ;
-           fhir:value [
-             a fhir:Url ;
-             fhir:v "west_operationalisations.html"^^xsd:anyURI ;
-             fhir:l fhir:west_operationalisations.html
-           ]
-         ] ) ;
-         fhir:name [
-           a fhir:Url ;
-           fhir:v "west_operationalisations.html"^^xsd:anyURI ;
-           fhir:l fhir:west_operationalisations.html
-         ] ;
-         fhir:title [ fhir:v "Operationalisierungshinweise" ] ;
+         fhir:title [ fhir:v "Informationsmodell" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -6970,6 +6913,63 @@
            fhir:l fhir:west_scenario_Versorgung_und_Massnahmen.html
          ] ;
          fhir:title [ fhir:v "Szenario Versorgung und Maßnahmen" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "Dem_Informationsmodell_zugrundeliegende_Spezifikationen.html"^^xsd:anyURI ;
+             fhir:l fhir:Dem_Informationsmodell_zugrundeliegende_Spezifikationen.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "Dem_Informationsmodell_zugrundeliegende_Spezifikationen.html"^^xsd:anyURI ;
+           fhir:l fhir:Dem_Informationsmodell_zugrundeliegende_Spezifikationen.html
+         ] ;
+         fhir:title [ fhir:v "Dem Informationsmodell zugrundeliegende Spezifikationen" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "Lesehilfe_Informationsmodell.html"^^xsd:anyURI ;
+             fhir:l fhir:Lesehilfe_Informationsmodell.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "Lesehilfe_Informationsmodell.html"^^xsd:anyURI ;
+           fhir:l fhir:Lesehilfe_Informationsmodell.html
+         ] ;
+         fhir:title [ fhir:v "Lesehilfe Informationsmodell" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "Erlaeuterungen_zum_Informationsmodell.html"^^xsd:anyURI ;
+             fhir:l fhir:Erlaeuterungen_zum_Informationsmodell.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "Erlaeuterungen_zum_Informationsmodell.html"^^xsd:anyURI ;
+           fhir:l fhir:Erlaeuterungen_zum_Informationsmodell.html
+         ] ;
+         fhir:title [ fhir:v "Erläuterungen zum Informationsmodell" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
