@@ -239,445 +239,534 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td style="white-space:pre">Diagnosen, Messwerte und Befunde [1..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">  Diagnose (KBV-Basis) [0..*]</td>
 <td>0..* </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td style="white-space:pre">  Anamnese [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">    Status [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Typ [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Code-Auswahl [1..2]</td>
 <td>1..2 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        SNOMED CT®-Code [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        LOINC®-Code [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Behandelnde Person/Behandelnde Person/Einrichtung [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Behandelnde Person (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Behandelnde Person/Einrichtung (KBV-Basis) [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Begegnung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Begegnung/Aufenthalt (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Aufnahmezeitpunkt [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Beschreibung [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">  Raucherstatus [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">    Status [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Typ [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Code-Auswahl [2..2]</td>
 <td>2..2 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        LOINC®-Code [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Behandelnder/Behandelnde Person/Einrichtung [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Behandelnde Person (KBV-Basis) [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Behandelnde Person/Einrichtung (KBV-Basis) [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Patient [1..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Patient:in (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Begegnung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Begegnung/Aufenthalt (KBV-Basis) [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Aufnahmezeitpunkt [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Wert [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">  Vitalzeichen und Körpermaße (KBV-Basis) [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">  Allergie/Unverträglichkeit (KBV-Basis)</td>
 <td>0..* </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td style="white-space:pre">    Allergie/Unverträglichkeit</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Mechanismus [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Substanz - Code/Bezeichnung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Code-Auswahl [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          SNOMED-CT® Code [0..*]</td>
 <td>0..* </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          ASK-Code [0..*]</td>
 <td>0..* </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          Code aus einem anderen Codesystem [0..*]</td>
 <td>0..* </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Bezeichnung [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Wirkstoffkategorie [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Reaktion [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Manifestation - Code/Bezeichnung [1..*]</td>
 <td>1..* </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          Code-Auswahl [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">            SNOMED CT®-Code [0..*]</td>
 <td>0..* </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            Code aus einem anderen Codesystem [0..*]</td>
 <td>0..* </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          Bezeichnung [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Schweregrad [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Ereignisdatum der Reaktion [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>date</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Expositionsweg - Code/Bezeichnung [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          Code-Auswahl [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">            SNOMED CT®-Code [0..*]</td>
 <td>0..* </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            Code aus einem anderen Codesystem [0..*]</td>
 <td>0..* </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          Bezeichnung [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Klinisch relevanter Zeitraum [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        von [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          Altersspanne [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">            Beginn der Altersspanne [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">              Wert [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>quantity</td>
 </tr>
 <tr>
 <td style="white-space:pre">              Einheit [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            Ende der Altersspanne [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">              Wert [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>quantity</td>
 </tr>
 <tr>
 <td style="white-space:pre">              Einheit [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          Alter [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">            Wert [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>quantity</td>
 </tr>
 <tr>
 <td style="white-space:pre">            Einheit [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          Lebensphase [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          Datum/Zeit [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>date</td>
 </tr>
 <tr>
 <td style="white-space:pre">        bis [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          Altersspanne [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td style="white-space:pre">            Beginn der Altersspanne [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">              Wert [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>quantity</td>
 </tr>
 <tr>
 <td style="white-space:pre">              Einheit [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            Ende der Altersspanne [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">              Wert [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>quantity</td>
 </tr>
 <tr>
 <td style="white-space:pre">              Einheit [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          Alter [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">            Wert [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>quantity</td>
 </tr>
 <tr>
 <td style="white-space:pre">            Einheit [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          Lebensphase [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          Datum/Zeit [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>date</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Klinischer Status [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Gewissheit [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Kritikalität [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Notiz [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Autor:in [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          Referenz [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          Freitext [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Zeitpunkt der Erstellung [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Text [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 </table>
@@ -704,7 +793,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Oct 21, 2026 17:10+0200">2026-10-21</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Thu, Oct 22, 2026 15:45+0200">2026-10-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

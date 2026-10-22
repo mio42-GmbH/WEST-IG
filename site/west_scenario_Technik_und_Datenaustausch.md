@@ -12,6 +12,7 @@ Version 1.0.0-kommentierung - ci-build
 * Name: Technik und Datenaustausch [1..1]
   * Kardinalität: 0..1
   * Konformität: 
+  * Datentyp: 
 * Name:   Dokumentenverweis/Anhang
   * Kardinalität: 0..*
   * Konformität: R

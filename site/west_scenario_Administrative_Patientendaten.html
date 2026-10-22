@@ -239,265 +239,318 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td style="white-space:pre">Administrative Patientendaten [1..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">  Krankenversicherungsverhältnis [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td style="white-space:pre">    Versichertennummer [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      VersichertenID_GKV [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>identifier</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Versichertennummer_KVK [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>identifier</td>
 </tr>
 <tr>
 <td style="white-space:pre">      VersichertenID_PKV [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>identifier</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Versichertennummer_PKV [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>identifier</td>
 </tr>
 <tr>
 <td style="white-space:pre">      VersichertenID_Pseudo [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>identifier</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Status [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Hauptversicherte Person [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Referenz [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Kontaktperson (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Patient:in (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Versichertennummer [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Typ [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Wert [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Patient [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Patient:in (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Zeitraum [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      von [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>date</td>
 </tr>
 <tr>
 <td style="white-space:pre">      bis [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>date</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Kostenträger [2..3]</td>
 <td>2..3 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Kostenträgertyp [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Referenz [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Einrichtung/Organisationseinheit (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Institutionskennzeichen [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>identifier</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Kostenträgername [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Einlesedatum [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Prüfnachweis [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Prüfziffer [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Error-Code [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Ergebnis [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Datum [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Version-eGK [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Generation-eGK [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Versichertenart [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Kostenerstattung [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Veranlasste Leistungen [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>boolean</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Stationärer Sektor [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>boolean</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Zahnärztlicher Sektor [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>boolean</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Ärztliche Sektor [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>boolean</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Wohnortprinzip [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Besondere Personengruppe [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    DMP-Kennzeichen [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Ruhender Leistungsanspruch [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Art [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Zeitraum [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        von [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>date</td>
 </tr>
 <tr>
 <td style="white-space:pre">        bis [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>date</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Zuzahlungsstatus [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Status [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>boolean</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Gültigkeitsende [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>date</td>
 </tr>
 <tr>
 <td style="white-space:pre">    SKT-Zusatzangabe [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 </table>
@@ -524,7 +577,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Oct 21, 2026 17:10+0200">2026-10-21</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Thu, Oct 22, 2026 15:45+0200">2026-10-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

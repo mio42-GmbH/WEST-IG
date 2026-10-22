@@ -12,193 +12,257 @@ Version 1.0.0-kommentierung - ci-build
 * Name: Personen, Orte und Einrichtungen [1..1]
   * Kardinalität: 0..1
   * Konformität: 
+  * Datentyp: 
 * Name:   Ort Hausbesuch [1..1]
   * Kardinalität: 1..1
   * Konformität: 
+  * Datentyp: 
 * Name:     Typ [1..1]
   * Kardinalität: 1..1
-  * Konformität: code
+  * Konformität: 
+  * Datentyp: code
 * Name:     Kontaktdaten [0..1]
   * Kardinalität: 0..1
   * Konformität: 
+  * Datentyp: 
 * Name:       Kontaktkanal [1..1]
   * Kardinalität: 1..1
-  * Konformität: code
+  * Konformität: 
+  * Datentyp: code
 * Name:       Wert [1..1]
   * Kardinalität: 1..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:     Straßenanschrift [0..1]
   * Kardinalität: 0..1
   * Konformität: 
+  * Datentyp: 
 * Name:       Straße [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Hausnummer [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Anschriftenzusatz [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Postleitzahl [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Ort [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Land/Wohnsitzländercode [0..1]
   * Kardinalität: 0..1
-  * Konformität: code
+  * Konformität: 
+  * Datentyp: code
 * Name:     Unstrukturierte Straßenanschrift [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:   Patient:in (KBV-Basis) [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:   Behandelnde Person (KBV-Basis) [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:   Einrichtung/Organisationseinheit (KBV-Basis) [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:   Mitarbeiter [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:     Mitarbeiternummer [1..1]
   * Kardinalität: 1..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:     Name [1..1]
   * Kardinalität: 1..1
   * Konformität: 
+  * Datentyp: 
 * Name:       Vollständiger Name [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Vorsatzwort [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Namenszusatz [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Titel [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Nachname [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Vorname [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:     Straßenanschrift [0..1]
   * Kardinalität: 0..1
   * Konformität: 
+  * Datentyp: 
 * Name:       Straße [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Hausnummer [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Anschriftenzusatz [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Stadtteil [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Postleitzahl [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Ort [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:       Land/Wohnsitzländercode [0..1]
   * Kardinalität: 0..1
-  * Konformität: code
+  * Konformität: 
+  * Datentyp: code
 * Name:     Kontaktdaten [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:       Kontaktkanal [1..1]
   * Kardinalität: 1..1
-  * Konformität: code
+  * Konformität: 
+  * Datentyp: code
 * Name:       Wert [1..1]
   * Kardinalität: 1..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:     Administratives Geschlecht [0..1]
   * Kardinalität: 0..1
-  * Konformität: code
+  * Konformität: 
+  * Datentyp: code
 * Name:     Qualifikation [0..*]
   * Kardinalität: 0..*
-  * Konformität: code
+  * Konformität: 
+  * Datentyp: code
 * Name:   Betriebsstätte [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:     Identifikator [1..*]
   * Kardinalität: 1..*
   * Konformität: 
+  * Datentyp: 
 * Name:       IK-Nummer [0..*]
   * Kardinalität: 0..*
-  * Konformität: identifier
+  * Konformität: 
+  * Datentyp: identifier
 * Name:       BSNR [1..1]
   * Kardinalität: 1..1
-  * Konformität: identifier
+  * Konformität: 
+  * Datentyp: identifier
 * Name:     Typ - Code/Bezeichnung [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:       Code-Auswahl [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:         Status der Betriebsstätte [0..1]
   * Kardinalität: 0..1
-  * Konformität: code
+  * Konformität: 
+  * Datentyp: code
 * Name:       Bezeichnung [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:     Name [1..1]
   * Kardinalität: 1..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:     Anschrift [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:       Straßenanschrift [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:         Straße [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:         Hausnummer [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:         Postleitzahl [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:         Ort [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:         Land/Wohnsitzländercode [0..1]
   * Kardinalität: 0..1
-  * Konformität: code
+  * Konformität: 
+  * Datentyp: code
 * Name:       Postfach [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:         Postfach [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:         Postleitzahl [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:         Ort [0..1]
   * Kardinalität: 0..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:         Land/Wohnsitzländercode [0..1]
   * Kardinalität: 0..1
-  * Konformität: code
+  * Konformität: 
+  * Datentyp: code
 * Name:     Kontaktdaten [0..*]
   * Kardinalität: 0..*
   * Konformität: 
+  * Datentyp: 
 * Name:       Kontaktkanal [1..1]
   * Kardinalität: 1..1
-  * Konformität: code
+  * Konformität: 
+  * Datentyp: code
 * Name:       Wert [1..1]
   * Kardinalität: 1..1
-  * Konformität: string
+  * Konformität: 
+  * Datentyp: string
 * Name:     Ergänzende Angaben [0..1]
   * Kardinalität: 0..1
-  * Konformität: count
+  * Konformität: 
+  * Datentyp: count
 

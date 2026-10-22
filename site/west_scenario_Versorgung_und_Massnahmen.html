@@ -239,310 +239,372 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td style="white-space:pre">Versorgung und Maßnahmen [1..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">  Ambulante Operation [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">    Dokumentationsdatum [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Status [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Kategorie - Code/Bezeichnung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Code-Auswahl [1..*]</td>
 <td>1..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        SNOMED CT®-Code [0..*]</td>
 <td>0..* </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Ressourcentyp [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Prozedur - Code/Bezeichnung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Code-Auswahl [1..*]</td>
 <td>1..* </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        OPS-Code</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          OPS-Code [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          OPS-Seitenlokalisation</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        SNOMED CT®-Code [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Bezeichnung [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Patient [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Patient:in (KBV-Basis) [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Allgemeine Ambulanten Operation [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Allgemeine Ambulante Operation [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Datum [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Grund [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      GOPs [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        bmae [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        e-go [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        ebm [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        goae [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        uv-goae [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        hzv_selektiv [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        sonstige_GOP [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Komplikationsbeschreibung [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">  Allgemeine Ambulante Operation [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">    Dokumentationsdatum [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Status [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Kategorie - Code/Bezeichnung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Code-Auswahl [1..*]</td>
 <td>1..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        SNOMED CT®-Code [0..*]</td>
 <td>0..* </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Ressourcentyp [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Prozedur - Code/Bezeichnung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Code-Auswahl [1..*]</td>
 <td>1..* </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        OPS-Code</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          OPS-Code [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          OPS-Seitenlokalisation</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        SNOMED CT®-Code [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Bezeichnung [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Seitenlokalisation [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Patient [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Patient:in (KBV-Basis) [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Begegnung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Begegnung/Aufenthalt (KBV-Basis) [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Datum [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Grund [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      GOPs [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        bmae [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        e-go [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        ebm [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        goae [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        uv-goae [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        hzv_selektiv [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        sonstige_GOP [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Komplikationsbeschreibung [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Beschreibung [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Gesamtzeit [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>quantity</td>
 </tr>
 </table>
@@ -569,7 +631,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Oct 21, 2026 17:10+0200">2026-10-21</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Thu, Oct 22, 2026 15:45+0200">2026-10-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

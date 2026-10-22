@@ -239,510 +239,612 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td style="white-space:pre">Aufträge, Verordnungen, Leistugnsanfragen, Leistungsgenehmigungen [1..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">  Überweisung zur Weiterbehandlung [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">    Status [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Absicht [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Ressourcentyp [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Patient [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Patient:in (KBV-Basis) [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Verweisdatum [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Angeforderter Behandelnder/Einrichtung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Bezeichnung [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Betriebsstätte [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Einrichtung/Organisationseinheit (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Behandelnde Person/Einrichtung (KBV-Basis) [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Überweisende Behandelnde Person / Überweisende Behandelnde Person/Einrichtung [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Behandelnde Person (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Behandelnde Person/Einrichtung (KBV-Basis) [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">  Verordnung Hilfsmittel [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">    Status [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Absicht [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Patient [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Patient:in (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Begegnung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Begegnung/Aufenthalt (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Ausstellungsdatum [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Hilfsmittel [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Hilfsmittel [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Anzahl Hilfsmittel [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>count</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Gebührenpflichtig [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>boolean</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Begründung [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Freitext [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Referenz Diagnose [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Diagnose (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Erläuterung [0..*]</td>
 <td>0..* </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">  Leistungsanfrage/genehmigung Heilmittel [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">    Status [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Zweck [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Patient [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Patient:in (KBV-Basis) [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Versicherung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      IK-Nummer [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>identifier</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Bezeichnung [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Referenz Organisation [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Einrichtung/Organisationseinheit (KBV-Basis) [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Anfrage [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Typ [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Antragsdatum [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Genehmigung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Bewilligungsdatum [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Ergebnis [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Referenz Genehmigungsanfrage [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Anfrage [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Versicherung [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Genehmigungsdiagnose [1..*]</td>
 <td>1..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          ICD-10-GM-Code [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">            Diagnosecode [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            Codierungskennzeichen [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            ICD-Diagnosesicherheit [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            ICD-Seitenlokalisation [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">          Diagnosegruppe [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Referenz Krankenversicherung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          Krankenversicherungsverhältnis [0..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Genehmigungszeitraum [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          Beginn [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">          Ende [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Typ [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Name [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Beschreibung [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">  Leistungsanfrage/genehmigung  Psychotherapie [0..*]</td>
 <td>0..* </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">    Status [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Zweck [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Referenz Patient [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Patient:in (KBV-Basis) [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Versicherung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      IK-Nummer [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>identifier</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Bezeichnung [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Referenz Organisation [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Einrichtung/Organisationseinheit (KBV-Basis) [0..*]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Anfrage [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Behandlungsart [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Antragsdatum [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Genehmigung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">      Bewilligungsdatum [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Ergebnis [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Referenz Genehmigungsanfrage [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Anfrage [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Versicherung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">        Leistungsinformationen [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          Leistung vor dem 1.04.2017 [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>text</td>
 </tr>
 <tr>
 <td style="white-space:pre">          GOPs [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">            bmae [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            e-go [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            ebm [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            goae [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            uv-goae [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            hzv_selektiv [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">            sonstige_GOP [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Referenz Krankenversicherung [1..1]</td>
 <td>1..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          Krankenversicherungsverhältnis [0..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Typ [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Personenbezug [1..1]</td>
 <td>1..1 </td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
 <td style="white-space:pre">        Bewilligte Leistungen [0..1]</td>
 <td>0..1 </td>
 <td></td>
+<td></td>
 </tr>
 <tr>
 <td style="white-space:pre">          Gesamtanzahl [0..1]</td>
 <td>0..1 </td>
+<td></td>
 <td>decimal</td>
 </tr>
 </table>
@@ -769,7 +871,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Wed, Oct 21, 2026 17:10+0200">2026-10-21</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Thu, Oct 22, 2026 15:45+0200">2026-10-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
