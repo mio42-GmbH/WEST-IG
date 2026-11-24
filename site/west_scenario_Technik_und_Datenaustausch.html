@@ -242,262 +242,190 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">  Dokumentenverweis/Anhang</td>
-<td>0..* </td>
-<td>R</td>
+<td style="white-space:pre">  Software [0..1]</td>
+<td>0..1 </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">    Status</td>
-<td>1..1 </td>
-<td>M</td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">    Typ - Code/Bezeichnung</td>
+<td style="white-space:pre">    Name [0..1]</td>
 <td>0..1 </td>
-<td>O</td>
 <td></td>
-</tr>
-<tr>
-<td style="white-space:pre">      Code-Auswahl</td>
-<td>0..* </td>
-<td>O</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">        XDS</td>
-<td>0..1 </td>
-<td>O</td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">        KBV</td>
-<td>0..1 </td>
-<td>O</td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Code aus einem anderen Codesystem</td>
-<td>0..* </td>
-<td>O</td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">      Bezeichnung</td>
-<td>0..1 </td>
-<td>O</td>
 <td>string</td>
 </tr>
 <tr>
-<td style="white-space:pre">    Kategorie - Code/Bezeichnung</td>
-<td>0..* </td>
-<td>O</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">      Code-Auswahl</td>
-<td>0..* </td>
-<td>O</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">        XDS</td>
+<td style="white-space:pre">    Typ [0..1]</td>
 <td>0..1 </td>
-<td>O</td>
+<td></td>
 <td>code</td>
 </tr>
 <tr>
-<td style="white-space:pre">        Code aus einem anderen Codesystem</td>
-<td>0..* </td>
-<td>O</td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">      Bezeichnung</td>
+<td style="white-space:pre">    Version [0..1]</td>
 <td>0..1 </td>
-<td>O</td>
+<td></td>
 <td>string</td>
 </tr>
 <tr>
-<td style="white-space:pre">    Dokumentenverweis</td>
-<td>0..* </td>
-<td>O</td>
+<td style="white-space:pre">    Kontaktdaten [0..1]</td>
+<td>0..1 </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">      Name des Dokumentes</td>
-<td>1..1 </td>
-<td>M</td>
-<td>string</td>
-</tr>
-<tr>
-<td style="white-space:pre">      URI des Dokuments</td>
-<td>1..1 </td>
-<td>M</td>
-<td>string</td>
-</tr>
-<tr>
-<td style="white-space:pre">    Dokumentanhang</td>
-<td>0..* </td>
-<td>O</td>
+<td style="white-space:pre">      Kontaktkanal [0..1]</td>
+<td>0..1 </td>
 <td></td>
-</tr>
-<tr>
-<td style="white-space:pre">      Titel</td>
-<td>1..1 </td>
-<td>M</td>
-<td>string</td>
-</tr>
-<tr>
-<td style="white-space:pre">      Dateiformat</td>
-<td>1..1 </td>
-<td>M</td>
 <td>code</td>
 </tr>
 <tr>
-<td style="white-space:pre">      Datei</td>
-<td>1..1 </td>
-<td>M</td>
-<td>blob</td>
+<td style="white-space:pre">      Wert [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
 </tr>
 <tr>
-<td style="white-space:pre">    Zeitpunkt der Erstellung des Dokumentes</td>
+<td style="white-space:pre">  Herkunftsinformation (KBV-Basis) [0..1]</td>
 <td>0..1 </td>
-<td>O</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    KBV-Basis Elemente 1.8.0 Herkunftsinformation [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Referenz auf das Ziel [1..*]</td>
+<td>1..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Referenz [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Ursprungs-Information [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Art der Nutzung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Verantwortliche Person/Entität [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">          Referenz auf Person/Entität [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">            Referenz [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">          Art der Beteiligung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Rolle der Person [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Referenz auf die Ursprungs-Information [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">          Referenz [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Beteiligte Person/Entität [1..*]</td>
+<td>1..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Referenz auf Person/Entität [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Art der Beteiligung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Rolle der Person/Entität [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Zeitpunkt der durchgeführten Aktivität [0..1]</td>
+<td>0..1 </td>
+<td></td>
 <td>datetime</td>
 </tr>
 <tr>
-<td style="white-space:pre">    Autor:in</td>
-<td>0..* </td>
-<td>O</td>
+<td style="white-space:pre">    Zusätzliche Elemente [0..1]</td>
+<td>0..1 </td>
+<td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">      Behandelnde Person</td>
+<td style="white-space:pre">      Beteiligte Person/Entität\Referenz auf Person/Entität [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Behandelnde Person (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
-<td>R</td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
-<td style="white-space:pre">      Behandelnde Person/Einrichtung</td>
+<td style="white-space:pre">        Behandelnde Person/Einrichtung (KBV-Basis) [0..1]</td>
 <td>0..1 </td>
-<td>R</td>
+<td></td>
 <td>reference</td>
 </tr>
 <tr>
-<td style="white-space:pre">    Beschreibung des Dokuments</td>
+<td style="white-space:pre">        Person [0..*]</td>
 <td>0..1 </td>
-<td>O</td>
-<td>string</td>
-</tr>
-<tr>
-<td style="white-space:pre">  Herkunftsinformation</td>
-<td>0..* </td>
-<td>O</td>
 <td></td>
-</tr>
-<tr>
-<td style="white-space:pre">    Referenz auf das Ziel</td>
-<td>1..* </td>
-<td>M</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">      Referenz</td>
-<td>1..1 </td>
-<td>M</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">    Ursprungs-Information</td>
-<td>0..* </td>
-<td>O</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">      Art der Nutzung</td>
-<td>1..1 </td>
-<td>M</td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">      Verantwortliche Person/Entität</td>
-<td>0..* </td>
-<td>O</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">        Referenz auf Person/Entität</td>
-<td>1..1 </td>
-<td>M</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">          Behandelnde Person</td>
-<td>0..1 </td>
-<td>R</td>
 <td>reference</td>
 </tr>
 <tr>
-<td style="white-space:pre">          Behandelnde Person/Einrichtung</td>
+<td style="white-space:pre">        Kontaktperson (KBV-Basis) [0..*]</td>
 <td>0..1 </td>
-<td>R</td>
+<td></td>
 <td>reference</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Art der Beteiligung</td>
-<td>0..1 </td>
-<td>O</td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Rolle der Person</td>
-<td>0..* </td>
-<td>O</td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">      Referenz auf die Ursprungs-Information</td>
-<td>1..1 </td>
-<td>M</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">        Referenz</td>
-<td>1..1 </td>
-<td>M</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">    Beteiligte Person/Entität</td>
-<td>1..* </td>
-<td>M</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">      Referenz auf Person/Entität</td>
-<td>1..1 </td>
-<td>M</td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">      Art der Beteiligung</td>
-<td>0..1 </td>
-<td>O</td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">      Rolle der Person/Entität</td>
-<td>0..* </td>
-<td>O</td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">    Zeitpunkt der durchgeführten Aktivität</td>
-<td>0..1 </td>
-<td>O</td>
-<td>datetime</td>
 </tr>
 </table>
 
@@ -523,7 +451,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Thu, Oct 22, 2026 15:45+0200">2026-10-22</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Nov 24, 2026 13:38+0100">2026-11-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

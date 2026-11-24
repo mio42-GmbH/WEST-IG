@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="fa35b68c-3c55-4723-adcd-e1491a40b715"/>
+  <id value="c8f28e74-09ff-43fc-9d37-9abff8111212"/>
   <meta>
-    <lastUpdated value="2026-10-22T15:45:45.504+02:00"/>
+    <lastUpdated value="2026-11-24T13:38:08.615+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -168,7 +168,7 @@
         <title value="KBV_VS_WEST_BDT_Betriebsstaettenstatus"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-10-22T15:45:45+02:00"/>
+        <date value="2026-11-24T13:38:08+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -178,8 +178,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:eedfed20-4b9d-4718-b74c-6808dc5eb9b2"/>
-          <timestamp value="2026-10-22T15:53:37+02:00"/>
+          <identifier value="urn:uuid:6fd18707-895e-44ee-9419-e40c219cfa18"/>
+          <timestamp value="2026-11-24T13:49:08+01:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -312,7 +312,7 @@
         <title value="KBV_VS_WEST_Diagnoseart"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-10-22T15:45:45+02:00"/>
+        <date value="2026-11-24T13:38:08+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -321,8 +321,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1085aca7-1b6e-407f-a8f7-0132cfb497a4"/>
-          <timestamp value="2026-10-22T15:52:44+02:00"/>
+          <identifier value="urn:uuid:74103bdc-1265-49d1-877f-3529f2fc1b22"/>
+          <timestamp value="2026-11-24T13:48:16+01:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -439,7 +439,7 @@
         <title value="KBV_VS_WEST_Diagnosekategorie"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-10-22T15:45:45+02:00"/>
+        <date value="2026-11-24T13:38:08+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -448,8 +448,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c7b037df-eb4f-4a09-9497-6c3bee00b7fa"/>
-          <timestamp value="2026-10-22T15:52:44+02:00"/>
+          <identifier value="urn:uuid:28b7b5c5-9879-42f2-8357-0060e8032a8e"/>
+          <timestamp value="2026-11-24T13:48:16+01:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -657,7 +657,7 @@
         <title value="KBV_VS_WEST_Patient_VSDM_Gender"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-10-22T15:45:45+02:00"/>
+        <date value="2026-11-24T13:38:08+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -667,8 +667,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:2572226e-8654-4d6b-984a-b8547d5e0cf1"/>
-          <timestamp value="2026-10-22T15:53:38+02:00"/>
+          <identifier value="urn:uuid:4fd14729-7768-4db7-aaa5-c35e08120e90"/>
+          <timestamp value="2026-11-24T13:49:10+01:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -809,7 +809,7 @@
         <title value="KBV_VS_WEST_Preistyp_Code"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-10-22T15:45:45+02:00"/>
+        <date value="2026-11-24T13:38:08+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -819,8 +819,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:e572a963-efeb-48ea-a37c-70390ee5b0fb"/>
-          <timestamp value="2026-10-22T15:53:39+02:00"/>
+          <identifier value="urn:uuid:376aeaa9-4402-48ac-abd9-b148b0118ac5"/>
+          <timestamp value="2026-11-24T13:49:10+01:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -997,7 +997,7 @@
         <title value="KBV_VS_WEST_Leistungsart"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2026-10-22T15:45:45+02:00"/>
+        <date value="2026-11-24T13:38:08+01:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1007,8 +1007,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:34455842-3b33-41bd-ac61-14aa3c0d4c11"/>
-          <timestamp value="2026-10-22T15:53:39+02:00"/>
+          <identifier value="urn:uuid:ae97140d-4f89-4af5-adf2-dd42c27c6c62"/>
+          <timestamp value="2026-11-24T13:49:10+01:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

@@ -12,7 +12,7 @@
   <title value="Arbeitsgruppe WeST"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-10-22T15:45:45+02:00"/>
+  <date value="2026-11-24T13:38:08+01:00"/>
   <publisher value="mio42 GmbH"/>
   <contact>
     <name value="mio42 GmbH"/>
@@ -42,7 +42,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.4.0"/>
+    <version value="7.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -50,7 +50,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="5.3.0"/>
+    <version value="5.4.0"/>
   </dependsOn>
   <dependsOn id="kbv_basis">
     <uri value="http://fhir.org/packages/kbv.basis/ImplementationGuide/kbv.basis"/>
@@ -2682,10 +2682,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="west_scenario_Behandlungskontakte.html"/>
+          <valueUrl value="west_scenario_Behandlungskontakte_und_Termine.html"/>
         </extension>
-        <nameUrl value="west_scenario_Behandlungskontakte.html"/>
-        <title value="Szenario Behandlungskontakte"/>
+        <nameUrl value="west_scenario_Behandlungskontakte_und_Termine.html"/>
+        <title value="Szenario Behandlungskontakte und Termine"/>
         <generation value="markdown"/>
       </page>
       <page>

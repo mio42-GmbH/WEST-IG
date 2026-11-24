@@ -29,7 +29,7 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
-* Name:     Gen Code / Bezeichung - Auswahl [1..*]
+* Name:     Gen Code / Bezeichnung - Auswahl [1..*]
   * Kardinalität: 1..*
   * Konformität: 
   * Datentyp: 
@@ -44,7 +44,7 @@ Version 1.0.0-kommentierung - ci-build
 * Name:       HGNC-Gen-Symbol [0..1]
   * Kardinalität: 0..1
   * Konformität: 
-  * Datentyp: string
+  * Datentyp: code
 * Name:       Bezeichnung [0..1]
   * Kardinalität: 0..1
   * Konformität: 

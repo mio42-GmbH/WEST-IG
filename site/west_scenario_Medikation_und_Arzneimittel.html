@@ -278,28 +278,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">      Preistyp [0..1]</td>
-<td>0..1 </td>
+<td style="white-space:pre">      Preistyp [1..1]</td>
+<td>1..1 </td>
 <td></td>
 <td>code</td>
 </tr>
 <tr>
-<td style="white-space:pre">      Preis [0..1]</td>
-<td>0..1 </td>
+<td style="white-space:pre">      Betrag in Euro [1..1]</td>
+<td>1..1 </td>
 <td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">        Betrag [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>decimal</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Währung [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>code</td>
+<td>quantity</td>
 </tr>
 <tr>
 <td style="white-space:pre">    Indikation Code/Bezeichnung [0..1]</td>
@@ -464,109 +452,645 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>string</td>
 </tr>
 <tr>
-<td style="white-space:pre">  Medikations-Information (KBV-Basis) [0..*]</td>
+<td style="white-space:pre">  Medikations-Information (KBV-Basis) [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    KBV-Basis Elemente 1.8.0 Medikations-Information [0..*]</td>
 <td>0..* </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">    Arzneimittel [1..1]</td>
+<td style="white-space:pre">      Arzneimittel [1..1]</td>
 <td>1..1 </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">      Referenz [1..1]</td>
+<td style="white-space:pre">        Referenz [1..1]</td>
 <td>1..1 </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">    Status [1..1]</td>
+<td style="white-space:pre">      Status [1..1]</td>
 <td>1..1 </td>
 <td></td>
 <td>code</td>
 </tr>
 <tr>
-<td style="white-space:pre">    Statusgrund - Code/Bezeichnung [0..1]</td>
+<td style="white-space:pre">      Statusgrund - Code/Bezeichnung [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">      Code-Auswahl [0..1]</td>
+<td style="white-space:pre">        Code-Auswahl [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">        Code aus einem Codesystem [0..1]</td>
+<td style="white-space:pre">          Code aus einem Codesystem [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td>code</td>
 </tr>
 <tr>
-<td style="white-space:pre">      Bezeichnung [0..1]</td>
+<td style="white-space:pre">        Bezeichnung [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td>string</td>
 </tr>
 <tr>
-<td style="white-space:pre">    Datum/Zeit der Informationserfassung [0..1]</td>
+<td style="white-space:pre">      Datum/Zeit der Informationserfassung [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td>datetime</td>
 </tr>
 <tr>
-<td style="white-space:pre">    Verabreichung/Einnahme: Zeitangabe-Auswahl [0..1]</td>
+<td style="white-space:pre">      Verabreichung/Einnahme: Zeitangabe-Auswahl [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">      Zeitpunkt [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>datetime</td>
-</tr>
-<tr>
-<td style="white-space:pre">      Zeitraum [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">        von [0..1]</td>
+<td style="white-space:pre">        Zeitpunkt [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td>datetime</td>
 </tr>
 <tr>
-<td style="white-space:pre">        bis [0..1]</td>
+<td style="white-space:pre">        Zeitraum [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">          von [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td>datetime</td>
 </tr>
 <tr>
-<td style="white-space:pre">    Dosierung [0..*]</td>
+<td style="white-space:pre">          bis [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Dosierung [0..*]</td>
 <td>0..* </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">      Dosierung der einzelnen Verabreichung/Einnahme [0..1]</td>
+<td style="white-space:pre">        Dosierung der einzelnen Verabreichung/Einnahme [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">        Menge pro Gabe/Einnahme [0..1]</td>
+<td style="white-space:pre">          Menge pro Gabe/Einnahme [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">          Feste Menge pro Gabe/Einnahme [0..1]</td>
+<td style="white-space:pre">            Feste Menge pro Gabe/Einnahme [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">              Menge [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">              Dosiereinheit [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Mengenbereich pro Gabe/Einnahme [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">              Obergrenze [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">                Menge [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">                Dosiereinheit [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">              Untergrenze [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">                Menge [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">                Dosiereinheit [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Rate/Verabreichungsgeschwindigkeit-Auswahl [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">            Feste Rate/Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">              Menge [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">              Kombinierte Einheit [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Feste Rate/Verabreichungsgeschwindigkeit mit Angabe von Zähler/Nenner [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">              Zähler Verabreichungsgeschwindigkeit [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">                Menge [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">                Dosiereinheit [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">              Nenner Verabreichungsgeschwindigkeit [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">                Wert der Zeitspanne [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">                Einheit der Zeitspanne [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Bereich für Rate/Verabreichungsgeschwindigkeit [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">              Obergrenze: Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">                Menge [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">                Kombinierte Einheit [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">              Untergrenze: Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">                Menge [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">                Kombinierte Einheit [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Dauer der einzelnen Verabreichung/Einnahme [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">            Wert der Zeitspanne [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Maximaler Wert der Zeitspanne [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Einheit der Zeitspanne [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Verabreichungsweg - Code/Bezeichnung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">            Code-Auswahl [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">              SNOMED CT®-Code [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">              EDQM-Code [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">              Code aus einem anderen Codesystem [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Bezeichnung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Körperstelle - Code/Bezeichnung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">            Code-Auswahl [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">              Code aus einem Codesystem [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Bezeichnung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Wiederholung der Verabreichung/Einnahme [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">          Zeitangabe-Auswahl (dosisspezifisch) [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">            Zeitraum (dosisspezifisch) [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">              von [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">              bis [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Feste Zeitspanne (dosisspezifisch) [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">              Wert der Zeitspanne [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">              Einheit der Zeitspanne [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Variable Zeitspanne (dosisspezifisch) [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">              Obergrenze [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">                Wert der Zeitspanne [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">                Einheit der Zeitspanne [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">              Untergrenze [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">                Wert der Zeitspanne [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">                Einheit der Zeitspanne [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Anzahl der Wiederholungen [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">            Absolute Anzahl der Wiederholungen [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>count</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Maximale Anzahl der Wiederholungen [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>count</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Frequenz/Zeitspanne der Wiederholungen [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">            Absolute Anzahl der Frequenz [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>count</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Maximale Anzahl der Frequenz [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>count</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Absoluter Wert der Zeitspanne [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Maximaler Wert der Zeitspanne [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>quantity</td>
+</tr>
+<tr>
+<td rowspan="3" style="white-space:pre">            Einheit der Zeitspanne [0..1]</td>
+<td colspan="3">Bedingung</td>
+</tr>
+<tr>
+<td>1..1 <br />wenn eine Dauer der Zeitspanne vorhanden ist</td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td>0..0 <br />sonst</td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td rowspan="3" style="white-space:pre">          Uhrzeit [0..*]</td>
+<td colspan="3">Bedingung</td>
+</tr>
+<tr>
+<td>0..0 <br />wenn Tageszeit und/oder Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation existiert</td>
+<td></td>
+<td>time</td>
+</tr>
+<tr>
+<td>0..* <br />sonst</td>
+<td></td>
+<td>time</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Tageszeit/Zusatzinformationen [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="3" style="white-space:pre">            Tageszeit [0..*]</td>
+<td colspan="3">Bedingung</td>
+</tr>
+<tr>
+<td>0..0 <br />wenn Uhrzeit existiert</td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td>0..* <br />sonst</td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td rowspan="3" style="white-space:pre">            Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation [0..*]</td>
+<td colspan="3">Bedingung</td>
+</tr>
+<tr>
+<td>0..0 <br />wenn Uhrzeit existiert</td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td>0..* <br />sonst</td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td rowspan="3" style="white-space:pre">            Zeitabstand zu einer Mahlzeit/Schlafzeit [0..1]</td>
+<td colspan="3">Bedingung</td>
+</tr>
+<tr>
+<td>0..1 <br />wenn Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation existiert UND als Code nicht "mit der Mahlzeit" ausgewählt ist</td>
+<td></td>
+<td>count</td>
+</tr>
+<tr>
+<td>0..0 <br />sonst</td>
+<td></td>
+<td>count</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Wochentag [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Bedarfsmedikation [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td rowspan="3" style="white-space:pre">          Bedarfsmedikation ja/nein [0..1]</td>
+<td colspan="3">Bedingung</td>
+</tr>
+<tr>
+<td>0..0 <br />wenn Bedingung vorhanden</td>
+<td></td>
+<td>boolean</td>
+</tr>
+<tr>
+<td>0..1 <br />sonst</td>
+<td></td>
+<td>boolean</td>
+</tr>
+<tr>
+<td rowspan="3" style="white-space:pre">          Bedingung - Code/Bezeichnung [0..1]</td>
+<td colspan="3">Bedingung</td>
+</tr>
+<tr>
+<td>0..0 <br />wenn Bedarfsmedikation ja/nein ausgefüllt</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>0..1 <br />sonst</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">            Code-Auswahl [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">              SNOMED CT®-Code [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">              Code aus einem anderen Codesystem [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">            Bezeichnung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Maximale Menge pro Gabe/Einnahme [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
@@ -584,55 +1108,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>code</td>
 </tr>
 <tr>
-<td style="white-space:pre">          Mengenbereich pro Gabe/Einnahme [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">            Obergrenze [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">              Menge [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">              Dosiereinheit [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">            Untergrenze [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">              Menge [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">              Dosiereinheit [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Rate/Verabreichungsgeschwindigkeit-Auswahl [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">          Feste Rate/Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]</td>
+<td style="white-space:pre">          Maximale Menge pro Zeitspanne [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
@@ -641,40 +1117,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td style="white-space:pre">            Menge [1..1]</td>
 <td>1..1 </td>
 <td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">            Kombinierte Einheit [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Feste Rate/Verabreichungsgeschwindigkeit mit Angabe von Zähler/Nenner [0..1]</td>
-<td>0..1 </td>
-<td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">            Zähler Verabreichungsgeschwindigkeit [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">              Menge [1..1]</td>
+<td style="white-space:pre">              Wert der Menge [1..1]</td>
 <td>1..1 </td>
 <td></td>
 <td>quantity</td>
 </tr>
 <tr>
-<td style="white-space:pre">              Dosiereinheit [1..1]</td>
+<td style="white-space:pre">              Dosiereinheit der Menge [1..1]</td>
 <td>1..1 </td>
 <td></td>
 <td>code</td>
 </tr>
 <tr>
-<td style="white-space:pre">            Nenner Verabreichungsgeschwindigkeit [1..1]</td>
+<td style="white-space:pre">            Zeitspanne [1..1]</td>
 <td>1..1 </td>
 <td></td>
 <td></td>
@@ -692,522 +1150,82 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>code</td>
 </tr>
 <tr>
-<td style="white-space:pre">          Bereich für Rate/Verabreichungsgeschwindigkeit [0..1]</td>
+<td style="white-space:pre">          Bereich der Verabreichungsfrequenz (informativ) [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">            Obergrenze: Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">              Menge [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">              Kombinierte Einheit [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">            Untergrenze: Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">              Menge [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">              Kombinierte Einheit [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Dauer der einzelnen Verabreichung/Einnahme [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">          Wert der Zeitspanne [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Maximaler Wert der Zeitspanne [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Einheit der Zeitspanne [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Verabreichungsweg - Code/Bezeichnung [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">          Code-Auswahl [0..*]</td>
-<td>0..* </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">            SNOMED CT®-Code [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">            EDQM-Code [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">            Code aus einem anderen Codesystem [0..*]</td>
-<td>0..* </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Bezeichnung [0..1]</td>
+<td style="white-space:pre">        Hinweise [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td>string</td>
 </tr>
 <tr>
-<td style="white-space:pre">        Körperstelle - Code/Bezeichnung [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">          Code-Auswahl [0..*]</td>
-<td>0..* </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">            Code aus einem Codesystem [0..*]</td>
-<td>0..* </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Bezeichnung [0..1]</td>
+<td style="white-space:pre">        Freitext Dosieranweisung [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td>string</td>
 </tr>
 <tr>
-<td style="white-space:pre">      Wiederholung der Verabreichung/Einnahme [0..1]</td>
+<td style="white-space:pre">      Notiz [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Autor:in [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">        Zeitangabe-Auswahl (dosisspezifisch) [0..1]</td>
+<td style="white-space:pre">          Referenz [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">          Zeitraum (dosisspezifisch) [0..1]</td>
+<td style="white-space:pre">          Freitext [0..1]</td>
 <td>0..1 </td>
 <td></td>
-<td></td>
+<td>string</td>
 </tr>
 <tr>
-<td style="white-space:pre">            von [0..1]</td>
+<td style="white-space:pre">        Zeitpunkt der Erstellung [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td>datetime</td>
 </tr>
 <tr>
-<td style="white-space:pre">            bis [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>datetime</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Feste Zeitspanne (dosisspezifisch) [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">            Wert der Zeitspanne [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">            Einheit der Zeitspanne [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Variable Zeitspanne (dosisspezifisch) [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">            Obergrenze [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">              Wert der Zeitspanne [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">              Einheit der Zeitspanne [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">            Untergrenze [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">              Wert der Zeitspanne [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">              Einheit der Zeitspanne [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Anzahl der Wiederholungen [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">          Absolute Anzahl der Wiederholungen [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>count</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Maximale Anzahl der Wiederholungen [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>count</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Frequenz/Zeitspanne der Wiederholungen [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">          Absolute Anzahl der Frequenz [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>count</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Maximale Anzahl der Frequenz [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>count</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Absoluter Wert der Zeitspanne [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Maximaler Wert der Zeitspanne [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td rowspan="3" style="white-space:pre">          Einheit der Zeitspanne [0..1]</td>
-<td colspan="3">Bedingung</td>
-</tr>
-<tr>
-<td>1..1 <br />wenn eine Dauer der Zeitspanne vorhanden ist</td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td>0..0 <br />sonst</td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td rowspan="3" style="white-space:pre">        Uhrzeit [0..*]</td>
-<td colspan="3">Bedingung</td>
-</tr>
-<tr>
-<td>0..0 <br />wenn Tageszeit und/oder Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation existiert</td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td>0..* <br />sonst</td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Tageszeit/Zusatzinformationen [0..*]</td>
-<td>0..* </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td rowspan="3" style="white-space:pre">          Tageszeit [0..*]</td>
-<td colspan="3">Bedingung</td>
-</tr>
-<tr>
-<td>0..0 <br />wenn Uhrzeit existiert</td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td>0..* <br />sonst</td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td rowspan="3" style="white-space:pre">          Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation [0..*]</td>
-<td colspan="3">Bedingung</td>
-</tr>
-<tr>
-<td>0..0 <br />wenn Uhrzeit existiert</td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td>0..* <br />sonst</td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td rowspan="3" style="white-space:pre">          Zeitabstand zu einer Mahlzeit/Schlafzeit [0..1]</td>
-<td colspan="3">Bedingung</td>
-</tr>
-<tr>
-<td>0..1 <br />wenn Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation existiert UND als Code nicht "mit der Mahlzeit" ausgewählt ist</td>
-<td></td>
-<td>count</td>
-</tr>
-<tr>
-<td>0..0 <br />sonst</td>
-<td></td>
-<td>count</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Wochentag [0..*]</td>
-<td>0..* </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">      Bedarfsmedikation [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td rowspan="3" style="white-space:pre">        Bedarfsmedikation ja/nein [0..1]</td>
-<td colspan="3">Bedingung</td>
-</tr>
-<tr>
-<td>0..0 <br />wenn Bedingung vorhanden</td>
-<td></td>
-<td>boolean</td>
-</tr>
-<tr>
-<td>0..1 <br />sonst</td>
-<td></td>
-<td>boolean</td>
-</tr>
-<tr>
-<td rowspan="3" style="white-space:pre">        Bedingung - Code/Bezeichnung [0..1]</td>
-<td colspan="3">Bedingung</td>
-</tr>
-<tr>
-<td>0..0 <br />wenn Bedarfsmedikation ja/nein ausgefüllt</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>0..1 <br />sonst</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">          Code-Auswahl [0..*]</td>
-<td>0..* </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">            SNOMED CT®-Code [0..*]</td>
-<td>0..* </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">            Code aus einem anderen Codesystem [0..*]</td>
-<td>0..* </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Bezeichnung [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>string</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Maximale Menge pro Gabe/Einnahme [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">          Menge [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Dosiereinheit [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Maximale Menge pro Zeitspanne [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">          Menge [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">            Wert der Menge [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">            Dosiereinheit der Menge [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">          Zeitspanne [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">            Wert der Zeitspanne [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>quantity</td>
-</tr>
-<tr>
-<td style="white-space:pre">            Einheit der Zeitspanne [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>code</td>
-</tr>
-<tr>
-<td style="white-space:pre">        Bereich der Verabreichungsfrequenz (informativ) [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">      Hinweise [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>string</td>
-</tr>
-<tr>
-<td style="white-space:pre">      Freitext Dosieranweisung [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>string</td>
-</tr>
-<tr>
-<td style="white-space:pre">    Notiz [0..*]</td>
-<td>0..* </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">      Autor:in [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">        Referenz [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="white-space:pre">        Freitext [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>string</td>
-</tr>
-<tr>
-<td style="white-space:pre">      Zeitpunkt der Erstellung [0..1]</td>
-<td>0..1 </td>
-<td></td>
-<td>datetime</td>
-</tr>
-<tr>
-<td style="white-space:pre">      Text [1..1]</td>
+<td style="white-space:pre">        Text [1..1]</td>
 <td>1..1 </td>
 <td></td>
 <td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Zusätzliche Elemente [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Notiz\Autor:in\Referenz [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Behandelnde Person (KBV-Basis) [0..*]</td>
+<td>0..1 </td>
+<td></td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Behandelnde Person/Einrichtung (KBV-Basis) [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>reference</td>
 </tr>
 <tr>
 <td style="white-space:pre">  Arzneimittel/Rezeptur (KBV-Basis) [0..*]</td>
@@ -1239,7 +1257,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Thu, Oct 22, 2026 15:45+0200">2026-10-22</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Nov 24, 2026 13:38+0100">2026-11-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

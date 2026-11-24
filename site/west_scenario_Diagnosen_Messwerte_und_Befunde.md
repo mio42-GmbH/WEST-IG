@@ -13,6 +13,78 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
+* Name:   Schwangerschaft [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:     Status [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:     Typ [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Code-Auswahl [2..2]
+  * Kardinalität: 2..2
+  * Konformität: 
+  * Datentyp: 
+* Name:         KBV-Code [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:         LOINC®-Code [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:     Referenz Patient [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Patient:in (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:     Referenz Begegnung [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Begegnung/Aufenthalt (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:     Referenz Behandelnder/BehandelnderFunktion [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:       Behandelnde Person (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:       Behandelnde Person/Einrichtung (KBV-Basis) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:     Aufnahmezeitpunkt [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:     Wert [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: boolean
+* Name:     Erwarteter Geburtstermin [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: date
+* Name:     Anzahl Schwangerschaften [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: count
+* Name:     Letzter Zyklus [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: date
 * Name:   Diagnose (KBV-Basis) [0..*]
   * Kardinalität: 0..*
   * Konformität: 
@@ -101,7 +173,7 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: reference
-* Name:     Referenz Patient [1..1]
+* Name:     Referenz Patient [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
@@ -129,11 +201,11 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 0..*
   * Konformität: 
   * Datentyp: 
-* Name:   Allergie/Unverträglichkeit (KBV-Basis)
+* Name:   Allergie/Unverträglichkeit (KBV-Basis) [0..*]
   * Kardinalität: 0..*
   * Konformität: 
   * Datentyp: 
-* Name:     Allergie/Unverträglichkeit
+* Name:     KBV-Basis Elemente 1.8.0 Allergie/Unverträglichkeit [0..*]
   * Kardinalität: 0..*
   * Konformität: 
   * Datentyp: 

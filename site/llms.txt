@@ -17,7 +17,7 @@
 * [Szenario Abrechnungen und Abrechnungsnachweise](west_scenario_Abrechnungen_und_Abrechnungsnachweise.md)
 * [Szenario Administrative Patientendaten](west_scenario_Administrative_Patientendaten.md)
 * [Szenario Aufträge, Verordnungen, Leistugnsanfragen, Leistungsgenehmigungen](west_scenario_Auftraege_Verordnungen_Leistugnsanfragen_Leistungsgenehmigungen.md)
-* [Szenario Behandlungskontakte](west_scenario_Behandlungskontakte.md)
+* [Szenario Behandlungskontakte und Termine](west_scenario_Behandlungskontakte_und_Termine.md)
 * [Szenario Behandlung im Auftrag Überweisung](west_scenario_Behandlung_im_Auftrag_Ueberweisung.md)
 * [Szenario Diagnosen, Messwerte und Befunde](west_scenario_Diagnosen_Messwerte_und_Befunde.md)
 * [Szenario Geräte, Heilmittel, Hilfsmittel, Materialien](west_scenario_Geraete_Heilmittel_Hilfsmittel_Materialien.md)

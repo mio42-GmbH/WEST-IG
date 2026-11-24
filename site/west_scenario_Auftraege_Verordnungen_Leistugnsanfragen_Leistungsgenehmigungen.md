@@ -9,7 +9,7 @@ Version 1.0.0-kommentierung - ci-build
 
 ## Szenario Aufträge, Verordnungen, Leistugnsanfragen, Leistungsgenehmigungen
 
-* Name: Aufträge, Verordnungen, Leistugnsanfragen, Leistungsgenehmigungen [1..1]
+* Name: Aufträge, Verordnungen, Leistungsanfragen, Leistungsgenehmigungen [1..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
@@ -360,7 +360,7 @@ Version 1.0.0-kommentierung - ci-build
 * Name:           Leistung vor dem 1.04.2017 [1..1]
   * Kardinalität: 1..1
   * Konformität: 
-  * Datentyp: text
+  * Datentyp: string
 * Name:           GOPs [0..1]
   * Kardinalität: 0..1
   * Konformität: 

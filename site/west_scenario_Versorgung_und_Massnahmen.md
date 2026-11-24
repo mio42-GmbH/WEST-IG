@@ -29,8 +29,8 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: 
-* Name:       Code-Auswahl [1..*]
-  * Kardinalität: 1..*
+* Name:       Code-Auswahl [1..1]
+  * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: 
 * Name:         SNOMED CT®-Code [0..*]
@@ -45,11 +45,11 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: 
-* Name:       Code-Auswahl [1..*]
-  * Kardinalität: 1..*
+* Name:       Code-Auswahl [1..1]
+  * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: 
-* Name:         OPS-Code
+* Name:         OPS-Code [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
@@ -57,7 +57,7 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
-* Name:           OPS-Seitenlokalisation
+* Name:           OPS-Seitenlokalisation [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: code
@@ -165,7 +165,7 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 1..*
   * Konformität: 
   * Datentyp: 
-* Name:         OPS-Code
+* Name:         OPS-Code [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
@@ -173,7 +173,7 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
-* Name:           OPS-Seitenlokalisation
+* Name:           OPS-Seitenlokalisation [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: code
@@ -185,10 +185,6 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: string
-* Name:       Seitenlokalisation [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: code
 * Name:     Referenz Patient [1..1]
   * Kardinalität: 1..1
   * Konformität: 
@@ -245,8 +241,8 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: code
-* Name:     Komplikationsbeschreibung [1..1]
-  * Kardinalität: 1..1
+* Name:     Komplikationsbeschreibung [0..*]
+  * Kardinalität: 0..*
   * Konformität: 
   * Datentyp: string
 * Name:     Beschreibung [1..1]

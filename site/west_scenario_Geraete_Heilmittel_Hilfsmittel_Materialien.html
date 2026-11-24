@@ -242,6 +242,228 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td></td>
 </tr>
 <tr>
+<td style="white-space:pre">  Gerät (KBV-Basis) [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    KBV-Basis Elemente 1.8.0 Gerät [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Kategorie - Code/Bezeichnung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Code-Auswahl [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">          Device Types [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Code aus einem anderen Codesystem [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Bezeichnung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Spezifischer Typ - Code/Bezeichnung [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Code-Auswahl [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">          SNOMED CT®-Code [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Code aus einem anderen Codesystem [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Bezeichnung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Name des Gerätes [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Name [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Typ [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      UDI [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        UDI-DI [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        UDI-PI [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Produktnummern [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Modellnummer [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Seriennummer [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Chargennummer [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Andere Produktnummer [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">          Produktnummer [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">          Bezeichnung der Produktnummer [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Hersteller [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Herstellungsdatum [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Haltbarkeitsdatum [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Version [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Status [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Statusgrund [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Verantwortliche Person/Einrichtung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Notiz [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        Autor:in [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">          Freitext [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Zeitpunkt der Erstellung [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">        Text [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>string</td>
+</tr>
+<tr>
 <td style="white-space:pre">  Hilfsmittel [0..*]</td>
 <td>0..* </td>
 <td></td>
@@ -409,7 +631,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Thu, Oct 22, 2026 15:45+0200">2026-10-22</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Nov 24, 2026 13:38+0100">2026-11-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

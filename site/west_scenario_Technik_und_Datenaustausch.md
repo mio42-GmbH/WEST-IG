@@ -13,176 +13,128 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:   Dokumentenverweis/Anhang
-  * Kardinalität: 0..*
-  * Konformität: R
+* Name:   Software [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: 
-* Name:     Status
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: code
-* Name:     Typ - Code/Bezeichnung
+* Name:     Name [0..1]
   * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: 
-* Name:       Code-Auswahl
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:         XDS
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: code
-* Name:         KBV
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: code
-* Name:         Code aus einem anderen Codesystem
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: code
-* Name:       Bezeichnung
-  * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
   * Datentyp: string
-* Name:     Kategorie - Code/Bezeichnung
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:       Code-Auswahl
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:         XDS
+* Name:     Typ [0..1]
   * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
   * Datentyp: code
-* Name:         Code aus einem anderen Codesystem
-  * Kardinalität: 0..*
-  * Konformität: O
+* Name:     Version [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:     Kontaktdaten [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Kontaktkanal [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: code
-* Name:       Bezeichnung
+* Name:       Wert [0..1]
   * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
   * Datentyp: string
-* Name:     Dokumentenverweis
-  * Kardinalität: 0..*
-  * Konformität: O
+* Name:   Herkunftsinformation (KBV-Basis) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: 
-* Name:       Name des Dokumentes
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: string
-* Name:       URI des Dokuments
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: string
-* Name:     Dokumentanhang
-  * Kardinalität: 0..*
-  * Konformität: O
+* Name:     KBV-Basis Elemente 1.8.0 Herkunftsinformation [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: 
-* Name:       Titel
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: string
-* Name:       Dateiformat
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: code
-* Name:       Datei
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: blob
-* Name:     Zeitpunkt der Erstellung des Dokumentes
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: datetime
-* Name:     Autor:in
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:       Behandelnde Person
-  * Kardinalität: 0..1
-  * Konformität: R
-  * Datentyp: reference
-* Name:       Behandelnde Person/Einrichtung
-  * Kardinalität: 0..1
-  * Konformität: R
-  * Datentyp: reference
-* Name:     Beschreibung des Dokuments
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: string
-* Name:   Herkunftsinformation
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:     Referenz auf das Ziel
+* Name:       Referenz auf das Ziel [1..*]
   * Kardinalität: 1..*
-  * Konformität: M
+  * Konformität: 
   * Datentyp: 
-* Name:       Referenz
+* Name:         Referenz [1..1]
   * Kardinalität: 1..1
-  * Konformität: M
+  * Konformität: 
   * Datentyp: 
-* Name:     Ursprungs-Information
+* Name:       Ursprungs-Information [0..*]
   * Kardinalität: 0..*
-  * Konformität: O
+  * Konformität: 
   * Datentyp: 
-* Name:       Art der Nutzung
-  * Kardinalität: 1..1
-  * Konformität: M
+* Name:         Art der Nutzung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: code
-* Name:       Verantwortliche Person/Entität
+* Name:         Verantwortliche Person/Entität [0..*]
   * Kardinalität: 0..*
-  * Konformität: O
+  * Konformität: 
   * Datentyp: 
-* Name:         Referenz auf Person/Entität
-  * Kardinalität: 1..1
-  * Konformität: M
+* Name:           Referenz auf Person/Entität [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: 
-* Name:           Behandelnde Person
+* Name:             Referenz [0..1]
   * Kardinalität: 0..1
-  * Konformität: R
-  * Datentyp: reference
-* Name:           Behandelnde Person/Einrichtung
+  * Konformität: 
+  * Datentyp: 
+* Name:           Art der Beteiligung [0..1]
   * Kardinalität: 0..1
-  * Konformität: R
-  * Datentyp: reference
-* Name:         Art der Beteiligung
-  * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
   * Datentyp: code
-* Name:         Rolle der Person
+* Name:           Rolle der Person [0..*]
   * Kardinalität: 0..*
-  * Konformität: O
+  * Konformität: 
   * Datentyp: code
-* Name:       Referenz auf die Ursprungs-Information
-  * Kardinalität: 1..1
-  * Konformität: M
+* Name:         Referenz auf die Ursprungs-Information [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: 
-* Name:         Referenz
+* Name:           Referenz [1..1]
   * Kardinalität: 1..1
-  * Konformität: M
+  * Konformität: 
   * Datentyp: 
-* Name:     Beteiligte Person/Entität
+* Name:       Beteiligte Person/Entität [1..*]
   * Kardinalität: 1..*
-  * Konformität: M
+  * Konformität: 
   * Datentyp: 
-* Name:       Referenz auf Person/Entität
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: 
-* Name:       Art der Beteiligung
+* Name:         Referenz auf Person/Entität [0..1]
   * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
+  * Datentyp: 
+* Name:         Art der Beteiligung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: code
-* Name:       Rolle der Person/Entität
+* Name:         Rolle der Person/Entität [0..*]
   * Kardinalität: 0..*
-  * Konformität: O
+  * Konformität: 
   * Datentyp: code
-* Name:     Zeitpunkt der durchgeführten Aktivität
+* Name:       Zeitpunkt der durchgeführten Aktivität [0..1]
   * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
   * Datentyp: datetime
+* Name:     Zusätzliche Elemente [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Beteiligte Person/Entität\Referenz auf Person/Entität [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:         Behandelnde Person (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:         Behandelnde Person/Einrichtung (KBV-Basis) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:         Person [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:         Kontaktperson (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
 

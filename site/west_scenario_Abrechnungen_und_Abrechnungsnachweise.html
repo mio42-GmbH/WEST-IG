@@ -518,7 +518,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">          Leistungsanfrage/genehmigung  Psychotherapie [0..*]</td>
+<td style="white-space:pre">          Leistungsanfrage/genehmigung Psychotherapie [0..*]</td>
 <td>0..1 </td>
 <td></td>
 <td>reference</td>
@@ -591,12 +591,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </tr>
 <tr>
 <td style="white-space:pre">      Krankenversicherungsverhältnis [0..1]</td>
-<td>0..1 </td>
+<td>1..1 </td>
 <td></td>
 <td>reference</td>
 </tr>
 <tr>
-<td style="white-space:pre">      Vertragkennzeichen [0..1]</td>
+<td style="white-space:pre">      Vertragskennzeichen [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td>string</td>
@@ -756,12 +756,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>0..1 </td>
 <td></td>
 <td></td>
-</tr>
-<tr>
-<td style="white-space:pre">      Beschreibung [1..1]</td>
-<td>1..1 </td>
-<td></td>
-<td>string</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Art [1..1]</td>
@@ -1073,7 +1067,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td style="white-space:pre">      Steigerungsfaktor [0..1]</td>
 <td>0..1 </td>
 <td></td>
-<td>quantity</td>
+<td>decimal</td>
 </tr>
 <tr>
 <td style="white-space:pre">      Gesamtbetrag [0..1]</td>
@@ -1436,13 +1430,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>reference</td>
 </tr>
 <tr>
-<td style="white-space:pre">    Zahlungsempfänger</td>
+<td style="white-space:pre">    Zahlungsempfänger [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">      Typ</td>
+<td style="white-space:pre">      Typ [1..1]</td>
 <td>1..1 </td>
 <td></td>
 <td>code</td>
@@ -1520,7 +1514,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>reference</td>
 </tr>
 <tr>
-<td style="white-space:pre">      Typ [0..1]</td>
+<td style="white-space:pre">      Selbstzahler [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td>string</td>
@@ -1892,7 +1886,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">          Leistungsanfrage/genehmigung  Psychotherapie [0..*]</td>
+<td style="white-space:pre">          Leistungsanfrage/genehmigung Psychotherapie [0..*]</td>
 <td>1..1 </td>
 <td></td>
 <td>reference</td>
@@ -1999,7 +1993,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Thu, Oct 22, 2026 15:45+0200">2026-10-22</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Nov 24, 2026 13:38+0100">2026-11-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

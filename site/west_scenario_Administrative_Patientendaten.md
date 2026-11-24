@@ -169,7 +169,7 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: boolean
-* Name:       Ärztliche Sektor [0..1]
+* Name:       Ärztlicher Sektor [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: boolean

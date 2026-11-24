@@ -22,7 +22,7 @@
   fhir:title [ fhir:v "Arbeitsgruppe WeST"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2026-10-22T15:45:45+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-11-24T13:38:08+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "mio42 GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "mio42 GmbH" ] ;
@@ -65,7 +65,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.4.0" ]
+     fhir:version [ fhir:v "7.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -83,7 +83,7 @@
        fhir:l <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.3.0" ]
+     fhir:version [ fhir:v "5.4.0" ]
   ] [
      fhir:id [ fhir:v "kbv_basis" ] ;
      fhir:uri [
@@ -6770,16 +6770,16 @@
            ] ;
            fhir:value [
              a fhir:Url ;
-             fhir:v "west_scenario_Behandlungskontakte.html"^^xsd:anyURI ;
-             fhir:l fhir:west_scenario_Behandlungskontakte.html
+             fhir:v "west_scenario_Behandlungskontakte_und_Termine.html"^^xsd:anyURI ;
+             fhir:l fhir:west_scenario_Behandlungskontakte_und_Termine.html
            ]
          ] ) ;
          fhir:name [
            a fhir:Url ;
-           fhir:v "west_scenario_Behandlungskontakte.html"^^xsd:anyURI ;
-           fhir:l fhir:west_scenario_Behandlungskontakte.html
+           fhir:v "west_scenario_Behandlungskontakte_und_Termine.html"^^xsd:anyURI ;
+           fhir:l fhir:west_scenario_Behandlungskontakte_und_Termine.html
          ] ;
-         fhir:title [ fhir:v "Szenario Behandlungskontakte" ] ;
+         fhir:title [ fhir:v "Szenario Behandlungskontakte und Termine" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

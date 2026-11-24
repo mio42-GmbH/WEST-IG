@@ -242,6 +242,114 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td></td>
 </tr>
 <tr>
+<td style="white-space:pre">  Schwangerschaft [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">    Status [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Typ [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Code-Auswahl [2..2]</td>
+<td>2..2 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">        KBV-Code [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">        LOINC®-Code [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>code</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Referenz Patient [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Patient:in (KBV-Basis) [0..*]</td>
+<td>0..1 </td>
+<td></td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Referenz Begegnung [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Begegnung/Aufenthalt (KBV-Basis) [0..*]</td>
+<td>0..1 </td>
+<td></td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Referenz Behandelnder/BehandelnderFunktion [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td style="white-space:pre">      Behandelnde Person (KBV-Basis) [0..*]</td>
+<td>0..1 </td>
+<td></td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">      Behandelnde Person/Einrichtung (KBV-Basis) [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>reference</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Aufnahmezeitpunkt [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>datetime</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Wert [1..1]</td>
+<td>1..1 </td>
+<td></td>
+<td>boolean</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Erwarteter Geburtstermin [0..*]</td>
+<td>0..* </td>
+<td></td>
+<td>date</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Anzahl Schwangerschaften [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>count</td>
+</tr>
+<tr>
+<td style="white-space:pre">    Letzter Zyklus [0..1]</td>
+<td>0..1 </td>
+<td></td>
+<td>date</td>
+</tr>
+<tr>
 <td style="white-space:pre">  Diagnose (KBV-Basis) [0..*]</td>
 <td>0..* </td>
 <td></td>
@@ -374,7 +482,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td>reference</td>
 </tr>
 <tr>
-<td style="white-space:pre">    Referenz Patient [1..1]</td>
+<td style="white-space:pre">    Referenz Patient [0..1]</td>
 <td>0..1 </td>
 <td></td>
 <td></td>
@@ -416,13 +524,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">  Allergie/Unverträglichkeit (KBV-Basis)</td>
+<td style="white-space:pre">  Allergie/Unverträglichkeit (KBV-Basis) [0..*]</td>
 <td>0..* </td>
 <td></td>
 <td></td>
 </tr>
 <tr>
-<td style="white-space:pre">    Allergie/Unverträglichkeit</td>
+<td style="white-space:pre">    KBV-Basis Elemente 1.8.0 Allergie/Unverträglichkeit [0..*]</td>
 <td>0..* </td>
 <td></td>
 <td></td>
@@ -793,7 +901,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Thu, Oct 22, 2026 15:45+0200">2026-10-22</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://mio.kbv.de">mio42 GmbH</a>.  Paket kbv.mio.west#1.0.0-kommentierung basierend auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generiert <span title="Tue, Nov 24, 2026 13:38+0100">2026-11-24</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

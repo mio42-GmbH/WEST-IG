@@ -246,10 +246,10 @@ Version 1.0.0-kommentierung - ci-build
   * Konformität: 
   * Datentyp: 
 * Name:       Krankenversicherungsverhältnis [0..1]
-  * Kardinalität: 0..1
+  * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: reference
-* Name:       Vertragkennzeichen [0..1]
+* Name:       Vertragskennzeichen [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: string
@@ -357,10 +357,6 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:       Beschreibung [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: string
 * Name:       Art [1..1]
   * Kardinalität: 1..1
   * Konformität: 
@@ -568,7 +564,7 @@ Version 1.0.0-kommentierung - ci-build
 * Name:       Steigerungsfaktor [0..1]
   * Kardinalität: 0..1
   * Konformität: 
-  * Datentyp: quantity
+  * Datentyp: decimal
 * Name:       Gesamtbetrag [0..1]
   * Kardinalität: 0..1
   * Konformität: 
@@ -809,11 +805,11 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: reference
-* Name:     Zahlungsempfänger
+* Name:     Zahlungsempfänger [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:       Typ
+* Name:       Typ [1..1]
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
@@ -865,7 +861,7 @@ Version 1.0.0-kommentierung - ci-build
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: reference
-* Name:       Typ [0..1]
+* Name:       Selbstzahler [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: string

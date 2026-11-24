@@ -301,10 +301,10 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Konformität: 
   * Datentyp: 
 * Name:       Krankenversicherungsverhältnis [0..1]
-  * Kardinalität: 0..1
+  * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: reference
-* Name:       Vertragkennzeichen [0..1]
+* Name:       Vertragskennzeichen [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: string
@@ -412,10 +412,6 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:       Beschreibung [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: string
 * Name:       Art [1..1]
   * Kardinalität: 1..1
   * Konformität: 
@@ -623,7 +619,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
 * Name:       Steigerungsfaktor [0..1]
   * Kardinalität: 0..1
   * Konformität: 
-  * Datentyp: quantity
+  * Datentyp: decimal
 * Name:       Gesamtbetrag [0..1]
   * Kardinalität: 0..1
   * Konformität: 
@@ -864,11 +860,11 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: reference
-* Name:     Zahlungsempfänger
+* Name:     Zahlungsempfänger [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:       Typ
+* Name:       Typ [1..1]
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
@@ -920,7 +916,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: reference
-* Name:       Typ [0..1]
+* Name:       Selbstzahler [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: string
@@ -1387,7 +1383,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: boolean
-* Name:       Ärztliche Sektor [0..1]
+* Name:       Ärztlicher Sektor [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: boolean
@@ -1442,7 +1438,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
 
  Szenario: Aufträge, Verordnungen, Leistugnsanfragen, Leistungsgenehmigungen 
 
-* Name: Aufträge, Verordnungen, Leistugnsanfragen, Leistungsgenehmigungen [1..1]
+* Name: Aufträge, Verordnungen, Leistungsanfragen, Leistungsgenehmigungen [1..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
@@ -1793,7 +1789,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
 * Name:           Leistung vor dem 1.04.2017 [1..1]
   * Kardinalität: 1..1
   * Konformität: 
-  * Datentyp: text
+  * Datentyp: string
 * Name:           GOPs [0..1]
   * Kardinalität: 0..1
   * Konformität: 
@@ -1853,145 +1849,229 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
 
  Szenario: Behandlung im Auftrag Überweisung 
 
-* Name:   Behandlung im Auftrag Überweisung
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: 
-* Name:     Status
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: code
-* Name:     Auftragsart
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: code
-* Name:     Auftragsbeschreibung
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: string
-* Name:     Leistungsart
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: code
-* Name:     Referenz Patient
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: 
-* Name:       Patient:in
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: reference
-* Name:     Referenz Begegnung
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: 
-* Name:       Begegnung/Aufenthalt
-  * Kardinalität: 0..1
-  * Konformität: R
-  * Datentyp: reference
-* Name:     Ausstellungsdatum
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: datetime
-* Name:     Erstveranlassende Überweisende Person
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: 
-* Name:       Referenz Behandelnde Person / Einrichtung
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: 
-* Name:         Behandelnde Person/Einrichtung
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: reference
-* Name:       ANR
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: identifier
-* Name:       Bezeichner
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: string
-* Name:     Überweisung an
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: 
-* Name:       Referenz
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: 
-* Name:         Betriebsstätte
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: reference
-* Name:         Behandelnde Person/Einrichtung
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: reference
-* Name:       Anzeigetext
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: string
-* Name:     Grund
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:       Freitext Diagnose/Verdachtsdiagnose
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: string
-* Name:       Referenz Diagnose/Verdachtsdiagnose
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: 
-* Name:         Diagnose
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: reference
-* Name:     Zusätzliche Informationen
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:       Befund Medikation
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:         Referenz
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: 
-* Name:           Arzneimittel
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: reference
-* Name:           Medikations-Information
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: reference
-* Name:         Befund Medikation Freitext
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: string
-* Name:       Ausnahmeindikation
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:         Ausnahmekennziffer
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: string
-* Name:     Abrechnungsrelevant
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: boolean
-
- Szenario: Behandlungskontakte 
-
-* Name: Behandlungskontakte [1..1]
+* Name: Behandlung im Auftrag Überweisung [1..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
+
+ Szenario: Behandlungskontakte und Termine 
+
+* Name: Behandlungskontakte und Termine [1..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:   Termin [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:     ID [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: identifier
+* Name:     Status [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:     Wert [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: code
+* Name:     Terminkategorie [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: string
+* Name:     Absagegrund [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: code
+* Name:     Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:     Zeitraum [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:       Beginn [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:       Ende [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:     Referenz Termin Ort [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Ort Betriebsstätte [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:     Terminnotiz [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:     Priorität [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: count
+* Name:     Teilnehmer [1..*]
+  * Kardinalität: 1..*
+  * Konformität: 
+  * Datentyp: 
+* Name:       Rolle [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:       Referenz Teilnehmer [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:         Ort Betriebsstätte [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:         Behandelnde Person (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:         Patient:in (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:       ANR [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: identifier
+* Name:       Status [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:     Terminserie [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Serienbeginn [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:       Serienende [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:       Gesamtanzahl der Termine [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: count
+* Name:       Anzahl je Bezugszeitraum [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: count
+* Name:       Länge des Bezugszeitraums [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: decimal
+* Name:       Einheit des Bezugszeitraums [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: code
+* Name:       Wochentag [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: code
+* Name:   Stationäre Behandlung [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:     Status [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:     Typ [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:     Beschreibung Aufenthalt [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:     Fachrichtung/Fachabteilung - Code/Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Code-Auswahl [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:         KBV-Fachgruppencodierung [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:         HL7®-Fachabteilungsschlüssel [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:         HL7®-Fachabteilungsschlüssel erweitert [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:       Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:     Referenz Patient [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Patient:in (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:     Referenz Behandelnde Person/Einrichtung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Behandelnde Person/Einrichtung (KBV-Basis) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:     Zeitraum [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       von [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:       bis [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:     Grund [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:       Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:     Referenz Organisation [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Einrichtung/Organisationseinheit (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:     Referenz Begegnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Begegnung/Aufenthalt (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
 * Name:   Begegnung/Aufenthalt (KBV-Basis) [0..*]
   * Kardinalität: 0..*
   * Konformität: 
@@ -2019,7 +2099,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
 * Name:     Grund [0..1]
   * Kardinalität: 0..1
   * Konformität: 
-  * Datentyp: complex
+  * Datentyp: string
 * Name:     Ort [1..1]
   * Kardinalität: 1..1
   * Konformität: 
@@ -2055,6 +2135,78 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
+* Name:   Schwangerschaft [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:     Status [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:     Typ [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Code-Auswahl [2..2]
+  * Kardinalität: 2..2
+  * Konformität: 
+  * Datentyp: 
+* Name:         KBV-Code [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:         LOINC®-Code [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:     Referenz Patient [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Patient:in (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:     Referenz Begegnung [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Begegnung/Aufenthalt (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:     Referenz Behandelnder/BehandelnderFunktion [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:       Behandelnde Person (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:       Behandelnde Person/Einrichtung (KBV-Basis) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:     Aufnahmezeitpunkt [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:     Wert [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: boolean
+* Name:     Erwarteter Geburtstermin [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: date
+* Name:     Anzahl Schwangerschaften [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: count
+* Name:     Letzter Zyklus [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: date
 * Name:   Diagnose (KBV-Basis) [0..*]
   * Kardinalität: 0..*
   * Konformität: 
@@ -2143,7 +2295,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: reference
-* Name:     Referenz Patient [1..1]
+* Name:     Referenz Patient [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
@@ -2171,11 +2323,11 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..*
   * Konformität: 
   * Datentyp: 
-* Name:   Allergie/Unverträglichkeit (KBV-Basis)
+* Name:   Allergie/Unverträglichkeit (KBV-Basis) [0..*]
   * Kardinalität: 0..*
   * Konformität: 
   * Datentyp: 
-* Name:     Allergie/Unverträglichkeit
+* Name:     KBV-Basis Elemente 1.8.0 Allergie/Unverträglichkeit [0..*]
   * Kardinalität: 0..*
   * Konformität: 
   * Datentyp: 
@@ -2414,6 +2566,154 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
+* Name:   Gerät (KBV-Basis) [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:     KBV-Basis Elemente 1.8.0 Gerät [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:       Kategorie - Code/Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:         Code-Auswahl [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:           Device Types [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:           Code aus einem anderen Codesystem [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:         Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:       Spezifischer Typ - Code/Bezeichnung [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:         Code-Auswahl [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:           SNOMED CT®-Code [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:           Code aus einem anderen Codesystem [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:         Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:       Name des Gerätes [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:         Name [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: string
+* Name:         Typ [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:       UDI [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:         UDI-DI [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:         UDI-PI [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:       Produktnummern [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:         Modellnummer [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:         Seriennummer [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:         Chargennummer [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:         Andere Produktnummer [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:           Produktnummer [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:           Bezeichnung der Produktnummer [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:       Hersteller [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Herstellungsdatum [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:       Haltbarkeitsdatum [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:       Version [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: string
+* Name:       Status [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: code
+* Name:       Statusgrund [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: code
+* Name:       Verantwortliche Person/Einrichtung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Notiz [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:         Autor:in [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:           Freitext [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:         Zeitpunkt der Erstellung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:         Text [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: string
 * Name:   Hilfsmittel [0..*]
   * Kardinalität: 0..*
   * Konformität: 
@@ -2533,7 +2833,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
-* Name:     Gen Code / Bezeichung - Auswahl [1..*]
+* Name:     Gen Code / Bezeichnung - Auswahl [1..*]
   * Kardinalität: 1..*
   * Konformität: 
   * Datentyp: 
@@ -2548,7 +2848,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
 * Name:       HGNC-Gen-Symbol [0..1]
   * Kardinalität: 0..1
   * Konformität: 
-  * Datentyp: string
+  * Datentyp: code
 * Name:       Bezeichnung [0..1]
   * Kardinalität: 0..1
   * Konformität: 
@@ -2612,22 +2912,14 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:       Preistyp [0..1]
-  * Kardinalität: 0..1
+* Name:       Preistyp [1..1]
+  * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
-* Name:       Preis [0..1]
-  * Kardinalität: 0..1
+* Name:       Betrag in Euro [1..1]
+  * Kardinalität: 1..1
   * Konformität: 
-  * Datentyp: 
-* Name:         Betrag [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: decimal
-* Name:         Währung [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: code
+  * Datentyp: quantity
 * Name:     Indikation Code/Bezeichnung [0..1]
   * Kardinalität: 0..1
   * Konformität: 
@@ -2736,75 +3028,423 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: string
-* Name:   Medikations-Information (KBV-Basis) [0..*]
+* Name:   Medikations-Information (KBV-Basis) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:     KBV-Basis Elemente 1.8.0 Medikations-Information [0..*]
   * Kardinalität: 0..*
   * Konformität: 
   * Datentyp: 
-* Name:     Arzneimittel [1..1]
+* Name:       Arzneimittel [1..1]
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: 
-* Name:       Referenz [1..1]
+* Name:         Referenz [1..1]
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: 
-* Name:     Status [1..1]
+* Name:       Status [1..1]
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
-* Name:     Statusgrund - Code/Bezeichnung [0..1]
+* Name:       Statusgrund - Code/Bezeichnung [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:       Code-Auswahl [0..1]
+* Name:         Code-Auswahl [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:         Code aus einem Codesystem [0..1]
+* Name:           Code aus einem Codesystem [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: code
-* Name:       Bezeichnung [0..1]
+* Name:         Bezeichnung [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: string
-* Name:     Datum/Zeit der Informationserfassung [0..1]
+* Name:       Datum/Zeit der Informationserfassung [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: datetime
-* Name:     Verabreichung/Einnahme: Zeitangabe-Auswahl [0..1]
+* Name:       Verabreichung/Einnahme: Zeitangabe-Auswahl [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:       Zeitpunkt [0..1]
+* Name:         Zeitpunkt [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: datetime
-* Name:       Zeitraum [0..1]
+* Name:         Zeitraum [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:         von [0..1]
+* Name:           von [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: datetime
-* Name:         bis [0..1]
+* Name:           bis [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: datetime
-* Name:     Dosierung [0..*]
+* Name:       Dosierung [0..*]
   * Kardinalität: 0..*
   * Konformität: 
   * Datentyp: 
-* Name:       Dosierung der einzelnen Verabreichung/Einnahme [0..1]
+* Name:         Dosierung der einzelnen Verabreichung/Einnahme [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:         Menge pro Gabe/Einnahme [0..1]
+* Name:           Menge pro Gabe/Einnahme [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:           Feste Menge pro Gabe/Einnahme [0..1]
+* Name:             Feste Menge pro Gabe/Einnahme [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:               Menge [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:               Dosiereinheit [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:             Mengenbereich pro Gabe/Einnahme [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:               Obergrenze [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:                 Menge [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:                 Dosiereinheit [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:               Untergrenze [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:                 Menge [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:                 Dosiereinheit [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:           Rate/Verabreichungsgeschwindigkeit-Auswahl [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:             Feste Rate/Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:               Menge [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:               Kombinierte Einheit [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:             Feste Rate/Verabreichungsgeschwindigkeit mit Angabe von Zähler/Nenner [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:               Zähler Verabreichungsgeschwindigkeit [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:                 Menge [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:                 Dosiereinheit [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:               Nenner Verabreichungsgeschwindigkeit [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:                 Wert der Zeitspanne [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:                 Einheit der Zeitspanne [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:             Bereich für Rate/Verabreichungsgeschwindigkeit [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:               Obergrenze: Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:                 Menge [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:                 Kombinierte Einheit [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:               Untergrenze: Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:                 Menge [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:                 Kombinierte Einheit [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:           Dauer der einzelnen Verabreichung/Einnahme [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:             Wert der Zeitspanne [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:             Maximaler Wert der Zeitspanne [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:             Einheit der Zeitspanne [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: code
+* Name:           Verabreichungsweg - Code/Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:             Code-Auswahl [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:               SNOMED CT®-Code [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: code
+* Name:               EDQM-Code [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: code
+* Name:               Code aus einem anderen Codesystem [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:             Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:           Körperstelle - Code/Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:             Code-Auswahl [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:               Code aus einem Codesystem [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:             Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:         Wiederholung der Verabreichung/Einnahme [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:           Zeitangabe-Auswahl (dosisspezifisch) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:             Zeitraum (dosisspezifisch) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:               von [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:               bis [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: datetime
+* Name:             Feste Zeitspanne (dosisspezifisch) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:               Wert der Zeitspanne [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:               Einheit der Zeitspanne [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:             Variable Zeitspanne (dosisspezifisch) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:               Obergrenze [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:                 Wert der Zeitspanne [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:                 Einheit der Zeitspanne [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:               Untergrenze [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:                 Wert der Zeitspanne [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:                 Einheit der Zeitspanne [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: code
+* Name:           Anzahl der Wiederholungen [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:             Absolute Anzahl der Wiederholungen [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: count
+* Name:             Maximale Anzahl der Wiederholungen [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: count
+* Name:           Frequenz/Zeitspanne der Wiederholungen [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:             Absolute Anzahl der Frequenz [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: count
+* Name:             Maximale Anzahl der Frequenz [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: count
+* Name:             Absoluter Wert der Zeitspanne [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:             Maximaler Wert der Zeitspanne [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: quantity
+* Name:             Einheit der Zeitspanne [0..1]
+  * Kardinalität: Bedingung
+* Name: 1..1wenn eine Dauer der Zeitspanne vorhanden ist
+  * Kardinalität: 
+  * Konformität: code
+* Name: 0..0sonst
+  * Kardinalität: 
+  * Konformität: code
+* Name:           Uhrzeit [0..*]
+  * Kardinalität: Bedingung
+* Name: 0..0wenn Tageszeit und/oder Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation existiert
+  * Kardinalität: 
+  * Konformität: time
+* Name: 0..*sonst
+  * Kardinalität: 
+  * Konformität: time
+* Name:           Tageszeit/Zusatzinformationen [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:             Tageszeit [0..*]
+  * Kardinalität: Bedingung
+* Name: 0..0wenn Uhrzeit existiert
+  * Kardinalität: 
+  * Konformität: code
+* Name: 0..*sonst
+  * Kardinalität: 
+  * Konformität: code
+* Name:             Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation [0..*]
+  * Kardinalität: Bedingung
+* Name: 0..0wenn Uhrzeit existiert
+  * Kardinalität: 
+  * Konformität: code
+* Name: 0..*sonst
+  * Kardinalität: 
+  * Konformität: code
+* Name:             Zeitabstand zu einer Mahlzeit/Schlafzeit [0..1]
+  * Kardinalität: Bedingung
+* Name: 0..1wenn Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation existiert UND als Code nicht "mit der Mahlzeit" ausgewählt ist
+  * Kardinalität: 
+  * Konformität: count
+* Name: 0..0sonst
+  * Kardinalität: 
+  * Konformität: count
+* Name:           Wochentag [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:         Bedarfsmedikation [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:           Bedarfsmedikation ja/nein [0..1]
+  * Kardinalität: Bedingung
+* Name: 0..0wenn Bedingung vorhanden
+  * Kardinalität: 
+  * Konformität: boolean
+* Name: 0..1sonst
+  * Kardinalität: 
+  * Konformität: boolean
+* Name:           Bedingung - Code/Bezeichnung [0..1]
+  * Kardinalität: Bedingung
+* Name: 0..0wenn Bedarfsmedikation ja/nein ausgefüllt
+  * Kardinalität: 
+  * Konformität: 
+* Name: 0..1sonst
+  * Kardinalität: 
+  * Konformität: 
+* Name:             Code-Auswahl [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:               SNOMED CT®-Code [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:               Code aus einem anderen Codesystem [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: code
+* Name:             Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:           Maximale Menge pro Gabe/Einnahme [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
@@ -2816,67 +3456,23 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
-* Name:           Mengenbereich pro Gabe/Einnahme [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:             Obergrenze [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:               Menge [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:               Dosiereinheit [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:             Untergrenze [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:               Menge [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:               Dosiereinheit [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:         Rate/Verabreichungsgeschwindigkeit-Auswahl [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:           Feste Rate/Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]
+* Name:           Maximale Menge pro Zeitspanne [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
 * Name:             Menge [1..1]
   * Kardinalität: 1..1
   * Konformität: 
-  * Datentyp: quantity
-* Name:             Kombinierte Einheit [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:           Feste Rate/Verabreichungsgeschwindigkeit mit Angabe von Zähler/Nenner [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
   * Datentyp: 
-* Name:             Zähler Verabreichungsgeschwindigkeit [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: 
-* Name:               Menge [1..1]
+* Name:               Wert der Menge [1..1]
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: quantity
-* Name:               Dosiereinheit [1..1]
+* Name:               Dosiereinheit der Menge [1..1]
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
-* Name:             Nenner Verabreichungsgeschwindigkeit [1..1]
+* Name:             Zeitspanne [1..1]
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: 
@@ -2888,342 +3484,58 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
-* Name:           Bereich für Rate/Verabreichungsgeschwindigkeit [0..1]
+* Name:           Bereich der Verabreichungsfrequenz (informativ) [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:             Obergrenze: Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:               Menge [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:               Kombinierte Einheit [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:             Untergrenze: Verabreichungsgeschwindigkeit mit kombinierter Einheit [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:               Menge [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:               Kombinierte Einheit [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:         Dauer der einzelnen Verabreichung/Einnahme [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:           Wert der Zeitspanne [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:           Maximaler Wert der Zeitspanne [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:           Einheit der Zeitspanne [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: code
-* Name:         Verabreichungsweg - Code/Bezeichnung [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:           Code-Auswahl [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: 
-* Name:             SNOMED CT®-Code [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: code
-* Name:             EDQM-Code [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: code
-* Name:             Code aus einem anderen Codesystem [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: code
-* Name:           Bezeichnung [0..1]
+* Name:         Hinweise [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: string
-* Name:         Körperstelle - Code/Bezeichnung [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:           Code-Auswahl [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: 
-* Name:             Code aus einem Codesystem [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: code
-* Name:           Bezeichnung [0..1]
+* Name:         Freitext Dosieranweisung [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: string
-* Name:       Wiederholung der Verabreichung/Einnahme [0..1]
+* Name:       Notiz [0..*]
+  * Kardinalität: 0..*
+  * Konformität: 
+  * Datentyp: 
+* Name:         Autor:in [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:         Zeitangabe-Auswahl (dosisspezifisch) [0..1]
+* Name:           Referenz [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:           Zeitraum (dosisspezifisch) [0..1]
+* Name:           Freitext [0..1]
   * Kardinalität: 0..1
   * Konformität: 
-  * Datentyp: 
-* Name:             von [0..1]
+  * Datentyp: string
+* Name:         Zeitpunkt der Erstellung [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: datetime
-* Name:             bis [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: datetime
-* Name:           Feste Zeitspanne (dosisspezifisch) [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:             Wert der Zeitspanne [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:             Einheit der Zeitspanne [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:           Variable Zeitspanne (dosisspezifisch) [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:             Obergrenze [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:               Wert der Zeitspanne [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:               Einheit der Zeitspanne [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:             Untergrenze [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:               Wert der Zeitspanne [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:               Einheit der Zeitspanne [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:         Anzahl der Wiederholungen [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:           Absolute Anzahl der Wiederholungen [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: count
-* Name:           Maximale Anzahl der Wiederholungen [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: count
-* Name:         Frequenz/Zeitspanne der Wiederholungen [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:           Absolute Anzahl der Frequenz [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: count
-* Name:           Maximale Anzahl der Frequenz [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: count
-* Name:           Absoluter Wert der Zeitspanne [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:           Maximaler Wert der Zeitspanne [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:           Einheit der Zeitspanne [0..1]
-  * Kardinalität: Bedingung
-* Name: 1..1wenn eine Dauer der Zeitspanne vorhanden ist
-  * Kardinalität: 
-  * Konformität: code
-* Name: 0..0sonst
-  * Kardinalität: 
-  * Konformität: code
-* Name:         Uhrzeit [0..*]
-  * Kardinalität: Bedingung
-* Name: 0..0wenn Tageszeit und/oder Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation existiert
-  * Kardinalität: 
-  * Konformität: quantity
-* Name: 0..*sonst
-  * Kardinalität: 
-  * Konformität: quantity
-* Name:         Tageszeit/Zusatzinformationen [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: 
-* Name:           Tageszeit [0..*]
-  * Kardinalität: Bedingung
-* Name: 0..0wenn Uhrzeit existiert
-  * Kardinalität: 
-  * Konformität: code
-* Name: 0..*sonst
-  * Kardinalität: 
-  * Konformität: code
-* Name:           Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation [0..*]
-  * Kardinalität: Bedingung
-* Name: 0..0wenn Uhrzeit existiert
-  * Kardinalität: 
-  * Konformität: code
-* Name: 0..*sonst
-  * Kardinalität: 
-  * Konformität: code
-* Name:           Zeitabstand zu einer Mahlzeit/Schlafzeit [0..1]
-  * Kardinalität: Bedingung
-* Name: 0..1wenn Mahlzeiten-/Schlafzeitenabhängige Zusatzinformation existiert UND als Code nicht "mit der Mahlzeit" ausgewählt ist
-  * Kardinalität: 
-  * Konformität: count
-* Name: 0..0sonst
-  * Kardinalität: 
-  * Konformität: count
-* Name:         Wochentag [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: code
-* Name:       Bedarfsmedikation [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:         Bedarfsmedikation ja/nein [0..1]
-  * Kardinalität: Bedingung
-* Name: 0..0wenn Bedingung vorhanden
-  * Kardinalität: 
-  * Konformität: boolean
-* Name: 0..1sonst
-  * Kardinalität: 
-  * Konformität: boolean
-* Name:         Bedingung - Code/Bezeichnung [0..1]
-  * Kardinalität: Bedingung
-* Name: 0..0wenn Bedarfsmedikation ja/nein ausgefüllt
-  * Kardinalität: 
-  * Konformität: 
-* Name: 0..1sonst
-  * Kardinalität: 
-  * Konformität: 
-* Name:           Code-Auswahl [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: 
-* Name:             SNOMED CT®-Code [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: code
-* Name:             Code aus einem anderen Codesystem [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: code
-* Name:           Bezeichnung [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:         Maximale Menge pro Gabe/Einnahme [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:           Menge [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:           Dosiereinheit [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:         Maximale Menge pro Zeitspanne [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:           Menge [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: 
-* Name:             Wert der Menge [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:             Dosiereinheit der Menge [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:           Zeitspanne [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: 
-* Name:             Wert der Zeitspanne [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: quantity
-* Name:             Einheit der Zeitspanne [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:         Bereich der Verabreichungsfrequenz (informativ) [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:       Hinweise [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Freitext Dosieranweisung [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:     Notiz [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: 
-* Name:       Autor:in [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:         Referenz [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:         Freitext [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Zeitpunkt der Erstellung [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: datetime
-* Name:       Text [1..1]
+* Name:         Text [1..1]
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: string
+* Name:     Zusätzliche Elemente [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Notiz\Autor:in\Referenz [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:         Behandelnde Person (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:         Behandelnde Person/Einrichtung (KBV-Basis) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
 * Name:   Arzneimittel/Rezeptur (KBV-Basis) [0..*]
   * Kardinalität: 0..*
   * Konformität: 
@@ -3235,6 +3547,26 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
+* Name:   Ort Betriebsstätte [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:     Bezeichnung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:     Typ [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: code
+* Name:     Referenz Betriebsstätte [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Betriebsstätte [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
 * Name:   Ort Hausbesuch [1..1]
   * Kardinalität: 1..1
   * Konformität: 
@@ -3287,106 +3619,10 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: string
-* Name:   Patient:in (KBV-Basis) [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: 
-* Name:   Behandelnde Person (KBV-Basis) [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: 
 * Name:   Einrichtung/Organisationseinheit (KBV-Basis) [0..*]
   * Kardinalität: 0..*
   * Konformität: 
   * Datentyp: 
-* Name:   Mitarbeiter [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: 
-* Name:     Mitarbeiternummer [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: string
-* Name:     Name [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: 
-* Name:       Vollständiger Name [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Vorsatzwort [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Namenszusatz [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Titel [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Nachname [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Vorname [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:     Straßenanschrift [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: 
-* Name:       Straße [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Hausnummer [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Anschriftenzusatz [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Stadtteil [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Postleitzahl [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Ort [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: string
-* Name:       Land/Wohnsitzländercode [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: code
-* Name:     Kontaktdaten [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: 
-* Name:       Kontaktkanal [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: code
-* Name:       Wert [1..1]
-  * Kardinalität: 1..1
-  * Konformität: 
-  * Datentyp: string
-* Name:     Administratives Geschlecht [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: code
-* Name:     Qualifikation [0..*]
-  * Kardinalität: 0..*
-  * Konformität: 
-  * Datentyp: code
 * Name:   Betriebsstätte [0..*]
   * Kardinalität: 0..*
   * Konformität: 
@@ -3486,7 +3722,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
 * Name:     Ergänzende Angaben [0..1]
   * Kardinalität: 0..1
   * Konformität: 
-  * Datentyp: count
+  * Datentyp: string
 
  Szenario: Technik und Datenaustausch 
 
@@ -3494,178 +3730,130 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
-* Name:   Dokumentenverweis/Anhang
-  * Kardinalität: 0..*
-  * Konformität: R
+* Name:   Software [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: 
-* Name:     Status
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: code
-* Name:     Typ - Code/Bezeichnung
+* Name:     Name [0..1]
   * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: 
-* Name:       Code-Auswahl
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:         XDS
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: code
-* Name:         KBV
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: code
-* Name:         Code aus einem anderen Codesystem
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: code
-* Name:       Bezeichnung
-  * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
   * Datentyp: string
-* Name:     Kategorie - Code/Bezeichnung
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:       Code-Auswahl
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:         XDS
+* Name:     Typ [0..1]
   * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
   * Datentyp: code
-* Name:         Code aus einem anderen Codesystem
-  * Kardinalität: 0..*
-  * Konformität: O
+* Name:     Version [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: string
+* Name:     Kontaktdaten [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Kontaktkanal [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: code
-* Name:       Bezeichnung
+* Name:       Wert [0..1]
   * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
   * Datentyp: string
-* Name:     Dokumentenverweis
-  * Kardinalität: 0..*
-  * Konformität: O
+* Name:   Herkunftsinformation (KBV-Basis) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: 
-* Name:       Name des Dokumentes
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: string
-* Name:       URI des Dokuments
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: string
-* Name:     Dokumentanhang
-  * Kardinalität: 0..*
-  * Konformität: O
+* Name:     KBV-Basis Elemente 1.8.0 Herkunftsinformation [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: 
-* Name:       Titel
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: string
-* Name:       Dateiformat
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: code
-* Name:       Datei
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: blob
-* Name:     Zeitpunkt der Erstellung des Dokumentes
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: datetime
-* Name:     Autor:in
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:       Behandelnde Person
-  * Kardinalität: 0..1
-  * Konformität: R
-  * Datentyp: reference
-* Name:       Behandelnde Person/Einrichtung
-  * Kardinalität: 0..1
-  * Konformität: R
-  * Datentyp: reference
-* Name:     Beschreibung des Dokuments
-  * Kardinalität: 0..1
-  * Konformität: O
-  * Datentyp: string
-* Name:   Herkunftsinformation
-  * Kardinalität: 0..*
-  * Konformität: O
-  * Datentyp: 
-* Name:     Referenz auf das Ziel
+* Name:       Referenz auf das Ziel [1..*]
   * Kardinalität: 1..*
-  * Konformität: M
+  * Konformität: 
   * Datentyp: 
-* Name:       Referenz
+* Name:         Referenz [1..1]
   * Kardinalität: 1..1
-  * Konformität: M
+  * Konformität: 
   * Datentyp: 
-* Name:     Ursprungs-Information
+* Name:       Ursprungs-Information [0..*]
   * Kardinalität: 0..*
-  * Konformität: O
+  * Konformität: 
   * Datentyp: 
-* Name:       Art der Nutzung
-  * Kardinalität: 1..1
-  * Konformität: M
+* Name:         Art der Nutzung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: code
-* Name:       Verantwortliche Person/Entität
+* Name:         Verantwortliche Person/Entität [0..*]
   * Kardinalität: 0..*
-  * Konformität: O
+  * Konformität: 
   * Datentyp: 
-* Name:         Referenz auf Person/Entität
-  * Kardinalität: 1..1
-  * Konformität: M
+* Name:           Referenz auf Person/Entität [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: 
-* Name:           Behandelnde Person
+* Name:             Referenz [0..1]
   * Kardinalität: 0..1
-  * Konformität: R
-  * Datentyp: reference
-* Name:           Behandelnde Person/Einrichtung
+  * Konformität: 
+  * Datentyp: 
+* Name:           Art der Beteiligung [0..1]
   * Kardinalität: 0..1
-  * Konformität: R
-  * Datentyp: reference
-* Name:         Art der Beteiligung
-  * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
   * Datentyp: code
-* Name:         Rolle der Person
+* Name:           Rolle der Person [0..*]
   * Kardinalität: 0..*
-  * Konformität: O
+  * Konformität: 
   * Datentyp: code
-* Name:       Referenz auf die Ursprungs-Information
-  * Kardinalität: 1..1
-  * Konformität: M
+* Name:         Referenz auf die Ursprungs-Information [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: 
-* Name:         Referenz
+* Name:           Referenz [1..1]
   * Kardinalität: 1..1
-  * Konformität: M
+  * Konformität: 
   * Datentyp: 
-* Name:     Beteiligte Person/Entität
+* Name:       Beteiligte Person/Entität [1..*]
   * Kardinalität: 1..*
-  * Konformität: M
+  * Konformität: 
   * Datentyp: 
-* Name:       Referenz auf Person/Entität
-  * Kardinalität: 1..1
-  * Konformität: M
-  * Datentyp: 
-* Name:       Art der Beteiligung
+* Name:         Referenz auf Person/Entität [0..1]
   * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
+  * Datentyp: 
+* Name:         Art der Beteiligung [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
   * Datentyp: code
-* Name:       Rolle der Person/Entität
+* Name:         Rolle der Person/Entität [0..*]
   * Kardinalität: 0..*
-  * Konformität: O
+  * Konformität: 
   * Datentyp: code
-* Name:     Zeitpunkt der durchgeführten Aktivität
+* Name:       Zeitpunkt der durchgeführten Aktivität [0..1]
   * Kardinalität: 0..1
-  * Konformität: O
+  * Konformität: 
   * Datentyp: datetime
+* Name:     Zusätzliche Elemente [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: 
+* Name:       Beteiligte Person/Entität\Referenz auf Person/Entität [1..1]
+  * Kardinalität: 1..1
+  * Konformität: 
+  * Datentyp: 
+* Name:         Behandelnde Person (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:         Behandelnde Person/Einrichtung (KBV-Basis) [0..1]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:         Person [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
+* Name:         Kontaktperson (KBV-Basis) [0..*]
+  * Kardinalität: 0..1
+  * Konformität: 
+  * Datentyp: reference
 
  Szenario: Versorgung und Maßnahmen 
 
@@ -3689,8 +3877,8 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: 
-* Name:       Code-Auswahl [1..*]
-  * Kardinalität: 1..*
+* Name:       Code-Auswahl [1..1]
+  * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: 
 * Name:         SNOMED CT®-Code [0..*]
@@ -3705,11 +3893,11 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: 
-* Name:       Code-Auswahl [1..*]
-  * Kardinalität: 1..*
+* Name:       Code-Auswahl [1..1]
+  * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: 
-* Name:         OPS-Code
+* Name:         OPS-Code [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
@@ -3717,7 +3905,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
-* Name:           OPS-Seitenlokalisation
+* Name:           OPS-Seitenlokalisation [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: code
@@ -3825,7 +4013,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 1..*
   * Konformität: 
   * Datentyp: 
-* Name:         OPS-Code
+* Name:         OPS-Code [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: 
@@ -3833,7 +4021,7 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 1..1
   * Konformität: 
   * Datentyp: code
-* Name:           OPS-Seitenlokalisation
+* Name:           OPS-Seitenlokalisation [0..1]
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: code
@@ -3845,10 +4033,6 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: string
-* Name:       Seitenlokalisation [0..1]
-  * Kardinalität: 0..1
-  * Konformität: 
-  * Datentyp: code
 * Name:     Referenz Patient [1..1]
   * Kardinalität: 1..1
   * Konformität: 
@@ -3905,8 +4089,8 @@ Einen detaillierten Einstieg in das Informationsmodell bietet die Seite [Lesehil
   * Kardinalität: 0..1
   * Konformität: 
   * Datentyp: code
-* Name:     Komplikationsbeschreibung [1..1]
-  * Kardinalität: 1..1
+* Name:     Komplikationsbeschreibung [0..*]
+  * Kardinalität: 0..*
   * Konformität: 
   * Datentyp: string
 * Name:     Beschreibung [1..1]
